@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>disabledisable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Product>$(AssemblyName.Replace(".",  " ")) .NET</Product>
+  </PropertyGroup>
+
+</Project>
