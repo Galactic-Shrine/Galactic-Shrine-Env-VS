@@ -16,7 +16,7 @@ namespace Gs.Outils {
    *   [EN] Class used to generate hash sums of file.
    * </summary>
    **/
-  static class Hachage {
+  static class Hacher {
 
     /**
      * <summary>
