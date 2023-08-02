@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ImplicitUsings>disabledisable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Product>$(AssemblyName.Replace(".",  " ")) .NET</Product>
+    <Product>$(AssemblyName.Replace("Gs",  "Galactic-Shrine").Replace(".",  " ")) Core .NET</Product>
   </PropertyGroup>
 
 </Project>

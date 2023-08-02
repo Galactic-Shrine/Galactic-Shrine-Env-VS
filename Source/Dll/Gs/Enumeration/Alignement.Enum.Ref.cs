@@ -5,7 +5,7 @@
 
 namespace Gs.Enumeration {
 
-  public enum Aligner {
+  public enum Alignement {
 
     Droite,
 

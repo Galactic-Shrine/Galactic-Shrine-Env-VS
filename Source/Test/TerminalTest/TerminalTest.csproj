@@ -2,9 +2,15 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Gs.Test.Terminal</RootNamespace>
+    <BaseOutputPath>..\..\..\Build\Test</BaseOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dll\Gs.Toolkit\Gs.Toolkit.csproj" />
+    <ProjectReference Include="..\..\Dll\Gs\Gs.csproj" />
+  </ItemGroup>
 
 </Project>

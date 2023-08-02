@@ -13,7 +13,8 @@ namespace Gs.Interface.Terminal {
 
     Dictionary<string, Couleur> Couleurs { get; set; }
 
-    Couleur AddColor(ConsoleColor? ArrierePlan, ConsoleColor? PremierPlan);
+    Couleur AjouterCouleur(ConsoleColor? ArrierePlan, ConsoleColor? PremierPlan);
+
     void DefinirLesCouleurs();
 
     void DefinirLesComposants();
