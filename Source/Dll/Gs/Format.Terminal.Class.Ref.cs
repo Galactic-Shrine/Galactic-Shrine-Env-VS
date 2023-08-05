@@ -11,9 +11,9 @@ using Gs.Enumeration;
 
 namespace Gs.Terminal {
 
-	public class Format {
+  public class Format {
 
-		Dictionary<string, Couleur> VariationDuTheme { get; set; }
+    Dictionary<string, Couleur> VariationDuTheme { get; set; }
 		private readonly Object VerrouillageDeCouleur = new Object();
 
 		public Format(CouleurInterface Theme) {
@@ -73,12 +73,12 @@ namespace Gs.Terminal {
 			}
 		}
 
-		public void Ecrire(bool WriteLine, string Texte, string Couleur = Couleurs.Txt.Default) {
+		public void Ecrire(bool ReserveToutLaLigne, string Texte, string Couleur = Couleurs.Txt.Default) {
 
 			lock(VerrouillageDeCouleur) {
 
 				DefinirCouleur(Couleur);
-				Sortie.Ecrire(WriteLine, Texte);
+				Sortie.Ecrire(ReserveToutLaLigne, Texte);
 				CouleurParDefaut();
 			}
 		}

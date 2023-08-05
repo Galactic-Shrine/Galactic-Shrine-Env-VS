@@ -33,20 +33,6 @@ namespace Gs {
 
     /**
      * <summary>
-     *   [FR] Fournit le chemin d'accès au dossier Program Files/Program Files (x86)
-     *        Racourci du <code>System.Environment.GetEnvironmentVariable</code>
-     *   [EN] Provides path to Program Files/Program Files folder (x86)
-     *        Shortcut of the <code>System.Environment.GetEnvironmentVariable</code>
-     * </summary>
-     * <returns>
-     *   string
-     * </returns>
-     **/
-    public readonly string ProgramFiles = EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)");
-    //public Gs () => Chemin = EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)");
-
-    /**
-     * <summary>
      *   [FR] Separateur de repertoire.
      *        Racourci du <code>System.IO.Path.DirectorySeparatorChar</code>
      *   [EN] Directory separator.
@@ -64,5 +50,22 @@ namespace Gs {
      * </summary>
      **/
     public static readonly char RepertoireSeparateur = Path.DirectorySeparatorChar;
+
+    /**
+     * <summary>
+     *   [FR] Fournit le chemin d'accès au dossier Program Files/Program Files (x86)
+     *        Racourci du <code>System.Environment.GetEnvironmentVariable</code>
+     *   [EN] Provides path to Program Files/Program Files folder (x86)
+     *        Shortcut of the <code>System.Environment.GetEnvironmentVariable</code>
+     * </summary>
+     * <returns>
+     *   string
+     * </returns>
+     **/
+    public static readonly string ProgramFiles = EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)");
+    //public Gs () => Chemin = EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)");
+
+    public static readonly string Documents = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+    //Environment.GetEnvironmentVariable("ProgramFiles")
   }
 }

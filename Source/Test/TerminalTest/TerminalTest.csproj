@@ -8,6 +8,22 @@
     <BaseOutputPath>..\..\..\Build\Test</BaseOutputPath>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\..\Dll\Gs.Toolkit\Gs.Toolkit.csproj" />
     <ProjectReference Include="..\..\Dll\Gs\Gs.csproj" />
