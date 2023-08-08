@@ -1,21 +1,30 @@
 ﻿using System;
+using System.IO;
 using System.Reflection;
-using GsP = Gs.Properties;
+using Gs.Outils;
 using Gs.Outils.Platform;
 using Gs.Enumeration;
 using Gs.Terminal;
 using Gs.UI.Terminal;
+using GsP = Gs.Properties;
 using static Gs.Terminal.Couleurs;
 using static Gs.Terminal.Terminal;
+using static Gs.DossierReference;
 using Gs.Test.Terminal.Properties;
 
 namespace Gs.Test.Terminal {
 
   internal class Program {
 
-		private static Format Terminal { get; set; }
+    private static Format Terminal { get; set; }
 
-		static void Main() {
+    public static readonly DossierReference RepertoireRacine = new DossierReference(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine())));
+
+    public static readonly DossierReference RepertoireRacine2 = new DossierReference(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()), ".."));
+
+    public static readonly DossierReference RepertoireDesSource = Combiner(RepertoireRacine, "Source");
+
+    static void Main() {
       
       try {
        
@@ -56,7 +65,7 @@ namespace Gs.Test.Terminal {
 			string AppName = typeof(Program).Assembly.GetName().Name;
 			Version AppVersion = Assembly.GetExecutingAssembly().GetName().Version;
 
-			Terminal.Eclaircir();
+      Terminal.Eclaircir();
 			Terminal.LigneSeparatriceDecoree(Character: '−', Couleur: Bg.Avertissement);
 			Terminal.Aligner(Alignement: Alignement.Centre, Texte: AppName.Replace("T", " T") + " .NET " + AppVersion, Couleur: Bg.Avertissement);
 			Terminal.LigneSeparatriceDecoree(Character: '−', Couleur: Bg.Avertissement);
@@ -185,12 +194,28 @@ namespace Gs.Test.Terminal {
 
     static void Variable() {
 
+      string ParamTest = "Argumentation";
+
       try {
 
-        Terminal.Ecrire(Texte: $"Gs.ProgramFiles => {Gs.ProgramFiles} \n");
-        Terminal.Ecrire(Texte: $"Gs.Documents => {Gs.Documents} \n");
-        Terminal.Ecrire(Texte: $"Gs.Rs => {Gs.Rs} \n");
-        Terminal.Ecrire(Texte: $"Gs.RepertoireSeparateur => {Gs.RepertoireSeparateur} \n");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier Gs.dll :");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.ProgramFiles => {Gs.ProgramFiles}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.Documents => {Gs.Documents}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.DossierReference.Rs => {Rs}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.DossierReference.RepertoireSeparateur => {RepertoireSeparateur}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.Resources.RepertoiresSeparateursInvalides => {GsP.Resources.RepertoiresSeparateursInvalides}", Argument: $"{ParamTest}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.Resources.FichierTermineInvalide => {GsP.Resources.FichierTermineInvalide}");
+        Terminal.LigneSeparatrice();
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier TerminalTest.(dll/exe) :");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacine => {RepertoireRacine}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacine => {RepertoireRacine2}");
+        Terminal.LigneSeparatrice();        
+        Terminal.LigneSeparatrice();
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "System.IO");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.DirectorySeparatorChar => {Path.DirectorySeparatorChar}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.AltDirectorySeparatorChar => {Path.AltDirectorySeparatorChar}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.PathSeparator => {Path.PathSeparator}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.VolumeSeparatorChar => {Path.VolumeSeparatorChar}");
 
         Retour();
       }

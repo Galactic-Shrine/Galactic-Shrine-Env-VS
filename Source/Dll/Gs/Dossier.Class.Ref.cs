@@ -23,6 +23,26 @@ namespace Gs {
 
     /**
      * <summary>
+     *   [FR] Separateur de repertoire.
+     *        Racourci du <code>System.IO.Path.DirectorySeparatorChar</code>
+     *   [EN] Directory separator.
+     *        Shortcut of the <code>System.IO.Path.DirectorySeparatorChar</code>
+     * </summary>
+     **/
+    public static readonly char Rs = Path.DirectorySeparatorChar;
+
+    /**
+     * <summary>
+     *   [FR] Separateur de repertoire.
+     *        Racourci du <code>System.IO.Path.DirectorySeparatorChar</code>
+     *   [EN] Directory separator.
+     *        Shortcut of the <code>System.IO.Path.DirectorySeparatorChar</code>
+     * </summary>
+     **/
+    public static readonly char RepertoireSeparateur = Path.DirectorySeparatorChar;
+
+    /**
+     * <summary>
      *   [FR] Constructeur par défaut.
      *   [EN] Default constructor.
      * </summary>
@@ -83,7 +103,7 @@ namespace Gs {
           return null;
         }
 
-        int LongueurDuParent = NomComplet.LastIndexOf(RepertoireSeparateur);
+        int LongueurDuParent = NomComplet.LastIndexOf(Rs);
         if (LongueurDuParent == 2 && NomComplet[1] == ':') {
 
           LongueurDuParent++;
@@ -115,7 +135,7 @@ namespace Gs {
      *   [EN] True if this path is a root directory, otherwise False.
      * </returns>
      **/
-    public bool EstLeRepertoireRacine() => NomComplet[NomComplet.Length - 1] == RepertoireSeparateur;
+    public bool EstLeRepertoireRacine() => NomComplet[NomComplet.Length - 1] == Rs;
 
     /**
      * <summary>
@@ -177,7 +197,7 @@ namespace Gs {
      **/
     public static DossierReference ObtenirLeRepertoireParrent(FichierReference Fichier) {
       
-      int LongueurDuParent = Fichier.NomComplet.LastIndexOf(RepertoireSeparateur);
+      int LongueurDuParent = Fichier.NomComplet.LastIndexOf(Rs);
       //int ParrentLength = Fichier.NomComplet.LastIndexOf(DirSepChar);
       if (LongueurDuParent == 2 && Fichier.NomComplet[1] == ':') {
 
@@ -598,15 +618,15 @@ namespace Gs {
 
       if (NomDuChemin.Length == 2 && NomDuChemin[1] == ':') {
 
-        return NomDuChemin + RepertoireSeparateur;
+        return NomDuChemin + Rs;
       }
-      else if (NomDuChemin.Length == 3 && NomDuChemin[1] == ':' && NomDuChemin[2] == RepertoireSeparateur) {
+      else if (NomDuChemin.Length == 3 && NomDuChemin[1] == ':' && NomDuChemin[2] == Rs) {
 
         return NomDuChemin;
       }
-      else if (NomDuChemin.Length > 1 && NomDuChemin[NomDuChemin.Length - 1] == RepertoireSeparateur) {
+      else if (NomDuChemin.Length > 1 && NomDuChemin[NomDuChemin.Length - 1] == Rs) {
 
-        return NomDuChemin.TrimEnd(RepertoireSeparateur);
+        return NomDuChemin.TrimEnd(Rs);
       }
       else {
 

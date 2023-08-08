@@ -33,26 +33,6 @@ namespace Gs {
 
     /**
      * <summary>
-     *   [FR] Separateur de repertoire.
-     *        Racourci du <code>System.IO.Path.DirectorySeparatorChar</code>
-     *   [EN] Directory separator.
-     *        Shortcut of the <code>System.IO.Path.DirectorySeparatorChar</code>
-     * </summary>
-     **/
-    public static readonly char Rs = Path.DirectorySeparatorChar;
-
-    /**
-     * <summary>
-     *   [FR] Separateur de repertoire.
-     *        Racourci du <code>System.IO.Path.DirectorySeparatorChar</code>
-     *   [EN] Directory separator.
-     *        Shortcut of the <code>System.IO.Path.DirectorySeparatorChar</code>
-     * </summary>
-     **/
-    public static readonly char RepertoireSeparateur = Path.DirectorySeparatorChar;
-
-    /**
-     * <summary>
      *   [FR] Fournit le chemin d'accès au dossier Program Files/Program Files (x86)
      *        Racourci du <code>System.Environment.GetEnvironmentVariable</code>
      *   [EN] Provides path to Program Files/Program Files folder (x86)

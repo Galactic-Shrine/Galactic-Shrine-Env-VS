@@ -9,6 +9,7 @@ using System.Text;
 using System.IO;
 using Gs.Enumeration;
 using Gs.Properties;
+using static Gs.DossierReference;
 
 namespace Gs {
 
@@ -152,7 +153,7 @@ namespace Gs {
     public string ObtenirLeNomDeFichierSansAucuneExtension()
     {
 
-      int IndexDeDebut = NomComplet.LastIndexOf(RepertoireSeparateur) + 1;
+      int IndexDeDebut = NomComplet.LastIndexOf(Rs) + 1;
       int IndexDeFin = NomComplet.LastIndexOf('.', IndexDeDebut);
 
       if (IndexDeFin < IndexDeDebut)

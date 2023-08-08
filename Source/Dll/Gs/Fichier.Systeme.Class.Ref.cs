@@ -33,14 +33,6 @@ namespace Gs {
 
     /**
      * <summary>
-     *   [FR] Racourci du System.IO.Path.DirectorySeparatorChar
-     *   [EN] Shortcut of the System.IO.Path.DirectorySeparatorChar
-     * </summary>
-     **/
-    public static readonly char RepertoireSeparateur = Path.DirectorySeparatorChar;
-
-    /**
-     * <summary>
      * [FR] Le comparateur à utiliser pour les références de systèmes de fichiers
      * [EN] The comparator to use for file system references
      * </summary>
@@ -95,7 +87,7 @@ namespace Gs {
      * </returns>
      **/
     public bool EstSousLeRepertoire(DossierReference Autre) => NomComplet.StartsWith(Autre.NomComplet, Comparaison) && (NomComplet.Length == Autre.NomComplet.Length 
-      || NomComplet[Autre.NomComplet.Length] == RepertoireSeparateur || Autre.EstLeRepertoireRacine());
+      || NomComplet[Autre.NomComplet.Length] == DossierReference.Rs || Autre.EstLeRepertoireRacine());
 
     /**
      * <summary>
@@ -182,7 +174,7 @@ namespace Gs {
          * [EN] check if the substring is a directory. 
          */
         int IndexDeFinDeCorrespondance = IndexDeCorrespondance + Nom.Length;
-        if (NomComplet[IndexDeCorrespondance - 1] == RepertoireSeparateur && (IndexDeFinDeCorrespondance == NomComplet.Length || NomComplet[IndexDeFinDeCorrespondance] == RepertoireSeparateur)) {
+        if (NomComplet[IndexDeCorrespondance - 1] == DossierReference.Rs && (IndexDeFinDeCorrespondance == NomComplet.Length || NomComplet[IndexDeFinDeCorrespondance] == DossierReference.Rs)) {
 
           return true;
         }
@@ -305,7 +297,7 @@ namespace Gs {
            * [FR] Vérifier si nous terminons sur un nom d'annuaire complet.
            * [EN] Check if we're finishing on a complete directory name.
            */
-          if (RepertoireDeBase.NomComplet[Index] == RepertoireSeparateur) {
+          if (RepertoireDeBase.NomComplet[Index] == DossierReference.Rs) {
 
             LongueurDuRepertoireCommun = Index;
           }
@@ -317,7 +309,7 @@ namespace Gs {
            * [FR] Vérifiez si la fin du nom du répertoire coïncide avec une limite pour le nom actuel.
            * [EN] Check whether the end of the directory name coincides with a boundary for the current name.
            */
-          if (NomComplet[Index] == RepertoireSeparateur) {
+          if (NomComplet[Index] == DossierReference.Rs) {
 
             LongueurDuRepertoireCommun = Index;
           }
@@ -336,7 +328,7 @@ namespace Gs {
             break;
           }
 
-          if (NomComplet[Index] == RepertoireSeparateur) {
+          if (NomComplet[Index] == DossierReference.Rs) {
 
             LongueurDuRepertoireCommun = Index;
           }
@@ -366,13 +358,13 @@ namespace Gs {
          * [EN] Move up a directory.
          */
         Resultat.Append("..");                                          //MLHIDE
-        Resultat.Append(RepertoireSeparateur);
+        Resultat.Append(DossierReference.Rs);
 
         /*
          * [FR] Numériser vers le séparateur de répertoire suivant.
          * [EN] Scan to the next directory separator.
          */
-        while (Index < RepertoireDeBase.NomComplet.Length && RepertoireDeBase.NomComplet[Index] != RepertoireSeparateur) {
+        while (Index < RepertoireDeBase.NomComplet.Length && RepertoireDeBase.NomComplet[Index] != DossierReference.Rs) {
 
           Index++;
         }
@@ -431,7 +423,7 @@ namespace Gs {
        */
       StringBuilder NouveauNomComplet = new StringBuilder(RepertoireDeBase.NomComplet);
 
-      if (NouveauNomComplet.Length > 0 && NouveauNomComplet[NouveauNomComplet.Length - 1] == RepertoireSeparateur) {
+      if (NouveauNomComplet.Length > 0 && NouveauNomComplet[NouveauNomComplet.Length - 1] == DossierReference.Rs) {
 
         NouveauNomComplet.Remove(NouveauNomComplet.Length - 1, 1);
       }
@@ -455,7 +447,7 @@ namespace Gs {
            * [EN] It is. Reset the new name to the full version of this path.
            */
           NouveauNomComplet.Clear();
-          NouveauNomComplet.Append(Path.GetFullPath(Fragment).TrimEnd(RepertoireSeparateur));
+          NouveauNomComplet.Append(Path.GetFullPath(Fragment).TrimEnd(DossierReference.Rs));
         } 
         else {
 
@@ -501,7 +493,7 @@ namespace Gs {
                */
               for (int SeparateurDindex = NouveauNomComplet.Length - 1; SeparateurDindex >= 0; SeparateurDindex--) {
 
-                if (NouveauNomComplet[SeparateurDindex] == RepertoireSeparateur) {
+                if (NouveauNomComplet[SeparateurDindex] == DossierReference.Rs) {
 
                   NouveauNomComplet.Remove(SeparateurDindex, NouveauNomComplet.Length - SeparateurDindex);
                   break;
@@ -513,7 +505,7 @@ namespace Gs {
                * [FR] Ajouter ce fragment
                * [EN] Add this fragment
                */
-              NouveauNomComplet.Append(RepertoireSeparateur);
+              NouveauNomComplet.Append(DossierReference.Rs);
               NouveauNomComplet.Append(Fragment, IndexDeDepart, Longueur);
             }
 
@@ -528,7 +520,7 @@ namespace Gs {
 
       if (NouveauNomComplet.Length == 0 || (NouveauNomComplet.Length == 2 && NouveauNomComplet[1] == ':')) {
 
-        NouveauNomComplet.Append(RepertoireSeparateur);
+        NouveauNomComplet.Append(DossierReference.Rs);
       }
 
       return NouveauNomComplet.ToString();

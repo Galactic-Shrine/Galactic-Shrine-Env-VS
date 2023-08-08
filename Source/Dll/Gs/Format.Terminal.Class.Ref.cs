@@ -71,9 +71,19 @@ namespace Gs.Terminal {
 				Sortie.Ecrire(Texte);
 				CouleurParDefaut();
 			}
-		}
+    }
 
-		public void Ecrire(bool ReserveToutLaLigne, string Texte, string Couleur = Couleurs.Txt.Default) {
+    public void Ecrire(string Texte, object Argument, string Couleur = Couleurs.Txt.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleur(Couleur);
+        Sortie.Ecrire(Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Ecrire(bool ReserveToutLaLigne, string Texte, string Couleur = Couleurs.Txt.Default) {
 
 			lock(VerrouillageDeCouleur) {
 
@@ -83,7 +93,17 @@ namespace Gs.Terminal {
 			}
 		}
 
-		public void Aligner(string Texte, string Couleur = Couleurs.Txt.Default) {
+    public void Ecrire(bool ReserveToutLaLigne, string Texte, object Argument, string Couleur = Couleurs.Txt.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleur(Couleur);
+        Sortie.Ecrire(ReserveToutLaLigne, Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Aligner(string Texte, string Couleur = Couleurs.Txt.Default) {
 
 			lock(VerrouillageDeCouleur) {
 
@@ -93,7 +113,17 @@ namespace Gs.Terminal {
 			}
 		}
 
-		public void Aligner(Alignement Alignement, string Texte, string Couleur = Couleurs.Txt.Default) {
+    public void Aligner(string Texte, object Argument, string Couleur = Couleurs.Txt.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleur(Couleur);
+        Sortie.Aligner(Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Aligner(Alignement Alignement, string Texte, string Couleur = Couleurs.Txt.Default) {
 
 			lock(VerrouillageDeCouleur) {
 
@@ -103,7 +133,17 @@ namespace Gs.Terminal {
 			}
 		}
 
-		public void AlignerLaDivision(string Texte, string Couleur = Couleurs.Txt.Default) {
+    public void Aligner(Alignement Alignement, string Texte, object Argument, string Couleur = Couleurs.Txt.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleur(Couleur);
+        Sortie.Aligner(Alignement, Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void AlignerLaDivision(string Texte, string Couleur = Couleurs.Txt.Default) {
 
 			lock(VerrouillageDeCouleur) {
 

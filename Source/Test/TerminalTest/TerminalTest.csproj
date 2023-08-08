@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,6 +7,16 @@
     <RootNamespace>Gs.Test.Terminal</RootNamespace>
     <BaseOutputPath>..\..\..\Build\Test</BaseOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Settings\App.cfg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Settings\App.cfg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 
 
   <ItemGroup>

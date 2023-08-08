@@ -1,10 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <ImplicitUsings>disabledisable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Product>$(AssemblyName.Replace("Gs",  "Galactic-Shrine").Replace(".",  " ")) Core .NET</Product>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gs.Toolkit\Gs.Toolkit.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

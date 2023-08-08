@@ -5,7 +5,7 @@
 
 using System;
 using System.IO;
-using static Gs.Gs;
+using static Gs.DossierReference;
 
 namespace Gs.Test.Terminal {
   internal class AutoGenere {
