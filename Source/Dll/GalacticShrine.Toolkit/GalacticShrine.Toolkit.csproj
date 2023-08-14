@@ -1,14 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>GalacticShrine.Test.Terminal</RootNamespace>
-    <BaseOutputPath>..\..\..\Build\Test</BaseOutputPath>
-    <Description>Test descrition</Description>
-    <AssemblyVersion>0.1.5</AssemblyVersion>
-    <FileVersion>0.1.5</FileVersion>
+    <RootNamespace>GalacticShrine.Outils</RootNamespace>
+    <Product>$(AssemblyName.Replace("GalacticShrine",  "Galactic-Shrine").Replace(".",  " ")) .NET</Product>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyVersion>0.1.6</AssemblyVersion>
+    <FileVersion>0.1.6</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
@@ -90,36 +88,5 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0|arm64'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Settings\App.cfg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Settings\App.cfg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\..\Dll\GalacticShrine.Toolkit\GalacticShrine.Toolkit.csproj" />
-    <ProjectReference Include="..\..\Dll\GalacticShrine\GalacticShrine.csproj" />
-  </ItemGroup>
 
 </Project>

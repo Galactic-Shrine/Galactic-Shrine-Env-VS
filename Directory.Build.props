@@ -4,10 +4,11 @@
    <Authors>Galactic-Shrine</Authors>
    <Copyright>© 2023, $(Authors) - All rights reserved.</Copyright>
    
-   <TargetFrameworks>netstandard2.1;netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+   <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
    <RuntimeIdentifiers>win;win-x64;win-x86;win-arm;win-arm64;linux;linux-x64;linux-x86;linux-arm;linux-arm64;osx;osx-x64</RuntimeIdentifiers>
    <Platforms>AnyCPU;x64;x86;arm;arm64</Platforms>
    
+   <AssemblyVersion>1.0.11</AssemblyVersion>
    <!--<BaseOutputPath>..\..\..\Build</BaseOutputPath>-->
    <GenerateDocumentationFile>False</GenerateDocumentationFile>
  </PropertyGroup>

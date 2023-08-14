@@ -1,48 +1,51 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using Gs.Outils;
-using Gs.Outils.Platform;
-using Gs.Enumeration;
-using Gs.Terminal;
-using Gs.UI.Terminal;
-using GsP = Gs.Properties;
-using static Gs.Terminal.Couleurs;
-using static Gs.Terminal.Terminal;
-using static Gs.DossierReference;
-using Gs.Test.Terminal.Properties;
+using GalacticShrine.Outils;
+using GalacticShrine.Outils.Platform;
+using GalacticShrine.Enumeration;
+using GalacticShrine.Terminal;
+using GalacticShrine.UI.Terminal;
+using GsP = GalacticShrine.Properties;
+using static GalacticShrine.Terminal.Couleurs;
+using static GalacticShrine.Terminal.Terminal;
+using static GalacticShrine.UI.Terminal.Theme;
+using static GalacticShrine.DossierReference;
+using GalacticShrine.Test.Terminal.Properties;
 
-namespace Gs.Test.Terminal {
+namespace GalacticShrine.Test.Terminal {
 
   internal class Program {
 
     private static Format Terminal { get; set; }
 
-    public static readonly DossierReference RepertoireRacine = new DossierReference(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine())));
+    public static readonly DossierReference RepertoireRacineApplication = new (Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine())));
 
-    public static readonly DossierReference RepertoireRacine2 = new DossierReference(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()), ".."));
+    public static readonly DossierReference RepertoireRacineSociete = new (Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()), ".."));
 
-    public static readonly DossierReference RepertoireDesSource = Combiner(RepertoireRacine, "Source");
+    public static readonly DossierReference RepertoireRacineSource = Combiner(RepertoireRacineSociete, "Source");
 
     static void Main() {
       
       try {
-       
+
+        new AutoGenere();
+
         switch(OS.ObtenirLesInfoCourantes()) {
 
 					case "Windows":
 
-						Terminal = new Format(Theme.Sombre);
+						Terminal = new Format(Theme: Sombre);
 						break;
 
 					case "Linux":
 
-						Terminal = new Format(new ThemeSombre());
+						Terminal = new Format(Theme: new ThemeSombre());
 						break;
 
 					case "OSX":
 
-						Terminal = new Format(Theme.Lumineux);
+						Terminal = new Format(Theme: Lumineux);
 						break;
 				}
 
@@ -198,24 +201,24 @@ namespace Gs.Test.Terminal {
 
       try {
 
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier Gs.dll :");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.ProgramFiles => {Gs.ProgramFiles}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.Documents => {Gs.Documents}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.DossierReference.Rs => {Rs}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.DossierReference.RepertoireSeparateur => {RepertoireSeparateur}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.Resources.RepertoiresSeparateursInvalides => {GsP.Resources.RepertoiresSeparateursInvalides}", Argument: $"{ParamTest}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Gs.Resources.FichierTermineInvalide => {GsP.Resources.FichierTermineInvalide}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier GalacticShrine.dll :");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.ProgramFiles => {GalacticShrine.ProgramFiles}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Documents => {GalacticShrine.Documents}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.DossierReference.Rs => {Rs}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.DossierReference.RepertoireSeparateur => {RepertoireSeparateur}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.RepertoiresSeparateursInvalides => {GsP.Resources.RepertoiresSeparateursInvalides}", Argument: $"{ParamTest}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.FichierTermineInvalide => {GsP.Resources.FichierTermineInvalide}");
         Terminal.LigneSeparatrice();
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier TerminalTest.(dll/exe) :");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacine => {RepertoireRacine}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacine => {RepertoireRacine2}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacineApplication => {RepertoireRacineApplication}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacine => {RepertoireRacineSociete}");
         Terminal.LigneSeparatrice();        
-        Terminal.LigneSeparatrice();
+        /*Terminal.LigneSeparatrice();
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "System.IO");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.DirectorySeparatorChar => {Path.DirectorySeparatorChar}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.AltDirectorySeparatorChar => {Path.AltDirectorySeparatorChar}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.PathSeparator => {Path.PathSeparator}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.VolumeSeparatorChar => {Path.VolumeSeparatorChar}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"Path.VolumeSeparatorChar => {Path.VolumeSeparatorChar}");*/
 
         Retour();
       }
@@ -309,7 +312,7 @@ namespace Gs.Test.Terminal {
 				Terminal.LigneSeparatriceDecoree(Character: '~', Couleur: Bg.Avertissement);
 				Terminal.LigneSeparatriceDecoree(Character: '°', Couleur: Bg.Danger);
 
-				Retour();
+        Retour();
 			}
 			catch(Exception ex) {
 
@@ -325,11 +328,11 @@ namespace Gs.Test.Terminal {
 
 					case "d":
 
-						Terminal = new Format(Theme: Theme.Sombre);
+						Terminal = new Format(Theme: Sombre);
 						break;
 					case "l":
 
-						Terminal = new Format(Theme: Theme.Lumineux);
+						Terminal = new Format(Theme: Lumineux);
 						break;
 				}
 			}

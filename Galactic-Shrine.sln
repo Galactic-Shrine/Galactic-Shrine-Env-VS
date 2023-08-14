@@ -12,13 +12,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "�
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 		Galactic-Shrine.sln.licenseheader = Galactic-Shrine.sln.licenseheader
 		LICENSE.md = LICENSE.md
+		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gs.Toolkit", "Source\Dll\Gs.Toolkit\Gs.Toolkit.csproj", "{BB910D26-34B0-4649-87EB-77B1992A4879}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalacticShrine.Toolkit", "Source\Dll\GalacticShrine.Toolkit\GalacticShrine.Toolkit.csproj", "{BB910D26-34B0-4649-87EB-77B1992A4879}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gs.Toolkit.Update", "Source\Dll\Gs.Toolkit.Update\Gs.Toolkit.Update.csproj", "{69AEDAD5-D6D5-411B-9433-A0742282BF81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalacticShrine.Toolkit.Update", "Source\Dll\GalacticShrine.Toolkit.Update\GalacticShrine.Toolkit.Update.csproj", "{69AEDAD5-D6D5-411B-9433-A0742282BF81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gs", "Source\Dll\Gs\Gs.csproj", "{EA13153D-1EBD-4F08-8F24-F29B4A539CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalacticShrine", "Source\Dll\GalacticShrine\GalacticShrine.csproj", "{EA13153D-1EBD-4F08-8F24-F29B4A539CB2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Programs", "Programs", "{00A3FB4F-6E18-4603-94E1-79F859BDDE41}"
 EndProject
@@ -26,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6B0783D7-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerminalTest", "Source\Test\TerminalTest\TerminalTest.csproj", "{E2A7970E-D27B-4641-A63F-7E4E60F7D980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gs.Database", "Source\Dll\Gs.Database\Gs.Database.csproj", "{C707CFC2-C457-4EAB-A2C5-6C4211E67583}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalacticShrine.Database", "Source\Dll\GalacticShrine.Database\GalacticShrine.Database.csproj", "{C707CFC2-C457-4EAB-A2C5-6C4211E67583}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

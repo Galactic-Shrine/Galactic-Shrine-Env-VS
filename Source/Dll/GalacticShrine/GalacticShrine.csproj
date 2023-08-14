@@ -1,14 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>disabledisable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>GalacticShrine.Test.Terminal</RootNamespace>
-    <BaseOutputPath>..\..\..\Build\Test</BaseOutputPath>
-    <Description>Test descrition</Description>
-    <AssemblyVersion>0.1.5</AssemblyVersion>
-    <FileVersion>0.1.5</FileVersion>
+    <Product>$(AssemblyName.Replace("Gs",  "Galactic-Shrine").Replace(".",  " ")) Core .NET</Product>
+    <AssemblyVersion>0.1.7</AssemblyVersion>
+    <FileVersion>0.1.7</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
@@ -92,17 +89,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Settings\App.cfg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Settings\App.cfg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-
-  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -115,11 +101,6 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\..\Dll\GalacticShrine.Toolkit\GalacticShrine.Toolkit.csproj" />
-    <ProjectReference Include="..\..\Dll\GalacticShrine\GalacticShrine.csproj" />
   </ItemGroup>
 
 </Project>
