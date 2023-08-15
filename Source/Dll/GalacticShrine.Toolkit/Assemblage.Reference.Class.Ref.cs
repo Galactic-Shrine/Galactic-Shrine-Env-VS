@@ -24,6 +24,6 @@ namespace GalacticShrine.Outils {
      *   [EN] Absolute path and filename to the assembly.
      * </returns>
      **/
-    public static string ObtenirLemplacementDorigine(this Assembly Assemblage) => new Uri(uriString: Assemblage.EscapedCodeBase).LocalPath;
+    public static string ObtenirLemplacementDorigine(this Assembly Assemblage) => new Uri(uriString: Assemblage.Location).LocalPath;
   }
 }

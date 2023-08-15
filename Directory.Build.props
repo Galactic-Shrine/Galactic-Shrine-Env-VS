@@ -1,15 +1,38 @@
 <Project>
  <PropertyGroup>
-   <ImplicitUsings>disable</ImplicitUsings>
-   <Authors>Galactic-Shrine</Authors>
-   <Copyright>© 2023, $(Authors) - All rights reserved.</Copyright>
+   <!-- Version du projet -->
+   <InformationalVersion>0.1.5</InformationalVersion>
    
-   <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+   <!-- Compilation -->
+   <ImplicitUsings>disable</ImplicitUsings>
    <RuntimeIdentifiers>win;win-x64;win-x86;win-arm;win-arm64;linux;linux-x64;linux-x86;linux-arm;linux-arm64;osx;osx-x64</RuntimeIdentifiers>
    <Platforms>AnyCPU;x64;x86;arm;arm64</Platforms>
-   
-   <AssemblyVersion>1.0.11</AssemblyVersion>
    <!--<BaseOutputPath>..\..\..\Build</BaseOutputPath>-->
-   <GenerateDocumentationFile>False</GenerateDocumentationFile>
+
+   <!-- Fichier Compiler -->
+   <GenerateDocumentationFile>false</GenerateDocumentationFile>
+   <GenerateDependencyFile>false</GenerateDependencyFile>
+   <!--<GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>-->
+   <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+   
+   <PreserveCompilationContext>false</PreserveCompilationContext>
+
+   <!-- Publish -->
+   <!--
+        <PublishReadyToRun>true</PublishReadyToRun>
+        <PublishSingleFile>true</PublishSingleFile>
+        <PublishTrimmed>true</PublishTrimmed>
+   -->
+
+   <!-- 
+        [FR] Ne pas supprimer ou modifier
+        [EN] Do not delete or modify
+   -->
+   <!-- Information -->
+   <Authors>Galactic-Shrine</Authors>
+   <Copyright>© 2023, $(Authors) - All rights reserved.</Copyright>
+
+   <!-- Frameworks -->
+   <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
  </PropertyGroup>
 </Project>
