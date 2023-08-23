@@ -1,5 +1,5 @@
 # Code de conduite du Contributeur
-[English Version] : CODE_OF_CONDUCT.en.md
+[English Version](CODE_OF_CONDUCT.en.md)
 ## Notre engagement
 En tant que membres, contributeurs et dirigeants, nous nous engageons à faire de la participation à notre communauté une expérience sans harcèlement pour tous, quel que soit l'âge ou le corps.
 communauté une expérience exempte de harcèlement pour tous, quels que soient l'âge, la taille
