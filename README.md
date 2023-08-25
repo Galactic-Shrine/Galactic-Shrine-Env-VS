@@ -5,7 +5,8 @@
 
 # Galactic-Shrine
 
-[![.NET](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet.yml)
+[![.NET windows](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_windows.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_windows.yml)
+[![.NET ubuntu](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_ubuntu.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_ubuntu.yml)
 ![GitHub contributors](https://img.shields.io/github/contributors/Galactic-Shrine/Galactic-Shrine-Env-VS?style=plastic&label=Contributors)
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Galactic-Shrine/Galactic-Shrine-Env-VS?style=plastic&label=Last%20Commit)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/Galactic-Shrine/Galactic-Shrine-Env-VS/master?style=plastic&label=Commit%20Activity)
