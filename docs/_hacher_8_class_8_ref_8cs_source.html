@@ -16,6 +16,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -93,32 +94,32 @@ $(document).ready(function(){initNavTree('_hacher_8_class_8_ref_8cs_source.html'
   <div class="headertitle"><div class="title">Hacher.Class.Ref.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="_hacher_8_class_8_ref_8cs.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>System.IO;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>System.Text;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>System.Security.Cryptography;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html">GalacticShrine.Outils.Enumeration</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html">GalacticShrine.Enumeration.Outils</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_outils.html">GalacticShrine.Outils</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">static</span> <span class="keyword">class </span>Hacher {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> HachageDeFichier (<span class="keywordtype">string</span> CheminDuFichier, <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a>) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> HachageDeFichier (<span class="keywordtype">string</span> CheminDuFichier, <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a>) {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      FileStream Fichier = <span class="keyword">new</span> FileStream(path: CheminDuFichier, mode: FileMode.Open);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keywordflow">switch</span>(<a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a>) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keywordflow">switch</span>(<a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a>) {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a>.Md5:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a>.Md5:</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>          <span class="keywordflow">return</span> HachageOctetsVersHachageDeChaines(Hachures: MD5.Create().ComputeHash(inputStream: Fichier));</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a>.Sha1:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a>.Sha1:</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>          <span class="keywordflow">return</span> HachageOctetsVersHachageDeChaines(Hachures: SHA1.Create().ComputeHash(inputStream: Fichier));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a>.Sha256:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a>.Sha256:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>          <span class="keywordflow">return</span> HachageOctetsVersHachageDeChaines(Hachures: SHA256.Create().ComputeHash(inputStream: Fichier));</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">HachageType</a>.Sha512:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">HachageType</a>.Sha512:</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="keywordflow">return</span> HachageOctetsVersHachageDeChaines(Hachures: SHA512.Create().ComputeHash(inputStream: Fichier));</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">default</span>:</div>
@@ -137,15 +138,15 @@ $(document).ready(function(){initNavTree('_hacher_8_class_8_ref_8cs_source.html'
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
-<div class="ttc" id="anamespace_galactic_shrine_1_1_outils_1_1_enumeration_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html">GalacticShrine.Outils.Enumeration</a></div><div class="ttdef"><b>Definition</b> <a href="_schema_type_8_enum_8_ref_8cs_source.html#l00006">SchemaType.Enum.Ref.cs:6</a></div></div>
-<div class="ttc" id="anamespace_galactic_shrine_1_1_outils_1_1_enumeration_html_ab239b7804a189fad854cfb6437173595"><div class="ttname"><a href="namespace_galactic_shrine_1_1_outils_1_1_enumeration.html#ab239b7804a189fad854cfb6437173595">GalacticShrine.Outils.Enumeration.HachageType</a></div><div class="ttdeci">HachageType</div><div class="ttdoc">[FR] Type de hachage [EN] Type of hash</div><div class="ttdef"><b>Definition</b> <a href="_hachage_8_enum_8_ref_8cs_source.html#l00014">Hachage.Enum.Ref.cs:14</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_1_1_outils_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html">GalacticShrine.Enumeration.Outils</a></div><div class="ttdef"><b>Definition</b> <a href="_schema_type_8_enum_8_ref_8cs_source.html#l00006">SchemaType.Enum.Ref.cs:6</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_1_1_outils_html_a65645c3840dd27a8bede7a23b7f047d2"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#a65645c3840dd27a8bede7a23b7f047d2">GalacticShrine.Enumeration.Outils.HachageType</a></div><div class="ttdeci">HachageType</div><div class="ttdoc">[FR] Type de hachage [EN] Type of hash</div><div class="ttdef"><b>Definition</b> <a href="_hachage_8_enum_8_ref_8cs_source.html#l00014">Hachage.Enum.Ref.cs:14</a></div></div>
 <div class="ttc" id="anamespace_galactic_shrine_1_1_outils_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_outils.html">GalacticShrine.Outils</a></div><div class="ttdef"><b>Definition</b> <a href="_assemblage_8_reference_8_class_8_ref_8cs_source.html#l00009">Assemblage.Reference.Class.Ref.cs:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a class="el" href="dir_b586309762ba03a8cfa576de64078e44.html">Dll</a></li><li class="navelem"><a class="el" href="dir_0cf43b8664b9455079349231e5966de5.html">GalacticShrine.Toolkit</a></li><li class="navelem"><b>Hacher.Class.Ref.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a class="el" href="dir_b586309762ba03a8cfa576de64078e44.html">Dll</a></li><li class="navelem"><a class="el" href="dir_0cf43b8664b9455079349231e5966de5.html">GalacticShrine.Toolkit</a></li><li class="navelem"><a class="el" href="_hacher_8_class_8_ref_8cs.html">Hacher.Class.Ref.cs</a></li>
     <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

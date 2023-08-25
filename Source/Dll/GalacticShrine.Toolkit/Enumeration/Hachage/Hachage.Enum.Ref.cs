@@ -3,7 +3,7 @@
  * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
  **/
 
-namespace GalacticShrine.Outils.Enumeration {
+namespace GalacticShrine.Enumeration.Outils {
 
   /**
    * <summary>

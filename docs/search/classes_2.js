@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fichierreference_0',['FichierReference',['../class_galactic_shrine_1_1_fichier_reference.html',1,'GalacticShrine']]],
-  ['fichiersystemereference_1',['FichierSystemeReference',['../class_galactic_shrine_1_1_fichier_systeme_reference.html',1,'GalacticShrine']]],
-  ['format_2',['Format',['../class_galactic_shrine_1_1_terminal_1_1_format.html',1,'GalacticShrine::Terminal']]]
+  ['donneesini_0',['DonneesIni',['../class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html',1,'GalacticShrine::Configuration']]],
+  ['donneesiniinsensiblea_5flacasse_1',['DonneesIniInsensibleA_LaCasse',['../class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_donnees_ini_insensible_a___la_casse.html',1,'GalacticShrine::Modele::Configuration::Ini']]],
+  ['dossierreference_2',['DossierReference',['../class_galactic_shrine_1_1_dossier_reference.html',1,'GalacticShrine']]]
 ];

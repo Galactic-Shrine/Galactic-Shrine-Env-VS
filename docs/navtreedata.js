@@ -32,27 +32,32 @@ var NAVTREE =
         [ "Énumérations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
-    [ "Classes", "annotated.html", [
-      [ "Liste des classes", "annotated.html", "annotated_dup" ],
-      [ "Index des classes", "classes.html", null ],
+    [ "Structures de données", "annotated.html", [
+      [ "Structures de données", "annotated.html", "annotated_dup" ],
+      [ "Index des structures de données", "classes.html", null ],
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
-      [ "Membres de classe", "functions.html", [
-        [ "Tout", "functions.html", null ],
+      [ "Champs de donnée", "functions.html", [
+        [ "Tout", "functions.html", "functions_dup" ],
         [ "Fonctions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Propriétés", "functions_prop.html", null ]
       ] ]
     ] ],
     [ "Fichiers", "files.html", [
-      [ "Liste des fichiers", "files.html", "files_dup" ]
+      [ "Liste des fichiers", "files.html", "files_dup" ],
+      [ "Variables globale", "globals.html", [
+        [ "Tout", "globals.html", null ],
+        [ "Définitions de type", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_alignement_8_enum_8_ref_8cs_source.html",
-"net6_80_2_galactic_shrine_8_toolkit_8_assembly_info_8cs_source.html"
+"_alignement_8_enum_8_ref_8cs.html",
+"class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#a2300bc20cf1bbedbd22dd27b6ec07fa7",
+"class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html#af0fce102a9735023fe98f2d6da78ed2d"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

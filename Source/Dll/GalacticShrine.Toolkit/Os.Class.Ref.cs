@@ -4,56 +4,94 @@
  **/
 
 using System.Runtime.InteropServices;
+using GalacticShrine.Enumeration.Outils;
 
-namespace GalacticShrine.Outils.Platform {
+namespace GalacticShrine.Outils {
 
   /**
    * <summary>
-   *   [FR] Fournit des informations sur le système actuel
+   *   [FR] Fournit des informations sur le système actuel<br>
    *   [EN] Provides information on the current system
    * </summary>
    **/
   public static class OS {
 
-    public static bool EstWin() {
+    public static bool EstWin => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
-      return RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-    }
+    public static bool EstOsx => RuntimeInformation.IsOSPlatform(OSPlatform.OSX);
 
-    public static bool EstOsx() {
+    public static bool EstGnu => RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
 
-      return RuntimeInformation.IsOSPlatform(OSPlatform.OSX);
-    }
+    /**
+     * <summary>
+     *   [FR] Obtenir le nom du systeme d'exploitation courantes<br>
+     *   [EN] Get the name of the current operating system
+     * </summary>
+     * <returns>
+     *   [FR] Chaîne(<see cref="string"/>) du nom du système<br>
+     *   [EN] System name <see cref="string"/>
+     * </returns>
+     **/
+    public static string ObtenirNomCourantes {
 
-    public static bool EstGnu() {
+      get {
 
-      return RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
+        string? obj;
+
+        if(EstWin)
+          obj = "Windows";
+        else 
+          obj = null;
+
+        if(obj == null) {
+
+          if(EstOsx)
+            obj = "OSX";
+          else 
+            obj = null;
+
+          if(obj == null) {
+
+            if(!EstGnu) 
+              return null;
+            
+            obj = "Linux";
+          }
+        }
+
+        return obj;
+      }
     }
 
     /**
-   * <summary>
-   *   [FR] Obtenir les informations courantes
-   *   [EN] Get current information
-   * </summary>
-   **/
-    public static string ObtenirLesInfoCourantes() {
+     * <summary>
+     *   [FR] Obtenir l'id du systeme d'exploitation courantes<br>
+     *   [EN] Get current operating system id
+     * </summary>
+     * <returns>
+     *   [FR] une énumération de type <see cref="SystemeExploitation"/>.<br>
+     *   [EN] an enumeration of type <see cref="SystemeExploitation"/>.
+     * </returns>
+     **/
+    public static SystemeExploitation ObtenirIdCourantes {
 
-      object obj = (EstWin() ? "Windows" : null);
-      if(obj == null) {
+      get {
 
-        obj = (EstOsx() ? "OSX" : null);
-        if(obj == null) {
+        if(!EstWin) {
 
-          if(!EstGnu()) {
+          if(EstGnu) {
 
-            return null;
+            return SystemeExploitation.Linux;
           }
 
-          obj = "Linux";
+          if(EstOsx) {
+            
+            return SystemeExploitation.Mac;
+          }
         }
-      }
 
-      return (string)obj;
+        return SystemeExploitation.Windows;
+      }
     }
   }
 }

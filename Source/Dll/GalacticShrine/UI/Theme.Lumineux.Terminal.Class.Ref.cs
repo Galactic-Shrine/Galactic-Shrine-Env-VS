@@ -3,7 +3,6 @@
  * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
  **/
 
-using GalacticShrine.Properties;
 using System;
 using System.Collections.Generic;
 using GalacticShrine.Structure.Terminal;
@@ -46,12 +45,12 @@ namespace GalacticShrine.UI.Terminal {
 				{ "text.info",					AjouterCouleur(null, ConsoleColor.DarkCyan) },
 				{ "bg.default",					AjouterCouleur(null, null) },
 				{ "bg.magenta",					AjouterCouleur(ConsoleColor.DarkMagenta, ConsoleColor.White) },
-				{ "bg.sourdine",				AjouterCouleur(ConsoleColor.Gray, ConsoleColor.Black) },
-				{ "bg.primaire",				AjouterCouleur(ConsoleColor.DarkGray, ConsoleColor.White) },
-				{ "bg.avertissement",		AjouterCouleur(ConsoleColor.DarkYellow, ConsoleColor.White) },
-				{ "bg.danger",					AjouterCouleur(ConsoleColor.DarkRed, ConsoleColor.White) },
-				{ "bg.succes",					AjouterCouleur(ConsoleColor.DarkGreen, ConsoleColor.White) },
-				{ "bg.info",						AjouterCouleur(ConsoleColor.DarkCyan, ConsoleColor.White) }
+				{ "bg.sourdine",				AjouterCouleur(ConsoleColor.Gray,        ConsoleColor.Black) },
+				{ "bg.primaire",				AjouterCouleur(ConsoleColor.DarkGray,    ConsoleColor.White) },
+				{ "bg.avertissement",		AjouterCouleur(ConsoleColor.DarkYellow,  ConsoleColor.White) },
+				{ "bg.danger",					AjouterCouleur(ConsoleColor.DarkRed,     ConsoleColor.White) },
+				{ "bg.succes",					AjouterCouleur(ConsoleColor.DarkGreen,   ConsoleColor.White) },
+				{ "bg.info",						AjouterCouleur(ConsoleColor.DarkCyan,    ConsoleColor.White) }
 			};
       Couleurs = Couleur;
 		}

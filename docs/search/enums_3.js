@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['optionsdeformatage_0',['OptionsDeFormatage',['../namespace_galactic_shrine_1_1_outils_1_1_enumeration_1_1_journalisation.html#a772f34bf88f13eb2540c46ee628b2120',1,'GalacticShrine::Outils::Enumeration::Journalisation']]]
+  ['effacement_0',['Effacement',['../namespace_galactic_shrine_1_1_enumeration_1_1_configuration.html#a632b2049550e61cde464235afcfba867',1,'GalacticShrine::Enumeration::Configuration']]]
 ];

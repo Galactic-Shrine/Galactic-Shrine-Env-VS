@@ -15,6 +15,16 @@ namespace GalacticShrine.Interface.Configuration {
    **/
   public interface ClonableInterface<T> where T : class {
 
+    /**
+     * <summary>
+     *   [FR] Crée un nouvel objet qui est une copie de l'instance actuelle.<br/>
+     *   [EN] Creates a new object that is a copy of the current instance.
+     * </summary>
+     * <remarks>
+     *   [FR] Un nouvel objet qui est une copie de cette instance.<br/>
+     *   [EN] A new object that is a copy of this instance.
+     * </remarks>
+     **/
     T CloneEnProfondeur();
   }
 }

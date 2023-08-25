@@ -3,13 +3,9 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <Product>$(AssemblyName.Replace("GalacticShrine",  "Galactic-Shrine").Replace(".",  " ")) Core .NET</Product>
-    <AssemblyVersion>0.1.7</AssemblyVersion>
+    <AssemblyVersion>0.1.7.18</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
-    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|AnyCPU'">
@@ -45,10 +41,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|arm64'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 

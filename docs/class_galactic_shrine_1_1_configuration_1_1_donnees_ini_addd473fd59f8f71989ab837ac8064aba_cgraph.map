@@ -1,0 +1,13 @@
+<map id="GalacticShrine.Configuration.DonneesIni.Fusionner" name="GalacticShrine.Configuration.DonneesIni.Fusionner">
+<area shape="rect" id="Node000001" title="[FR] Fusionne les autres iniData dans celle&#45;ci en écrasant les valeurs existantes...." alt="" coords="5,39,195,81"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#ad3c80f6686b1e2a9450af794508039fe" title="[FR] Fusionne les autres propriétés, &#160;en ajoutant de nouvelles propriétés si elles n&#39;existent pas déj..." alt="" coords="243,5,478,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,45,227,41,228,46,195,51"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ac2f833e033dd9b7cb49023856a6ae7c9" title=" " alt="" coords="243,72,478,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,69,228,74,227,79,195,75"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#adc268cf273d84c086d7c84efe77aa488" title="[FR] Ajoute une nouvelle clé avec le nom spécifié, une valeur vide et des commentaires...." alt="" coords="526,5,761,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,24,511,24,511,29,479,29"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ab439f8ed108317714dae058d645f56c0" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="526,72,761,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,91,511,91,511,96,479,96"/>
+<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="809,72,1045,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="762,91,794,91,794,96,762,96"/>
+</map>

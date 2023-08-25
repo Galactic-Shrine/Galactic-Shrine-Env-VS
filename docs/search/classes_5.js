@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['outils_0',['Outils',['../class_galactic_shrine_1_1_outils_1_1_outils.html',1,'GalacticShrine::Outils']]]
+  ['ini_0',['Ini',['../class_galactic_shrine_1_1_configuration_1_1_ini.html',1,'GalacticShrine::Configuration']]]
 ];

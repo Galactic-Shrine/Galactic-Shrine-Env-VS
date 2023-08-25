@@ -9,7 +9,7 @@ using System.Text;
 using System.IO;
 using GalacticShrine.Enumeration;
 using GalacticShrine.Properties;
-using static GalacticShrine.DossierReference;
+
 
 namespace GalacticShrine {
 
@@ -153,7 +153,7 @@ namespace GalacticShrine {
     public string ObtenirLeNomDeFichierSansAucuneExtension()
     {
 
-      int IndexDeDebut = NomComplet.LastIndexOf(Rs) + 1;
+      int IndexDeDebut = NomComplet.LastIndexOf(DossierReference.Rs) + 1;
       int IndexDeFin = NomComplet.LastIndexOf('.', IndexDeDebut);
 
       if (IndexDeFin < IndexDeDebut)

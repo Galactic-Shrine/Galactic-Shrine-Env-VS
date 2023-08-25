@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['pasdeprefixedegravite_0',['PasDePrefixeDeGravite',['../namespace_galactic_shrine_1_1_outils_1_1_enumeration_1_1_journalisation.html#a772f34bf88f13eb2540c46ee628b2120aecd6649249922d01bc8bc7d59f80b703',1,'GalacticShrine::Outils::Enumeration::Journalisation']]],
-  ['pasdesortieconsole_1',['PasDeSortieConsole',['../namespace_galactic_shrine_1_1_outils_1_1_enumeration_1_1_journalisation.html#a772f34bf88f13eb2540c46ee628b2120a3b26ead26758fc641c0044004c8dae57',1,'GalacticShrine::Outils::Enumeration::Journalisation']]],
-  ['possedelextension_2',['PossedeLextension',['../class_galactic_shrine_1_1_fichier_systeme_reference.html#a6e3fa88243984f120a644c1d3f511a50',1,'GalacticShrine::FichierSystemeReference']]],
-  ['primaire_3',['Primaire',['../class_galactic_shrine_1_1_test_1_1_terminal_1_1_properties_1_1_resources.html#a375121523cdf397ba3562b91bab5e308',1,'GalacticShrine::Test::Terminal::Properties::Resources']]],
-  ['programfiles_4',['ProgramFiles',['../class_galactic_shrine_1_1_galactic_shrine.html#a59be0518e8e95a5be671b7ee86af6de2',1,'GalacticShrine::GalacticShrine']]]
+  ['obtenirledossierspecial_0',['ObtenirLeDossierSpecial',['../class_galactic_shrine_1_1_dossier_reference.html#ae4bc967f181b51f76aa4d01132d59412',1,'GalacticShrine::DossierReference']]],
+  ['obtenirlenomdurepertoire_1',['ObtenirLeNomDuRepertoire',['../class_galactic_shrine_1_1_dossier_reference.html#a57be00912250e50daa61ee968cbb2680',1,'GalacticShrine::DossierReference']]],
+  ['obtenirlextension_2',['ObtenirLextension',['../class_galactic_shrine_1_1_fichier_reference.html#afd891b587e4bffb3178a3bb7a7ba245d',1,'GalacticShrine::FichierReference']]],
+  ['operator_21_3d_3',['operator!=',['../class_galactic_shrine_1_1_dossier_reference.html#a02f583140d69a4e18d8a476ee2b10d85',1,'GalacticShrine::DossierReference']]],
+  ['operator_2b_4',['operator+',['../class_galactic_shrine_1_1_fichier_reference.html#a427da320d23c9e4c53afe6ddd70a20dc',1,'GalacticShrine::FichierReference']]],
+  ['optionsdeformatage_5',['OptionsDeFormatage',['../namespace_galactic_shrine_1_1_enumeration_1_1_outils_1_1_journalisation.html#ae66f8431565585538cd5446311ebe24c',1,'GalacticShrine::Enumeration::Outils::Journalisation']]],
+  ['optionsdeformatage_2eenum_2eref_2ecs_6',['OptionsDeFormatage.Enum.Ref.cs',['../_options_de_formatage_8_enum_8_ref_8cs.html',1,'']]],
+  ['os_2eclass_2eref_2ecs_7',['Os.Class.Ref.cs',['../_os_8_class_8_ref_8cs.html',1,'']]],
+  ['outils_8',['Outils',['../class_galactic_shrine_1_1_outils_1_1_outils.html',1,'GalacticShrine::Outils']]],
+  ['outils_2eclass_2eref_2ecs_9',['Outils.Class.Ref.cs',['../_outils_8_class_8_ref_8cs.html',1,'']]]
 ];

@@ -6,7 +6,7 @@
 using System.IO;
 using System.Text;
 using System.Security.Cryptography;
-using GalacticShrine.Outils.Enumeration;
+using GalacticShrine.Enumeration.Outils;
 
 namespace GalacticShrine.Outils {
 

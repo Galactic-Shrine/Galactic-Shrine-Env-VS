@@ -52,6 +52,7 @@ namespace GalacticShrine {
      * </param>
      **/
     public DossierReference(string Chemins) : base (SeparateurDeVoieDeFuite(Path.GetFullPath(Chemins))) {
+
     }
 
     /**
@@ -65,6 +66,7 @@ namespace GalacticShrine {
      * </param>
      **/
     public DossierReference(DirectoryInfo InfoRepertoire) : base (SeparateurDeVoieDeFuite(InfoRepertoire.FullName)) {
+
     }
 
     /**
@@ -82,6 +84,7 @@ namespace GalacticShrine {
      * </param>
      **/
     public DossierReference(string NomAuComplet, Desinfecter Assainisseur) : base (NomAuComplet) {
+
     }
 
     /**
@@ -124,6 +127,30 @@ namespace GalacticShrine {
      * </returns>
      **/
     public string ObtenirLeNomDuRepertoire() => Path.GetFileName(NomComplet);
+
+    /**
+     * <summary>
+     *   [FR] Renvoie la partie répertoire d'un chemin d'accès à un fichier.<br/>
+     *        Cette méthode supprime effectivement le dernier segment du chemin de fichier donné,<br/>
+     *        c'est-à-dire qu'elle renvoie une chaîne de caractères composée de tous les caractères<br/>
+     *        jusqu'à la dernière barre oblique inverse ("\") du chemin de fichier.<br/>
+     *        ("\") dans le chemin d'accès au fichier.<br/>
+     *        La valeur renvoyée est nulle si le chemin spécifié est nul,<br/>
+     *        vide ou une racine (telle que "\", "C :", ou "\\server\share").<br/><br/> 
+     *   [EN] Returns the directory part of a file path.<br/>
+     *        This method effectively deletes the last segment of the given file path,<br/>
+     *        i.e., it returns a string consisting of all characters<br/>
+     *        characters up to the last backslash of the file path.<br/>
+     *        ("\") in the file path.<br/>
+     *        The value returned is null if the specified path is zero,<br/>
+     *        empty or a root(such as "\", "C:", or "\server\share").<br/>
+     * </summary>
+     * <remarks>
+     *   [FR] Les séparateurs de répertoire sont normalisés dans la chaîne renvoyée.<br/>
+     *   [EN] Directory separators are normalized in the returned string.
+     * </remarks>
+     **/
+    public static string? ObtenirLeNomDuRepertoire(string? Chemin) => Path.GetDirectoryName(Chemin);
 
     /**
      * <summary>

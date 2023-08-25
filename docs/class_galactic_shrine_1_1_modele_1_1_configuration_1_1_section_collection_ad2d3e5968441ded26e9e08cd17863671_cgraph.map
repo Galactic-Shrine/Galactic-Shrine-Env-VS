@@ -1,0 +1,5 @@
+<map id="GalacticShrine.Modele.Configuration.SectionCollection.Ajouter" name="GalacticShrine.Modele.Configuration.SectionCollection.Ajouter">
+<area shape="rect" id="Node000001" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="5,5,241,48"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_section_collection.html#a2dc225556420c4fa2134e4553a258662" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="289,5,524,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,24,274,24,274,29,241,29"/>
+</map>

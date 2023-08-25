@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GalacticShrine.Outils.Enumeration.Journalisation {
+namespace GalacticShrine.Enumeration.Outils.Journalisation {
 
   /**
    * <summary>

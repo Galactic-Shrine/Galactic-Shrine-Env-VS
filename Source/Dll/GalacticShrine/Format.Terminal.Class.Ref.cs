@@ -14,13 +14,13 @@ namespace GalacticShrine.Terminal {
   public class Format {
 
     Dictionary<string, Couleur> VariationDuTheme { get; set; }
-		private readonly Object VerrouillageDeCouleur = new Object();
+		private readonly object VerrouillageDeCouleur = new();
 
 		public Format(CouleurInterface Theme) {
 
 			if(Theme == null) {
 
-				throw new ArgumentException(nameof(Theme));
+				throw new ArgumentException(message: nameof(Theme));
 			}
 
 			VariationDuTheme = Theme.Couleurs;

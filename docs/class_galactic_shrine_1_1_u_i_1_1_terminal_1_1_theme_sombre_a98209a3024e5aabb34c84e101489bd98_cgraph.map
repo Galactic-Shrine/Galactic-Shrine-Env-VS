@@ -1,0 +1,11 @@
+<map id="GalacticShrine.UI.Terminal.ThemeSombre.ThemeSombre" name="GalacticShrine.UI.Terminal.ThemeSombre.ThemeSombre">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,199,81"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html#a40e2a871b6941ff37638869444d5abc5" title=" " alt="" coords="247,5,486,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,45,232,41,232,46,200,50"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html#ac5b63fc1b20610a3cbaf47ee2829eec2" title=" " alt="" coords="258,72,475,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,70,243,75,242,80,199,75"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aa34e36adfde77fb1d09783d65926c5cc" title=" " alt="" coords="536,5,730,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,24,520,24,520,29,486,29"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title=" " alt="" coords="534,72,731,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="475,91,519,91,519,96,475,96"/>
+</map>

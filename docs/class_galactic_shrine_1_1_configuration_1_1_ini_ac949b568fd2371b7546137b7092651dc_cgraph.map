@@ -1,0 +1,16 @@
+<map id="GalacticShrine.Configuration.Ini.ProprieteDeProcessus" name="GalacticShrine.Configuration.Ini.ProprieteDeProcessus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,117,195,160"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa1784d12ea6aefb26d219e9010a90653" title=" " alt="" coords="243,72,512,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,123,228,119,228,124,195,129"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#a5ff6a33ce5c9c8b1c634b3242304a1b7" title=" " alt="" coords="256,5,499,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,115,183,85,242,58,261,50,263,55,244,62,186,90,136,119"/>
+<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ac0a94fa81730c6f5fde7f2f842200620" title=" " alt="" coords="259,155,496,197"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="195,149,244,155,244,161,195,154"/>
+<area shape="rect" id="Node000007" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#afa88b78cbdf391a2bdb3128d611760b6" title=" " alt="" coords="262,221,493,280"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="142,158,244,207,261,213,259,218,242,212,140,163"/>
+<area shape="rect" id="Node000003" href="$struct_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine_1_1_plage.html#a2001d3beece21e14bb82661f749c60ae" title=" " alt="" coords="577,147,819,205"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="507,129,563,142,562,147,506,134"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ad4240aacc0c932e5f08443b756b82f27" title=" " alt="" coords="560,5,836,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="499,24,546,24,546,29,499,29"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="492,221,562,205,563,210,494,226"/>
+</map>

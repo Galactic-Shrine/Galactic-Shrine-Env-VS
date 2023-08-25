@@ -124,6 +124,6 @@
     <value>Path fragment '{0}' contains invalid directory separators.</value>
   </data>
   <data name="ConsoleEstTropPetite" xml:space="preserve">
-    <value>Ah my eyes! Why is this console too small?!</value>
+    <value>Ah my eyes! Why is this console too small?</value>
   </data>
 </root>
