@@ -1,0 +1,10 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="Node000000" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html" title="[FR] Classe de base pour les objets du système de fichiers (fichiers ou répertoires)...." alt="" coords="5,5,207,48"/>
+<area shape="rect" id="Node000001" href="$class_galactic_shrine_1_1_dossier_reference.html" title="[FR] Représentation d&#39;un chemin de répertoire absolu. Permet un hachage et des comparaisons rapides...." alt="" coords="255,16,467,43"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="221,25,254,26,254,31,221,31"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_fichier_reference.html" title="[FR] Représentation d&#39;un chemin de fichier absolu. Permet des hachages et des comparaisons rapides...." alt="" coords="257,68,465,95"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="222,49,296,65,294,70,220,54"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="65,72,147,99"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="161,71,296,41,297,46,162,76"/>
+<area shape="poly" id="edge5_Node000002_Node000003" title=" " alt="" coords="162,82,257,80,257,86,162,87"/>
+</map>

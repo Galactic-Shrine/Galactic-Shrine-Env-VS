@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,85,40"/>
+<area shape="rect" id="Node000001" href="$class_galactic_shrine_1_1_exceptions_1_1_configuration_1_1_analyse_exception.html" title="[FR] Représente une erreur survenue lors de l&#39;analyse des données. [EN] Represents an error during data a..." alt="" coords="133,5,338,48"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="100,24,132,24,132,29,100,29"/>
+</map>

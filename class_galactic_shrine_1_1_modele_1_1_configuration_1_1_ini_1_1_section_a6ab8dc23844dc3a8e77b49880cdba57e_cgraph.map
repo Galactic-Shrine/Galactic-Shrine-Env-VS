@@ -1,0 +1,7 @@
+<map id="GalacticShrine.Modele.Configuration.Ini.Section.Fusionner" name="GalacticShrine.Modele.Configuration.Ini.Section.Fusionner">
+<area shape="rect" id="Node000001" title="[FR] Fusionne d&#39;autres sections dans celle&#45;ci, &#160;en ajoutant de nouvelles propriétés si elles n&#39;exista..." alt="" coords="5,5,241,48"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#ad3c80f6686b1e2a9450af794508039fe" title="[FR] Fusionne les autres propriétés, &#160;en ajoutant de nouvelles propriétés si elles n&#39;existent pas déj..." alt="" coords="289,5,524,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,24,274,24,274,29,241,29"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#adc268cf273d84c086d7c84efe77aa488" title="[FR] Ajoute une nouvelle clé avec le nom spécifié, une valeur vide et des commentaires...." alt="" coords="572,5,807,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,24,557,24,557,29,525,29"/>
+</map>

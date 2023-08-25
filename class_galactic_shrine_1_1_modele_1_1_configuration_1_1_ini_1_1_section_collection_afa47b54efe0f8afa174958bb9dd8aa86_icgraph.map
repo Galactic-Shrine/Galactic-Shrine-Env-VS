@@ -1,0 +1,7 @@
+<map id="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Effacer" name="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Effacer">
+<area shape="rect" id="Node000001" title="[FR] Supprime toutes les entrées de cette collection. &#160;[EN] Deletes all entries in this collection." alt="" coords="480,5,715,48"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#acc7e48b9185281a6d872a5598a728143" title="[FR] Fonction de suppression. &#160;[EN] Deletion function." alt="" coords="243,5,432,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="465,29,433,29,433,24,465,24"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,5,195,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,29,195,29,195,24,228,24"/>
+</map>

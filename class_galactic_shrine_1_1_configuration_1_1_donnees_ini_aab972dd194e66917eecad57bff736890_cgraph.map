@@ -1,0 +1,5 @@
+<map id="GalacticShrine.Configuration.DonneesIni.DonneesIni" name="GalacticShrine.Configuration.DonneesIni.DonneesIni">
+<area shape="rect" id="Node000001" title="[FR] Initialise une instance avec un schéma donné. &#160;[EN] Initializes an instance with a given schema." alt="" coords="5,13,195,56"/>
+<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html#a105777a718fdc2d14973eecfe9ba182b" title="[FR] Crée un nouvel objet qui est une copie de l&#39;instance actuelle. &#160;[EN] Creates a new object that i..." alt="" coords="243,5,446,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,32,228,32,228,37,195,37"/>
+</map>
