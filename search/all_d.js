@@ -9,5 +9,6 @@ var searchData=
   ['optionsdeformatage_2eenum_2eref_2ecs_6',['OptionsDeFormatage.Enum.Ref.cs',['../_options_de_formatage_8_enum_8_ref_8cs.html',1,'']]],
   ['os_2eclass_2eref_2ecs_7',['Os.Class.Ref.cs',['../_os_8_class_8_ref_8cs.html',1,'']]],
   ['outils_8',['Outils',['../class_galactic_shrine_1_1_outils_1_1_outils.html',1,'GalacticShrine::Outils']]],
-  ['outils_2eclass_2eref_2ecs_9',['Outils.Class.Ref.cs',['../_outils_8_class_8_ref_8cs.html',1,'']]]
+  ['outils_2eclass_2eref_2ecs_9',['Outils.Class.Ref.cs',['../_outils_8_class_8_ref_8cs.html',1,'']]],
+  ['ouvrir_10',['Ouvrir',['../class_galactic_shrine_1_1_configuration_1_1_ini.html#a2e1f5764e7bf9201332ee2c8790a3540',1,'GalacticShrine::Configuration::Ini']]]
 ];

@@ -1,6 +1,7 @@
 var namespace_galactic_shrine =
 [
     [ "ConfigExample", "namespace_galactic_shrine_1_1_config_example.html", null ],
+    [ "ConfigIntegreExample", "namespace_galactic_shrine_1_1_config_integre_example.html", null ],
     [ "Configuration", "namespace_galactic_shrine_1_1_configuration.html", "namespace_galactic_shrine_1_1_configuration" ],
     [ "Enumeration", "namespace_galactic_shrine_1_1_enumeration.html", "namespace_galactic_shrine_1_1_enumeration" ],
     [ "Exceptions", "namespace_galactic_shrine_1_1_exceptions.html", "namespace_galactic_shrine_1_1_exceptions" ],

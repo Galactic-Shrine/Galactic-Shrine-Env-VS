@@ -41,6 +41,7 @@ var hierarchy =
     ] ],
     [ "GalacticShrine.Terminal.Format", "class_galactic_shrine_1_1_terminal_1_1_format.html", null ],
     [ "GalacticShrine.GalacticShrine", "class_galactic_shrine_1_1_galactic_shrine.html", null ],
+    [ "GalacticShrine.Configuration.GsC", "class_galactic_shrine_1_1_configuration_1_1_gs_c.html", null ],
     [ "IEnumerable", null, [
       [ "GalacticShrine.Modele.Configuration.Ini.ProprieteCollection", "class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html", null ],
       [ "GalacticShrine.Modele.Configuration.Ini.SectionCollection", "class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html", null ]
@@ -55,6 +56,7 @@ var hierarchy =
     [ "GalacticShrine.Configuration.Properties.Resources", "class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html", null ],
     [ "GalacticShrine.Properties.Resources", "class_galactic_shrine_1_1_properties_1_1_resources.html", null ],
     [ "GalacticShrine.TerminalExample.Properties.Resources", "class_galactic_shrine_1_1_terminal_example_1_1_properties_1_1_resources.html", null ],
+    [ "GalacticShrine.Configuration.Configuration.SchemaGsC", "class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_schema_gs_c.html", null ],
     [ "GalacticShrine.Configuration.Analyseur.TamponDeChaine", "class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html", null ],
     [ "GalacticShrine.Terminal.Terminal", "class_galactic_shrine_1_1_terminal_1_1_terminal.html", null ]
 ];

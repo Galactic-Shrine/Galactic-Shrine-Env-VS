@@ -1,5 +1,7 @@
 <map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
 <area shape="rect" id="Node000000" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html" title=" " alt="" coords="5,5,205,64"/>
-<area shape="rect" id="Node000001" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html" title="[FR] Informations associées à une propriété provenant d&#39;une Configuration INI. &#160;[EN] Information asso..." alt="" coords="253,13,488,56"/>
-<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="220,32,252,32,252,37,220,37"/>
+<area shape="rect" id="Node000001" href="$class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html" title=" " alt="" coords="253,13,442,56"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="220,32,252,32,252,37,220,37"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_donnees_ini_insensible_a___la_casse.html" title="[FR] Représente toutes les données d&#39;un fichier INI exactement comme la classe GalacticShrine...." alt="" coords="490,13,725,56"/>
+<area shape="poly" id="edge8_Node000001_Node000002" title=" " alt="" coords="457,32,489,32,489,37,457,37"/>
 </map>

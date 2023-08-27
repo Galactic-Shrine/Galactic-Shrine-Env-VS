@@ -1,6 +1,6 @@
 <map id="GalacticShrine.Configuration.Ini.Analyse" name="GalacticShrine.Configuration.Ini.Analyse">
 <area shape="rect" id="Node000001" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,29,195,72"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ae90fb1f6f1a8f46adbce897184294879" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="243,29,432,72"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a8f03b6d4f98543c431b169d04d33af9a" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="243,29,432,72"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,48,227,48,227,53,195,53"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="292,29,291,19,298,10,314,5,337,3,364,5,379,12,377,17,362,10,337,8,315,10,301,15,296,21,298,28"/>
 </map>

@@ -7,12 +7,14 @@ var annotated_dup =
         ] ],
         [ "Configuration", "namespace_galactic_shrine_1_1_configuration_1_1_configuration.html", [
           [ "AnalyseurIni", "class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_analyseur_ini.html", "class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_analyseur_ini" ],
+          [ "SchemaGsC", "class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_schema_gs_c.html", null ],
           [ "SchemaIni", "class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_schema_ini.html", "class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_schema_ini" ]
         ] ],
         [ "Properties", "namespace_galactic_shrine_1_1_configuration_1_1_properties.html", [
           [ "Resources", "class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html", null ]
         ] ],
         [ "DonneesIni", "class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html", "class_galactic_shrine_1_1_configuration_1_1_donnees_ini" ],
+        [ "GsC", "class_galactic_shrine_1_1_configuration_1_1_gs_c.html", "class_galactic_shrine_1_1_configuration_1_1_gs_c" ],
         [ "Ini", "class_galactic_shrine_1_1_configuration_1_1_ini.html", "class_galactic_shrine_1_1_configuration_1_1_ini" ]
       ] ],
       [ "Exceptions", "namespace_galactic_shrine_1_1_exceptions.html", [
