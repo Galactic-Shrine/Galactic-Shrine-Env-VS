@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>GalacticShrine.Outils</RootNamespace>
     <Product>$(AssemblyName.Replace("GalacticShrine",  "Galactic-Shrine").Replace(".",  " ")) .NET</Product>
-    <AssemblyVersion>0.1.6.19</AssemblyVersion>
+    <AssemblyVersion>0.1.6.20</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
   </PropertyGroup>

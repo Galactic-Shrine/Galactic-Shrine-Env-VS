@@ -97,6 +97,42 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Bleu.
+        /// </summary>
+        public static string ArrierePlanBleu {
+            get {
+                return ResourceManager.GetString("ArrierePlanBleu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Bleu foncé.
+        /// </summary>
+        public static string ArrierePlanBleuFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanBleuFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Cyan.
+        /// </summary>
+        public static string ArrierePlanCyan {
+            get {
+                return ResourceManager.GetString("ArrierePlanCyan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Cyan foncé.
+        /// </summary>
+        public static string ArrierePlanCyanFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanCyanFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Arrière-plan Danger.
         /// </summary>
         public static string ArrierePlanDanger {
@@ -115,11 +151,47 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arriere-plan Gris.
+        /// </summary>
+        public static string ArrièrePlanGris {
+            get {
+                return ResourceManager.GetString("ArrièrePlanGris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Gris foncé.
+        /// </summary>
+        public static string ArrierePlanGrisFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanGrisFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Arrière-plan Info.
         /// </summary>
         public static string ArrierePlanInfo {
             get {
                 return ResourceManager.GetString("ArrierePlanInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Jaune.
+        /// </summary>
+        public static string ArrierePlanJaune {
+            get {
+                return ResourceManager.GetString("ArrierePlanJaune", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Jaune foncé.
+        /// </summary>
+        public static string ArrierePlanJauneFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanJauneFonce", resourceCulture);
             }
         }
         
@@ -133,11 +205,47 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Magenta foncé.
+        /// </summary>
+        public static string ArrierePlanMagentaFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanMagentaFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Noir.
+        /// </summary>
+        public static string ArrierePlanNoir {
+            get {
+                return ResourceManager.GetString("ArrierePlanNoir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Arrière-plan Primaire.
         /// </summary>
         public static string ArrierePlanPrimaire {
             get {
                 return ResourceManager.GetString("ArrierePlanPrimaire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Rouge.
+        /// </summary>
+        public static string ArrierePlanRouge {
+            get {
+                return ResourceManager.GetString("ArrierePlanRouge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Rouge foncé.
+        /// </summary>
+        public static string ArrierePlanRougeFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanRougeFonce", resourceCulture);
             }
         }
         
@@ -156,6 +264,24 @@ namespace GalacticShrine.TerminalExample.Properties {
         public static string ArrierePlanSucces {
             get {
                 return ResourceManager.GetString("ArrierePlanSucces", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Vert.
+        /// </summary>
+        public static string ArrierePlanVert {
+            get {
+                return ResourceManager.GetString("ArrierePlanVert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arrière-plan Vert foncé.
+        /// </summary>
+        public static string ArrierePlanVertFonce {
+            get {
+                return ResourceManager.GetString("ArrierePlanVertFonce", resourceCulture);
             }
         }
         
@@ -259,6 +385,15 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Personnaliser les couleur à votre envie.
+        /// </summary>
+        public static string PersonnaliserLesCouleur {
+            get {
+                return ResourceManager.GetString("PersonnaliserLesCouleur", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Primaire.
         /// </summary>
         public static string Primaire {
@@ -322,6 +457,42 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Bleu.
+        /// </summary>
+        public static string TexteBleu {
+            get {
+                return ResourceManager.GetString("TexteBleu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Bleu foncé.
+        /// </summary>
+        public static string TexteBleuFonce {
+            get {
+                return ResourceManager.GetString("TexteBleuFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Cyan.
+        /// </summary>
+        public static string TexteCyan {
+            get {
+                return ResourceManager.GetString("TexteCyan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Cyan foncé.
+        /// </summary>
+        public static string TexteCyanFonce {
+            get {
+                return ResourceManager.GetString("TexteCyanFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Texte Danger.
         /// </summary>
         public static string TexteDanger {
@@ -340,11 +511,47 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Gris.
+        /// </summary>
+        public static string TexteGris {
+            get {
+                return ResourceManager.GetString("TexteGris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Gris foncé.
+        /// </summary>
+        public static string TexteGrisFonce {
+            get {
+                return ResourceManager.GetString("TexteGrisFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Texte Info.
         /// </summary>
         public static string TexteInfo {
             get {
                 return ResourceManager.GetString("TexteInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Jaune.
+        /// </summary>
+        public static string TexteJaune {
+            get {
+                return ResourceManager.GetString("TexteJaune", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Jaune foncé.
+        /// </summary>
+        public static string TexteJauneFonce {
+            get {
+                return ResourceManager.GetString("TexteJauneFonce", resourceCulture);
             }
         }
         
@@ -358,11 +565,47 @@ namespace GalacticShrine.TerminalExample.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Magenta foncé.
+        /// </summary>
+        public static string TexteMagentaFonce {
+            get {
+                return ResourceManager.GetString("TexteMagentaFonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Noir.
+        /// </summary>
+        public static string TexteNoir {
+            get {
+                return ResourceManager.GetString("TexteNoir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Texte Primaire.
         /// </summary>
         public static string TextePrimaire {
             get {
                 return ResourceManager.GetString("TextePrimaire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Rouge.
+        /// </summary>
+        public static string TexteRouge {
+            get {
+                return ResourceManager.GetString("TexteRouge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Rouge foncé.
+        /// </summary>
+        public static string TexteRougeFonce {
+            get {
+                return ResourceManager.GetString("TexteRougeFonce", resourceCulture);
             }
         }
         
@@ -381,6 +624,24 @@ namespace GalacticShrine.TerminalExample.Properties {
         public static string TexteSucces {
             get {
                 return ResourceManager.GetString("TexteSucces", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Vert.
+        /// </summary>
+        public static string TexteVert {
+            get {
+                return ResourceManager.GetString("TexteVert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Texte Vert foncé.
+        /// </summary>
+        public static string TexteVertFonce {
+            get {
+                return ResourceManager.GetString("TexteVertFonce", resourceCulture);
             }
         }
         
