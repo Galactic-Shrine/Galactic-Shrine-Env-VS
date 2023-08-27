@@ -15,7 +15,6 @@ using GalacticShrine.Configuration.Properties;
 using GalacticShrine.Modele.Configuration.Ini;
 using static GalacticShrine.Configuration.Analyseur.TamponDeChaine;
 using static GalacticShrine.FichierReference;
-using System.Text;
 
 namespace GalacticShrine.Configuration {
 
@@ -130,19 +129,14 @@ namespace GalacticShrine.Configuration {
      *   [FR] Analyse une chaîne contenant des données ini valides.<br/>
      *   [EN] Parses a string containing valid ini data.
      * </summary>
-     * <param name="FichierA_Ouvrir">
-     *   [FR] Le fichier à ouvrir, qui contient une chaîne de données au format INI.<br/>
-     *   [EN] The file to be opened, which contains a data string in INI format.
+     * <param name="ChaineIni">
+     *   [FR] une chaîne de données au format INI.<br/>
+     *   [EN] a data string in INI format.
      * </param>
      **/
-    public DonneesIni Analyse(string FichierA_Ouvrir) {
+    public DonneesIni Analyse(string ChaineIni) {
 
-      if(!VerifieSiExiste(Localisation: new FichierReference(Chemins: FichierA_Ouvrir)))
-        throw new ArgumentException(Resources.FichierNonTrouve);
-
-      string ChaineIni = LireTousLeTexte(Localisation: new FichierReference(Chemins: FichierA_Ouvrir));
-
-      return Analyse(new StringReader(ChaineIni));
+       return Analyse(LecteurDeTexte: new StringReader(ChaineIni));
     }
 
     /**
@@ -266,6 +260,26 @@ namespace GalacticShrine.Configuration {
 
         DonneesIni.Effacer();
       }
+    }
+
+    /**
+     * <summary>
+     *   [FR] Ouvre un fichier, qui contient une chaîne de données au format INI.<br/>
+     *   [EN] Opens a file containing a data string in INI format.
+     * </summary>
+     * <param name="FichierA_Ouvrir">
+     *   [FR] Le fichier à ouvrir, qui contient une chaîne de données au format INI.<br/>
+     *   [EN] The file to be opened, which contains a data string in INI format.
+     * </param>
+     **/
+    public DonneesIni Ouvrir(string FichierA_Ouvrir) {
+
+      if(!VerifieSiExiste(Localisation: new FichierReference(Chemins: FichierA_Ouvrir)))
+        throw new ArgumentException(Resources.FichierNonTrouve);
+
+      string ChaineIni = LireTousLeTexte(Localisation: new FichierReference(Chemins: FichierA_Ouvrir));
+
+      return Analyse(LecteurDeTexte: new StringReader(ChaineIni));
     }
 
     protected virtual bool CommentaireDeProcessus(TamponDeChaine LigneActuelle) {

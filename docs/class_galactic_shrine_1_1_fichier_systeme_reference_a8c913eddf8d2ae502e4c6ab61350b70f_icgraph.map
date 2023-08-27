@@ -1,7 +1,0 @@
-<map id="GalacticShrine.FichierSystemeReference.ContientLeNom" name="GalacticShrine.FichierSystemeReference.ContientLeNom">
-<area shape="rect" id="Node000001" title="[FR] Recherche les fragments de chemin pour le nom donné. Seuls les fragments complets sont considéré..." alt="" coords="268,39,469,81"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#acc47c56ccbec6b6c4b35722936c8719b" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="12,5,213,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,48,213,42,214,37,253,42"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#ade1b9c34676e637966af385496b1c289" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="5,72,220,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,78,220,82,220,77,253,72"/>
-</map>

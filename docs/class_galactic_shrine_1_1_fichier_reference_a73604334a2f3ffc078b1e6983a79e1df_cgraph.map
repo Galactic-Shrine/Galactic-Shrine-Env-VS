@@ -1,5 +1,0 @@
-<map id="GalacticShrine.FichierReference.Combiner" name="GalacticShrine.FichierReference.Combiner">
-<area shape="rect" id="Node000001" title="[FR] Combine several fragments with a base directory, à partir d&#39;un nouveau nom de fichier [EN] Combi..." alt="" coords="5,5,217,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#a4ea7223c43034381ad7efd01e045ef5c" title="[FR] Créez un chemin complet en concaténant plusieurs chaînes de caractères. [EN] Create a complete p..." alt="" coords="265,5,471,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,24,250,24,250,29,217,29"/>
-</map>

@@ -8,7 +8,7 @@ using System.Reflection;
 using GalacticShrine.Enumeration.Outils;
 using GalacticShrine.Enumeration;
 using GalacticShrine.IO; // Utiliser pour la fonction : Chemin.Combiner()
-using GalacticShrine.Outils; // Utiliser pour la fonction : ObtenirLemplacementDorigine()
+using GalacticShrine.Outils;
 using GsP = GalacticShrine.Properties;
 using GalacticShrine.Terminal;
 using GalacticShrine.TerminalExample.Properties;
@@ -22,19 +22,16 @@ namespace GalacticShrine.TerminalExample {
 
   internal class Program {
 
+    #region Important pour le démarrage de l'application
     private static Format Terminal { get; set; }
 
-    public static readonly DossierReference RepertoireRacineApplication = new (Chemins: Chemin.Combiner(Chemin: ObtenirLeNomDuRepertoire(Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine())));
-
-    public static readonly DossierReference RepertoireRacineSociete = new (Chemins: Chemin.Combiner(Chemin1: ObtenirLeNomDuRepertoire(Chemin : Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()), Chemin2: ".."));
-
-    public static readonly DossierReference RepertoireRacineSource = Combiner(RepertoireDeBase: RepertoireRacineSociete, Fragments: "Source");
+    #endregion
 
     static void Main() {
       
       try {
 
-        /* Version par Nom 
+        /* Example par Nom 
         switch(OS.ObtenirNomCourantes) {
           
           case "Windows":
@@ -50,7 +47,7 @@ namespace GalacticShrine.TerminalExample {
             break;
          }
          */
-        /* Version par Id */
+        /* Example par Id */
         switch(OS.ObtenirIdCourantes) {
 
           case SystemeExploitation.Windows:
@@ -230,16 +227,18 @@ namespace GalacticShrine.TerminalExample {
       try {
 
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier GalacticShrine.dll :");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.ProgramFiles => {GalacticShrine.ProgramFiles}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Documents => {GalacticShrine.Documents}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"ProgramFiles\"] => {GalacticShrine.Repertoire["ProgramFiles"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Documents\"] => {GalacticShrine.Repertoire["Documents"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Racine\"] => {GalacticShrine.Repertoire["Racine"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Societe\"] => {GalacticShrine.Repertoire["Societe"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Config\"] => {GalacticShrine.Repertoire["Config"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Source\"] => {GalacticShrine.Repertoire["Source"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.DossierReference.Rs => {Rs}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.DossierReference.RepertoireSeparateur => {RepertoireSeparateur}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.RepertoiresSeparateursInvalides => {GsP.Resources.RepertoiresSeparateursInvalides}", Argument: $"{ParamTest}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.FichierTermineInvalide => {GsP.Resources.FichierTermineInvalide}");
-        Terminal.LigneSeparatrice();
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier TerminalTest.(dll/exe) :");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacineApplication => {RepertoireRacineApplication}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"RepertoireRacine => {RepertoireRacineSociete}");
         Terminal.LigneSeparatrice();
         
         Retour();

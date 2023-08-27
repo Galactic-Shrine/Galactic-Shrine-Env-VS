@@ -6,10 +6,9 @@
 using GalacticShrine.Terminal;
 using static GalacticShrine.UI.Terminal.Theme;
 using static GalacticShrine.Terminal.Couleurs;
-using static GalacticShrine.DossierReference;
 using GalacticShrine.Configuration;
 
-namespace GalacticShrine.ConfigExample {
+namespace GalacticShrine.ConfigIntegreExample {
 
   internal class Program {
 
@@ -18,33 +17,24 @@ namespace GalacticShrine.ConfigExample {
     #endregion
 
     static void Main(string[] args) {
-
       #region Important pour le démarrage de l'application
-      new AutoGenere();
+      var Priver = @"# Copyright © 2018 - 2023, Galactic-Shrine - Tous droits réservés
+        [GeneralConfiguration]
+
+        DataType = MySql
+
+        # valeur accepté lumineux ou sombre par défaut sombre
+        DefaultTemplate = Sombre
+
+        [Database.Users]
+        User = Root";
 
       Ini ini = new();
 
       ini.Schema.AttributionDuCommentaire = "#";
 
-      DonneesIni Config = ini.Ouvrir($"{GalacticShrine.Repertoire["Racine"]}{Rs}Config{Rs}App.ini");
+      DonneesIni Config = ini.Analyse(Priver);
 
-      /* Example 1
-      switch(Config["GeneralConfiguration"]["DefaultTemplate"]) {
-
-        case "Lumineux":
-        case "lumineux":
-
-          Terminal = new Format(Theme: Lumineux);
-          break;
-        
-        case "Sombre":
-        case "sombre":
-        default:
-
-          Terminal = new Format(Theme: Sombre);
-          break;
-      }*/
-      /* Example 2 */
       Terminal = Config["GeneralConfiguration"]["DefaultTemplate"] switch {
 
         "Lumineux" or "lumineux" => new Format(Theme: Lumineux),
@@ -57,7 +47,6 @@ namespace GalacticShrine.ConfigExample {
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
       Terminal.Ecrire(ReserveToutLaLigne: false, Texte: $"Config : ");
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"{Config}", Couleur: Txt.Danger);
-      Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
       Terminal.Ecrire(ReserveToutLaLigne: false, Texte: "Section : ");
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "GeneralConfiguration", Couleur: Txt.Magenta);

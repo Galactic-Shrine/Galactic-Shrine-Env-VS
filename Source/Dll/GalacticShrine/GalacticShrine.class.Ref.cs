@@ -4,16 +4,15 @@
  **/
 
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
+
+using GalacticShrine.IO;
+using static GalacticShrine.DossierReference;
 
 namespace GalacticShrine {
 
-  /**
-   * <summary>
-   *   [FR] Classe de base pour les outil.
-   *   [EN] Basic class for tools.
-   * </summary>
-   **/
   [Serializable]
   public abstract class GalacticShrine {
 
@@ -31,21 +30,66 @@ namespace GalacticShrine {
      **/
     public static readonly bool EstEn64Bit = Environment.Is64BitOperatingSystem;
 
-    /**
-     * <summary>
-     *   [FR] Fournit le chemin d'accès au dossier Program Files/Program Files (x86)
-     *        Racourci du <code>System.Environment.GetEnvironmentVariable</code>
-     *   [EN] Provides path to Program Files/Program Files folder (x86)
-     *        Shortcut of the <code>System.Environment.GetEnvironmentVariable</code>
-     * </summary>
-     * <returns>
-     *   string
-     * </returns>
-     **/
-    public static readonly string ProgramFiles = EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)");
-    //public Gs () => Chemin = EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)");
-
-    public static readonly string Documents = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-    //Environment.GetEnvironmentVariable("ProgramFiles")
+    public static readonly Dictionary<string, object> Repertoire = new(){
+      {
+        "ProgramFiles",
+        /**
+         * [FR] Fournit le chemin d'accès au dossier Program Files/Program Files (x86)
+         *      Racourci du <code>System.Environment.GetEnvironmentVariable</code>
+         * [EN] Provides path to Program Files/Program Files folder (x86)
+         *      Shortcut of the <code>System.Environment.GetEnvironmentVariable</code>
+         **/
+        EstEn64Bit ? Environment.GetEnvironmentVariable("ProgramFiles") : Environment.GetEnvironmentVariable("ProgramFiles(x86)")
+      },
+      {
+        "Documents",
+        Environment.GetFolderPath(Environment.SpecialFolder.Personal)
+      },
+      {
+        "Societe",
+        new DossierReference(
+          Chemins: Chemin.Combiner(
+            Chemin1: ObtenirLeNomDuRepertoire(
+              Chemin : Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()
+            ),
+            Chemin2: ".."
+          )
+        )
+      },
+      {
+        "Racine",
+        new DossierReference(
+          Chemins: Chemin.Combiner(
+            Chemin: ObtenirLeNomDuRepertoire(
+              Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()
+            )
+          )
+        )
+      },
+      {
+        "Config",
+        new DossierReference(
+          Chemins: Chemin.Combiner(
+            Chemin1: ObtenirLeNomDuRepertoire(
+              Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()
+            ),
+            Chemin2: "Config"
+          )
+        )
+      },
+      {
+        "Source",
+        new DossierReference(
+          Chemins: Chemin.Combiner(
+            Chemin1: Chemin.Combiner(
+              Chemin1: ObtenirLeNomDuRepertoire(
+                Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()),
+              Chemin2: ".."
+            ),
+            Chemin2: "Source"
+          )
+        )
+      }
+    };
   }
 }

@@ -5,9 +5,9 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.0.0.94</AssemblyVersion>
+    <AssemblyVersion>1.0.0.9</AssemblyVersion>
     <BaseOutputPath>..\..\..\Build\Example\$(AssemblyName)\</BaseOutputPath>
-    <RootNamespace>GalacticShrine.ConfigExample</RootNamespace>
+    <RootNamespace>GalacticShrine.ConfigIntegreExample</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

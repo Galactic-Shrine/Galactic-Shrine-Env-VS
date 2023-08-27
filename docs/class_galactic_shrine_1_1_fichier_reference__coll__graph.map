@@ -1,9 +1,0 @@
-<map id="GalacticShrine.FichierReference" name="GalacticShrine.FichierReference">
-<area shape="rect" id="Node000001" title="[FR] Représentation d&#39;un chemin de fichier absolu. Permet des hachages et des comparaisons rapides...." alt="" coords="144,188,352,215"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html" title="[FR] Classe de base pour les objets du système de fichiers (fichiers ou répertoires)...." alt="" coords="5,112,176,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,143,222,185,220,190,130,148"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="64,5,117,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,47,93,112,88,112,88,47"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="200,112,403,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="286,152,259,189,255,186,282,149"/>
-</map>

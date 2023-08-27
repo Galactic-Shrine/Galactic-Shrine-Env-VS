@@ -1,9 +1,0 @@
-<map id="GalacticShrine.FichierReference.RendreInscriptibles" name="GalacticShrine.FichierReference.RendreInscriptibles">
-<area shape="rect" id="Node000001" title="[FR] Rend un emplacement de fichier inscriptible [EN] Makes a file location writeable" alt="" coords="5,72,217,115"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_reference.html#abd9dbaeef1cc8a5217fc7fb5afdf3a5d" title="[FR] Définit les attributs d&#39;un fichier [EN] Sets the attributes for a file" alt="" coords="265,5,476,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,69,270,50,271,55,197,74"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_fichier_reference.html#a3546cdaa1d22cb5fa21f74703039beae" title="[FR] Récupère les attributs d&#39;un fichier [EN] Gets the attributes for a file" alt="" coords="265,72,476,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,91,249,91,249,96,217,96"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_fichier_reference.html#a7d0d26fbec5ef0bf613a5df00d357c90" title="[FR] Détermine si le nom de fichier donné existe ou non. [EN] Determines whether the given filename e..." alt="" coords="265,139,476,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,113,271,132,270,137,196,118"/>
-</map>

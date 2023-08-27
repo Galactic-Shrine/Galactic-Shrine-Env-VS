@@ -6,58 +6,47 @@
 using GalacticShrine.Terminal;
 using static GalacticShrine.UI.Terminal.Theme;
 using static GalacticShrine.Terminal.Couleurs;
-using static GalacticShrine.DossierReference;
 using GalacticShrine.Configuration;
 
-namespace GalacticShrine.ConfigExample {
+namespace GalacticShrine.ConfigIntegreExample {
 
   internal class Program {
 
     #region Important pour le démarrage de l'application
+    public static string NL = Environment.NewLine;
+
     private static Format Terminal { get; set; }
+
+    private static readonly string Fichier = "[GeneralConfiguration]" + NL + 
+                                             "DataType = MySql" + NL + 
+                                             //valeur accepté lumineux ou sombre par défaut sombre
+                                             "DefaultTemplate = Sombre" + NL + 
+                                             "[Database.Users]" + NL + 
+                                             "User = Root";
+
+    static readonly Ini ini = new();
+
+    static readonly DonneesIni Config = ini.Analyse(ChaineIni: Fichier);
+
+    public Program() {
+
+      ini.Schema.AttributionDuCommentaire = "#";
+    }
     #endregion
 
     static void Main(string[] args) {
 
-      #region Important pour le démarrage de l'application
-      new AutoGenere();
-
-      Ini ini = new();
-
-      ini.Schema.AttributionDuCommentaire = "#";
-
-      DonneesIni Config = ini.Ouvrir($"{GalacticShrine.Repertoire["Racine"]}{Rs}Config{Rs}App.ini");
-
-      /* Example 1
-      switch(Config["GeneralConfiguration"]["DefaultTemplate"]) {
-
-        case "Lumineux":
-        case "lumineux":
-
-          Terminal = new Format(Theme: Lumineux);
-          break;
-        
-        case "Sombre":
-        case "sombre":
-        default:
-
-          Terminal = new Format(Theme: Sombre);
-          break;
-      }*/
-      /* Example 2 */
       Terminal = Config["GeneralConfiguration"]["DefaultTemplate"] switch {
 
         "Lumineux" or "lumineux" => new Format(Theme: Lumineux),
         "Sombre" or "sombre" or _ => new Format(Theme: Sombre)
       };
-      #endregion
 
       Terminal.Eclaircir();
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Hello, World!", Couleur: Txt.Sourdine);
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
       Terminal.Ecrire(ReserveToutLaLigne: false, Texte: $"Config : ");
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"{Config}", Couleur: Txt.Danger);
-      Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
       Terminal.Ecrire(ReserveToutLaLigne: false, Texte: "Section : ");
       Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "GeneralConfiguration", Couleur: Txt.Magenta);

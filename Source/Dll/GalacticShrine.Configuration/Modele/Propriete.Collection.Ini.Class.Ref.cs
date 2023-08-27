@@ -3,7 +3,6 @@
  * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
  **/
 
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using GalacticShrine.Enumeration.Configuration;

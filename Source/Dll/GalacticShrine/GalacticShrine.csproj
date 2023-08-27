@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <Product>$(AssemblyName.Replace("GalacticShrine",  "Galactic-Shrine").Replace(".",  " ")) Core .NET</Product>
-    <AssemblyVersion>0.1.7.18</AssemblyVersion>
+    <AssemblyVersion>0.1.7.26</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
   </PropertyGroup>

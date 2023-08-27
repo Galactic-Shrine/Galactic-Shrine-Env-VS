@@ -1,9 +1,11 @@
 
-<p align="center">
-  <img src="https://cdn.discordapp.com/attachments/511861227157192705/623915363494658077/1.3.1.png" alt="Logo" width="700" height="150" />
-</p>
+<center>
+<img src="https://cdn.discordapp.com/attachments/511861227157192705/623915363494658077/1.3.1.png" alt="Logo" width="700" height="150" /><br/>
+  Environnement d'application .NET (visual studio)
 
-# Galactic-Shrine
+
+# Galactic-Shrine-Env .NET (GsE .NET)
+
 
 [![.NET windows](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_windows.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_windows.yml)
 [![.NET ubuntu](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_ubuntu.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet_ubuntu.yml)
@@ -18,9 +20,21 @@
 <a href="https://discord.gg/aWDv3TUYdX">![Discord](https://img.shields.io/discord/288663731024691201?style=plastic&logo=discord&label=Discord&cacheSeconds=0&link=https%3A%2F%2Fdiscord.gg%2FaWDv3TUYdX)</a>
 
 
-## ➤ Contributors
+## ⮞ Contributeurs/Contributors ⮜
+En cas de problème avec un autre participant n'oubliez pas de lire ceci [CODE OF CONDUCT](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/blob/master/CODE_OF_CONDUCT.md).
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## ⮞ License ⮜
+
+ Sous licence [MIT](https://opensource.org/licenses/MIT).
 
 
-## ➤ License
-	
-Sous licence [MIT](https://opensource.org/licenses/MIT).
+</center>

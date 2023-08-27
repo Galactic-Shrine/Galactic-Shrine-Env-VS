@@ -3,12 +3,6 @@
  * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
  **/
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace GalacticShrine.Enumeration.Configuration {
 
   public enum ComportementDesProprietesDupliquees {

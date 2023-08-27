@@ -3,7 +3,6 @@
  * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
  **/
 
-using System;
 using System.Text;
 using GalacticShrine.IO;
 using static GalacticShrine.DossierReference;
@@ -19,12 +18,9 @@ namespace GalacticShrine.ConfigExample {
 
       try {
 
-
         DateTime date = DateTime.Now;
 
-        //string Chemins = Chemin.Combiner(Chemin1: $"{Program.RepertoireRacineApplication}", Chemin2: "Config");
-        //string Nom = Chemin.Combiner(Chemin1: Chemins, Chemin2: $"General.{Extention}");
-        string Nom = $"App.{Extention}";
+        string Nom = Chemin.Combiner(Chemin1: $"{GalacticShrine.Repertoire["Config"]}", Chemin2: $"App.{Extention}");
 
         /**
          * [FR] Nous créons le contenu du fichier.
@@ -50,14 +46,14 @@ namespace GalacticShrine.ConfigExample {
          * [FR] On vérifier si le dossier existe.
          * [EN] Check if the folder exists.
          **/
-        //if(!VerifieSiExiste(Localisation: new DossierReference(Chemins: Chemins))) {
+        if(!VerifieSiExiste(Localisation: new DossierReference(Chemins: $"{GalacticShrine.Repertoire["Config"]}"))) {
 
           /**
            * [FR] Nous créons un nouveau dossier.
            * [EN] We create a new folder.
            **/
-        //  Creer(Localisation: new (Chemins: "Config")); // Creer(Localisation: new DossierReference(Chemins: "Config"));
-        //}
+          Creer(Localisation: new (Chemins: $"{GalacticShrine.Repertoire["Config"]}")); // Creer(Localisation: new DossierReference(Chemins: "Config"));
+        }
 
         /**
          * [FR] On vérifier si le fichier existe

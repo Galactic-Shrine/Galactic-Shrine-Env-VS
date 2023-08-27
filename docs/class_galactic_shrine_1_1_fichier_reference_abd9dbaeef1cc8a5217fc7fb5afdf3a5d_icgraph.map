@@ -1,5 +1,0 @@
-<map id="GalacticShrine.FichierReference.DefinirDesAttributs" name="GalacticShrine.FichierReference.DefinirDesAttributs">
-<area shape="rect" id="Node000001" title="[FR] Définit les attributs d&#39;un fichier [EN] Sets the attributes for a file" alt="" coords="265,5,476,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_reference.html#a99e8deff2ef8063d9b912bf9bbbdbac7" title="[FR] Rend un emplacement de fichier inscriptible [EN] Makes a file location writeable" alt="" coords="5,5,217,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,29,217,29,217,24,250,24"/>
-</map>
