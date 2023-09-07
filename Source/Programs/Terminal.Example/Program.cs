@@ -5,7 +5,6 @@
 
 using System;
 using System.Reflection;
-using GalacticShrine.Enumeration.Outils;
 using GalacticShrine.Enumeration;
 using GalacticShrine.IO; // Utiliser pour la fonction : Chemin.Combiner()
 using GalacticShrine.Outils;

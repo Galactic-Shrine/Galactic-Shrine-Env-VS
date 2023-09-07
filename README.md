@@ -20,7 +20,7 @@
 <a href="https://discord.gg/aWDv3TUYdX">![Discord](https://img.shields.io/discord/288663731024691201?style=plastic&logo=discord&label=Discord&cacheSeconds=0&link=https%3A%2F%2Fdiscord.gg%2FaWDv3TUYdX)</a>
 
 
-## ⮞ Contributeurs/Contributors ⮜
+## Contributors
 En cas de problème avec un autre participant n'oubliez pas de lire ceci [CODE OF CONDUCT](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/blob/master/CODE_OF_CONDUCT.md).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
