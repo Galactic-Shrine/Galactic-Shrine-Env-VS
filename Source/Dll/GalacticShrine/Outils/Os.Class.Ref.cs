@@ -4,7 +4,7 @@
  **/
 
 using System.Runtime.InteropServices;
-using GalacticShrine.Enumeration.Outils;
+using GalacticShrine.Enumeration;
 
 namespace GalacticShrine.Outils {
 

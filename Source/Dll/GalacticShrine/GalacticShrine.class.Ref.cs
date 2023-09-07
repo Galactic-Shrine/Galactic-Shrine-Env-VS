@@ -5,9 +5,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Reflection;
-
 using GalacticShrine.IO;
 using static GalacticShrine.DossierReference;
 
@@ -50,7 +48,7 @@ namespace GalacticShrine {
         new DossierReference(
           Chemins: Chemin.Combiner(
             Chemin1: ObtenirLeNomDuRepertoire(
-              Chemin : Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()
+              Chemin : Assembly.GetExecutingAssembly().ObtenirL_EmplacementD_Origine()
             ),
             Chemin2: ".."
           )
@@ -61,7 +59,7 @@ namespace GalacticShrine {
         new DossierReference(
           Chemins: Chemin.Combiner(
             Chemin: ObtenirLeNomDuRepertoire(
-              Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()
+              Chemin: Assembly.GetExecutingAssembly().ObtenirL_EmplacementD_Origine()
             )
           )
         )
@@ -71,7 +69,7 @@ namespace GalacticShrine {
         new DossierReference(
           Chemins: Chemin.Combiner(
             Chemin1: ObtenirLeNomDuRepertoire(
-              Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()
+              Chemin: Assembly.GetExecutingAssembly().ObtenirL_EmplacementD_Origine()
             ),
             Chemin2: "Config"
           )
@@ -83,7 +81,7 @@ namespace GalacticShrine {
           Chemins: Chemin.Combiner(
             Chemin1: Chemin.Combiner(
               Chemin1: ObtenirLeNomDuRepertoire(
-                Chemin: Assembly.GetExecutingAssembly().ObtenirLemplacementDorigine()),
+                Chemin: Assembly.GetExecutingAssembly().ObtenirL_EmplacementD_Origine()),
               Chemin2: ".."
             ),
             Chemin2: "Source"
