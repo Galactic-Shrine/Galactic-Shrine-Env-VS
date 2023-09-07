@@ -14,35 +14,35 @@ namespace GalacticShrine.Terminal {
   public class Format {
 
     Dictionary<string, Couleur> VariationDuTheme { get; set; }
-		private readonly object VerrouillageDeCouleur = new();
+    private readonly object VerrouillageDeCouleur = new();
 
-		public Format(CouleurInterface Theme) {
+    public Format(CouleurInterface Theme) {
 
-			if(Theme == null) {
+      if(Theme == null) {
 
-				throw new ArgumentException(message: nameof(Theme));
-			}
+        throw new ArgumentException(message: nameof(Theme));
+      }
 
-			VariationDuTheme = Theme.Couleurs;
-			CouleurParDefaut();
-		}
+      VariationDuTheme = Theme.Couleurs;
+      CouleurParDefaut();
+    }
 
-		void CouleurParDefaut(string Couleur = Couleurs.Bg.Default) {
+    void CouleurParDefaut(string Couleur = Couleurs.Bg.Default) {
 
-			var Theme = VariationDuTheme[Couleur];
-			Console.BackgroundColor = Theme.ArrierePlan;
-			Console.ForegroundColor = Theme.PremierPlan;
-		}
+      var Theme = VariationDuTheme[Couleur];
+      Console.BackgroundColor = Theme.ArrierePlan;
+      Console.ForegroundColor = Theme.PremierPlan;
+    }
 
-		public void RetablirCouleur() {
+    public void RetablirCouleur() {
 
-			lock(VerrouillageDeCouleur) {
+      lock(VerrouillageDeCouleur) {
 
-				Console.ResetColor();
-			}
-		}
+        Console.ResetColor();
+      }
+    }
 
-		void DefinirCouleur(string Couleur) {
+    void DefinirCouleur(string Couleur) {
 
       if(VariationDuTheme.TryGetValue(Couleur, out Couleur Value)) {
 
@@ -55,22 +55,46 @@ namespace GalacticShrine.Terminal {
       }
     }
 
-		public void Eclaircir() {
+    void DefinirCouleurTexte(string Couleur) {
 
-			lock(VerrouillageDeCouleur) {
+      if(VariationDuTheme.TryGetValue(Couleur, out Couleur Value)) {
 
-				Console.Clear();
-			}
-		}
+        Console.ForegroundColor = Value.PremierPlan;
+      }
+      else {
 
-		public void Ecrire(string Texte, string Couleur = Couleurs.Txt.Default) {
+        throw new KeyNotFoundException();
+      }
+    }
 
-			lock(VerrouillageDeCouleur) {
+    void DefinirCouleurArrierePlan(string Couleur) {
 
-				DefinirCouleur(Couleur);
-				Sortie.Ecrire(Texte);
-				CouleurParDefaut();
-			}
+      if(VariationDuTheme.TryGetValue(Couleur, out Couleur Values)) {
+
+        Console.BackgroundColor = Values.ArrierePlan;
+      }
+      else {
+
+        throw new KeyNotFoundException();
+      }
+    }
+
+    public void Eclaircir() {
+
+      lock(VerrouillageDeCouleur) {
+
+        Console.Clear();
+      }
+    }
+
+    public void Ecrire(string Texte, string Couleur = Couleurs.Txt.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleur(Couleur);
+        Sortie.Ecrire(Texte);
+        CouleurParDefaut();
+      }
     }
 
     public void Ecrire(string Texte, object Argument, string Couleur = Couleurs.Txt.Default) {
@@ -98,6 +122,50 @@ namespace GalacticShrine.Terminal {
       lock(VerrouillageDeCouleur) {
 
         DefinirCouleur(Couleur);
+        Sortie.Ecrire(ReserveToutLaLigne, Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Ecrire2Couleur(string Texte, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Ecrire(Texte);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Ecrire2Couleur(string Texte, object Argument, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Ecrire(Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Ecrire2Couleur(bool ReserveToutLaLigne, string Texte, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Ecrire(ReserveToutLaLigne, Texte);
+        CouleurParDefaut();
+      }
+    }
+    
+    public void Ecrire2Couleur(bool ReserveToutLaLigne, string Texte, object Argument, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
         Sortie.Ecrire(ReserveToutLaLigne, Texte, Argument);
         CouleurParDefaut();
       }
@@ -143,6 +211,50 @@ namespace GalacticShrine.Terminal {
       }
     }
 
+    public void Aligner2Couleur(string Texte, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Aligner(Texte);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Aligner2Couleur(string Texte, object Argument, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Aligner(Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Aligner2Couleur(Alignement Alignement, string Texte, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Aligner(Alignement, Texte);
+        CouleurParDefaut();
+      }
+    }
+
+    public void Aligner2Couleur(Alignement Alignement, string Texte, object Argument, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Sortie.Aligner(Alignement, Texte, Argument);
+        CouleurParDefaut();
+      }
+    }
+
     public void AlignerLaDivision(string Texte, string Couleur = Couleurs.Txt.Default) {
 
 			lock(VerrouillageDeCouleur) {
@@ -165,7 +277,18 @@ namespace GalacticShrine.Terminal {
 			}
 		}
 
-		public void LigneSeparatriceDecoree(char Character, string Couleur) {
+    public void Enveloppement2Couleur(string Texte, string CouleurTexte = Couleurs.Txt.Default, string CouleurArrierePlan = Couleurs.Bg.Default) {
+
+      lock(VerrouillageDeCouleur) {
+
+        DefinirCouleurTexte(CouleurTexte);
+        DefinirCouleurArrierePlan(CouleurArrierePlan);
+        Decorateur.Texte(Texte);
+        CouleurParDefaut();
+      }
+    }
+
+    public void LigneSeparatriceDecoree(char Character, string Couleur) {
 
 			lock(VerrouillageDeCouleur) {
 

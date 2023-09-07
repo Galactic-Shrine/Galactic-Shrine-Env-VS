@@ -196,7 +196,21 @@ namespace GalacticShrine.TerminalExample {
 			try {
 
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteDefault,						 Couleur: Txt.Default);
-				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteMagenta,						 Couleur: Txt.Magenta);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteNoir,                Couleur: Txt.Black);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteBleuFonce,           Couleur: Txt.DarkBlue);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteVertFonce,           Couleur: Txt.DarkGreen);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteCyanFonce,           Couleur: Txt.DarkCyan);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteRougeFonce,          Couleur: Txt.DarkRed);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteMagentaFonce,        Couleur: Txt.DarkMagenta);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteJauneFonce,          Couleur: Txt.DarkYellow);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteGrisFonce,           Couleur: Txt.DarkGray);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteBleu,                Couleur: Txt.Blue);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteVert,                Couleur: Txt.Green);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteCyan,                Couleur: Txt.Cyan);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteRouge,               Couleur: Txt.Red);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteMagenta,             Couleur: Txt.Magenta);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteJaune,               Couleur: Txt.Yellow);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteGris,                Couleur: Txt.Gray);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteSourdine,						 Couleur: Txt.Sourdine);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TextePrimaire,						 Couleur: Txt.Primaire);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteSucces,							 Couleur: Txt.Succes);
@@ -204,15 +218,32 @@ namespace GalacticShrine.TerminalExample {
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteAvertissement,			 Couleur: Txt.Avertissement);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.TexteDanger,							 Couleur: Txt.Danger);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanDefault,			 Couleur: Bg.Default);
-				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanMagenta,			 Couleur: Bg.Magenta);
-				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanSourdine,			 Couleur: Bg.Sourdine);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanNoir,          Couleur: Bg.Black);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanBleuFonce,     Couleur: Bg.DarkBlue);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanVertFonce,     Couleur: Bg.DarkGreen);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanCyanFonce,     Couleur: Bg.DarkCyan);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanRougeFonce,    Couleur: Bg.DarkRed);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanMagentaFonce,  Couleur: Bg.DarkMagenta);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanJauneFonce,    Couleur: Bg.DarkYellow);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanGrisFonce,     Couleur: Bg.DarkGray);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanBleu,          Couleur: Bg.Blue);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanVert,          Couleur: Bg.Green);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanCyan,          Couleur: Bg.Cyan);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanRouge,         Couleur: Bg.Red);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanMagenta,       Couleur: Bg.Magenta);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanJaune,         Couleur: Bg.Yellow);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrièrePlanGris,          Couleur: Bg.Gray);
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanSourdine,			 Couleur: Bg.Sourdine);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanPrimaire,			 Couleur: Bg.Primaire);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanSucces,				 Couleur: Bg.Succes);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanInfo,					 Couleur: Bg.Info);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanAvertissement, Couleur: Bg.Avertissement);
 				Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Resources.ArrierePlanDanger,				 Couleur: Bg.Danger);
+        Terminal.Ecrire2Couleur(ReserveToutLaLigne: true, Texte: Resources.PersonnaliserLesCouleur, CouleurTexte: Txt.Red, CouleurArrierePlan: Bg.Blue);
+        Terminal.Ecrire2Couleur(ReserveToutLaLigne: true, Texte: Resources.PersonnaliserLesCouleur, CouleurTexte: Txt.DarkGreen, CouleurArrierePlan: Bg.DarkYellow);
+        Terminal.Ecrire2Couleur(ReserveToutLaLigne: true, Texte: Resources.PersonnaliserLesCouleur, CouleurTexte: Txt.Cyan, CouleurArrierePlan: Bg.DarkCyan);
 
-				Retour();
+        Retour();
 			}
 			catch(Exception ex) {
 
@@ -261,8 +292,11 @@ namespace GalacticShrine.TerminalExample {
 				Terminal.Ecrire(Texte: $" {Resources.Info} \n",          Couleur: Bg.Info);
 				Terminal.Ecrire(Texte: $" {Resources.Avertissemens} \n", Couleur: Bg.Avertissement);
 				Terminal.Ecrire(Texte: $" {Resources.Danger} \n",				 Couleur: Bg.Danger);
+        Terminal.Ecrire2Couleur(Texte: $" {Resources.PersonnaliserLesCouleur} \n", CouleurTexte: Txt.Red, CouleurArrierePlan: Bg.Blue);
+        Terminal.Ecrire2Couleur(Texte: $" {Resources.PersonnaliserLesCouleur} \n", CouleurTexte: Txt.DarkGreen, CouleurArrierePlan: Bg.DarkYellow);
+        Terminal.Ecrire2Couleur(Texte: $" {Resources.PersonnaliserLesCouleur} \n", CouleurTexte: Txt.Cyan, CouleurArrierePlan: Bg.DarkCyan);
 
-				Retour();
+        Retour();
 			}
 			catch(Exception ex) {
 

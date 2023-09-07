@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Appuyez sur n'importe quelle touche pour continuer</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Texte Noir</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Texte Bleu foncé</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Texte Vert foncé</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Texte Cyan foncé</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Texte Rouge foncé</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Texte Magenta foncé</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Texte Jaune foncé</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Texte Gris foncé</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Texte Bleu</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Texte Vert</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Texte Cyan</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Texte Rouge</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Texte Jaune</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Texte Gris</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Arrière-plan Noir</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Arrière-plan Bleu foncé</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Arrière-plan Vert foncé</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Arrière-plan Cyan foncé</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Arrière-plan Rouge foncé</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Arrière-plan Magenta foncé</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Arrière-plan Jaune foncé</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Arrière-plan Gris foncé</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Arrière-plan Bleu</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Arrière-plan Vert</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Arrière-plan Cyan</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Arrière-plan Rouge</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Arrière-plan Jaune</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Arriere-plan Gris</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Personnaliser les couleur à votre envie</value>
+  </data>
 </root>
