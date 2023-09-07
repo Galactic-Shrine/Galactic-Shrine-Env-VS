@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Dll\GalacticShrine.Configuration\GalacticShrine.Configuration.csproj" />
+    <ProjectReference Include="..\..\Dll\GalacticShrine\GalacticShrine.csproj" />
   </ItemGroup>
 
 </Project>
