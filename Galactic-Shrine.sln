@@ -31,16 +31,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigIntegre.Example2", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalacticShrine.BaseDeDonnees", "Source\Dll\GalacticShrine.BaseDeDonnees\GalacticShrine.BaseDeDonnees.csproj", "{8F756D19-2B24-43F4-9FDF-F9D3745E5857}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7A7A7BA5-1165-4F8F-B2C9-4771BCDD867F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{71B20CA4-DE38-416D-BCC0-5FF3407A2B21}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\dotnet6.0_ubuntu.yml = .github\workflows\dotnet6.0_ubuntu.yml
-		.github\workflows\dotnet6.0_windows.yml = .github\workflows\dotnet6.0_windows.yml
-		.github\workflows\dotnet7.0_ubuntu.yml = .github\workflows\dotnet7.0_ubuntu.yml
-		.github\workflows\dotnet7.0_windows.yml = .github\workflows\dotnet7.0_windows.yml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,14 +197,13 @@ Global
 		{86EC7589-5AFB-49CD-BB36-11927F3374D5} = {00A3FB4F-6E18-4603-94E1-79F859BDDE41}
 		{A4944EA1-8E27-44D3-958E-6F975F37D04E} = {00A3FB4F-6E18-4603-94E1-79F859BDDE41}
 		{8F756D19-2B24-43F4-9FDF-F9D3745E5857} = {5D7048F9-D88C-4767-945E-A2ACDA02BB5E}
-		{71B20CA4-DE38-416D-BCC0-5FF3407A2B21} = {7A7A7BA5-1165-4F8F-B2C9-4771BCDD867F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A264A22E-5930-4A3F-9C16-55A849B42879}
-		RESX_NeutralResourcesLanguage = fr-FR
-		RESX_ConfirmAddLanguageFile = True
-		RESX_ExcelExportMode = MultipleSheets
-		RESX_PrefixTranslations = False
 		RESX_AutoCreateNewLanguageFiles = True
+		RESX_PrefixTranslations = False
+		RESX_ExcelExportMode = MultipleSheets
+		RESX_ConfirmAddLanguageFile = True
+		RESX_NeutralResourcesLanguage = fr-FR
+		SolutionGuid = {A264A22E-5930-4A3F-9C16-55A849B42879}
 	EndGlobalSection
 EndGlobal
