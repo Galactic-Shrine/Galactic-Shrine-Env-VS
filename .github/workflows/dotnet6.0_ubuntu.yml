@@ -1,7 +1,7 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET for windows
+name: .NET 6.0 for ubuntu
 
 on:
   push:
@@ -16,23 +16,23 @@ env:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: 'ubuntu-latest'
     strategy:
       matrix:
-        dotnet-version: [ '6.0.x', '7.0.x' ]
+        dotnet-version: [ '6.0.x' ]
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup .NET windows
+    - name: Setup .NET ubuntu
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-    - name: Restore dependencies windows
+    - name: Restore dependencies ubuntu
       run: dotnet restore Galactic-Shrine.sln
       working-directory: ./
-    - name: Build windows
+    - name: Build ubuntu
       run: dotnet build Galactic-Shrine.sln --no-restore
       working-directory: ./
-    - name: Test windows
+    - name: Test ubuntu
       run: dotnet test Galactic-Shrine.sln --no-build --verbosity normal
       working-directory: ./
