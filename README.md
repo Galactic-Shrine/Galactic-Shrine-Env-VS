@@ -4,7 +4,7 @@
   Environnement d'application .NET (visual studio)
 </center>
 
-# Galactic-Shrine-Env .NET 8.0 (GsE .NET)
+# Galactic-Shrine-Env .NET 6.0 (GsE .NET)
 
 
 [![.NET 6.0 windows](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet6.0_windows.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet6.0_windows.yml)
