@@ -20,6 +20,7 @@
 - Harmonisation mineure des noms (ex. `LireToutLeTexte`, `LireToutesLesLignes`).
 
 ### Corrigé
+- **Services.Http.VerificateurDeServeur**
 - Petites fautes dans les commentaires EN (ex. “Writres” → “Writes”, “containig” → “containing”, “frome” → “from”).
 
 ### Ruptures

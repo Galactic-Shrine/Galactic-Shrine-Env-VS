@@ -12,7 +12,6 @@
  * Si une copie de la MPL ne vous a pas été distribuée avec ce fichier, vous pouvez en obtenir une à l'adresse suivante : https://mozilla.org/MPL/2.0/.
  * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
-#if GS_PREVIEW_1_2_0
 using System;
 using System.Timers;
 using System.Net.Http;
@@ -29,11 +28,7 @@ namespace GalacticShrine.Services.Http {
    *   [EN] Periodically checks the status of a given server.
    * </summary>
    **/
-#if NET8_0_OR_GREATER
   public class VerificateurDeServeur : IDisposable, IAsyncDisposable {
-#else
-  public class VerificateurDeServeur : IDisposable {
-#endif
 
     /**
      * <summary>
@@ -255,7 +250,6 @@ namespace GalacticShrine.Services.Http {
       GC.SuppressFinalize(this);
     }
 
-#if NET8_0_OR_GREATER
     /**
      * <summary>
      *   [FR] Libère les ressources utilisées par l'objet de manière asynchrone.
@@ -272,7 +266,6 @@ namespace GalacticShrine.Services.Http {
       GC.SuppressFinalize(this);
       await Task.CompletedTask;
     }
-#endif
 
     /**
      * <summary>
@@ -286,4 +279,3 @@ namespace GalacticShrine.Services.Http {
     }
   }
 }
-#endif
