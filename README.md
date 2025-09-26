@@ -4,11 +4,9 @@
   Environnement d'application .NET (visual studio)
 </center>
 
-# Galactic-Shrine-Env .NET 6.0 (GsE .NET)
+# Galactic-Shrine-Env .NET 8 (GsE .NET)
 
 
-[![.NET 6.0 windows](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet6.0_windows.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet6.0_windows.yml)
-[![.NET 6.0 ubuntu](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet6.0_ubuntu.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet6.0_ubuntu.yml)
 [![.NET 8.0 windows](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet8.0_windows.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet8.0_windows.yml)
 [![.NET 8.0 ubuntu](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet8.0_ubuntu.yml/badge.svg?style=plastic)](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/actions/workflows/dotnet8.0_ubuntu.yml)
 ![GitHub contributors](https://img.shields.io/github/contributors/Galactic-Shrine/Galactic-Shrine-Env-VS?style=plastic&label=Contributors)
@@ -26,12 +24,6 @@
 * [License](#license)
 ## Branches Liste
 
-master => .NET 6.0
-
-net80 => .NET 8.0
-
-github-pages => Documentation
-
 
 ## Contributors
 En cas de problème avec un autre participant n'oubliez pas de lire ceci [CODE OF CONDUCT](https://github.com/Galactic-Shrine/Galactic-Shrine-Env-VS/blob/master/CODE_OF_CONDUCT.md).
@@ -48,4 +40,4 @@ En cas de problème avec un autre participant n'oubliez pas de lire ceci [CODE O
 
 ## License
 
- Sous licence [MIT](https://opensource.org/licenses/MIT).
+ Sous licence [MPL 2.0](https://mozilla.org/MPL/2.0/).
