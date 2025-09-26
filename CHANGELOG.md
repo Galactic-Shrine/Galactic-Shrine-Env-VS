@@ -1,31 +1,53 @@
 # Changelog
 
-> Nous sommes désolés : aucun changelog n’avait été maintenu jusqu’à présent.  
-> Cet historique démarre avec la version ci-dessous ; les changements antérieurs (2023–2025) n’ont pas été consignés.
-
-## [1.1.8.108] — 2025-09-26
-
-### Ajouté
-- Documentation **FR/EN** sur la majorité de l’API publique.
-- Entêtes de licence harmonisés **Mozilla Public License 2.0 (MPL-2.0)** sur les fichiers.
-- Méthodes d’extensions de sérialisation pour `FichierReference` (lecture/écriture via `BinaryReader`/`BinaryWriter`).
-
-### Modifié
-- Nettoyage des commentaires XML et normalisation des noms (ex. `LireToutLeTexte`, `LireToutesLesLignes`).
-- Amélioration des messages d’exception (ex. validations de chemin/nom de fichier).
+## 2025-09-26
 
 ### Corrigé
-- Fautes d’orthographe récurrentes dans les docs EN (ex. “containig” → “containing”, “Writres” → “Writes”, etc.).
-- Petits ajustements de balises XML (`<returns>` manquants, coquilles).
+- Mise a jour du README.md
 
-### Non inclus / réservés pour **1.2.0**
-> Ces éléments existent en local mais **ne sont pas publiés** dans cette version.
-- `Services.Http.VerificateurDeServeur` (vérification HTTP périodique, journalisation).
-- API **asynchrones** de `FichierReference` (lectures/écritures async, attributs/dates async, `AjouterLigneAsync`, etc.).
+## 2023-09-07
 
-### À venir
-- Publication de `VerificateurDeServeur` et des API async de `FichierReference` dans **1.2.0**.
-- Eventuel passage de la journalisation vers une file d’écriture asynchrone.
+### Ajouté
+- Projet GalacticShrine.BaseDeDonnees.
+
+### Supprimé
+- Projet GalacticShrine.Toolkit fusionné dans GalacticShrine.
+
+## 2023-08-15
+
+### Ajouté
+- Projet GalacticShrine.Configuration.
+
+## 2023-08-14
+
+### Modifié
+- Projet Gs renommé en GalacticShrine.
+- Projet Gs.Toolkit renommé en GalacticShrine.Toolkit.
+
+### Supprimé
+- Projet Gs.Database.
+- Projet Gs.Toolkit.Update.
+
+## 2023-08-08
+
+### Ajouté
+- Projet Gs.Database.
+
+## 2023-08-02
+
+### Supprimé
+- Projet Gs.Toolkit.Terminal.
+
+### Modifié
+- Ajourt des fichiers du projet Gs.Toolkit.Terminal dans le projet Gs.
+
+## 2023-07-31
+
+### Ajouté
+- Projet Gs.
+- Projets Gs.Toolkit.
+- Projet Gs.Toolkit.Update.
+- Projet Gs.Toolkit.Terminal.
 
 ---
 
