@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
 	<TargetFrameworks>$(Frameworks)</TargetFrameworks>
     <Product>$(AssemblyName.Replace("GalacticShrine",  $(Authors)).Replace(".",  " ")) $(Product)</Product>
-    <AssemblyVersion>1.1.8.108</AssemblyVersion>
+    <AssemblyVersion>1.2.0.109</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
     <Configurations>Debug;Release</Configurations>

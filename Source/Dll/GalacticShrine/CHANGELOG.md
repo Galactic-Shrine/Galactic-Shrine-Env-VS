@@ -3,6 +3,28 @@
 > Nous sommes désolés : aucun changelog n’avait été maintenu jusqu’à présent.  
 > Cet historique démarre avec la version ci-dessous ; les changements antérieurs (2023–2025) n’ont pas été consignés.
 
+## [1.2.0.109] — 2025-09-26
+
+### Ajouté
+- **Services.Http.VerificateurDeServeur**
+  - Vérification périodique d’une URL via HttpClient.
+  - Événement `ServeurVerifie` (online/offline).
+  - Journalisation via la classe `Journalisation`.
+- **API asynchrones dans `FichierReference`**
+  - Lecture : `LireTousLesOctetsAsync`, `LireToutLeTexteAsync` (± `Encoding`), `LireToutesLesLignesAsync` (± `Encoding`).
+  - Écriture : `EcrireTousLesOctetsAsync`, `EcrireToutLeTexteAsync` (± `Encoding`), `EcrireToutesLesLignesAsync` (`IEnumerable<string>`/`string[]` ± `Encoding`), `AjouterLigneAsync` (± `Encoding`).
+  - Attributs : `ObtenirDesAttributsAsync`, `DefinirDesAttributsAsync`, `RendreInscriptiblesAsync`.
+
+### Modifié
+- Documentation FR/EN complétée pour les nouvelles API.
+- Harmonisation mineure des noms (ex. `LireToutLeTexte`, `LireToutesLesLignes`).
+
+### Corrigé
+- Petites fautes dans les commentaires EN (ex. “Writres” → “Writes”, “containig” → “containing”, “frome” → “from”).
+
+### Ruptures
+- Aucune (toutes les API synchrones existantes restent disponibles).
+
 ## [1.1.8.108] — 2025-09-26
 
 ### Ajouté

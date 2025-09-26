@@ -1,12 +1,23 @@
 ﻿/**
- * Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
- * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+ * Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+ * Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+ * 
+ * Mozilla Public License 2.0 / Licence Publique Mozilla 2.0
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
+ *
+ * Cette Forme de Code Source est soumise aux termes de la Licence Publique Mozilla, version 2.0.
+ * Si une copie de la MPL ne vous a pas été distribuée avec ce fichier, vous pouvez en obtenir une à l'adresse suivante : https://mozilla.org/MPL/2.0/.
+ * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
 
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Threading.Tasks;
 using GalacticShrine.Enumeration;
 using GalacticShrine.Properties;
 
@@ -35,8 +46,11 @@ namespace GalacticShrine {
      * </param>
      **/
     public FichierReference(string Chemins) : base(Path.GetFullPath(Chemins)) {
-
-      if (NomComplet[NomComplet.Length - 1] == '\\' || NomComplet[NomComplet.Length - 1] == '/') {
+#if NET8_0_OR_GREATER
+        if(NomComplet[^1] == '\\' || NomComplet[^1] == '/') {
+#else
+        if(NomComplet[NomComplet.Length - 1] == '\\' || NomComplet[NomComplet.Length - 1] == '/') {
+#endif
 
         throw new ArgumentException(Resources.FichierTermineInvalide);
       }
@@ -114,7 +128,7 @@ namespace GalacticShrine {
      *   [EN] A new FileInfo object
      * </returns>
      **/
-    public FileInfo InformationsDuFichier() => new FileInfo(NomComplet);
+    public FileInfo InformationsDuFichier() => new(NomComplet);
 
     /**
      * <summary>
@@ -264,7 +278,7 @@ namespace GalacticShrine {
      *   [EN] Suffix to be appended
      * </param>
      **/
-    public static FichierReference operator +(FichierReference FichierA, string FichierB) => new FichierReference(FichierA.NomComplet + FichierB, Aseptise.Aucun);
+    public static FichierReference operator +(FichierReference FichierA, string FichierB) => new(FichierA.NomComplet + FichierB, Aseptise.Aucun);
 
     /**
     * <summary>
@@ -284,7 +298,7 @@ namespace GalacticShrine {
     *   [EN] New directory reference
     * </returns>
     **/
-    public static FichierReference MarquerADistance(string CheminAbsolu) => new FichierReference(CheminAbsolu, Aseptise.Aucun);
+    public static FichierReference MarquerADistance(string CheminAbsolu) => new(CheminAbsolu, Aseptise.Aucun);
 
     /**
      * <summary>
@@ -301,6 +315,22 @@ namespace GalacticShrine {
      * </returns>
      **/
     public static FileAttributes ObtenirDesAttributs(FichierReference Localisation) => File.GetAttributes(Localisation.NomComplet);
+
+    /**
+     * <summary>
+     *   [FR] Récupère les attributs d'un fichier de manière asynchrone
+     *   [EN] Gets the attributes for a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <returns>
+     *   [FR] Attibutes du fichier
+     *   [EN] Attibutes of the file
+     * </returns>
+     **/
+    public async static Task<FileAttributes> ObtenirDesAttributsAsync(FichierReference Localisation) => await Task.Run(() => File.GetAttributes(Localisation.NomComplet));
 
     /**
      * <summary>
@@ -436,6 +466,22 @@ namespace GalacticShrine {
 
     /**
      * <summary>
+     *   [FR] Lit le contenu d'un fichier de manière asynchrone et retourne tous ses octets.
+     *   [EN] Asynchronously reads the content of a file and returns all its bytes.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier.
+     *   [EN] Location of the file.
+     * </param>
+     * <returns>
+     *   [FR] Un tableau de bytes contenant le contenu du fichier.
+     *   [EN] A byte array containing the content of the file.
+     * </returns>
+     **/
+    public async Task<byte[]> LireTousLesOctetsAsync(FichierReference Localisation) => await File.ReadAllBytesAsync(Localisation.NomComplet);
+
+    /**
+     * <summary>
      *   [FR] Lit le contenu d'un fichier
      *   [EN] Reads the contents of a file
      * </summary>
@@ -448,7 +494,23 @@ namespace GalacticShrine {
      *   [EN] Contents of the file as a single string
      * </returns>
      **/
-    public static string LireTousLeTexte(FichierReference Localisation) => File.ReadAllText(Localisation.NomComplet);
+    public static string LireToutLeTexte(FichierReference Localisation) => File.ReadAllText(Localisation.NomComplet);
+
+    /**
+     * <summary>
+     *   [FR] Lit le contenu d'un fichier de manière asynchrone et retourne le texte complet du fichier.
+     *   [EN] Asynchronously reads the content of a file and returns the complete text of the file.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier.
+     *   [EN] Location of the file.
+     * </param>
+     * <returns>
+     *   [FR] Une chaîne contenant le texte complet du fichier.
+     *   [EN] A string containing the full text of the file.
+     * </returns>
+     **/
+    public async Task<string> LireToutLeTexteAsync(FichierReference Localisation) => await File.ReadAllTextAsync(Localisation.NomComplet);
 
     /**
      * <summary>
@@ -468,8 +530,28 @@ namespace GalacticShrine {
      *   [EN] Contents of the file as a single string
      * </returns>
      **/
-    public static string LireTousLeTexte(FichierReference Localisation, Encoding Encodage) => File.ReadAllText(Localisation.NomComplet, Encodage);
+    public static string LireToutLeTexte(FichierReference Localisation, Encoding Encodage) => File.ReadAllText(Localisation.NomComplet, Encodage);
 
+    /**
+     * <summary>
+     *   [FR] Lit le contenu d'un fichier de manière asynchrone et retourne le texte complet du fichier en utilisant un encodage spécifié.
+     *   [EN] Asynchronously reads the content of a file and returns the complete text of the file using the specified encoding.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier.
+     *   [EN] Location of the file.
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de la lecture du fichier.
+     *   [EN] The encoding to use when reading the file.
+     * </param>
+     * <returns>
+     *   [FR] Une chaîne contenant le texte complet du fichier, décodé avec l'encodage spécifié.
+     *   [EN] A string containing the full text of the file, decoded using the specified encoding.
+     * </returns>
+     **/
+    public async Task<string> LireToutLeTexteAsync(FichierReference Localisation, Encoding Encodage) => await File.ReadAllTextAsync(Localisation.NomComplet, Encodage);
+    
     /**
      * <summary>
      *   [FR] Lit le contenu d'un fichier
@@ -484,7 +566,23 @@ namespace GalacticShrine {
      *   [EN] string array containig the contents of the file
      * </returns>
      **/
-    public static string[] LireTousLesLignes(FichierReference Localisation) => File.ReadAllLines(Localisation.NomComplet);
+    public static string[] LireToutLesLignes(FichierReference Localisation) => File.ReadAllLines(Localisation.NomComplet);
+
+    /**
+     * <summary>
+     *   [FR] Lit le contenu d'un fichier de manière asynchrone et retourne toutes les lignes du fichier.
+     *   [EN] Asynchronously reads the content of a file and returns all lines of the file.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier.
+     *   [EN] Location of the file.
+     * </param>
+     * <returns>
+     *   [FR] Un tableau de chaînes contenant toutes les lignes du fichier.
+     *   [EN] An array of strings containing all lines of the file.
+     * </returns>
+     **/
+    public async Task<string[]> LireToutLesLignesAsync(FichierReference Localisation) => await File.ReadAllLinesAsync(Localisation.NomComplet);
 
     /**
      * <summary>
@@ -504,7 +602,27 @@ namespace GalacticShrine {
      *   [EN] string array containig the contents of the file
      * </returns>
      **/
-    public static string[] LireTousLesLignes(FichierReference Localisation, Encoding Encodage) => File.ReadAllLines(Localisation.NomComplet, Encodage);
+    public static string[] LireToutLesLignes(FichierReference Localisation, Encoding Encodage) => File.ReadAllLines(Localisation.NomComplet, Encodage);
+
+    /**
+     * <summary>
+     *   [FR] Lit le contenu d'un fichier de manière asynchrone et retourne toutes les lignes du fichier en utilisant un encodage spécifié.
+     *   [EN] Asynchronously reads the content of a file and returns all lines of the file using the specified encoding.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier.
+     *   [EN] Location of the file.
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de la lecture du fichier.
+     *   [EN] The encoding to use when reading the file.
+     * </param>
+     * <returns>
+     *   [FR] Un tableau de chaînes contenant toutes les lignes du fichier, décodé avec l'encodage spécifié.
+     *   [EN] An array of strings containing all lines of the file, decoded using the specified encoding.
+     * </returns>
+     **/
+    public async Task<string[]> LireToutLesLignesAsync(FichierReference Localisation, Encoding Encodage) => await File.ReadAllLinesAsync(Localisation.NomComplet, Encodage);
 
     /**
      * <summary>
@@ -516,20 +634,43 @@ namespace GalacticShrine {
      *   [EN] Location of the file
      * </param>
      **/
-    public static void RendreInscriptibles(FichierReference Localisation)
-    {
+    public static void RendreInscriptibles(FichierReference Localisation) {
 
-      if (VerifieSiExiste(Localisation))
-      {
+      if (VerifieSiExiste(Localisation)) {
 
         FileAttributes Attributes = ObtenirDesAttributs(Localisation);
-        if ((Attributes & FileAttributes.ReadOnly) != 0)
-        {
+        if ((Attributes & FileAttributes.ReadOnly) != 0) {
 
           DefinirDesAttributs(Localisation, Attributes & FileAttributes.ReadOnly);
         }
       }
     }
+
+    /**
+     * <summary>
+     *   [FR] Rende un fichier inscriptible de manière asynchrone en vérifiant ses attributs.
+     *         Si le fichier est en lecture seule, l'attribut "lecture seule" est supprimé.
+     *   [EN] Makes a file writable asynchronously by checking its attributes.
+     *         If the file is read-only, the "read-only" attribute is removed.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier à rendre inscriptible.
+     *   [EN] Location of the file to make writable.
+     * </param>
+     **/
+    public async static Task RendreInscriptiblesAsync(FichierReference Localisation) {
+
+
+      if (VerifieSiExiste(Localisation)) {
+
+        FileAttributes Attributes = await ObtenirDesAttributsAsync(Localisation);
+        if ((Attributes & FileAttributes.ReadOnly) != 0) {
+
+          await DefinirDesAttributsAsync(Localisation, Attributes & FileAttributes.ReadOnly);
+        }
+      }
+    }
+
     /**
      * <summary>
      *   [FR] Copie un fichier d'un emplacement à un autre
@@ -581,7 +722,7 @@ namespace GalacticShrine {
      * </param>
      **/
     public static void Deplacer(FichierReference LocalisationDeDepart, FichierReference LocalisationDeDestination) => File.Move(LocalisationDeDepart.NomComplet, LocalisationDeDestination.NomComplet);
-
+    
     /**
      * <summary>
      *   [FR] Supprimer ce fichier
@@ -609,6 +750,28 @@ namespace GalacticShrine {
      * </param>
      **/
     public static void DefinirDesAttributs(FichierReference Localisation, FileAttributes Attributs) => File.SetAttributes(Localisation.NomComplet, Attributs);
+
+    /**
+     * <summary>
+     *   [FR] Définit les attributs d'un fichier de manière asynchrone.
+     *         Cette méthode applique les attributs spécifiés au fichier indiqué.
+     *   [EN] Sets the attributes of a file asynchronously.
+     *         This method applies the specified attributes to the given file.
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier auquel les attributs doivent être appliqués.
+     *   [EN] Location of the file to which the attributes should be applied.
+     * </param>
+     * <param name="Attributs">
+     *   [FR] Les attributs à définir pour le fichier.
+     *   [EN] The attributes to set for the file.
+     * </param>
+     * <returns>
+     *   [FR] Cette méthode retourne une tâche qui représente l'opération asynchrone de définition des attributs.
+     *   [EN] This method returns a task representing the asynchronous operation of setting the attributes.
+     * </returns>
+     **/
+    public async static Task DefinirDesAttributsAsync(FichierReference Localisation, FileAttributes Attributs) => await Task.Run(() => File.SetAttributes(Localisation.NomComplet, Attributs));
 
     /**
      * <summary>
@@ -660,6 +823,22 @@ namespace GalacticShrine {
 
     /**
      * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     **/
+    public async static Task EcrireTousLesOctetsAsync(FichierReference Localisation, byte[] Contenu) => await File.WriteAllBytesAsync(Localisation.NomComplet, Contenu);
+
+    /**
+     * <summary>
      *   [FR] Écrit le contenu d'un fichier
      *   [EN] Writres the contents of a file
      * </summary>
@@ -673,6 +852,22 @@ namespace GalacticShrine {
      * </param>
      **/
     public static void EcrireToutLeTexte(FichierReference Localisation, string Contenu) => File.WriteAllText(Localisation.NomComplet, Contenu);
+
+    /**
+     * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     **/
+    public async static Task EcrireToutLeTexteAsync(FichierReference Localisation, string Contenu) => await File.WriteAllTextAsync(Localisation.NomComplet, Contenu);
 
     /**
      * <summary>
@@ -696,6 +891,26 @@ namespace GalacticShrine {
 
     /**
      * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de l'analyse du fichier
+     *   [EN] The encoding to use when parsing the file
+     * </param>
+     **/
+    public async static Task EcrireToutLeTexteAsync(FichierReference Localisation, string Contenu, Encoding Encodage) => await File.WriteAllTextAsync(Localisation.NomComplet, Contenu, Encodage);
+
+    /**
+     * <summary>
      *   [FR] Écrit le contenu d'un fichier
      *   [EN] Writres the contents of a file
      * </summary>
@@ -712,6 +927,22 @@ namespace GalacticShrine {
 
     /**
      * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     **/
+    public async static Task EcrireToutesLeslignesAsync(FichierReference Localisation, IEnumerable<string> Contenu) => await File.WriteAllLinesAsync(Localisation.NomComplet, Contenu);
+
+    /**
+     * <summary>
      *   [FR] Écrit le contenu d'un fichier
      *   [EN] Writres the contents of a file
      * </summary>
@@ -725,6 +956,22 @@ namespace GalacticShrine {
      * </param>
      **/
     public static void EcrireToutesLeslignes(FichierReference Localisation, string[] Contenu) => File.WriteAllLines(Localisation.NomComplet, Contenu);
+
+    /**
+     * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     **/
+    public async static Task EcrireToutesLeslignesAsync(FichierReference Localisation, string[] Contenu) => await File.WriteAllLinesAsync(Localisation.NomComplet, Contenu);
 
     /**
      * <summary>
@@ -748,6 +995,26 @@ namespace GalacticShrine {
 
     /**
      * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de l'analyse du fichier
+     *   [EN] The encoding to use when parsing the file
+     * </param>
+     **/
+    public async static Task EcrireToutesLeslignesAsync(FichierReference Localisation, IEnumerable<string> Contenu, Encoding Encodage) => await File.WriteAllLinesAsync(Localisation.NomComplet, Contenu, Encodage);
+
+    /**
+     * <summary>
      *   [FR] Écrit le contenu d'un fichier
      *   [EN] Writres the contents of a file
      * </summary>
@@ -768,6 +1035,98 @@ namespace GalacticShrine {
 
     /**
      * <summary>
+     *   [FR] Écrit le contenu d'un fichier de manière asynchrone
+     *   [EN] Writres the contents of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu du fichier
+     *   [EN] Contents of the file
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de l'analyse du fichier
+     *   [EN] The encoding to use when parsing the file
+     * </param>
+     **/
+    public async static Task EcrireToutesLeslignesAsync(FichierReference Localisation, string[] Contenu, Encoding Encodage) => await File.WriteAllLinesAsync(Localisation.NomComplet, Contenu, Encodage);
+
+    /**
+     * <summary>
+     *   [FR] Ajoute une ligne à la fin d'un fichier
+     *   [EN] Appends a line to the end of a file
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu de la ligne à ajouter
+     *   [EN] Contents of the line to append
+     * </param>
+     **/
+    public static void AjouterLigne(FichierReference Localisation, string Contenu) => File.AppendAllText(Localisation.NomComplet, Contenu);
+
+    /**
+     * <summary>
+     *   [FR] Ajoute une ligne à la fin d'un fichier de manière asynchrone
+     *   [EN] Appends a line to the end of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu de la ligne à ajouter
+     *   [EN] Contents of the line to append
+     * </param>
+     **/
+    public async static Task AjouterLigneAsync(FichierReference Localisation, string Contenu) => await File.AppendAllTextAsync(Localisation.NomComplet, Contenu);
+
+    /**
+     * <summary>
+     *   [FR] Ajoute une ligne à la fin d'un fichier
+     *   [EN] Appends a line to the end of a file
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu de la ligne à ajouter
+     *   [EN] Contents of the line to append
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de l'analyse du fichier
+     *   [EN] The encoding to use when parsing the file
+     * </param>
+     **/
+    public static void AjouterLigne(FichierReference Localisation, string Contenu, Encoding Encodage) => File.AppendAllText(Localisation.NomComplet, Contenu, Encodage);
+
+    /**
+     * <summary>
+     *   [FR] Ajoute une ligne à la fin d'un fichier de manière asynchrone
+     *   [EN] Appends a line to the end of a file asynchronously
+     * </summary>
+     * <param name="Localisation">
+     *   [FR] Emplacement du fichier
+     *   [EN] Location of the file
+     * </param>
+     * <param name="Contenu">
+     *   [FR] Contenu de la ligne à ajouter
+     *   [EN] Contents of the line to append
+     * </param>
+     * <param name="Encodage">
+     *   [FR] L'encodage à utiliser lors de l'analyse du fichier
+     *   [EN] The encoding to use when parsing the file
+     * </param>
+     **/
+    public async static Task AjouterLigneAsync(FichierReference Localisation, string Contenu, Encoding Encodage) => await File.AppendAllTextAsync(Localisation.NomComplet, Contenu, Encodage);
+
+    /**
+     * <summary>
      *   [FR] Détermine si le nom de fichier donné existe ou non.
      *   [EN] Determines  whether the given filename exists.
      * </summary>
@@ -775,10 +1134,10 @@ namespace GalacticShrine {
      *   [FR] Emplacement du fichier
      *   [EN] Location of the file
      * </param>
-     * <retruns>
+     * <returns>
      *   [FR] Vrai s'il existe, Sinon faux
      *   [EN] True if it exists, False otherwise
-     * </retruns>
+     * </returns>
      **/
     public static bool VerifieSiExiste(FichierReference Localisation) => File.Exists(Localisation.NomComplet);
 
@@ -887,12 +1246,12 @@ namespace GalacticShrine {
      **/
     public static void Ecrire(this BinaryWriter Redacteur, FichierReference Fichier, Dictionary<FichierReference, int> FichierAIdUnique) {
 
-      int IdUnique;
+      //int IdUnique;
       if (Fichier == null) {
 
         Redacteur.Write(-1);
       }
-      else if (FichierAIdUnique.TryGetValue(Fichier, out IdUnique)) {
+      else if (FichierAIdUnique.TryGetValue(Fichier, out int IdUnique)) {
 
         Redacteur.Write(IdUnique);
       }
