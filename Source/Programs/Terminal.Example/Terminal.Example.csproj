@@ -3,13 +3,17 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <Nullable>enable</Nullable>
+	<TargetFrameworks>$(Frameworks)</TargetFrameworks>
     <RootNamespace>GalacticShrine.TerminalExample</RootNamespace>
     <BaseOutputPath>..\..\..\Build\Example\$(AssemblyName)\</BaseOutputPath>
-    <AssemblyVersion>1.0.0.53</AssemblyVersion>
+    <AssemblyVersion>1.0.0.108</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
+    <PackageOutputPath />
+    <AnalysisLevel>6.0</AnalysisLevel>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
-
+	
   <ItemGroup>
     <ProjectReference Include="..\..\Dll\GalacticShrine\GalacticShrine.csproj" />
   </ItemGroup>
@@ -28,5 +32,4 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
 </Project>

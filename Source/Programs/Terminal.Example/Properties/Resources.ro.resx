@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Apăsați orice tastă pentru a continua!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Text negru</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Text albastru închis</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Text Verde închis</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Text cyan închis</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Text roșu închis</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Text magenta închis</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Text Galben închis</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Text Gri închis</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Text albastru</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Text verde</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Text cian</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Text roșu</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Text galben</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Text gri</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Fond negru</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Fundal Albastru închis</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Fundal Verde închis</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Fundal cyan închis</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Fundal Roșu închis</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Fond magenta închis</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Fundal Galben închis</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Fond Gri închis</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Fond albastru</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Fond verde</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Fond cian</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Fond roșu</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Fond galben</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Placa de bază gri</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Personalizați culorile în funcție de dvs.</value>
+  </data>
 </root>

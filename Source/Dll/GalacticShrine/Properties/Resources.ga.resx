@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>Ah mo shúile! Cén fáth go bhfuil an consól seo ró - bheag?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Comhad GSP neamhbhailí.!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Fios</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>Rath</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>Earráid</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>Foláireamh</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>Fad na heochrach criptithe neamhbhailí. Ní mór 32 beart a bheith san eochair chriptithe.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Cartlann á tosú.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Cartlann á cruthú ag {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Comhad curtha leis: {0} (bunmhéid: {1} beart).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Cruthú cartlainne críochnaithe.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Cartlann á baint as {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Síniú cartlainne neamhbhailí.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Leagan GsP gan tacaíocht: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Earráid sheiceála i gcomhad {0}. Tá cur isteach ar eastóscadh.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Mí - oiriúnú an tseiceála.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Comhad asbhainte: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Tá an eastóscadh críochnaithe.!</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Liosta comhad i gcartlann {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Comhad aimsithe: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Comhad aimsithe: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Comhad aimsithe: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Comhad aimsithe: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Comhad aimsithe: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Ní féidir leis an gcosán a bheith folamh.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Ní féidir ainm an chomhaid a bheith folamh.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Ní féidir leis an teachtaireacht a bheith folamh.!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Níl cosán nó ainm an logchomhaid socraithe.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Níor chuir sé algartam hash i bhfeidhm.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Ní féidir le paraiméadar '{0}' a bheith folamh.!</value>
+  </data>
 </root>

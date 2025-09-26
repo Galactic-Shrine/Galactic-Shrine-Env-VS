@@ -8,17 +8,38 @@ using System.Collections.Generic;
 using GalacticShrine.Structure.Terminal;
 
 namespace GalacticShrine.UI.Terminal {
+  /**
+   * <summary>
+   *   [FR] Implémentation d'un thème sombre (couleurs sombres en arrière-plan).
+   *   [EN] Implementation of a dark theme (dark background colors).
+   * </summary>
+   **/
+  public class ThemeSombre : ThemeParams {
 
-	public class ThemeLumineux : ThemeParams {
+    /**
+     * <summary>
+     *   [FR] Constructeur du thème sombre. Initialise et configure les couleurs et composants.
+     *   [EN] Dark theme constructor. Initializes and configures colors and components.
+     * </summary>
+     * <param name="bConsoleParDefault">
+     *   [FR] Si <c>true</c>, utilise les couleurs par défaut de la console. Sinon, couleurs sombres personnalisées.
+     *   [EN] If <c>true</c>, uses the console's default colors. Otherwise, uses custom dark colors.
+     * </param>
+     **/
+    public ThemeSombre(bool bConsoleParDefault = true) {
 
-    public ThemeLumineux(bool bConsoleDefault = true) {
-
-      ConsoleParDefault = bConsoleDefault;
+      ConsoleParDefault = bConsoleParDefault;
       DefinirLesCouleurs();
       DefinirLesComposants();
     }
 
-    public override void DefinirLesCouleurs () {
+    /**
+     * <summary>
+     *   [FR] Définit les couleurs principales du thème sombre, soit en console par défaut, soit en noir/blanc inversé.
+     *   [EN] Defines main colors for the dark theme, either console default or black/white inverted.
+     * </summary>
+     **/
+    public override void DefinirLesCouleurs() {
 
       if(ConsoleParDefault) {
 
@@ -26,16 +47,22 @@ namespace GalacticShrine.UI.Terminal {
       }
       else {
 
-        ConsoleArrierePlan = ConsoleColor.White;
-        ConsolePremierPlan = ConsoleColor.Black;
+        ConsoleArrierePlan = ConsoleColor.Black;
+        ConsolePremierPlan = ConsoleColor.White;
       }
     }
 
-		public override void DefinirLesComposants () {
+    /**
+     * <summary>
+     * [FR] Configure les différents composants (textes, fonds) avec des couleurs sombres.
+     * [EN] Configures the various components (text, background) with dark-oriented colors.
+     * </summary>
+     **/
+    public override void DefinirLesComposants() {
 
-      var Couleur = new Dictionary<string, Couleur> {
+			var Couleur = new Dictionary<string, Couleur> {
 
-        { "text.default",				AjouterCouleur(null, null) },
+        { "text.default",       AjouterCouleur(null, null) },
         { "text.black",         AjouterCouleur(null, ConsoleColor.Black) },
         { "text.darkBlue",      AjouterCouleur(null, ConsoleColor.DarkBlue) },
         { "text.darkGreen",     AjouterCouleur(null, ConsoleColor.DarkGreen) },
@@ -51,10 +78,10 @@ namespace GalacticShrine.UI.Terminal {
         { "text.magenta",       AjouterCouleur(null, ConsoleColor.Magenta) },
         { "text.yellow",        AjouterCouleur(null, ConsoleColor.Yellow) },
         { "text.gray",          AjouterCouleur(null, ConsoleColor.Gray) },
-        { "text.sourdine",			AjouterCouleur(null, ConsoleColor.Gray) },
-				{ "text.primaire",			AjouterCouleur(null, ConsoleColor.DarkGray) },
-				{ "text.avertissement", AjouterCouleur(null, ConsoleColor.DarkYellow) },
-				{ "text.danger",				AjouterCouleur(null, ConsoleColor.DarkRed) },
+        { "text.sourdine",			AjouterCouleur(null, ConsoleColor.DarkGray) },
+				{ "text.primaire",			AjouterCouleur(null, ConsoleColor.Gray) },
+				{ "text.avertissement", AjouterCouleur(null, ConsoleColor.Yellow) },
+				{ "text.danger",				AjouterCouleur(null, ConsoleColor.Red) },
 				{ "text.succes",				AjouterCouleur(null, ConsoleColor.DarkGreen) },
 				{ "text.info",					AjouterCouleur(null, ConsoleColor.DarkCyan) },
 				{ "bg.default",					AjouterCouleur(null,                     null) },
@@ -73,10 +100,10 @@ namespace GalacticShrine.UI.Terminal {
         { "bg.magenta",         AjouterCouleur(ConsoleColor.Magenta,     null) },
         { "bg.yellow",          AjouterCouleur(ConsoleColor.Yellow,      null) },
         { "bg.gray",            AjouterCouleur(ConsoleColor.Gray,        null) },
-        { "bg.sourdine",				AjouterCouleur(ConsoleColor.Gray,        ConsoleColor.Black) },
-				{ "bg.primaire",				AjouterCouleur(ConsoleColor.DarkGray,    ConsoleColor.White) },
-				{ "bg.avertissement",		AjouterCouleur(ConsoleColor.DarkYellow,  ConsoleColor.White) },
-				{ "bg.danger",					AjouterCouleur(ConsoleColor.DarkRed,     ConsoleColor.White) },
+        { "bg.sourdine",				AjouterCouleur(ConsoleColor.DarkGray,    ConsoleColor.Black) },
+				{ "bg.primaire",				AjouterCouleur(ConsoleColor.Gray,        ConsoleColor.White) },
+				{ "bg.avertissement",		AjouterCouleur(ConsoleColor.Yellow,      ConsoleColor.Black) },
+				{ "bg.danger",					AjouterCouleur(ConsoleColor.Red,         ConsoleColor.White) },
 				{ "bg.succes",					AjouterCouleur(ConsoleColor.DarkGreen,   ConsoleColor.White) },
 				{ "bg.info",						AjouterCouleur(ConsoleColor.DarkCyan,    ConsoleColor.White) }
 			};

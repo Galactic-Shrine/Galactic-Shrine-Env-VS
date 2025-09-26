@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>いずれかのキーを押して続行してください！</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>黒文字</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>紺色の文字</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>テキスト ダークグリーン</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>テキスト ダークシアン</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>濃い赤文字</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>濃いマゼンタのテキスト</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>テキスト 濃い黄色</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>テキスト ダークグレー</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>青文字</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>グリーンテキスト</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>シアン・テキスト</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>赤文字</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>黄色のテキスト</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>グレーのテキスト</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>黒背景</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>背景 濃紺</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>背景 ダークグリーン</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>背景 濃いシアン</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>背景 ダークレッド</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>濃いマゼンタの背景</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>背景 濃い黄色</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>背景 ダークグレー</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>ブルーバック</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>グリーンバック</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>シアンの背景</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>赤い背景</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>黄色の背景</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>グレーのバックプレーン</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>お好みの色にカスタマイズ</value>
+  </data>
 </root>

@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>О, очите ми! Защо тази конзола е толкова малка?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Невалиден GSP файл.!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>Успех</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>Дължината на невалидния ключ за шифроване. Ключът за шифроване трябва да бъде 32 байта.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Инициализиране на архива.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Създаване на архив на {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Добавен файл: {0} (оригинален размер: {1} байта).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Създаването на архива е завършено.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Извличане на архив от {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Невалиден подпис на архива.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Неподдържана версия на GsP: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Грешка в контролната сума за файл {0}. Извличането е прекъснато.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Несъответствие на контролната сума.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Извлечен файл: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Екстрахирането завърши!</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Списък на файловете в архива {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Файлът е намерен: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Файлът е намерен: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Файлът е намерен: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Файлът е намерен: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Файлът е намерен: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Пътят не може да е празен.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Името на файла не може да бъде празно.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Съобщението не може да бъде празно.!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Пътят или името на регистрационния файл не са зададени.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Не е реализирал алгоритъм за хеш.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Параметърът „{0}“ не може да бъде празен.!</value>
+  </data>
 </root>

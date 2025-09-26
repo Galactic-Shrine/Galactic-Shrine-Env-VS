@@ -8,7 +8,13 @@ using GalacticShrine.Enumeration;
 
 namespace GalacticShrine.Terminal {
 
-	public static class Sortie {
+  /**
+   * <summary>
+   *   [FR] Classe statique Sortie fournissant des méthodes simplifiées pour écrire et aligner du texte dans le terminal.
+   *   [EN] Static Sortie class providing simplified methods to write and align text in the terminal.
+   * </summary>
+   **/
+  public static class Sortie {
 
     /**
      * <summary>
@@ -158,10 +164,48 @@ namespace GalacticShrine.Terminal {
       }
     }
 
+    /**
+     * <summary>
+     *   [FR] Aligne le texte spécifié avec une couleur donnée.
+     *   [EN] Aligns the specified text with a given color.
+     * </summary>
+     * <param name="Text">
+     *   [FR] Le texte à aligner.
+     *   [EN] The text to align.
+     * </param>
+     **/
     public static void Aligner(string Text) => Ecrire(true, $"{Text.PadRight(Console.WindowWidth - 1)}");
 
+    /**
+     * <summary>
+     *   [FR] Aligne le texte spécifié avec une couleur donnée et un argument formaté.
+     *   [EN] Aligns the specified text with a given color and a formatted argument.
+     * </summary>
+     * <param name="Text">
+     *   [FR] Le texte à aligner.
+     *   [EN] The text to align.
+     * </param>
+     * <param name="Argument">
+     *   [FR] Argument à insérer dans le texte formaté.
+     *   [EN] Argument to insert into the formatted text.
+     * </param>
+     **/
     public static void Aligner(string Text, object Argument) => Ecrire(true, $"{Text.PadRight(Console.WindowWidth - 1)}", Argument);
 
+    /**
+     * <summary>
+     *   [FR] Aligne le texte avec un alignement spécifique.
+     *   [EN] Aligns the text with a specific alignment.
+     * </summary>
+     * <param name="Alignement">
+     *   [FR] Type d'alignement à appliquer (Droite, Gauche, Centre).
+     *   [EN] Type of alignment to apply (Right, Left, Center).
+     * </param>
+     * <param name="Texte">
+     *   [FR] Le texte à aligner.
+     *   [EN] The text to align.
+     * </param>
+     **/
     public static void Aligner(Alignement Alignement, string Texte) {
 
       switch (Alignement) {
@@ -195,6 +239,24 @@ namespace GalacticShrine.Terminal {
       }
     }
 
+    /**
+     * <summary>
+     *   [FR] Aligne le texte formaté avec un alignement spécifique et un argument.
+     *   [EN] Aligns the formatted text with a specific alignment and an argument.
+     * </summary>
+     * <param name="Alignement">
+     *   [FR] Type d'alignement à appliquer (Droite, Gauche, Centre).
+     *   [EN] Type of alignment to apply (Right, Left, Center).
+     * </param>
+     * <param name="Texte">
+     *   [FR] Le texte à aligner, pouvant contenir des formats.
+     *   [EN] The text to align, potentially containing formats.
+     * </param>
+     * <param name="Argument">
+     *   [FR] Argument à insérer dans le texte formaté.
+     *   [EN] Argument to insert into the formatted text.
+     * </param>
+     **/
     public static void Aligner(Alignement Alignement, string Texte, object Argument) {
 
       switch(Alignement) {
@@ -228,12 +290,32 @@ namespace GalacticShrine.Terminal {
       }
     }
 
+    /**
+     * <summary>
+     *   [FR] Dessine une ligne séparatrice décorée avec un caractère spécifique et une couleur donnée.
+     *   [EN] Draws a decorated separator line with a specific character and a given color.
+     * </summary>
+     * <param name="Caractere">
+     *   [FR] Le caractère à utiliser pour dessiner la ligne séparatrice.
+     *   [EN] The character to use for drawing the separator line.
+     * </param>
+     **/
     public static void LigneSeparatriceDecoree(char Caractere) {
 
       string Texte = new String(Caractere, Console.WindowWidth - 1);
       Ecrire(true, Texte);
     }
 
+    /**
+     * <summary>
+     *   [FR] Dessine une ou plusieurs lignes séparatrices avec une couleur par défaut.
+     *   [EN] Draws one or more separator lines with a default color.
+     * </summary>
+     * <param name="Lignes">
+     *   [FR] Nombre de lignes séparatrices à dessiner. Par défaut, 1.
+     *   [EN] Number of separator lines to draw. Defaults to 1.
+     * </param>
+     **/
     public static void LigneSeparatrice(int? Lignes = 1) {
 
       for (int i = 0; i < Lignes; i++) {
@@ -242,7 +324,21 @@ namespace GalacticShrine.Terminal {
       }
     }
 
-		public static void Extreme(string Gauche, string Droit) {
+    /**
+     * <summary>
+     *   [FR] Aligne une division de texte séparée par un caractère spécifique avec une couleur donnée.
+     *   [EN] Align a text division separated by a specific character with a given color.
+     * </summary>
+     * <param name="Gauche">
+     *   [FR] Texte à aligner à gauche de la division.
+     *   [EN] Text to align to the left of the division.
+     * </param>
+     * <param name="Droit">
+     *   [FR] Texte à aligner à droite de la division.
+     *   [EN] Text to align to the right of the division.
+     * </param>
+     **/
+    public static void Extreme(string Gauche, string Droit) {
 
 			decimal Taille  = Console.WindowWidth - 1;
 			int MargeDroite = (int)Math.Round(Taille / 2);

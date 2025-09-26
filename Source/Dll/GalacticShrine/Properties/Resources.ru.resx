@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>Ах, мои глаза! Почему эта консоль слишком маленькая?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Недопустимый файл GSP.!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>УСПЕХ</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>ОШИБКА</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>ПРЕДУПРЕЖДЕНИЕ</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>Длина недопустимого ключа шифрования. Шифровальный ключ должен быть 32 байта.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Инициализация архива.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Создание архива в {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Файл добавлен: {0} (исходный размер: {1} байт).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Создание архива завершено.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Извлечение архива из {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Неверная подпись архива.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Неподдерживаемая версия GsP: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Ошибка контрольной суммы для файла {0}. Извлечение было прервано.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Несоответствие контрольной суммы.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Извлеченный файл: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Получение ресурсов успешно завершено.</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Список файлов в архиве {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Файл найден: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Файл найден: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Файл найден: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Файл найден: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Файл найден: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Путь не может быть пустым.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Имя файла не может быть пустым.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Сообщение не может быть пустым!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Не задан путь или имя файла журнала.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Не реализовал хэш -алгоритм.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Параметр `{0}` не может быть пустым.!</value>
+  </data>
 </root>

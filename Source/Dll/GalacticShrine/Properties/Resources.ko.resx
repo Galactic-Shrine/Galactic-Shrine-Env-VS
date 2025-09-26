@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>아, 내 눈! 이 콘솔이 왜 너무 작지?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>유효하지 않은 GSP 파일.!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>성공</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>경고</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>유효하지 않은 암호화 키의 길이입니다. 암호화 키는 32바이트여야 합니다.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>아카이브 초기화 중.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>{0} 에 아카이브 생성 중...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>추가된 파일: {0} (원래 크기: {1} 바이트).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>아카이브 생성 완료.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>{0} 에서 아카이브 추출 중...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>유효하지 않은 아카이브 서명입니다.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>지원되지 않는 GsP 버전: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>파일 {0} 에 대한 체크섬 오류. 추출이 중단되었습니다.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>체크섬 불일치.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>추출된 파일: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>체크아웃 완료.</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>아카이브 {0} 의 파일 목록...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>파일을 찾았습니다: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>파일을 찾았습니다: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>파일을 찾았습니다: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>파일을 찾았습니다: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>파일을 찾았습니다: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>경로는 비워둘 수 없습니다.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>파일 이름은 비워둘 수 없습니다.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>메시지는 비워둘 수 없습니다.!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>로그 파일의 경로 또는 이름이 설정되지 않았습니다.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>해시 알고리즘을 구현하지 않았습니다.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>매개 변수 `{0}` 은 (는) 비워둘 수 없습니다.!</value>
+  </data>
 </root>

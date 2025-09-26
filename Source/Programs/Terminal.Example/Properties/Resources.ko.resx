@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>계속하려면 아무 키나 누르세요!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>검은색 텍스트</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>진한 파란색 텍스트</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>텍스트 짙은 녹색</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>텍스트 진한 청록색</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>진한 빨간색 텍스트</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>진한 자홍색 텍스트</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>텍스트 진한 노란색</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>텍스트 짙은 회색</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>파란색 텍스트</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>녹색 텍스트</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>청록색 텍스트</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>빨간색 텍스트</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>노란색 텍스트</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>회색 텍스트</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>검은색 배경</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>배경 진한 파란색</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>배경 짙은 녹색</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>배경 진한 청록색</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>배경 진한 빨간색</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>진한 자홍색 배경</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>배경 진한 노란색</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>배경 짙은 회색</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>파란색 배경</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>녹색 배경</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>청록색 배경</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>빨간색 배경</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>노란색 배경</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>회색 백플레인</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>나에게 맞는 색상 사용자 지정</value>
+  </data>
 </root>

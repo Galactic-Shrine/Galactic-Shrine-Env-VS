@@ -1,6 +1,16 @@
 ﻿/**
- * Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
- * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+ * Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+ * Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+ * 
+ * Mozilla Public License 2.0 / Licence Publique Mozilla 2.0
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
+ *
+ * Cette Forme de Code Source est soumise aux termes de la Licence Publique Mozilla, version 2.0.
+ * Si une copie de la MPL ne vous a pas été distribuée avec ce fichier, vous pouvez en obtenir une à l'adresse suivante : https://mozilla.org/MPL/2.0/.
+ * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
 
 using System;
@@ -106,7 +116,7 @@ namespace GalacticShrine {
      * </param>
      * <returns>
      * [FR] vrai si le nom donné se trouve dans le chemin d'accès
-     * [EN] true if the name given is found wihtin the path.
+     * [EN] true if the name given is found within the path.
      * </returns>
      **/
     public bool ContientLeNom(string Nom, int Offset) => ContientLeNom(Nom, Offset, NomComplet.Length - Offset);
@@ -132,7 +142,7 @@ namespace GalacticShrine {
      * </param>
      * <returns>
      * [FR] vrai si le nom donné se trouve dans le chemin d'accès
-     * [EN] true if the name given is found wihtin the path.
+     * [EN] true if the name given is found within the path.
      * </returns>
      **/
     public bool ContientLeNom(string Nom, int Offset, int Longueur) {
@@ -181,7 +191,7 @@ namespace GalacticShrine {
 
         /* 
          * [FR] Passez devant la chaîne qui ne correspond pas.
-         * [EN] Move past the syring that didn't match. 
+         * [EN] Move past the string that didn't match. 
          */
         IndexDeCorrespondance += Nom.Length;
       }
@@ -350,7 +360,7 @@ namespace GalacticShrine {
        * [EN] Append all the '..' separators to get back to the common directory, 
        *      Then the rest of the string to reach the target item.
        */
-      StringBuilder Resultat = new StringBuilder();
+      StringBuilder Resultat = new();
       for (int Index = LongueurDuRepertoireCommun + 1; Index < RepertoireDeBase.NomComplet.Length; Index++) {
 
         /*
@@ -404,7 +414,7 @@ namespace GalacticShrine {
      * [EN] Direct constructor for a path.
      * </summary>
      **/
-    protected FichierSystemeReference(string NomAuComplet, string CanonicalName) => NomComplet = NomAuComplet;
+    protected FichierSystemeReference(string NomAuComplet, string NomCanonique) => NomComplet = NomAuComplet;
 
     /**
      * <summary>
@@ -421,9 +431,13 @@ namespace GalacticShrine {
        * [EN] Retrieves the initial string to be added,
        *      and remove the suffix from any root directory.
        */
-      StringBuilder NouveauNomComplet = new StringBuilder(RepertoireDeBase.NomComplet);
+      StringBuilder NouveauNomComplet = new(RepertoireDeBase.NomComplet);
 
+#if NET8_0_OR_GREATER
+      if(NouveauNomComplet.Length > 0 && NouveauNomComplet[^1] == DossierReference.Rs) {
+#else
       if (NouveauNomComplet.Length > 0 && NouveauNomComplet[NouveauNomComplet.Length - 1] == DossierReference.Rs) {
+#endif
 
         NouveauNomComplet.Remove(NouveauNomComplet.Length - 1, 1);
       }
@@ -491,11 +505,11 @@ namespace GalacticShrine {
                * [FR] Supprimer le dernier nom de répertoire.
                * [EN] Delete the last directory name.
                */
-              for (int SeparateurDindex = NouveauNomComplet.Length - 1; SeparateurDindex >= 0; SeparateurDindex--) {
+              for (int SeparateurD_Index = NouveauNomComplet.Length - 1; SeparateurD_Index >= 0; SeparateurD_Index--) {
 
-                if (NouveauNomComplet[SeparateurDindex] == DossierReference.Rs) {
+                if (NouveauNomComplet[SeparateurD_Index] == DossierReference.Rs) {
 
-                  NouveauNomComplet.Remove(SeparateurDindex, NouveauNomComplet.Length - SeparateurDindex);
+                  NouveauNomComplet.Remove(SeparateurD_Index, NouveauNomComplet.Length - SeparateurD_Index);
                   break;
                 }
               }

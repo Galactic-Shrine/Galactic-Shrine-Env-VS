@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>Ah i miei occhi! Perché questa consolle è troppo piccola?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>File non valido</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Informazioni</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>SUCCESSO</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>ERRORE</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>AVVERTIMENTO</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>La lunghezza della chiave di crittografia non è valida. La chiave di cifratura deve essere di 32 byte.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Inizializzazione dell'archivio.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Creazione di un archivio a {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>File aggiunto: {0} (dimensione originale: {1} byte).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Creazione dell'archivio completata.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Estrazione dell'archivio di {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Firma archivio non valida.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Versione GsP non supportata: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Errore checksum per file {0}. L'estrazione è stata interrotta.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Non concordanza del checksum.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>File estratto: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Extraction complete!</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Elenco dei file nell'archivio {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>File trovato:</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>File trovato:</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>File trovato:</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>File trovato:</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>File trovato:</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Il percorso non può essere vuoto.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Il nome del file non può essere vuoto.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Il messaggio non può essere vuoto.</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Il percorso o il nome del file di registro non è definito.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Non ha implementato l'algoritmo hash.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Il parametro `{0}` non può essere vuoto.!</value>
+  </data>
 </root>

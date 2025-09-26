@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Нажмите любую клавишу, чтобы продолжить!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Черный текст</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Темно-синий текст</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Текст Темно-зеленый</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Текст Темно-голубой</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Темно-красный текст</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Темно-пурпурный текст</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Текст Темно-желтый</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Текст Темно-серый</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Синий текст</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Зеленый текст</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Голубой текст</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Красный текст</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Желтый текст</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Серый текст</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Черный фон</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Фон Темно-синий</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Фон Темно-зеленый</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Фон Темно-голубой</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Фон Темно-красный</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Темно-пурпурный фон</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Фон Темно-желтый</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Фон Темно-серый</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Синий фон</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Зеленый фон</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Голубой фон</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Красный фон</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Желтый фон</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Серая объединительная плата</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Настраивайте цвета по своему усмотрению</value>
+  </data>
 </root>

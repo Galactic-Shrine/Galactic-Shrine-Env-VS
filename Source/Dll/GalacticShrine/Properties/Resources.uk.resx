@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>Ах, мої очі! Чому ця консоль занадто маленька?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Недійсний файл GSP.!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Інформація</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>Успіх</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>УВАГА</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>Довжина недійсного ключа шифрування. Ключ шифрування має бути 32 байта.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Ініціалізація архіву.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Створення архіву в {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Файл додано: {0} (початковий розмір: {1} байт).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Створення архіву завершено.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Видобування архіву з {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Недійсний архівний підпис.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Непідтримувана версія GsP: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Помилка контрольної суми для файлу {0}. Видобуток перервано.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Невідповідність контрольної суми.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Видобутий файл: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Отримання ресурсів завершене.</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Список файлів в архіві {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Файл знайдено: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Файл знайдено: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Файл знайдено: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Файл знайдено: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Файл знайдено: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Шлях не може бути порожнім.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Ім 'я файлу не може бути порожнім.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Повідомлення не може бути порожнім.!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Шлях або ім 'я файлу журналу не встановлено.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Не впровадив алгоритм хешу.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Параметр `{0}` не може бути порожнім.!</value>
+  </data>
 </root>

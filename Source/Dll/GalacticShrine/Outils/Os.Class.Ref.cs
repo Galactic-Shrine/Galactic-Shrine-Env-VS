@@ -16,10 +16,28 @@ namespace GalacticShrine.Outils {
    **/
   public static class OS {
 
+    /**
+     * <summary>
+     *   [FR] Retourne vrai si c'est un système Windows
+     *   [EN] Returns true if the current OS is Windows
+     * </summary>
+     **/
     public static bool EstWin => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
+    /**
+     * <summary>
+     *   [FR] Retourne vrai si c'est un système macOS
+     *   [EN] Returns true if the current OS is macOS
+     * </summary>
+     **/
     public static bool EstOsx => RuntimeInformation.IsOSPlatform(OSPlatform.OSX);
 
+    /**
+     * <summary>
+     *   [FR] Retourne vrai si c'est un système Linux
+     *   [EN] Returns true if the current OS is Linux
+     * </summary>
+     **/
     public static bool EstGnu => RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
 
     /**

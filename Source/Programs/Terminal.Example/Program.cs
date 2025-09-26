@@ -8,7 +8,7 @@ using System.Reflection;
 using GalacticShrine.Enumeration;
 using GalacticShrine.IO; // Utiliser pour la fonction : Chemin.Combiner()
 using GalacticShrine.Outils;
-using GsP = GalacticShrine.Properties;
+using GsProp = GalacticShrine.Properties;
 using GalacticShrine.Terminal;
 using GalacticShrine.TerminalExample.Properties;
 using GalacticShrine.UI.Terminal;
@@ -72,9 +72,9 @@ namespace GalacticShrine.TerminalExample {
 			}
 			catch(ArgumentOutOfRangeException) {
 
-				MessageException(Message: GsP.Resources.ConsoleEstTropPetite);
+				MessageException(Message: GsProp.Resources.ConsoleEstTropPetite);
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}
@@ -244,7 +244,7 @@ namespace GalacticShrine.TerminalExample {
 
         Retour();
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}
@@ -259,21 +259,24 @@ namespace GalacticShrine.TerminalExample {
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "Fichier GalacticShrine.dll :");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"ProgramFiles\"] => {GalacticShrine.Repertoire["ProgramFiles"]}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Documents\"] => {GalacticShrine.Repertoire["Documents"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Roaming\"] => {GalacticShrine.Repertoire["Roaming"]}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Racine\"] => {GalacticShrine.Repertoire["Racine"]}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Societe\"] => {GalacticShrine.Repertoire["Societe"]}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Config\"] => {GalacticShrine.Repertoire["Config"]}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Source\"] => {GalacticShrine.Repertoire["Source"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"Log\"] => {GalacticShrine.Repertoire["Log"]}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Repertoire[\"DLog\"] => {GalacticShrine.Repertoire["DLog"]}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.DossierReference.Rs => {Rs}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.DossierReference.RepertoireSeparateur => {RepertoireSeparateur}");
         Terminal.Ecrire(ReserveToutLaLigne: true, Texte: "");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.RepertoiresSeparateursInvalides => {GsP.Resources.RepertoiresSeparateursInvalides}", Argument: $"{ParamTest}");
-        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.FichierTermineInvalide => {GsP.Resources.FichierTermineInvalide}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.RepertoiresSeparateursInvalides => {GsProp.Resources.RepertoiresSeparateursInvalides}", Argument: $"{ParamTest}");
+        Terminal.Ecrire(ReserveToutLaLigne: true, Texte: $"GalacticShrine.Resources.FichierTermineInvalide => {GsProp.Resources.FichierTermineInvalide}");
         Terminal.LigneSeparatrice();
         
         Retour();
       }
-      catch(Exception ex) {
+      catch(System.Exception ex) {
 
         MessageException(Message: ex.ToString());
       }
@@ -297,7 +300,7 @@ namespace GalacticShrine.TerminalExample {
 
         Retour();
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}
@@ -314,7 +317,7 @@ namespace GalacticShrine.TerminalExample {
 
 				Retour();
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}
@@ -331,7 +334,7 @@ namespace GalacticShrine.TerminalExample {
 
 				Retour();
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}
@@ -348,7 +351,7 @@ namespace GalacticShrine.TerminalExample {
 
 				Retour();
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}
@@ -368,7 +371,7 @@ namespace GalacticShrine.TerminalExample {
 
         Retour();
 			}
-			catch(Exception ex) {
+			catch(System.Exception ex) {
 
 				MessageException(Message: ex.ToString());
 			}

@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Pressione qualquer tecla para continuar!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Texto a preto</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Texto em azul escuro</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Texto Verde escuro</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Texto Ciano escuro</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Texto vermelho escuro</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Texto magenta escuro</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Texto Amarelo escuro</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Texto Cinzento escuro</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Texto azul</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Texto verde</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Texto em ciano</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Texto vermelho</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Texto amarelo</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Texto cinzento</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Fundo preto</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Fundo Azul escuro</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Fundo Verde escuro</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Fundo Ciano escuro</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Fundo Vermelho escuro</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Fundo magenta escuro</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Fundo Amarelo escuro</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Fundo Cinzento escuro</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Fundo azul</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Fundo verde</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Fundo ciano</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Fundo vermelho</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Fundo amarelo</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Placa traseira cinzenta</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Personalize as cores à sua medida</value>
+  </data>
 </root>

@@ -145,7 +145,7 @@
     <value>Press the [Q] key and then press Enter to exit</value>
   </data>
   <data name="VariableValeurs" xml:space="preserve">
-    <value>Variable &amp; values!</value>
+    <value>Variable &amp; values</value>
   </data>
   <data name="ArrierePlanDefault" xml:space="preserve">
     <value>Background Default</value>
@@ -233,5 +233,92 @@
   </data>
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Press any key to continue</value>
+  </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Black text</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Dark blue text</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Text Dark green</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Text Dark cyan</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Dark red text</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Dark magenta text</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Text Dark yellow</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Text Dark gray</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Blue text</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Green text</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Cyan text</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Red text</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Yellow text</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Grey text</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Black background</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Background Dark blue</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Background Dark green</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Background Dark cyan</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Background Dark red</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Dark magenta background</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Background Dark yellow</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Background Dark grey</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Blue background</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Green background</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Cyan background</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Red background</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Yellow background</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Grey backplane</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Customize colors to suit your needs</value>
   </data>
 </root>

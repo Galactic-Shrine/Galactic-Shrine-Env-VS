@@ -2,11 +2,21 @@
 
   <PropertyGroup>
     <Nullable>enable</Nullable>
-    <Product>$(AssemblyName.Replace("GalacticShrine",  "Galactic-Shrine").Replace(".",  " ")) Core .NET</Product>
-    <AssemblyVersion>1.1.7.35</AssemblyVersion>
+	<TargetFrameworks>$(Frameworks)</TargetFrameworks>
+    <Product>$(AssemblyName.Replace("GalacticShrine",  $(Authors)).Replace(".",  " ")) $(Product)</Product>
+    <AssemblyVersion>1.1.8.108</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
+    <Configurations>Debug;Release</Configurations>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

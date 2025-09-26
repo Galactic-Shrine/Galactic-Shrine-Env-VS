@@ -61,11 +61,128 @@ namespace GalacticShrine.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Algorithme de hachage non implémenté..
+        /// </summary>
+        public static string AlgorithmeHachageNonImplemente {
+            get {
+                return ResourceManager.GetString("AlgorithmeHachageNonImplemente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à AVERTISSEMENT.
+        /// </summary>
+        public static string AVERTISSEMENT {
+            get {
+                return ResourceManager.GetString("AVERTISSEMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le chemin ou le nom du fichier journal n&apos;est pas défini..
+        /// </summary>
+        public static string CheminOuNomDuJournalPasDefini {
+            get {
+                return ResourceManager.GetString("CheminOuNomDuJournalPasDefini", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Ah mes yeux ! Pourquoi cette console est trop petite ?.
         /// </summary>
         public static string ConsoleEstTropPetite {
             get {
                 return ResourceManager.GetString("ConsoleEstTropPetite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Création d&apos;une archive à {0}....
+        /// </summary>
+        public static string CreationDArchive {
+            get {
+                return ResourceManager.GetString("CreationDArchive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Création de l&apos;archive terminée..
+        /// </summary>
+        public static string CreationDArchiveTerminee {
+            get {
+                return ResourceManager.GetString("CreationDArchiveTerminee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à ERREUR.
+        /// </summary>
+        public static string ERREUR {
+            get {
+                return ResourceManager.GetString("ERREUR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Erreur de connexion au serveur : {0}.
+        /// </summary>
+        public static string ErreurConnexionServeur {
+            get {
+                return ResourceManager.GetString("ErreurConnexionServeur", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Erreur de somme de contrôle pour le fichier {0}. L&apos;extraction a été interrompue..
+        /// </summary>
+        public static string ErreurGsPDeSomme {
+            get {
+                return ResourceManager.GetString("ErreurGsPDeSomme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Extraction de l&apos;archive de {0}....
+        /// </summary>
+        public static string ExtractionDArchive {
+            get {
+                return ResourceManager.GetString("ExtractionDArchive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Extraction terminée..
+        /// </summary>
+        public static string ExtractionTerminee {
+            get {
+                return ResourceManager.GetString("ExtractionTerminee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier ajouté : {0} (taille originale : {1} octets)..
+        /// </summary>
+        public static string FichierAjouteGsP {
+            get {
+                return ResourceManager.GetString("FichierAjouteGsP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier extrait : {0}..
+        /// </summary>
+        public static string FichierExtrait {
+            get {
+                return ResourceManager.GetString("FichierExtrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier GSP non valide..
+        /// </summary>
+        public static string FichierGspInvalide {
+            get {
+                return ResourceManager.GetString("FichierGspInvalide", resourceCulture);
             }
         }
         
@@ -79,11 +196,182 @@ namespace GalacticShrine.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier trouvé : {0}..
+        /// </summary>
+        public static string FichierTrouve {
+            get {
+                return ResourceManager.GetString("FichierTrouve", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier trouvé : {0}..
+        /// </summary>
+        public static string FichierTrouve1 {
+            get {
+                return ResourceManager.GetString("FichierTrouve1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier trouvé : {0}..
+        /// </summary>
+        public static string FichierTrouve2 {
+            get {
+                return ResourceManager.GetString("FichierTrouve2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier trouvé : {0}..
+        /// </summary>
+        public static string FichierTrouve3 {
+            get {
+                return ResourceManager.GetString("FichierTrouve3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fichier trouvé : {0}..
+        /// </summary>
+        public static string FichierTrouve4 {
+            get {
+                return ResourceManager.GetString("FichierTrouve4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à INFO.
+        /// </summary>
+        public static string INFO {
+            get {
+                return ResourceManager.GetString("INFO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Initialisation de l&apos;archive..
+        /// </summary>
+        public static string InitArchive {
+            get {
+                return ResourceManager.GetString("InitArchive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le chemin ne peut pas être vide..
+        /// </summary>
+        public static string LeCheminNePeutPasEtreVide {
+            get {
+                return ResourceManager.GetString("LeCheminNePeutPasEtreVide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le message ne peut pas être vide..
+        /// </summary>
+        public static string LeMessageNePeutPasEtreVide {
+            get {
+                return ResourceManager.GetString("LeMessageNePeutPasEtreVide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le nom du fichier ne peut pas être vide..
+        /// </summary>
+        public static string LeNomDuFichierNePeutPasEtreVide {
+            get {
+                return ResourceManager.GetString("LeNomDuFichierNePeutPasEtreVide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le paramètre `{0}` ne peut pas être vide..
+        /// </summary>
+        public static string LeParametreNePeutPasEtreVide {
+            get {
+                return ResourceManager.GetString("LeParametreNePeutPasEtreVide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Liste des fichiers dans l&apos;archive {0}....
+        /// </summary>
+        public static string ListeDesFichiersDansLArchive {
+            get {
+                return ResourceManager.GetString("ListeDesFichiersDansLArchive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Non concordance de la somme de contrôle..
+        /// </summary>
+        public static string NonConcordanceDeLaSommeDeControle {
+            get {
+                return ResourceManager.GetString("NonConcordanceDeLaSommeDeControle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Le fragment de chemin d&apos;accès &apos;{0}&apos; contient des séparateurs de répertoire invalides..
         /// </summary>
         public static string RepertoiresSeparateursInvalides {
             get {
                 return ResourceManager.GetString("RepertoiresSeparateursInvalides", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le serveur est en ligne..
+        /// </summary>
+        public static string ServeurEnLigne {
+            get {
+                return ResourceManager.GetString("ServeurEnLigne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le serveur est hors ligne..
+        /// </summary>
+        public static string ServeurHorsLigne {
+            get {
+                return ResourceManager.GetString("ServeurHorsLigne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Signature d&apos;archive invalide..
+        /// </summary>
+        public static string SignatureDArchiveInvalide {
+            get {
+                return ResourceManager.GetString("SignatureDArchiveInvalide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à SUCCÉS.
+        /// </summary>
+        public static string SUCCES {
+            get {
+                return ResourceManager.GetString("SUCCES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La longueur de la clé de chiffrement non valide. La clé de chiffrement doit être de 32 octets..
+        /// </summary>
+        public static string TailleDeCleInvalide {
+            get {
+                return ResourceManager.GetString("TailleDeCleInvalide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Version GsP non prise en charge : {0}..
+        /// </summary>
+        public static string VersionGsPNonSupportee {
+            get {
+                return ResourceManager.GetString("VersionGsPNonSupportee", resourceCulture);
             }
         }
     }

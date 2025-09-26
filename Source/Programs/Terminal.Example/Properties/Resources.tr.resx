@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Devam etmek için herhangi bir tuşa basın!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Siyah metin</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Koyu mavi metin</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Metin Koyu yeşil</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Metin Koyu camgöbeği</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Koyu kırmızı metin</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Koyu eflatun metin</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Metin Koyu sarı</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Metin Koyu gri</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Mavi metin</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Yeşil metin</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Camgöbeği metin</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Kırmızı metin</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Sarı metin</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Gri metin</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Siyah arka plan</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Arka plan Koyu mavi</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Arka plan Koyu yeşil</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Arka plan Koyu camgöbeği</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Arka plan Koyu kırmızı</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Koyu eflatun arka plan</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Arka plan Koyu sarı</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Arka plan Koyu gri</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Mavi arka plan</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Yeşil arka plan</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Camgöbeği arka plan</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Kırmızı arka plan</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Sarı arka plan</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Gri arka panel</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Renkleri size uyacak şekilde özelleştirin</value>
+  </data>
 </root>

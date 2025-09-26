@@ -3,13 +3,20 @@
    <!-- Version du projet -->
    <InformationalVersion>1.0.0-Alpha</InformationalVersion>
    
+   <!-- 
+    Utiliser la commande `-[Nouveaux]-` pour ajouter une nouvelle entrée.
+    Exemple: -[Nouveaux]-2025, NomDuContributeur - Copyright.-[Nouveaux]-2025 - NomDuGroupe, Copyright. 
+   -->
+   <ContributorAndCopyright></ContributorAndCopyright>
+   
    <!-- Compilation -->   
    <ImplicitUsings>disable</ImplicitUsings>  
    <RuntimeIdentifiers>win;win-x64;win-x86;win-arm;win-arm64;linux;linux-x64;linux-x86;linux-arm;linux-arm64;osx;osx-x64</RuntimeIdentifiers>
    <Platforms>AnyCPU;x64;x86;arm;arm64</Platforms>
    <!--<BaseOutputPath>..\..\..\Build</BaseOutputPath>-->
 
-   <NoWarn>0618;1591;1573;1701;1702;8601;8603;8618;8625;8765;8767;</NoWarn>
+   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
    <!-- Fichier Compiler -->
    <GenerateDocumentationFile>false</GenerateDocumentationFile>
    <GenerateDependencyFile>false</GenerateDependencyFile>
@@ -30,11 +37,14 @@
         [EN] Do not delete or modify
    -->
    <!-- Information -->
-   <Authors>Galactic-Shrine</Authors>
-   <Copyright>© 2023, $(Authors) - All rights reserved.</Copyright>
+   <Authors>⋞Galactic-Shrine⋟</Authors>
+   <CopyrightDate>2023 - 2025</CopyrightDate>
+   <Product>.NET</Product>
+   <Copyright>© $(CopyrightDate), $(Authors) - All rights reserved.$(ContributorAndCopyright.Replace("-[Nouveaux]-",  " © "))</Copyright>
 
    <!-- Frameworks -->
-   <TargetFrameworks>net6.0</TargetFrameworks>
+   <Frameworks>net8.0</Frameworks>
+   <FrameworksSystem>net8.0-windows</FrameworksSystem>
  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugType>embedded</DebugType>
@@ -47,6 +57,7 @@
     <UpdatePackageVersion>False</UpdatePackageVersion>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+    <NoWarn>0618;1591;1573;1701;1702;1816;8600;8601;8603;8604;8618;8625;8765;8767;</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -56,42 +67,43 @@
     <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
     <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
     <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
-    <AssemblyVersionSettings>None.None.None.Increment</AssemblyVersionSettings>
+    <AssemblyVersionSettings>None.None.None.None</AssemblyVersionSettings>
     <UpdatePackageVersion>False</UpdatePackageVersion>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+    <NoWarn>0618;1591;1573;1701;1702;1816;8600;8601;8603;8604;8618;8625;8765;8767;</NoWarn>
   </PropertyGroup>
 
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|x86'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|arm'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|arm64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|x86'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|arm'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|arm64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 </Project>

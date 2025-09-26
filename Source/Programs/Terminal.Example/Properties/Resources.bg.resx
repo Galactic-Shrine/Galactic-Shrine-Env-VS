@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Натиснете произволен клавиш, за да продължите!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Черен текст</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Тъмно син текст</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Текст Тъмнозелено</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Текст Тъмно синьо</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Тъмночервен текст</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Тъмно магента текст</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Текст Тъмно жълто</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Текст Тъмно сиво</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Син текст</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Зелен текст</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Синьо-зелен текст</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Червен текст</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Жълт текст</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Сив текст</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Черен фон</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Фон Тъмно синьо</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Фон Тъмнозелен</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Фон Тъмно синьо</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Фон Тъмно червено</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Тъмно пурпурен фон</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Фон Тъмно жълто</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Фон Тъмно сиво</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Син фон</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Зелен фон</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Синьосин фон</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Червен фон</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Жълт фон</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Сива задна платка</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Персонализирайте цветовете според нуждите си</value>
+  </data>
 </root>

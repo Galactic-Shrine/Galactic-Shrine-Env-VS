@@ -10,7 +10,7 @@ using System.IO;
 using GalacticShrine.Configuration.Analyseur;
 using GalacticShrine.Configuration.Configuration;
 using GalacticShrine.Enumeration.Configuration;
-using GalacticShrine.Exceptions.Configuration;
+using GalacticShrine.Exception.Configuration;
 using GalacticShrine.Configuration.Properties;
 using GalacticShrine.Modele.Configuration.Ini;
 using static GalacticShrine.Configuration.Analyseur.TamponDeChaine;
@@ -64,7 +64,7 @@ namespace GalacticShrine.Configuration {
      *   [EN] Contains a list of exceptions caught during parsing.
      * </summary>
      **/
-    private readonly List<Exception> ErreurExceptions;
+    private readonly List<System.Exception> ErreurExceptions;
 
     /**
      * <summary>
@@ -88,7 +88,7 @@ namespace GalacticShrine.Configuration {
      *        otherwise, it will only contain the same exception as the one raised.
      * </remarks>
      **/
-    public ReadOnlyCollection<Exception> Erreur => ErreurExceptions.AsReadOnly();
+    public ReadOnlyCollection<System.Exception> Erreur => ErreurExceptions.AsReadOnly();
 
     /**
      * <summary>
@@ -121,7 +121,7 @@ namespace GalacticShrine.Configuration {
     
       Schema           = new SchemaIni();
       Configuration    = new AnalyseurIni();
-      ErreurExceptions = new List<Exception>();
+      ErreurExceptions = new List<System.Exception>();
     }
 
     /**
@@ -209,7 +209,7 @@ namespace GalacticShrine.Configuration {
 
           LigneDeProcessus(LigneActuelle: Tampon, DonneesIni: DonneesIni);
         }
-        catch(Exception ex) {
+        catch(System.Exception ex) {
 
           ErreurExceptions.Add(item: ex);
           if(Configuration.LancerDesExceptionsEnCasDerreur) {
@@ -247,7 +247,7 @@ namespace GalacticShrine.Configuration {
           ListeDeCommentairesActuelleTemp.Clear();
         }
       }
-      catch(Exception ex) {
+      catch(System.Exception ex) {
 
         ErreurExceptions.Add(ex);
         if(Configuration.LancerDesExceptionsEnCasDerreur) {
@@ -277,7 +277,7 @@ namespace GalacticShrine.Configuration {
       if(!VerifieSiExiste(Localisation: new FichierReference(Chemins: FichierA_Ouvrir)))
         throw new ArgumentException(Resources.FichierNonTrouve);
 
-      string ChaineIni = LireTousLeTexte(Localisation: new FichierReference(Chemins: FichierA_Ouvrir));
+      string ChaineIni = LireToutLeTexte(Localisation: new FichierReference(Chemins: FichierA_Ouvrir));
 
       return Analyse(LecteurDeTexte: new StringReader(ChaineIni));
     }

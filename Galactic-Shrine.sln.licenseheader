@@ -1,22 +1,45 @@
 ﻿extensions: designer.cs generated.cs
 extensions: .cs .cpp .h
 /**
- * Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
- * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+ * Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+ * Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+ * 
+ * Mozilla Public License 2.0
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.  
+ * If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+ * Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
  **/
 
 extensions: .aspx .ascx
 <%-- 
-Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
-Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+
+Mozilla Public License 2.0
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.  
+If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
 --%>
 
 extensions: .vb
-' Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
-' Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+' Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+' Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+'
+' Mozilla Public License 2.0
+'
+' This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.  
+' If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/. 
 
 extensions:  .xml .config .xsd
 <!--
-Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
-Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+
+Mozilla Public License 2.0
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.  
+If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
 -->

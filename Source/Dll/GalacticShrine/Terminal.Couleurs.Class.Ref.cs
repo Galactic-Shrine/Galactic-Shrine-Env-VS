@@ -5,8 +5,20 @@
 
 namespace GalacticShrine.Terminal {
 
-	public static class Couleurs {
-    
+ /**
+  * <summary>
+  *   [FR] Classe statique Couleurs, offrant des constantes pour identifier des couleurs (texte / fond) dans un terminal.
+  *   [EN] Static Couleurs class, providing constants to identify text/background colors in a terminal.
+  * </summary>
+  **/
+  public static class Couleurs {
+
+    /**
+     * <summary>
+     *   [FR] Classe statique de constantes de couleurs pour le texte.
+     *   [EN] Static class of color constants for text.
+     * </summary>
+     **/
     public static class Txt {
 
       public const string Default       = "text.default";
@@ -33,6 +45,12 @@ namespace GalacticShrine.Terminal {
       public const string Danger        = "text.danger";
     }
 
+    /**
+     * <summary>
+     *   [FR] Classe statique de constantes de couleurs pour le fond (background).
+     *   [EN] Static class of color constants for background.
+     * </summary>
+     **/
     public static class Bg {
       
       public const string Default       = "bg.default";
@@ -59,6 +77,22 @@ namespace GalacticShrine.Terminal {
       public const string Danger        = "bg.danger";
     }
 
+    /**
+    * <summary>
+    *   [FR] Retourne la couleur de texte en fonction d'un booléen (estValide).
+    *        Si vrai, renvoie la couleur <c>Txt.Primaire</c>, sinon <c>Txt.Sourdine</c>.
+    *   [EN] Returns the text color depending on a boolean (isValid).
+    *        If true, returns <c>Txt.Primaire</c>, otherwise <c>Txt.Sourdine</c>.
+    * </summary>
+    * <param name="isValid">
+    *   [FR] Indique si l'état est valide ou non.
+    *   [EN] Indicates whether the state is valid or not.
+    * </param>
+    * <returns>
+    *   [FR] Une chaîne représentant la clé de la couleur à utiliser.
+    *   [EN] A string representing the color key to use.
+    * </returns>
+    **/
     public static string TxtStatus(bool isValid) {
 
       return (isValid ? Txt.Primaire : Txt.Sourdine);

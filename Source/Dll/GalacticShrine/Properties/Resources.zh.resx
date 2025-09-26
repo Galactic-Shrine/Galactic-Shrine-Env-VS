@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>啊，我的眼睛！为什么这个游戏机太小了？ ！</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>GSP文件无效。！</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>无效加密密钥的长度。加密密钥必须为32个字节。！</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>正在初始化存档。！</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>正在 {0} 处创建存档... ！</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>文件已添加： {0} （原始大小： {1} 字节）。!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>存档创建完成。！</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>正在从 {0} 提取存档... ！</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>存档签名无效。！</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>不支持的GsP版本： {0} 。!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>文件 {0} 的校验和错误。提取已中断。！</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>校验和不匹配。！</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>已提取文件： {0} 。!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>取出完成 。</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>存档 {0} 中的文件列表... ！</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>已找到文件： {0} 。!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>已找到文件： {0} 。!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>已找到文件： {0} 。!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>已找到文件： {0} 。!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>已找到文件： {0} 。!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>路径不能为空。！</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>文件名不能为空</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>消息不能为空。！</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>未设置日志文件的路径或名称。!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>尚未实施哈希算法。</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>参数“ {0} ”不能为空。!</value>
+  </data>
 </root>

@@ -1,10 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+	<TargetFrameworks>$(Frameworks)</TargetFrameworks>
+    <Product>$(AssemblyName.Replace("GalacticShrine",  $(Authors)).Replace(".",  " ")) $(Product)</Product>
+    <AssemblyVersion>1.0.0.19</AssemblyVersion>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
 </Project>

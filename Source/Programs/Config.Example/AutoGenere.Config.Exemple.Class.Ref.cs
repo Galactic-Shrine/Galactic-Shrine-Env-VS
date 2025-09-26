@@ -69,7 +69,7 @@ namespace GalacticShrine.ConfigExample {
           // EcrireToutesLeslignes(Localisation: new FichierReference(Chemins: Nom), Contenu: Config, Encodage: Encoding.UTF8);
         }
       }
-      catch(Exception Ex) {
+      catch(System.Exception Ex) {
 
         //Terminal = new Format(Theme: Sombre); (using GalacticShrine.Terminal; using static GalacticShrine.UI.Terminal.Theme;)
         //Terminal.Ecrire(ReserveToutLaLigne: true, Texte: Ex.ToString(), Couleur: Couleurs.Txt.Danger);

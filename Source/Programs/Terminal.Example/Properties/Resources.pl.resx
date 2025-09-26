@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Naciśnij dowolny klawisz, aby kontynuować!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Czarny tekst</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Ciemnoniebieski tekst</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Tekst Ciemnozielony</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Tekst Ciemny cyjan</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Ciemnoczerwony tekst</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Tekst w kolorze ciemnej magenty</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Tekst Ciemnożółty</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Tekst Ciemnoszary</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Niebieski tekst</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Zielony tekst</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Cyjanowy tekst</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Czerwony tekst</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Żółty tekst</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Szary tekst</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Czarne tło</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Tło Ciemnoniebieski</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Tło Ciemnozielony</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Tło Ciemny cyjan</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Tło Ciemnoczerwony</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Tło w kolorze ciemnej magenty</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Tło Ciemnożółty</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Tło Ciemnoszary</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Niebieskie tło</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Zielone tło</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Cyjanowe tło</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Czerwone tło</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Żółte tło</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Szara płyta montażowa</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Dostosuj kolory do swoich potrzeb</value>
+  </data>
 </root>

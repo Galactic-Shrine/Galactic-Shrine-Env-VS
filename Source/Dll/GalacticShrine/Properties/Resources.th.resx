@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>อ้าตาของฉัน! ทำไมคอนโซลนี้เล็กเกินไป?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>ไฟล์ GSP ไม่ถูกต้อง!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>ข้อมูล</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>ความสำเร็จ</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>คำเตือน</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>ความยาวของคีย์การเข้ารหัสที่ไม่ถูกต้องคีย์การเข้ารหัสต้องมี 32 ไบต์!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>กำลังเตรียมใช้งานที่เก็บถาวร!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>กำลังสร้างที่เก็บถาวรที่ {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>เพิ่มไฟล์: {0} (ขนาดเดิม: {1} ไบต์) แล้ว!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>การสร้างแฟ้มจัดเก็บเสร็จสมบูรณ์แล้ว!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>กำลังแยกแฟ้มจัดเก็บจาก {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>ลายเซ็นเก็บถาวรไม่ถูกต้อง!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>เวอร์ชัน GsP ที่ไม่รองรับ: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>ตรวจสอบข้อผิดพลาดสำหรับไฟล์ {0} การสกัดถูกขัดจังหวะ!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Checksum ไม่ตรงกัน!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>ไฟล์ที่แยกได้: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>การแยกเสร็จสมบูรณ์!</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>รายชื่อไฟล์ในคลังเก็บ {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>พบไฟล์: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>พบไฟล์: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>พบไฟล์: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>พบไฟล์: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>พบไฟล์: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>เส้นทางต้องไม่ว่างเปล่า!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>ชื่อไฟล์ต้องไม่ว่างเปล่า!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>ข้อความต้องไม่ว่างเปล่า!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>ไม่ได้ตั้งพาธหรือชื่อของไฟล์บันทึก!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>ยังไม่ได้ใช้อัลกอริทึมแฮช</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>ต้องกรอกพารามิเตอร์ '{0}'!</value>
+  </data>
 </root>

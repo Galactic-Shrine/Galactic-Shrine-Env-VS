@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>[Ùisdean] Carson a tha seo ro bheag?</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Faidhle GSP mì - dhligheach!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Fiosrachadh</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>Soirbheachas</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>Mearachd</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>Rabhadh</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>Faid na h - iuchrach crioptachaidh neo - dhligheach. Feumaidh an iuchair crioptachaidh a bhith 32 bytes!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>A 'tòiseachadh tasglann!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>A 'cruthachadh tasglann aig {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Chuir am faidhle: {0} (am meud tùsail: {1} bytes).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Cruthachadh tasglann crìochnaichte!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>A 'toirt a - mach tasglann bho {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Soidhneadh tasglainn mì - dhligheach!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Tionndadh GsP gun taic: {0}!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Mearachd leis an t - suim - dearbhaidh airson an fhaidhle {0}. Tha sin dìreach lazy!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Tha sin dìreach lazy!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Faidhle air a thoirt a - mach: {0}.</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Tha sin dìreach lazy!</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Liosta de fhaidhlichean ann an tasglann {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Chaidh am faidhle a lorg: {0}.</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Chaidh am faidhle a lorg: {0}.</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Chaidh am faidhle a lorg: {0}.</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Chaidh am faidhle a lorg: {0}.</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Chaidh am faidhle a lorg: {0}.</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Chan urrainn don t - slighe a bhith sgoinneil!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Chan urrainn ainm an fhaidhle a bhith falamh!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Chan urrainn don teachdaireachd a bhith falamh!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Chan eil slighe no ainm an fhaidhle log air a shuidheachadh!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Cha do chuir Algorithm Hash.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Chan urrainn don phasgan '{0}' a bhith falamh.!</value>
+  </data>
 </root>

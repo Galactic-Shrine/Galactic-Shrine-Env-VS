@@ -126,4 +126,100 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>Ah mes yeux ! Pourquoi cette console est trop petite ?</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Fichier GSP non valide.</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>SUCCÉS</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>ERREUR</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>AVERTISSEMENT</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>La longueur de la clé de chiffrement non valide. La clé de chiffrement doit être de 32 octets.</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Initialisation de l'archive.</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Création d'une archive à {0}...</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Fichier ajouté : {0} (taille originale : {1} octets).</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Création de l'archive terminée.</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Extraction de l'archive de {0}...</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Signature d'archive invalide.</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Version GsP non prise en charge : {0}.</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Erreur de somme de contrôle pour le fichier {0}. L'extraction a été interrompue.</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Non concordance de la somme de contrôle.</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Fichier extrait : {0}.</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Extraction terminée.</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Liste des fichiers dans l'archive {0}...</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Fichier trouvé : {0}.</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Fichier trouvé : {0}.</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Fichier trouvé : {0}.</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Fichier trouvé : {0}.</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Fichier trouvé : {0}.</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Le chemin ne peut pas être vide.</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Le nom du fichier ne peut pas être vide.</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Le message ne peut pas être vide.</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Le chemin ou le nom du fichier journal n'est pas défini.</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Algorithme de hachage non implémenté.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Le paramètre `{0}` ne peut pas être vide.</value>
+  </data>
+  <data name="ServeurEnLigne" xml:space="preserve">
+    <value>Le serveur est en ligne.</value>
+  </data>
+  <data name="ServeurHorsLigne" xml:space="preserve">
+    <value>Le serveur est hors ligne.</value>
+  </data>
+  <data name="ErreurConnexionServeur" xml:space="preserve">
+    <value>Erreur de connexion au serveur : {0}</value>
+  </data>
 </root>

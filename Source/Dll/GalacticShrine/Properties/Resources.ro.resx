@@ -126,4 +126,91 @@
   <data name="ConsoleEstTropPetite" xml:space="preserve">
     <value>Ah, ochii mei! De ce este această consolă prea mică?!</value>
   </data>
+  <data name="FichierGspInvalide" xml:space="preserve">
+    <value>Fișier GSP nevalid.!</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>Informații</value>
+  </data>
+  <data name="SUCCES" xml:space="preserve">
+    <value>SUCCES</value>
+  </data>
+  <data name="ERREUR" xml:space="preserve">
+    <value>EROARE</value>
+  </data>
+  <data name="AVERTISSEMENT" xml:space="preserve">
+    <value>AVERTIZARE</value>
+  </data>
+  <data name="TailleDeCleInvalide" xml:space="preserve">
+    <value>Lungimea cheii de criptare nevalide. Cheia de criptare trebuie să fie de 32 de octeți.!</value>
+  </data>
+  <data name="InitArchive" xml:space="preserve">
+    <value>Se inițializează arhiva.!</value>
+  </data>
+  <data name="CreationDArchive" xml:space="preserve">
+    <value>Se creează arhiva la {0}...!</value>
+  </data>
+  <data name="FichierAjouteGsP" xml:space="preserve">
+    <value>Fișier adăugat: {0} (dimensiune originală: {1} octeți).!</value>
+  </data>
+  <data name="CreationDArchiveTerminee" xml:space="preserve">
+    <value>Crearea arhivei este finalizată.!</value>
+  </data>
+  <data name="ExtractionDArchive" xml:space="preserve">
+    <value>Se extrage arhiva din {0}...!</value>
+  </data>
+  <data name="SignatureDArchiveInvalide" xml:space="preserve">
+    <value>Semnătură arhivă nevalidă.!</value>
+  </data>
+  <data name="VersionGsPNonSupportee" xml:space="preserve">
+    <value>Versiune GsP neacceptată: {0}.!</value>
+  </data>
+  <data name="ErreurGsPDeSomme" xml:space="preserve">
+    <value>Eroare sumă de control pentru fișierul {0}. Extracția a fost întreruptă.!</value>
+  </data>
+  <data name="NonConcordanceDeLaSommeDeControle" xml:space="preserve">
+    <value>Nepotrivire sumă de control.!</value>
+  </data>
+  <data name="FichierExtrait" xml:space="preserve">
+    <value>Fișier extras: {0}.!</value>
+  </data>
+  <data name="ExtractionTerminee" xml:space="preserve">
+    <value>Extracție finalizată.!</value>
+  </data>
+  <data name="ListeDesFichiersDansLArchive" xml:space="preserve">
+    <value>Lista fișierelor din arhiva {0}...!</value>
+  </data>
+  <data name="FichierTrouve" xml:space="preserve">
+    <value>Fișier găsit: {0}.!</value>
+  </data>
+  <data name="FichierTrouve4" xml:space="preserve">
+    <value>Fișier găsit: {0}.!</value>
+  </data>
+  <data name="FichierTrouve3" xml:space="preserve">
+    <value>Fișier găsit: {0}.!</value>
+  </data>
+  <data name="FichierTrouve2" xml:space="preserve">
+    <value>Fișier găsit: {0}.!</value>
+  </data>
+  <data name="FichierTrouve1" xml:space="preserve">
+    <value>Fișier găsit: {0}.!</value>
+  </data>
+  <data name="LeCheminNePeutPasEtreVide" xml:space="preserve">
+    <value>Calea nu poate fi goală.!</value>
+  </data>
+  <data name="LeNomDuFichierNePeutPasEtreVide" xml:space="preserve">
+    <value>Numele fișierului nu poate rămâne necompletat.!</value>
+  </data>
+  <data name="LeMessageNePeutPasEtreVide" xml:space="preserve">
+    <value>Mesajul nu poate rămâne necompletat.!</value>
+  </data>
+  <data name="CheminOuNomDuJournalPasDefini" xml:space="preserve">
+    <value>Calea sau numele fișierului jurnal nu este setat.!</value>
+  </data>
+  <data name="AlgorithmeHachageNonImplemente" xml:space="preserve">
+    <value>Nu a implementat algoritmul hash.</value>
+  </data>
+  <data name="LeParametreNePeutPasEtreVide" xml:space="preserve">
+    <value>Parametrul `{0}` nu poate rămâne necompletat.!</value>
+  </data>
 </root>

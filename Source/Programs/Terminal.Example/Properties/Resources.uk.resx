@@ -234,4 +234,91 @@
   <data name="AppuyezNimporteQuelleTouche" xml:space="preserve">
     <value>Натисніть будь-яку клавішу, щоб продовжити!</value>
   </data>
+  <data name="TexteNoir" xml:space="preserve">
+    <value>Чорний текст</value>
+  </data>
+  <data name="TexteBleuFonce" xml:space="preserve">
+    <value>Темно-синій текст</value>
+  </data>
+  <data name="TexteVertFonce" xml:space="preserve">
+    <value>Текст Темно-зелений</value>
+  </data>
+  <data name="TexteCyanFonce" xml:space="preserve">
+    <value>Текст Темно-синій</value>
+  </data>
+  <data name="TexteRougeFonce" xml:space="preserve">
+    <value>Темно-червоний текст</value>
+  </data>
+  <data name="TexteMagentaFonce" xml:space="preserve">
+    <value>Темно-пурпурний текст</value>
+  </data>
+  <data name="TexteJauneFonce" xml:space="preserve">
+    <value>Текст Темно-жовтий</value>
+  </data>
+  <data name="TexteGrisFonce" xml:space="preserve">
+    <value>Текст Темно-сірий</value>
+  </data>
+  <data name="TexteBleu" xml:space="preserve">
+    <value>Синій текст</value>
+  </data>
+  <data name="TexteVert" xml:space="preserve">
+    <value>Зелений текст</value>
+  </data>
+  <data name="TexteCyan" xml:space="preserve">
+    <value>Текст блакитного кольору</value>
+  </data>
+  <data name="TexteRouge" xml:space="preserve">
+    <value>Червоний текст</value>
+  </data>
+  <data name="TexteJaune" xml:space="preserve">
+    <value>Жовтий текст</value>
+  </data>
+  <data name="TexteGris" xml:space="preserve">
+    <value>Сірий текст</value>
+  </data>
+  <data name="ArrierePlanNoir" xml:space="preserve">
+    <value>Чорний фон</value>
+  </data>
+  <data name="ArrierePlanBleuFonce" xml:space="preserve">
+    <value>Темно-синій фон Темно-синій</value>
+  </data>
+  <data name="ArrierePlanVertFonce" xml:space="preserve">
+    <value>Темно-зелений фон Темно-зелений</value>
+  </data>
+  <data name="ArrierePlanCyanFonce" xml:space="preserve">
+    <value>Тло Темно-блакитний</value>
+  </data>
+  <data name="ArrierePlanRougeFonce" xml:space="preserve">
+    <value>Темно-червоний фон Темно-червоний</value>
+  </data>
+  <data name="ArrierePlanMagentaFonce" xml:space="preserve">
+    <value>Темно-пурпурний фон</value>
+  </data>
+  <data name="ArrierePlanJauneFonce" xml:space="preserve">
+    <value>Темно-жовтий фон Темно-жовтий</value>
+  </data>
+  <data name="ArrierePlanGrisFonce" xml:space="preserve">
+    <value>Темно-сірий фон Темно-сірий</value>
+  </data>
+  <data name="ArrierePlanBleu" xml:space="preserve">
+    <value>Синій фон</value>
+  </data>
+  <data name="ArrierePlanVert" xml:space="preserve">
+    <value>Зелений фон</value>
+  </data>
+  <data name="ArrierePlanCyan" xml:space="preserve">
+    <value>Блакитний фон</value>
+  </data>
+  <data name="ArrierePlanRouge" xml:space="preserve">
+    <value>Червоний фон</value>
+  </data>
+  <data name="ArrierePlanJaune" xml:space="preserve">
+    <value>Жовтий фон</value>
+  </data>
+  <data name="ArrièrePlanGris" xml:space="preserve">
+    <value>Сіра задня панель</value>
+  </data>
+  <data name="PersonnaliserLesCouleur" xml:space="preserve">
+    <value>Налаштуйте кольори відповідно до ваших потреб</value>
+  </data>
 </root>
