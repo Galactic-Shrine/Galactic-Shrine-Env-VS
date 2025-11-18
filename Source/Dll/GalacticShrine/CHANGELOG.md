@@ -3,6 +3,30 @@
 > Nous sommes désolés : aucun changelog n’avait été maintenu jusqu’à présent.  
 > Cet historique démarre avec la version ci-dessous ; les changements antérieurs (2023–2025) n’ont pas été consignés.
 
+## [1.2.0.110] — 2025-10-26
+
+### Ajouté
+- **Stockage.Groupe** (`\Source\Dll\GalacticShrine\Stockage\Groupe.Class.Ref.cs`)
+  - Type simple pour regrouper des éléments (indexeurs, `Range`, `Count`, vue en lecture seule).
+- **Stockage.Catalogue** (`\Source\Dll\GalacticShrine\Stockage\Catalogue.Class.Ref.cs`)
+  - Dictionnaire case-insensitive de groupes par nom, accès direct via l’indexeur et énumération des noms.
+- **Fichier (catalogue d’extensions)** (`\Source\Dll\GalacticShrine\Fichier.Class.Ref.cs`)
+  - Classe statique exposant `Fichier.Extension` (catalogue prêt à l’emploi : Images, Audio, Vidéo, Documents, Scripts, Archives, Fonts, Config, Gs).
+
+### Modifié
+- **Renommages structurels**
+  - `Dossier.Class.Ref.cs` ➜ `Dossier.Reference.Class.Ref.cs`
+  - `Fichier.Class.Ref.cs` ➜ `Fichier.Reference.Class.Ref.cs`
+  - `Fichier.Systeme.Class.Ref.cs` ➜ `Fichier.Systeme.Reference.Class.Ref.cs`
+    > (Un nouveau `Fichier.Class.Ref.cs` coexiste désormais pour le **catalogue d’extensions**.)
+
+### Corrigé
+- N/A
+
+### Ruptures
+- Aucune (ajouts non-cassants, renommages conservant les types *Reference* existants).
+
+
 ## [1.2.0.109] — 2025-09-26
 
 ### Ajouté
