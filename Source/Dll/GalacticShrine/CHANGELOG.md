@@ -5,6 +5,31 @@
 
 ---
 
+## [1.2.0.112] - 2025-11-18
+
+### Modifié
+- `GalacticShrine.Enregistrement.Journalisation`
+  - Renforcement de la validation des paramètres `Chemin`, `Nom`, `Extension` et `Horodatage`
+    avec des exceptions localisées (`Resources`).
+  - Ajout d’un verrou interne pour rendre l’écriture dans les fichiers de log thread-safe.
+  - Centralisation de la construction du chemin complet et prise en compte de l’extension configurable.
+  - Gestion plus robuste du format d’horodatage : rétablissement du format par défaut
+    `dd-MM-yyyy HH:mm:ss` lorsqu’une valeur vide est fournie.
+  - Amélioration de la génération des messages de log :
+    - horodatage basé sur `CultureInfo.InvariantCulture`,
+    - meilleure utilisation des libellés localisés (`INFO`, `SUCCES`, `AVERTISSEMENT`, `ERREUR`).
+
+### Ajouté
+- Aucun nouvel élément public.
+
+### Corrigé
+- Réduction des risques de conditions de course lors d’écritures concurrentes dans les journaux.
+- Meilleure cohérence entre les niveaux de journalisation et les messages localisés.
+
+### Ruptures
+- Aucune rupture d’API attendue : la surface publique de `Journalisation` est conservée.
+
+
 ## [1.2.0.111] — 2025-11-18
 
 ### Ajouté
