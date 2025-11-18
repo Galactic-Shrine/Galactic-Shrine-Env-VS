@@ -3,6 +3,69 @@
 > Nous sommes désolés : aucun changelog n’avait été maintenu jusqu’à présent.  
 > Cet historique démarre avec la version ci-dessous ; les changements antérieurs (2023–2025) n’ont pas été consignés.
 
+---
+
+## [1.2.0.111] — 2025-11-18
+
+### Ajouté
+- **GalacticShrine (répertoires standards)** (`\Source\Dll\GalacticShrine\GalacticShrine.class.Ref.cs`)
+  - Méthodes utilitaires :
+    - `ObtenirLeDossier(string Nom)` : accès typé (`DossierReference`) aux entrées de `Repertoire`.
+    - `ObtenirLeChemin(string Nom)` : accès direct au chemin brut (`string`) pour les clés de type chemin simple.
+- **Fichier (catalogue d’extensions)** (`\Source\Dll\GalacticShrine\Fichier.Class.Ref.cs`)
+  - Méthodes de confort autour du catalogue `Extension` :
+    - `EstExtensionDansGroupe(string ExtensionDeFichier, string NomDuGroupe)` : vérifie l’appartenance d’une extension à un groupe logique (Images, Audio, Gs, etc.).
+    - `TrouverPremierGroupePourExtension(string ExtensionDeFichier)` : retourne le premier groupe qui contient l’extension (ou `null`).
+- **Stockage.Groupe** (`\Source\Dll\GalacticShrine\Stockage\Groupe.Class.Ref.cs`)
+  - Méthode `Contient(string ElementRecherche)` pour tester la présence d’un élément dans le groupe (comparaison insensible à la casse).
+- **Stockage.Catalogue** (`\Source\Dll\GalacticShrine\Stockage\Catalogue.Class.Ref.cs`)
+  - Propriétés / méthodes supplémentaires :
+    - `Groupes` : énumération des instances de `Groupe`.
+    - `Compter` : nombre total de groupes.
+    - `ContientLeGroupe(string NomDuGroupe)` : test d’existence.
+    - `EssayerObtenirGroupe(string NomDuGroupe, out Groupe Groupe)` : accès sécurisé sans exception.
+
+### Modifié
+- **GalacticShrine.Repertoire**
+  - Construction déplacée dans une factory privée `CreerTableDesRepertoires` pour clarifier la logique d’initialisation.
+  - Dictionnaire désormais créé avec `StringComparer.OrdinalIgnoreCase` (accès insensible à la casse aux clés comme `"Config"`, `"Log"`, `"Source"`, etc.).
+  - Détection de `ProgramFiles` rendue plus robuste :
+    - Priorité à `Environment.SpecialFolder.ProgramFiles`.
+    - Fallback propre sur les variables d’environnement `ProgramFiles` / `ProgramFiles(x86)`.
+    - Renvoie simplement aucune entrée si aucun chemin pertinent n’est disponible sur la plateforme (Linux/macOS).
+  - Chemins standards (`Societe`, `Racine`, `Config`, `Log`, `Source`, `DLog`) toujours basés sur l’emplacement de l’assembly mais avec vérifications supplémentaires sur les chaînes vides.
+- **Stockage.Groupe**
+  - Validation plus stricte des arguments (`Nom` et `Element` ne peuvent pas être nuls ou vides).
+  - Copie défensive du tableau d’éléments et cache d’une vue en lecture seule pour exposer `Element` sans risque de modification externe.
+  - Documentation FR/EN complétée et clarifiée.
+- **Stockage.Catalogue**
+  - Le constructeur recopie désormais le dictionnaire source en validant chaque entrée (nom non vide, groupe non null).
+  - L’indexeur `this[string NomDuGroupe]` vérifie l’argument et documente explicitement la `KeyNotFoundException`.
+  - Normalisation systématique sur `StringComparer.OrdinalIgnoreCase` pour l’ensemble des accès.
+
+- **Références de fichiers et de dossiers**
+  - **FichierReference** (`\Source\Dll\GalacticShrine\Fichier.Reference.Class.Ref.cs`)  
+    - Renforcement de la validation d’arguments sur les méthodes publiques (chemins, contenus, etc.).
+    - Harmonisation des commentaires XML FR/EN et corrections de formulations.
+  - **DossierReference** (`\Source\Dll\GalacticShrine\Dossier.Reference.Class.Ref.cs`)  
+    - Documentation complétée.
+    - Passage à un style plus moderne (utilisation de l’indexeur ^, etc.) en conservant l’API publique.
+
+### Corrigé
+- **DossierReference.FichiersEnumerer** (`\Source\Dll\GalacticShrine\Dossier.Reference.Class.Ref.cs`)
+  - Les trois surcharges `FichiersEnumerer(...)` utilisaient `Directory.EnumerateDirectories` au lieu de `Directory.EnumerateFiles`, ce qui empêchait de lister les fichiers correctement.  
+    → Correction pour énumérer les fichiers comme attendu.
+- **FichierReference.RendreInscriptibles / RendreInscriptiblesAsync**
+  - Correction de la manipulation des attributs : l’attribut `ReadOnly` est désormais correctement retiré au lieu de reconstruire un ensemble d’attributs incorrect.
+- **GalacticShrine.Repertoire["ProgramFiles"]**
+  - Correction de la logique 32/64 bits et du fallback : évite de renvoyer un chemin incohérent lorsque les variables d’environnement ne sont pas définies comme attendu.
+
+### Ruptures
+- Aucune rupture majeure identifiée :
+  - Les signatures publiques existantes des types centraux (`FichierReference`, `DossierReference`, `Fichier`, `Stockage.Groupe`, `Stockage.Catalogue`, `GalacticShrine`) sont conservées.
+  - Les changements sont principalement additifs (nouvelles méthodes utilitaires) et des durcissements internes (validation, corrections de bugs).
+
+
 ## [1.2.0.110] — 2025-10-26
 
 ### Ajouté
