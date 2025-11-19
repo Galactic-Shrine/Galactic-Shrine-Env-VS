@@ -5,6 +5,73 @@
 
 ---
 
+## [1.2.0.113] - 2025-11-19
+
+### Ajouté
+- **SystemeExploitation.Inconnu**  
+  (`\Source\Dll\GalacticShrine\Enumeration\SystemeExploitation.Enum.Ref.cs`)
+  - Nouvelle valeur explicite `Inconnu = 0` pour représenter un système d’exploitation inconnu ou non supporté.
+  - Utilisée comme valeur de retour par défaut par les méthodes de détection de l’OS.
+
+### Modifié
+- **GalacticShrine.Enumeration.SystemeExploitation**  
+  (`\Source\Dll\GalacticShrine\Enumeration\SystemeExploitation.Enum.Ref.cs`)
+  - Enum enrichie et documentation FR/EN clarifiée.
+  - Les valeurs suivent désormais `Inconnu = 0` :
+    - `Mac` = 1,
+    - `Linux` = 2,
+    - `Windows` = 3.
+
+- **GalacticShrine.Outils.Outils**  
+  (`\Source\Dll\GalacticShrine\Outils\Outils.Class.Ref.cs`)
+  - Légère clarification des commentaires FR/EN (aucun changement d’API).
+
+- **GalacticShrine.Outils.OS**  
+  (`\Source\Dll\GalacticShrine\Outils\Os.Class.Ref.cs`)
+  - `ObtenirNomCourantes` :
+    - Ne renvoie plus jamais `null`, mais l’une des valeurs : `"Windows"`, `"macOS"`, `"Linux"` ou `"Inconnu"`.
+    - Logique simplifiée pour limiter les branches imbriquées.
+  - `ObtenirIdCourantes` :
+    - Retourne désormais `SystemeExploitation.Inconnu` si aucun OS connu n’est détecté.
+    - Le fallback implicite sur `SystemeExploitation.Windows` pour les plateformes inconnues est supprimé.
+  - Harmonisation de la documentation XML FR/EN.
+
+- **GalacticShrine.Enumeration.WindowsTheme**  
+  (`\Source\Dll\Galactic-Shrine\Enumeration\WindowsTheme.Enum.Ref.cs`)
+  - Normalisation mineure du formatage (espaces, alignement) sans modification des valeurs ni de l’API.
+
+- **GalacticShrine.Outils.WindowsThemeAssistant**  
+  (`\Source\Dll\GalacticShrine\Outils\WindowsTheme.Assistant.Class.Ref.cs`)
+  - `ObtenirThemeApp` et `ObtenirThemeSystem` :
+    - Vérifient désormais explicitement la plateforme : sur un système non Windows, retournent immédiatement `WindowsTheme.Inconnu` sans accès au Registre.
+    - Les accès au Registre (`Registry.CurrentUser.OpenSubKey(...)`) sont encapsulés dans un `try/catch` pour éviter les exceptions non gérées.
+    - En cas de valeur de registre invalide ou manquante, l’API retourne `WindowsTheme.Inconnu` de manière déterministe.
+  - Nettoyage de quelques coquilles (stray `;`) et amélioration des commentaires XML FR/EN.
+
+### Corrigé
+- **Détection de l’OS courant**  
+  (`GalacticShrine.Outils.OS`)
+  - Cas des systèmes non Windows/Linux/macOS mieux pris en compte :
+    - `ObtenirNomCourantes` ne renvoie plus `null` mais `"Inconnu"`.
+    - `ObtenirIdCourantes` ne force plus `SystemeExploitation.Windows` par défaut lorsque l’OS n’est pas reconnu.
+
+- **Compatibilité multi-plateforme de WindowsThemeAssistant**
+  - L’utilisation de `WindowsThemeAssistant` sur Linux/macOS ne provoque plus d’accès au Registre ni de comportement indéfini :
+    - Sur toute plateforme non Windows, les thèmes applicatif et système sont systématiquement retournés comme `WindowsTheme.Inconnu`.
+  - Les erreurs d’accès au Registre (droits, clés manquantes, valeurs inattendues) n’entrainent plus d’exception : l’API revient à un état sûr (`Inconnu`).
+
+### Ruptures
+- **SystemeExploitation (valeurs numériques sous-jacentes)**
+  - L’ajout de `Inconnu = 0` en tête de l’énumération modifie les valeurs numériques des autres membres :
+    - `Mac` passe de `0` à `1`,
+    - `Linux` passe de `1` à `2`,
+    - `Windows` passe de `2` à `3`.
+  - Impacts possibles :
+    - Données sérialisées ou stockées qui s’appuyaient sur les valeurs numériques brutes de l’énumération.
+    - Éventuels `switch` ou comparaisons externes qui utilisent explicitement ces valeurs numériques.
+  - L’API publique reste inchangée, mais la sémantique de la valeur par défaut (`0`) correspond désormais explicitement à un OS inconnu (`Inconnu`).
+
+  
 ## [1.2.0.112] - 2025-11-18
 
 ### Modifié
@@ -152,15 +219,6 @@
 ### Corrigé
 - Fautes d’orthographe récurrentes dans les docs EN (ex. “containig” → “containing”, “Writres” → “Writes”, etc.).
 - Petits ajustements de balises XML (`<returns>` manquants, coquilles).
-
-### Non inclus / réservés pour **1.2.0**
-> Ces éléments existent en local mais **ne sont pas publiés** dans cette version.
-- `Services.Http.VerificateurDeServeur` (vérification HTTP périodique, journalisation).
-- API **asynchrones** de `FichierReference` (lectures/écritures async, attributs/dates async, `AjouterLigneAsync`, etc.).
-
-### À venir
-- Publication de `VerificateurDeServeur` et des API async de `FichierReference` dans **1.2.0**.
-- Eventuel passage de la journalisation vers une file d’écriture asynchrone.
 
 ---
 

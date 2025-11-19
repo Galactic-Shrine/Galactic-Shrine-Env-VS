@@ -1,8 +1,17 @@
 ﻿/**
- * Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
- * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+ * Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+ * Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+ * 
+ * Mozilla Public License 2.0 / Licence Publique Mozilla 2.0
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
+ *
+ * Cette Forme de Code Source est soumise aux termes de la Licence Publique Mozilla, version 2.0.
+ * Si une copie de la MPL ne vous a pas été distribuée avec ce fichier, vous pouvez en obtenir une à l'adresse suivante : https://mozilla.org/MPL/2.0/.
+ * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
-
 using System.Runtime.InteropServices;
 using GalacticShrine.Enumeration;
 
@@ -40,7 +49,7 @@ namespace GalacticShrine.Outils {
      **/
     public static bool EstGnu => RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
 
-    /**
+		/**
      * <summary>
      *   [FR] Obtenir le nom du systeme d'exploitation courantes<br>
      *   [EN] Get the name of the current operating system
@@ -50,38 +59,24 @@ namespace GalacticShrine.Outils {
      *   [EN] System name <see cref="string"/>
      * </returns>
      **/
-    public static string ObtenirNomCourantes {
+		public static string ObtenirNomCourantes {
 
-      get {
+			get {
 
-        string? obj;
+				if(EstWin)
+					return "Windows";
 
-        if(EstWin)
-          obj = "Windows";
-        else 
-          obj = null;
+				if(EstOsx)
+					return "macOS";
 
-        if(obj == null) {
+				if(EstGnu)
+					return "Linux";
 
-          if(EstOsx)
-            obj = "OSX";
-          else 
-            obj = null;
+				return "Inconnu";
+			}
+		}
 
-          if(obj == null) {
-
-            if(!EstGnu) 
-              return null;
-            
-            obj = "Linux";
-          }
-        }
-
-        return obj;
-      }
-    }
-
-    /**
+		/**
      * <summary>
      *   [FR] Obtenir l'id du systeme d'exploitation courantes<br>
      *   [EN] Get current operating system id
@@ -91,25 +86,21 @@ namespace GalacticShrine.Outils {
      *   [EN] an enumeration of type <see cref="SystemeExploitation"/>.
      * </returns>
      **/
-    public static SystemeExploitation ObtenirIdCourantes {
+		public static SystemeExploitation ObtenirIdCourantes {
 
-      get {
+			get {
 
-        if(!EstWin) {
+				if(EstWin)
+					return SystemeExploitation.Windows;
 
-          if(EstGnu) {
+				if(EstOsx)
+					return SystemeExploitation.Mac;
 
-            return SystemeExploitation.Linux;
-          }
+				if(EstGnu)
+					return SystemeExploitation.Linux;
 
-          if(EstOsx) {
-            
-            return SystemeExploitation.Mac;
-          }
-        }
-
-        return SystemeExploitation.Windows;
-      }
-    }
-  }
+				return SystemeExploitation.Inconnu;
+			}
+		}
+	}
 }

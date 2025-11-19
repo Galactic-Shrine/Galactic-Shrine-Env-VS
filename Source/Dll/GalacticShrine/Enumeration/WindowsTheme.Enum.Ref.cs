@@ -13,33 +13,38 @@
  * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
 
-using System;
+namespace GalacticShrine.Enumeration {
 
-namespace GalacticShrine.Outils {
-
-  /**
+	/**
    * <summary>
-   *   [FR] Classe de base pour les outil.
-   *   [EN] Basic class for tools.
+   *   [FR] Énumération des thèmes Windows.
+   *   [EN] Enumeration of Windows themes.
    * </summary>
    **/
-  [Serializable]
-  public abstract class Outils {
+	public enum WindowsTheme {
 
-    /**
+		/**
      * <summary>
-     *   [FR] Le comparateur à utiliser pour les références de systèmes de fichiers
-     *   [EN] The comparator to use for file system references
+     *   [FR] Valeur par défaut, thème inconnu.
+     *   [EN] Default value, unknown theme.
      * </summary>
      **/
-    public static readonly StringComparer Comparateur = StringComparer.OrdinalIgnoreCase;
+		Inconnu = 0,
 
-    /**
+		/**
      * <summary>
-     *   [FR] La comparaison à utiliser pour les références de systèmes de fichiers
-     *   [EN] The comparison to be used for file system references
+     *   [FR] Thème clair.
+     *   [EN] Light theme.
      * </summary>
      **/
-    public static readonly StringComparison Comparaison = StringComparison.OrdinalIgnoreCase;
-  }
+		Clair = 1,
+
+		/**
+     * <summary>
+     *   [FR] Thème sombre.
+     *   [EN] Dark theme.
+     * </summary>
+     **/
+		Sombre = 2
+	}
 }
