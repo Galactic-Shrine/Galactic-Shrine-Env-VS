@@ -5,6 +5,31 @@
 
 ---
 
+## [1.2.0.114] - 2025-11-19
+
+### Ajouté
+- `GalacticShrine.Interface.StockageSessionInterface`
+  - Méthode asynchrone `Task SauvegarderAsync(string Donnees, string Cle, CancellationToken JetonAnnulation = default)`  
+    pour la sauvegarde non bloquante des données de session.
+  - Méthode asynchrone `Task<string> ChargerAsync(string Cle, CancellationToken JetonAnnulation = default)`  
+    pour le chargement non bloquant des données de session.
+
+### Modifié
+- `GalacticShrine.Stockage.Session`
+  - Ajout des implémentations asynchrones `SauvegarderAsync` et `ChargerAsync` basées sur `FileStream` asynchrone,
+    `CryptoStream` et propagation du `CancellationToken`.
+  - Introduction de la méthode interne `ObtenirCleDeChiffrement(string Cle)` :
+    - validation de la clé AES en UTF-8 (longueur 16, 24 ou 32 octets),
+    - levée d’`ArgumentException` en cas de clé invalide.
+  - Harmonisation de la gestion de l’extension du fichier de session :
+    - utilisation de `Fichier.Extension["Scripts"][4]` pour initialiser `Extension`,
+    - concaténation du nom de fichier sous la forme `${NomDeFichier}{Extension}` sans point redondant.
+  - Renforcement de la robustesse lors du chargement :
+    - lecture et validation stricte de l’IV (16 octets),
+    - levée d’`InvalidDataException` lorsque l’IV ne peut pas être lu intégralement (fichier corrompu).
+  - Mise à jour et clarification de la documentation XML bilingue (FR/EN) sur l’ensemble des méthodes
+    de stockage de session (synchrones et asynchrones).
+
 ## [1.2.0.113] - 2025-11-19
 
 ### Ajouté
