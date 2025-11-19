@@ -39,5 +39,4 @@ En cas de problème avec un autre participant n'oubliez pas de lire ceci [CODE O
 
 
 ## License
-
- Sous licence [MPL 2.0](https://mozilla.org/MPL/2.0/).
+[MPL 2.0](https://mozilla.org/MPL/2.0/).

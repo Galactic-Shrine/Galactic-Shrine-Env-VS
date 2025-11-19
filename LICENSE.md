@@ -1,14 +1,15 @@
-Mozilla Public License 2.0
+Licence publique Mozilla 2.0
 
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
-If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+Ce formulaire de code source est soumis aux conditions de la licence publique Mozilla, version 2.0.
+Si une copie de la MPL n'a pas été distribuée avec ce fichier, vous pouvez en obtenir une à l'adresse https://mozilla.org/MPL/2.0/.
 
-(C) 2023-2025 Galactic-Shrine. All rights reserved.
+(C) 2023-2025 Galactic-Shrine. Tous droits réservés.
 
-Under this license:
-- You may use, modify, and distribute this software freely.
-- If you modify any source code file under this license, you **must** share those modifications under the same MPL-2.0 license.
-- You **must** retain the original copyright notice in all modified files.
-- You may integrate this software into proprietary projects, but any modified MPL-2.0 licensed files must remain open source.
+En vertu de cette licence :
+- Vous pouvez utiliser, modifier et distribuer ce logiciel librement.
+- Si vous modifiez un fichier de code source sous cette licence, vous **devez** partager ces modifications sous la même licence MPL-2.0.
+- Vous **devez** conserver la mention de copyright originale dans tous les fichiers modifiés.
+- Vous pouvez intégrer ce logiciel dans des projets propriétaires, mais tous les fichiers modifiés sous licence MPL-2.0 doivent rester open source.
 
-For full license terms, visit: https://mozilla.org/MPL/2.0/
+Pour connaître l'intégralité des conditions de licence, rendez-vous sur : https://mozilla.org/MPL/2.0/
+
