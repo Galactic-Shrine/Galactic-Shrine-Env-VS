@@ -1,5 +1,10 @@
 # Changelog
 
+## 2025-11-19
+
+### Modifié
+- Mise à jour du README.md
+
 ## 2025-09-26
 
 ### Corrigé
