@@ -5,9 +5,9 @@ name: .NET 8.0 for windows
 
 on:
   push:
-    branches: [ "net80" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "net80" ]
+    branches: [ "master" ]
 
 env:
   SOLUTION_FILE_PATH: .
