@@ -13,80 +13,128 @@
  * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
 using System;
-using System.Timers;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using GalacticShrine.Properties;
+using System.Timers;
 using GalacticShrine.Enregistrement;
+using GalacticShrine.Properties;
 
 namespace GalacticShrine.Services.Http {
 
-  /**
+	/**
    * <summary>
    *   [FR] Vérifie périodiquement l'état d'un serveur donné.
    *   [EN] Periodically checks the status of a given server.
    * </summary>
    **/
-  public class VerificateurDeServeur : IDisposable, IAsyncDisposable {
+	public class VerificateurDeServeur : IDisposable, IAsyncDisposable {
 
-    /**
+		/**
+     * <summary>
+     *   [FR] Informations associées à l'événement de vérification du serveur.
+     *   [EN] Information associated with the server verification event.
+     * </summary>
+     **/
+		public sealed class ResultatVerificationServeurEventArgs : EventArgs {
+
+			/**
+       * <summary>
+       *   [FR] Indique si le serveur est en ligne.
+       *   [EN] Indicates whether the server is online.
+       * </summary>
+       **/
+			public bool EstEnLigne { get; }
+
+			/**
+       * <summary>
+       *   [FR] Initialise une nouvelle instance des arguments de l'événement.
+       *   [EN] Initializes a new instance of the event arguments.
+       * </summary>
+       * <param name="ServeurEnLigne">
+       *   [FR] Indique si le serveur est en ligne.
+       *   [EN] Indicates whether the server is online.
+       * </param>
+       **/
+			public ResultatVerificationServeurEventArgs(bool ServeurEnLigne) {
+
+				EstEnLigne = ServeurEnLigne;
+			}
+		}
+
+		/**
      * <summary>
      *   [FR] Minuteur utilisé pour déclencher la vérification périodique.
      *   [EN] Timer used to trigger periodic verification.
      * </summary>
      **/
-    private readonly System.Timers.Timer _Minuteur;
+		private readonly System.Timers.Timer _Minuteur;
 
-    /**
+		/**
      * <summary>
-     *   [FR] URL du serveur à vérifier.
-     *   [EN] Server URL to check.
+     *   [FR] URI du serveur à vérifier.
+     *   [EN] Server URI to check.
      * </summary>
      **/
-    private readonly string _AdresseDuServeur;
+		private readonly Uri _AdresseDuServeur;
 
-    /**
+		/**
      * <summary>
      *   [FR] Client HTTP utilisé pour effectuer les requêtes.
      *   [EN] HTTP client used to make requests.
      * </summary>
      **/
-    private readonly HttpClient _Client;
+		private readonly HttpClient _Client;
 
-    /**
+		/**
+     * <summary>
+     *   [FR] Indique si le client HTTP a été créé en interne et doit être disposé par cette instance.
+     *   [EN] Indicates whether the HTTP client was created internally and must be disposed by this instance.
+     * </summary>
+     **/
+		private readonly bool _ClientCreeEnInterne;
+
+		/**
      * <summary>
      *   [FR] Classe de journalisation pour enregistrer les informations et erreurs.
      *   [EN] Logging class to record information and errors.
      * </summary>
      **/
-    private readonly Journalisation? _Journal;
+		private readonly Journalisation? _Journal;
 
-    /**
+		/**
      * <summary>
      *   [FR] Indique si l'objet a déjà été supprimé.
      *   [EN] Indicates whether the object has already been disposed.
      * </summary>
      **/
-    private bool _Elimine;
+		private volatile bool _Elimine;
 
-    /**
+		/**
      * <summary>
-     *   [FR] Indique si une vérification est déjà en cours pour éviter les exécutions concurrentes.
-     *   [EN] Indicates if a verification is already in progress to prevent concurrent executions.
+     *   [FR] Indicateur atomique pour savoir si une vérification est en cours.
+     *   [EN] Atomic flag indicating whether a verification is currently running.
      * </summary>
      **/
-    private bool _EstEnCours;
+		private int _EtatVerificationEnCours;
 
-    /**
+		/**
      * <summary>
      *   [FR] Événement déclenché après chaque vérification avec le résultat.
      *   [EN] Event raised after each check with the result.
      * </summary>
      **/
-    public event EventHandler<bool>? ServeurVerifie;
+		public event EventHandler<ResultatVerificationServeurEventArgs>? ServeurVerifie;
 
-    /**
+		/**
+     * <summary>
+     *   [FR] Obtient l'URI du serveur surveillé.
+     *   [EN] Gets the URI of the monitored server.
+     * </summary>
+     **/
+		public Uri AdresseDuServeur => _AdresseDuServeur;
+
+		/**
      * <summary>
      *   [FR] Initialise une nouvelle instance de VerificateurDeServeur.
      *   [EN] Initializes a new instance of the server verifier.
@@ -119,138 +167,253 @@ namespace GalacticShrine.Services.Http {
      *   [FR] Levée si l'URL du serveur est vide ou invalide.
      *   [EN] Thrown if the server URL is empty or invalid.
      * </exception>
+     * <exception cref="ArgumentOutOfRangeException">
+     *   [FR] Levée si l'intervalle est inférieur ou égal à zéro.
+     *   [EN] Thrown if the interval is less than or equal to zero.
+     * </exception>
      **/
-    public VerificateurDeServeur(string AdresseDuServeur, HttpClient? Client = null, Journalisation? Journal = null, bool Active = true, int Intervalle = 300000, bool AutoReset = true) {
+		public VerificateurDeServeur(string AdresseDuServeur, HttpClient? Client = null, Journalisation? Journal = null, bool Active = true, int Intervalle = 300000, bool AutoReset = true) {
 
-      if(string.IsNullOrWhiteSpace(AdresseDuServeur)) {
+			if(string.IsNullOrWhiteSpace(AdresseDuServeur)) {
 
-        throw new ArgumentException(
-          string.Format(Resources.LeParametreNePeutPasEtreVide, nameof(AdresseDuServeur)),
-          nameof(AdresseDuServeur)
-        );
-      }
+				throw new ArgumentException(
+					string.Format(Resources.LeParametreNePeutPasEtreVide, nameof(AdresseDuServeur)),
+					nameof(AdresseDuServeur)
+				);
+			}
 
-      _AdresseDuServeur = AdresseDuServeur;
-      _Client = Client ?? new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
-      _Journal = Journal;
+			if(!Uri.TryCreate(AdresseDuServeur, UriKind.Absolute, out var AdresseUri) ||
+				 (AdresseUri.Scheme != Uri.UriSchemeHttp && AdresseUri.Scheme != Uri.UriSchemeHttps)) {
 
-      _Minuteur = new System.Timers.Timer(Intervalle) {
+				throw new ArgumentException(
+					"L'URL du serveur est invalide. Une URL absolue HTTP ou HTTPS est attendue.",
+					nameof(AdresseDuServeur)
+				);
+			}
 
-        AutoReset = AutoReset,
-        Enabled = Active
-      };
+			if(Intervalle <= 0) {
 
-      _Minuteur.Elapsed += OnTimedEvent;
-    }
+				throw new ArgumentOutOfRangeException(
+					nameof(Intervalle),
+					"L'intervalle doit être strictement supérieur à zéro."
+				);
+			}
 
-    /**
+			_AdresseDuServeur = AdresseUri;
+
+			if(Client is null) {
+
+				_Client = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
+				_ClientCreeEnInterne = true;
+			}
+			else {
+
+				_Client = Client;
+				_ClientCreeEnInterne = false;
+			}
+
+			_Journal = Journal;
+
+			_Minuteur = new System.Timers.Timer(Intervalle)
+			{
+
+				AutoReset = AutoReset,
+				Enabled = Active
+			};
+
+			_Minuteur.Elapsed += OnTimedEvent;
+		}
+
+		/**
      * <summary>
      *   [FR] Gestionnaire d'événement du timer qui déclenche la vérification.
      *   [EN] Timer event handler that triggers the verification.
      * </summary>
      **/
-    private async void OnTimedEvent(object? sender, ElapsedEventArgs e) {
+		private async void OnTimedEvent(object? Emetteur, ElapsedEventArgs Evenement) {
 
-      if(_EstEnCours) {
+			if(_Elimine) {
 
-        _Journal?.Avertissement("Une vérification est déjà en cours, la nouvelle demande est ignorée.");
-        return;
-      }
+				return;
+			}
 
-      _EstEnCours = true;
-      try {
+			if(Interlocked.Exchange(ref _EtatVerificationEnCours, 1) == 1) {
 
-        using var cts = new CancellationTokenSource();
-        await VerifierLEtatAsync(cts.Token);
-      }
-      finally {
+				_Journal?.Avertissement("Une vérification est déjà en cours, la nouvelle demande est ignorée.");
+				return;
+			}
 
-        _EstEnCours = false;
-      }
-    }
+			try {
 
-    /**
+				await VerifierLEtatAsync(CancellationToken.None).ConfigureAwait(false);
+			}
+			finally {
+
+				Interlocked.Exchange(ref _EtatVerificationEnCours, 0);
+			}
+		}
+
+		/**
      * <summary>
      *   [FR] Vérifie l'état du serveur en effectuant une requête HTTP.
      *   [EN] Checks the server status by performing an HTTP request.
      * </summary>
-     * <param name="cancellationToken">
-     *   [FR] Token d'annulation pour la vérification.
+     * <param name="CancellationToken">
+     *   [FR] Jeton d'annulation pour la vérification.
      *   [EN] Cancellation token for the verification.
      * </param>
      * <returns>
-     *   [FR] Une tâche asynchrone effectuant la vérification.
-     *   [EN] An asynchronous task performing the check.
+     *   [FR] True si le serveur répond avec un code HTTP de succès, sinon false.
+     *   [EN] True if the server responds with a successful HTTP status code, otherwise false.
      * </returns>
      **/
-    private async Task VerifierLEtatAsync(CancellationToken CancellationToken) {
+		private async Task<bool> VerifierLEtatAsync(CancellationToken CancellationToken) {
 
-      try {
+			try {
 
-        var response = await _Client.GetAsync(_AdresseDuServeur, CancellationToken);
-        bool estEnLigne = response.IsSuccessStatusCode;
+				var Reponse = await _Client.GetAsync(_AdresseDuServeur, CancellationToken).ConfigureAwait(false);
+				bool EstEnLigne = Reponse.IsSuccessStatusCode;
 
-        if(estEnLigne) {
+				if(EstEnLigne) {
 
-          _Journal?.Info(Resources.ServeurEnLigne);
-        }
-        else {
+					_Journal?.Info(Resources.ServeurEnLigne);
+				}
+				else {
 
-          _Journal?.Avertissement(Resources.ServeurHorsLigne);
-        }
+					_Journal?.Avertissement(Resources.ServeurHorsLigne);
+				}
 
-        ServeurVerifie?.Invoke(this, estEnLigne);
-      }
-      catch(TaskCanceledException) {
+				ServeurVerifie?.Invoke(this, new ResultatVerificationServeurEventArgs(EstEnLigne));
 
-        _Journal?.Erreur("La vérification du serveur a été annulée ou a expiré.");
-        ServeurVerifie?.Invoke(this, false);
-      }
-      catch(System.Exception ex) {
+				return EstEnLigne;
+			}
+			catch(TaskCanceledException) {
 
-        _Journal?.Erreur($"Erreur lors de la vérification du serveur : {ex.Message}");
-        ServeurVerifie?.Invoke(this, false);
-      }
-    }
+				_Journal?.Erreur("La vérification du serveur a été annulée ou a expiré.");
+				ServeurVerifie?.Invoke(this, new ResultatVerificationServeurEventArgs(false));
+				return false;
+			}
+			catch(System.Exception Exception) {
 
-    /**
+				_Journal?.Erreur($"Erreur lors de la vérification du serveur : {Exception.Message}");
+				ServeurVerifie?.Invoke(this, new ResultatVerificationServeurEventArgs(false));
+				return false;
+			}
+		}
+
+		/**
+     * <summary>
+     *   [FR] Lance immédiatement une vérification de l'état du serveur.
+     *   [EN] Immediately triggers a server status check.
+     * </summary>
+     * <param name="CancellationToken">
+     *   [FR] Jeton d'annulation optionnel pour la vérification.
+     *   [EN] Optional cancellation token for the verification.
+     * </param>
+     * <returns>
+     *   [FR] Une tâche retournant true si le serveur répond avec un code de succès HTTP.
+     *   [EN] A task returning true if the server responds with a successful HTTP status code.
+     * </returns>
+     * <exception cref="ObjectDisposedException">
+     *   [FR] Levée si l'instance a déjà été libérée.
+     *   [EN] Thrown if the instance has already been disposed.
+     * </exception>
+     **/
+		public Task<bool> VerifierMaintenantAsync(CancellationToken CancellationToken = default) {
+
+			if(_Elimine) {
+
+				throw new ObjectDisposedException(nameof(VerificateurDeServeur));
+			}
+
+			return VerifierLEtatAsync(CancellationToken);
+		}
+
+		/**
+     * <summary>
+     *   [FR] Démarre le minuteur de vérification périodique.
+     *   [EN] Starts the periodic verification timer.
+     * </summary>
+     * <exception cref="ObjectDisposedException">
+     *   [FR] Levée si l'instance a déjà été libérée.
+     *   [EN] Thrown if the instance has already been disposed.
+     * </exception>
+     **/
+		public void Demarrer() {
+
+			if(_Elimine) {
+
+				throw new ObjectDisposedException(nameof(VerificateurDeServeur));
+			}
+
+			_Minuteur.Start();
+		}
+
+		/**
+     * <summary>
+     *   [FR] Arrête le minuteur de vérification périodique.
+     *   [EN] Stops the periodic verification timer.
+     * </summary>
+     * <exception cref="ObjectDisposedException">
+     *   [FR] Levée si l'instance a déjà été libérée.
+     *   [EN] Thrown if the instance has already been disposed.
+     * </exception>
+     **/
+		public void Arreter() {
+
+			if(_Elimine) {
+
+				throw new ObjectDisposedException(nameof(VerificateurDeServeur));
+			}
+
+			_Minuteur.Stop();
+		}
+
+		/**
      * <summary>
      *   [FR] Libère les ressources utilisées par l'objet de manière synchrone.
      *   [EN] Releases the resources used by the object synchronously.
      * </summary>
-     * <param name="disposing">
+     * <param name="Disposing">
      *   [FR] Indique si l'appel provient de la méthode Dispose.
      *   [EN] Indicates whether the call comes from the Dispose method.
      * </param>
      **/
-    protected virtual void Dispose(bool disposing) {
+		protected virtual void Dispose(bool Disposing) {
 
-      if(!_Elimine) {
+			if(_Elimine) {
 
-        if(disposing) {
+				return;
+			}
 
-          _Minuteur.Stop();
-          _Minuteur.Dispose();
-          _Client.Dispose();
-        }
+			if(Disposing) {
 
-        _Elimine = true;
-      }
-    }
+				_Minuteur.Stop();
+				_Minuteur.Elapsed -= OnTimedEvent;
+				_Minuteur.Dispose();
 
-    /**
+				if(_ClientCreeEnInterne) {
+
+					_Client.Dispose();
+				}
+			}
+
+			_Elimine = true;
+		}
+
+		/**
      * <summary>
      *   [FR] Libère les ressources utilisées par l'objet de manière synchrone.
      *   [EN] Releases the resources used by the object synchronously.
      * </summary>
      **/
-    public void Dispose() {
+		public void Dispose() {
 
-      Dispose(true);
-      GC.SuppressFinalize(this);
-    }
+			Dispose(true);
+			GC.SuppressFinalize(this);
+		}
 
-    /**
+		/**
      * <summary>
      *   [FR] Libère les ressources utilisées par l'objet de manière asynchrone.
      *   [EN] Asynchronously releases the resources used by the object.
@@ -260,22 +423,21 @@ namespace GalacticShrine.Services.Http {
      *   [EN] A ValueTask representing the asynchronous disposal operation.
      * </returns>
      **/
-    public async ValueTask DisposeAsync() {
+		public ValueTask DisposeAsync() {
 
-      Dispose(true);
-      GC.SuppressFinalize(this);
-      await Task.CompletedTask;
-    }
+			Dispose();
+			return ValueTask.CompletedTask;
+		}
 
-    /**
+		/**
      * <summary>
      *   [FR] Finaliseur pour s'assurer que Dispose est bien appelé.
      *   [EN] Finalizer to ensure Dispose is properly called.
      * </summary>
      **/
-    ~VerificateurDeServeur() {
+		~VerificateurDeServeur() {
 
-      Dispose(false);
-    }
-  }
+			Dispose(false);
+		}
+	}
 }

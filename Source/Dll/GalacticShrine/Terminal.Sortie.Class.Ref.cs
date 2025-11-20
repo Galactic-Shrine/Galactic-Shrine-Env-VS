@@ -1,351 +1,356 @@
 ﻿/**
- * Copyright © 2017-2023, Galactic-Shrine - All Rights Reserved.
- * Copyright © 2017-2023, Galactic-Shrine - Tous droits réservés.
+ * Copyright © 2023-2025, Galactic-Shrine - All Rights Reserved.
+ * Copyright © 2023-2025, Galactic-Shrine - Tous droits réservés.
+ * 
+ * Mozilla Public License 2.0 / Licence Publique Mozilla 2.0
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Modifications to this file must be shared under the same Mozilla Public License, v. 2.0.
+ *
+ * Cette Forme de Code Source est soumise aux termes de la Licence Publique Mozilla, version 2.0.
+ * Si une copie de la MPL ne vous a pas été distribuée avec ce fichier, vous pouvez en obtenir une à l'adresse suivante : https://mozilla.org/MPL/2.0/.
+ * Les modifications apportées à ce fichier doivent être partagées sous la même Licence Publique Mozilla, v. 2.0.
  **/
-
 using System;
 using GalacticShrine.Enumeration;
 
 namespace GalacticShrine.Terminal {
 
-  /**
+	/**
    * <summary>
    *   [FR] Classe statique Sortie fournissant des méthodes simplifiées pour écrire et aligner du texte dans le terminal.
    *   [EN] Static Sortie class providing simplified methods to write and align text in the terminal.
    * </summary>
    **/
-  public static class Sortie {
+	public static class Sortie {
 
-    /**
+		/**
      * <summary>
      *   [FR] Écrit la valeur de la chaîne spécifiée sur le flux de sortie standard.
-     *        Racourci du <code>System.Console.Write</code>
+     *        Raccourci de <see cref="System.Console.Write(string?)"/>.
      *   [EN] Writes the specified string value to the standard output stream.
-     *        Shortcut of the <code>System.Console.Write</code>
+     *        Shortcut for <see cref="System.Console.Write(string?)"/>.
      * </summary>
      * <param name="Texte">
-     *   [FR] Texte à renvoyer
-     *   [EN] Text to return
+     *   [FR] Texte à écrire.
+     *   [EN] Text to write.
      * </param>
-     * <returns>
-     *   chaîne
-     * </returns>
      **/
-    public static void Ecrire(string Texte) => Console.Write(Texte);
+		public static void Ecrire(string Texte) => Console.Write(Texte);
 
-    /**
+		/**
      * <summary>
-     *   [FR] Écrit la valeur de la chaîne spécifiée sur le flux de sortie standard.
-     *        Racourci du <code>System.Console.Write</code>
-     *   [EN] Writes the specified string value to the standard output stream.
-     *        Shortcut of the <code>System.Console.Write</code>
+     *   [FR] Écrit une chaîne formatée sur le flux de sortie standard.
+     *        Raccourci de <see cref="System.Console.Write(string?, object?)"/>.
+     *   [EN] Writes a formatted string value to the standard output stream.
+     *        Shortcut for <see cref="System.Console.Write(string?, object?)"/>.
      * </summary>
      * <param name="Texte">
-     *   [FR] Texte à renvoyer
-     *   [EN] Text to return
+     *   [FR] Texte à écrire, pouvant contenir des éléments de format.
+     *   [EN] Text to write, which may contain format items.
      * </param>
-     * </summary>
      * <param name="Argument">
-     *   [FR] Argument à renvoyer
-     *   [EN] Argument to return
+     *   [FR] Argument inséré dans le texte formaté.
+     *   [EN] Argument inserted into the formatted text.
      * </param>
-     * <returns>
-     *   Une chaîne plus l'argument
-     * </returns>
      **/
-    public static void Ecrire(string Texte, object Argument) => Console.Write(Texte, Argument);
+		public static void Ecrire(string Texte, object Argument) => Console.Write(Texte, Argument);
 
-    /**
+		/**
      * <summary>
-     *   [FR] Écrit la valeur de la chaîne de caractères spécifiée, suivie de la fin de la ligne en cours, dans le flux de sortie standard.
-     *        Racourci du <code>System.Console.Write</code>
-     *   [EN] Writes the specified string value, followed by the current line terminator, to the standard output stream.
-     *        Shortcut of the <code>System.Console.Write</code>
+     *   [FR] Écrit le texte en option sur toute la largeur de la ligne.
+     *        Utilise <see cref="Console.WindowWidth"/> pour calculer le remplissage.
+     *   [EN] Writes text, optionally filling the entire console line width.
+     *        Uses <see cref="Console.WindowWidth"/> to compute padding.
      * </summary>
      * <param name="ReserveToutLaLigne">
-     *   [FR] Indique si la ligne entière est prise ou non
-     *   [EN] Indicates whether the entire line is taken or not
+     *   [FR] Si <c>true</c>, le texte remplit la ligne entière avec un <c>PadRight</c>.
+     *   [EN] If <c>true</c>, the text fills the entire line using <c>PadRight</c>.
      * </param>
      * <param name="Texte">
-     *   [FR] Texte à renvoyer
-     *   [EN] Text to return
+     *   [FR] Texte à écrire.
+     *   [EN] Text to write.
      * </param>
-     * <returns>
-     *   chaîne
-     * </returns>
      **/
-    public static void Ecrire(bool ReserveToutLaLigne, string Texte) {
+		public static void Ecrire(bool ReserveToutLaLigne, string Texte) {
 
-      switch (ReserveToutLaLigne) {
+			switch(ReserveToutLaLigne) {
 
-        case true:
+				case true:
 
-          int Dimension = Console.WindowWidth - 1;
-          
-          if (Dimension != Console.CursorLeft + 1) {
+				int Dimension = Console.WindowWidth - 1;
 
-            Dimension = Dimension - Console.CursorLeft;
-          }
-          
-          if (Dimension < Texte.Length) {
+				if(Dimension != Console.CursorLeft + 1) {
 
-            Dimension = Console.WindowWidth + Dimension;
-          }
+					Dimension = Dimension - Console.CursorLeft;
+				}
 
-          if (Dimension < 0) {
+				if(Dimension < Texte.Length) {
 
-            Dimension = Texte.Length;
-          }
-          
-          Console.WriteLine($"{Texte.PadRight(Dimension)}");
-          break;
+					Dimension = Console.WindowWidth + Dimension;
+				}
 
-        default:
+				if(Dimension < 0) {
 
-          Ecrire(Texte);
-          break;
-      }
-    }
+					Dimension = Texte.Length;
+				}
 
-    /**
+				Console.WriteLine($"{Texte.PadRight(Dimension)}");
+				break;
+
+				default:
+
+				Ecrire(Texte);
+				break;
+			}
+		}
+
+		/**
      * <summary>
-     *   [FR] Écrit la valeur de la chaîne de caractères spécifiée, suivie de la fin de la ligne en cours, dans le flux de sortie standard.
-     *        Racourci du <code>System.Console.Write</code>
-     *   [EN] Writes the specified string value, followed by the current line terminator, to the standard output stream.
-     *        Shortcut of the <code>System.Console.Write</code>
+     *   [FR] Écrit le texte formaté en option sur toute la largeur de la ligne.
+     *        Utilise <see cref="Console.WindowWidth"/> pour calculer le remplissage.
+     *   [EN] Writes formatted text, optionally filling the entire console line width.
+     *        Uses <see cref="Console.WindowWidth"/> to compute padding.
      * </summary>
      * <param name="ReserveToutLaLigne">
-     *   [FR] Indique si la ligne entière est prise ou non
-     *   [EN] Indicates whether the entire line is taken or not
+     *   [FR] Si <c>true</c>, le texte remplit la ligne entière avec un <c>PadRight</c>.
+     *   [EN] If <c>true</c>, the text fills the entire line using <c>PadRight</c>.
      * </param>
      * <param name="Texte">
-     *   [FR] Texte à renvoyer
-     *   [EN] Text to return
-     * </param>
-     * * </summary>
-     * <param name="Argument">
-     *   [FR] Argument à renvoyer
-     *   [EN] Argument to return
-     * </param>
-     * <returns>
-     *   chaîne
-     * </returns>
-     **/
-    public static void Ecrire(bool ReserveToutLaLigne, string Texte, object Argument) {
-
-      switch(ReserveToutLaLigne) {
-
-        case true:
-
-          int Dimension = Console.WindowWidth - 1;
-
-          if(Dimension != Console.CursorLeft + 1) {
-
-            Dimension = Dimension - Console.CursorLeft;
-          }
-
-          if(Dimension < Texte.Length) {
-
-            Dimension = Console.WindowWidth + Dimension;
-          }
-
-          if(Dimension < 0) {
-
-            Dimension = Texte.Length;
-          }
-
-          Console.WriteLine($"{Texte.PadRight(Dimension)}", Argument);
-          break;
-
-        default:
-
-          Ecrire(Texte, Argument);
-          break;
-      }
-    }
-
-    /**
-     * <summary>
-     *   [FR] Aligne le texte spécifié avec une couleur donnée.
-     *   [EN] Aligns the specified text with a given color.
-     * </summary>
-     * <param name="Text">
-     *   [FR] Le texte à aligner.
-     *   [EN] The text to align.
-     * </param>
-     **/
-    public static void Aligner(string Text) => Ecrire(true, $"{Text.PadRight(Console.WindowWidth - 1)}");
-
-    /**
-     * <summary>
-     *   [FR] Aligne le texte spécifié avec une couleur donnée et un argument formaté.
-     *   [EN] Aligns the specified text with a given color and a formatted argument.
-     * </summary>
-     * <param name="Text">
-     *   [FR] Le texte à aligner.
-     *   [EN] The text to align.
+     *   [FR] Texte à écrire, pouvant contenir des éléments de format.
+     *   [EN] Text to write, which may contain format items.
      * </param>
      * <param name="Argument">
-     *   [FR] Argument à insérer dans le texte formaté.
-     *   [EN] Argument to insert into the formatted text.
+     *   [FR] Argument inséré dans le texte formaté.
+     *   [EN] Argument inserted into the formatted text.
      * </param>
      **/
-    public static void Aligner(string Text, object Argument) => Ecrire(true, $"{Text.PadRight(Console.WindowWidth - 1)}", Argument);
+		public static void Ecrire(bool ReserveToutLaLigne, string Texte, object Argument) {
 
-    /**
+			switch(ReserveToutLaLigne) {
+
+				case true:
+
+				int Dimension = Console.WindowWidth - 1;
+
+				if(Dimension != Console.CursorLeft + 1) {
+
+					Dimension = Dimension - Console.CursorLeft;
+				}
+
+				if(Dimension < Texte.Length) {
+
+					Dimension = Console.WindowWidth + Dimension;
+				}
+
+				if(Dimension < 0) {
+
+					Dimension = Texte.Length;
+				}
+
+				Console.WriteLine($"{Texte.PadRight(Dimension)}", Argument);
+				break;
+
+				default:
+
+				Ecrire(Texte, Argument);
+				break;
+			}
+		}
+
+		/**
      * <summary>
-     *   [FR] Aligne le texte avec un alignement spécifique.
-     *   [EN] Aligns the text with a specific alignment.
+     *   [FR] Aligne le texte sur toute la largeur de la fenêtre en le remplissant à droite.
+     *   [EN] Aligns the text to fill the console width by padding on the right.
+     * </summary>
+     * <param name="Texte">
+     *   [FR] Texte à aligner.
+     *   [EN] Text to align.
+     * </param>
+     **/
+		public static void Aligner(string Texte) =>
+			Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}");
+
+		/**
+     * <summary>
+     *   [FR] Aligne le texte formaté sur toute la largeur de la fenêtre en le remplissant à droite.
+     *   [EN] Aligns the formatted text to fill the console width by padding on the right.
+     * </summary>
+     * <param name="Texte">
+     *   [FR] Texte à aligner, pouvant contenir des éléments de format.
+     *   [EN] Text to align, which may contain format items.
+     * </param>
+     * <param name="Argument">
+     *   [FR] Argument inséré dans le texte formaté.
+     *   [EN] Argument inserted into the formatted text.
+     * </param>
+     **/
+		public static void Aligner(string Texte, object Argument) =>
+			Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}", Argument);
+
+		/**
+     * <summary>
+     *   [FR] Aligne le texte selon l'alignement spécifié.
+     *   [EN] Aligns the text according to the specified alignment.
      * </summary>
      * <param name="Alignement">
      *   [FR] Type d'alignement à appliquer (Droite, Gauche, Centre).
      *   [EN] Type of alignment to apply (Right, Left, Center).
      * </param>
      * <param name="Texte">
-     *   [FR] Le texte à aligner.
-     *   [EN] The text to align.
+     *   [FR] Texte à aligner.
+     *   [EN] Text to align.
      * </param>
      **/
-    public static void Aligner(Alignement Alignement, string Texte) {
+		public static void Aligner(Alignement Alignement, string Texte) {
 
-      switch (Alignement) {
+			switch(Alignement) {
 
-        case Alignement.Droite:
-          Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}");
-          break;
+				case Alignement.Droite:
 
-        case Alignement.Gauche:
+				// Aligne le texte à droite (espaces à gauche).
+				Ecrire(true, $"{Texte.PadLeft(Console.WindowWidth - 1)}");
+				break;
 
-          Ecrire(true, $"{Texte.PadLeft(Console.WindowWidth - 1)}");
-          break;
+				case Alignement.Gauche:
 
-        case Alignement.Centre:
+				// Aligne le texte à gauche (espaces à droite).
+				Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}");
+				break;
 
-          decimal Taille = Console.WindowWidth - 1 - Texte.Length;
-          int TailleDroite = (int)Math.Round(Taille / 2);
-          int TailleGauche = (int)(Taille - TailleDroite);
-          string MargeGauche = new String(' ', TailleGauche);
-          string MargeDroite = new String(' ', TailleDroite);
+				case Alignement.Centre:
 
-          Ecrire(MargeGauche);
-          Ecrire(Texte);
-          Ecrire(true, MargeDroite);
-          break;
+				decimal Taille = Console.WindowWidth - 1 - Texte.Length;
+				int TailleDroite = (int)Math.Round(Taille / 2);
+				int TailleGauche = (int)(Taille - TailleDroite);
+				string MargeGauche = new string(' ', TailleGauche);
+				string MargeDroite = new string(' ', TailleDroite);
 
-        default:
+				Ecrire(MargeGauche);
+				Ecrire(Texte);
+				Ecrire(true, MargeDroite);
+				break;
 
-          Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}");
-          break;
-      }
-    }
+				default:
 
-    /**
+				Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}");
+				break;
+			}
+		}
+
+		/**
      * <summary>
-     *   [FR] Aligne le texte formaté avec un alignement spécifique et un argument.
-     *   [EN] Aligns the formatted text with a specific alignment and an argument.
+     *   [FR] Aligne le texte formaté selon l'alignement spécifié.
+     *   [EN] Aligns the formatted text according to the specified alignment.
      * </summary>
      * <param name="Alignement">
      *   [FR] Type d'alignement à appliquer (Droite, Gauche, Centre).
      *   [EN] Type of alignment to apply (Right, Left, Center).
      * </param>
      * <param name="Texte">
-     *   [FR] Le texte à aligner, pouvant contenir des formats.
-     *   [EN] The text to align, potentially containing formats.
+     *   [FR] Texte à aligner, pouvant contenir des éléments de format.
+     *   [EN] Text to align, which may contain format items.
      * </param>
      * <param name="Argument">
-     *   [FR] Argument à insérer dans le texte formaté.
-     *   [EN] Argument to insert into the formatted text.
+     *   [FR] Argument inséré dans le texte formaté.
+     *   [EN] Argument inserted into the formatted text.
      * </param>
      **/
-    public static void Aligner(Alignement Alignement, string Texte, object Argument) {
+		public static void Aligner(Alignement Alignement, string Texte, object Argument) {
 
-      switch(Alignement) {
+			switch(Alignement) {
 
-        case Alignement.Droite:
-          Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}", Argument);
-          break;
+				case Alignement.Droite:
 
-        case Alignement.Gauche:
+				// Aligne le texte à droite (espaces à gauche).
+				Ecrire(true, $"{Texte.PadLeft(Console.WindowWidth - 1)}", Argument);
+				break;
 
-          Ecrire(true, $"{Texte.PadLeft(Console.WindowWidth - 1)}", Argument);
-          break;
+				case Alignement.Gauche:
 
-        case Alignement.Centre:
+				// Aligne le texte à gauche (espaces à droite).
+				Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}", Argument);
+				break;
 
-          decimal Taille = Console.WindowWidth - 1 - Texte.Length;
-          int TailleDroite = (int)Math.Round(Taille / 2);
-          int TailleGauche = (int)(Taille - TailleDroite);
-          string MargeGauche = new String(' ', TailleGauche);
-          string MargeDroite = new String(' ', TailleDroite);
+				case Alignement.Centre:
 
-          Ecrire(MargeGauche);
-          Ecrire(Texte, Argument);
-          Ecrire(true, MargeDroite);
-          break;
+				decimal Taille = Console.WindowWidth - 1 - Texte.Length;
+				int TailleDroite = (int)Math.Round(Taille / 2);
+				int TailleGauche = (int)(Taille - TailleDroite);
+				string MargeGauche = new string(' ', TailleGauche);
+				string MargeDroite = new string(' ', TailleDroite);
 
-        default:
+				Ecrire(MargeGauche);
+				Ecrire(Texte, Argument);
+				Ecrire(true, MargeDroite);
+				break;
 
-          Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}");
-          break;
-      }
-    }
+				default:
 
-    /**
+				Ecrire(true, $"{Texte.PadRight(Console.WindowWidth - 1)}", Argument);
+				break;
+			}
+		}
+
+		/**
      * <summary>
-     *   [FR] Dessine une ligne séparatrice décorée avec un caractère spécifique et une couleur donnée.
-     *   [EN] Draws a decorated separator line with a specific character and a given color.
+     *   [FR] Dessine une ligne composée du caractère spécifié sur toute la largeur de la fenêtre.
+     *   [EN] Draws a line made of the specified character across the console width.
      * </summary>
      * <param name="Caractere">
-     *   [FR] Le caractère à utiliser pour dessiner la ligne séparatrice.
-     *   [EN] The character to use for drawing the separator line.
+     *   [FR] Caractère utilisé pour dessiner la ligne.
+     *   [EN] Character used to draw the line.
      * </param>
      **/
-    public static void LigneSeparatriceDecoree(char Caractere) {
+		public static void LigneSeparatriceDecoree(char Caractere) {
 
-      string Texte = new String(Caractere, Console.WindowWidth - 1);
-      Ecrire(true, Texte);
-    }
+			string Texte = new string(Caractere, Console.WindowWidth - 1);
+			Ecrire(true, Texte);
+		}
 
-    /**
+		/**
      * <summary>
-     *   [FR] Dessine une ou plusieurs lignes séparatrices avec une couleur par défaut.
-     *   [EN] Draws one or more separator lines with a default color.
+     *   [FR] Dessine une ou plusieurs lignes séparatrices vides (espaces).
+     *   [EN] Draws one or more blank separator lines (spaces).
      * </summary>
      * <param name="Lignes">
-     *   [FR] Nombre de lignes séparatrices à dessiner. Par défaut, 1.
-     *   [EN] Number of separator lines to draw. Defaults to 1.
+     *   [FR] Nombre de lignes séparatrices à dessiner (1 si <c>null</c>).
+     *   [EN] Number of separator lines to draw (1 if <c>null</c>).
      * </param>
      **/
-    public static void LigneSeparatrice(int? Lignes = 1) {
+		public static void LigneSeparatrice(int? Lignes = 1) {
 
-      for (int i = 0; i < Lignes; i++) {
+			int NombreLignes = Lignes ?? 1;
 
-        LigneSeparatriceDecoree(' ');
-      }
-    }
+			for(int i = 0; i < NombreLignes; i++) {
 
-    /**
+				LigneSeparatriceDecoree(' ');
+			}
+		}
+
+		/**
      * <summary>
-     *   [FR] Aligne une division de texte séparée par un caractère spécifique avec une couleur donnée.
-     *   [EN] Align a text division separated by a specific character with a given color.
+     *   [FR] Affiche deux textes aux extrémités gauche et droite de la fenêtre.
+     *   [EN] Displays two texts at the left and right extremes of the console window.
      * </summary>
      * <param name="Gauche">
-     *   [FR] Texte à aligner à gauche de la division.
-     *   [EN] Text to align to the left of the division.
+     *   [FR] Texte aligné à gauche.
+     *   [EN] Text aligned to the left.
      * </param>
      * <param name="Droit">
-     *   [FR] Texte à aligner à droite de la division.
-     *   [EN] Text to align to the right of the division.
+     *   [FR] Texte aligné à droite.
+     *   [EN] Text aligned to the right.
      * </param>
      **/
-    public static void Extreme(string Gauche, string Droit) {
+		public static void Extreme(string Gauche, string Droit) {
 
-			decimal Taille  = Console.WindowWidth - 1;
+			decimal Taille = Console.WindowWidth - 1;
 			int MargeDroite = (int)Math.Round(Taille / 2);
 			int MargeGauche = (int)(Taille - MargeDroite);
 
-      Ecrire($"{Gauche}".PadRight(MargeDroite));
-      Ecrire(true, $"{Droit}".PadLeft(MargeGauche));
-    }
+			Ecrire(Gauche.PadRight(MargeDroite));
+			Ecrire(true, Droit.PadLeft(MargeGauche));
+		}
 	}
 }

@@ -5,6 +5,55 @@
 
 ---
 
+## [1.2.0.115] - 2025-11-20
+
+### Modifié
+- Terminal / Thèmes
+  - `GalacticShrine.Structure.Terminal.Couleur`
+    - Struct rendue immuable (`readonly struct`) avec propriétés en lecture seule.
+    - Ajout de la documentation XML bilingue (FR/EN).
+  - `GalacticShrine.UI.Terminal.ThemeParams`
+    - Propriété `Couleurs` désormais non-nullable et initialisée avec un dictionnaire vide.
+    - Documentation clarifiée sur le rôle de `ConsoleParDefault`, `ConsoleArrierePlan` et `ConsolePremierPlan`.
+  - `GalacticShrine.UI.Terminal.Theme`, `ThemeLumineux`, `ThemeSombre`
+    - Construction des thèmes inchangée, mais utilisation sécurisée de `ThemeParams.Couleurs`.
+  - `GalacticShrine.Interface.Terminal.CouleurInterface`
+    - Utilisation cohérente de la propriété `Couleurs` côté implémentations.
+
+- Formatage du terminal
+  - `GalacticShrine.Terminal.Format`
+    - Validation du paramètre `Theme` via `ArgumentNullException.ThrowIfNull`.
+    - Vérification explicite que `Theme.Couleurs` est initialisé, avec `InvalidOperationException` en cas de configuration invalide.
+    - Champ `VariationDuTheme` rendu `private readonly` pour garantir l’immuabilité après construction.
+    - Méthodes internes (`DefinirCouleur*`, `CouleurParDefaut`) rendues privées, avec messages d’erreur plus explicites lorsqu’une clé de couleur est introuvable.
+    - Documentation XML FR/EN complétée pour l’ensemble de l’API publique.
+
+- Utilitaires Terminal
+  - `GalacticShrine.Terminal.Terminal`
+    - Conversion en classe statique.
+    - Propriété `Controleur` exposée en lecture seule, avec construction tolérante multi-plateforme :
+      - utilisation de `Utilisateur@Domaine` lorsque disponible ;
+      - repli sur `Environment.UserName` en cas d’environnement sans domaine.
+  - `GalacticShrine.Terminal.Couleurs`
+    - Paramètre de `TxtStatus` renommé en `EstValide` (français) pour respecter les conventions de nommage.
+    - Documentation XML mise à jour pour refléter ce changement.
+
+- Sortie et décoration de texte
+  - `GalacticShrine.Terminal.Sortie`
+    - Documentation XML nettoyée (balises cohérentes, suppression des redondances).
+    - Alignement des textes droite/gauche/centre clarifié et rendu plus lisible.
+  - `GalacticShrine.Terminal.Decorateur`
+    - Ajout de la validation de l’argument `Texte` avec `ArgumentNullException.ThrowIfNull`.
+    - Calcul de `LargeurEcran` rendu plus robuste (valeur minimale garantie).
+    - Nettoyage du code (utilisation de `var`, `StringBuilder`, `TrimEnd`, etc.) sans changement fonctionnel visible.
+
+### Corrigé
+- `GalacticShrine.Terminal.Sortie`
+  - Correction d’incohérences possibles entre les modes d’alignement (gauche/droite/centre) et l’utilisation de `PadLeft` / `PadRight`.
+- `GalacticShrine.Terminal.Decorateur`
+  - Protection contre des largeurs de console invalides pouvant conduire à des comportements inattendus lors du découpage des mots.
+
+
 ## [1.2.0.114] - 2025-11-19
 
 ### Ajouté
