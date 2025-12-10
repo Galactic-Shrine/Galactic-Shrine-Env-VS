@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "GalacticShrine", "namespace_galactic_shrine.html", "namespace_galactic_shrine" ]
+    [ "GalacticShrine", "d7/d39/namespace_galactic_shrine.html", "d7/d39/namespace_galactic_shrine" ]
 ];

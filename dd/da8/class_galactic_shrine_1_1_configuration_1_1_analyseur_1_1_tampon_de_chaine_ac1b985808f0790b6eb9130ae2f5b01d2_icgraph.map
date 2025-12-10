@@ -1,0 +1,9 @@
+<map id="GalacticShrine.Configuration.Analyseur.TamponDeChaine.AvalezCopie" name="GalacticShrine.Configuration.Analyseur.TamponDeChaine.AvalezCopie">
+<area shape="rect" id="Node000001" title=" " alt="" coords="728,5,994,48"/>
+<area shape="rect" id="Node000002" href="$dd/da8/class_galactic_shrine_1_1_configuration_1_1_ini.html#ab33c61b1a5f2a6e45d63e48113f20750" title=" " alt="" coords="484,5,680,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="713,29,681,29,681,24,713,24"/>
+<area shape="rect" id="Node000003" href="$dd/da8/class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="245,5,436,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,29,437,29,437,24,469,24"/>
+<area shape="rect" id="Node000004" href="$dd/da8/class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,5,197,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,29,197,29,197,24,229,24"/>
+</map>

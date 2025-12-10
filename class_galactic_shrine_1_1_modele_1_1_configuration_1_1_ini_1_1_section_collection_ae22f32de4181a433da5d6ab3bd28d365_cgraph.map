@@ -1,5 +1,0 @@
-<map id="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Ajouter" name="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Ajouter">
-<area shape="rect" id="Node000001" title="[FR] Ajoute une nouvelle instance de section à la collection. &#160;[EN] Adds a new section instance to th..." alt="" coords="5,5,241,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="289,5,524,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,24,274,24,274,29,241,29"/>
-</map>

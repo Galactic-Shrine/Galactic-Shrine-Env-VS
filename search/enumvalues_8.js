@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['linux_0',['Linux',['../namespace_galactic_shrine_1_1_enumeration_1_1_outils.html#ae72610c1b287738f89a4ab960b0a8948aedc9f0a5a5d57797bf68e37364743831',1,'GalacticShrine::Enumeration::Outils']]]
+  ['personnalise_0',['Personnalise',['../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6aab57fa0c13b867a46108668c11bff46a',1,'GalacticShrine::Enumeration']]],
+  ['proprietes_1',['Proprietes',['../d5/d42/namespace_galactic_shrine_1_1_enumeration_1_1_configuration.html#a632b2049550e61cde464235afcfba867aa7dec5ddeaed86ee9234393e398973c1',1,'GalacticShrine::Enumeration::Configuration']]]
 ];

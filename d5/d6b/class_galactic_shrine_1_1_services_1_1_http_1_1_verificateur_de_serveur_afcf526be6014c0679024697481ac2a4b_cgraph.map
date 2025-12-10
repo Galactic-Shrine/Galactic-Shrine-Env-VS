@@ -1,0 +1,5 @@
+<map id="GalacticShrine.Services.Http.VerificateurDeServeur.Arreter" name="GalacticShrine.Services.Http.VerificateurDeServeur.Arreter">
+<area shape="rect" id="Node000001" title="[FR] Arrête le minuteur de vérification périodique. [EN] Stops the periodic verification timer." alt="" coords="5,13,226,56"/>
+<area shape="rect" id="Node000002" href="$d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur.html#a3eecb5e4d2d1c26070fe0549f78bede2" title="[FR] Initialise une nouvelle instance de VerificateurDeServeur. [EN] Initializes a new instance of th..." alt="" coords="274,5,520,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,32,258,32,258,37,226,37"/>
+</map>

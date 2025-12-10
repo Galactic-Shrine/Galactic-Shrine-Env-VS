@@ -1,0 +1,5 @@
+<map id="GalacticShrine.Services.Http.VerificateurDeServeur.VerifierMaintenantAsync" name="GalacticShrine.Services.Http.VerificateurDeServeur.VerifierMaintenantAsync">
+<area shape="rect" id="Node000001" title="[FR] Lance immédiatement une vérification de l&#39;état du serveur. [EN] Immediately triggers a server st..." alt="" coords="5,5,227,64"/>
+<area shape="rect" id="Node000002" href="$d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur.html#a3eecb5e4d2d1c26070fe0549f78bede2" title="[FR] Initialise une nouvelle instance de VerificateurDeServeur. [EN] Initializes a new instance of th..." alt="" coords="275,5,521,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,32,259,32,259,37,227,37"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="GalacticShrine.UI.Terminal.ThemeSombre.DefinirLesComposants" name="GalacticShrine.UI.Terminal.ThemeSombre.DefinirLesComposants">
+<area shape="rect" id="Node000001" title="[FR] Configure les différents composants (textes, fonds) avec des couleurs sombres...." alt="" coords="5,5,249,48"/>
+<area shape="rect" id="Node000002" href="$d4/dd5/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aa34e36adfde77fb1d09783d65926c5cc" title="[FR] Crée et retourne un objet Couleur en tenant compte d&#39;éventuelles couleurs de fallback...." alt="" coords="297,5,493,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,24,281,24,281,29,249,29"/>
+</map>

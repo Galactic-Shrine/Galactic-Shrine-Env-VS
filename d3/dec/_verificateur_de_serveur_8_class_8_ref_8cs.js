@@ -1,0 +1,5 @@
+var _verificateur_de_serveur_8_class_8_ref_8cs =
+[
+    [ "GalacticShrine.Services.Http.VerificateurDeServeur", "d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur.html", "d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur" ],
+    [ "GalacticShrine.Services.Http.VerificateurDeServeur.ResultatVerificationServeurEventArgs", "d5/d05/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur_1_1_resultat_verification_serveur_event_args.html", "d5/d05/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur_1_1_resultat_verification_serveur_event_args" ]
+];

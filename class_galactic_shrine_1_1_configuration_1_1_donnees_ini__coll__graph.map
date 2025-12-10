@@ -1,9 +1,0 @@
-<map id="GalacticShrine.Configuration.DonneesIni" name="GalacticShrine.Configuration.DonneesIni">
-<area shape="rect" id="Node000001" title=" " alt="" coords="521,39,711,81"/>
-<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html" title=" " alt="" coords="214,5,342,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="356,32,521,48,520,53,356,37"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_schema_ini.html" title="[FR] Cette structure définit le format du fichier INI en personnalisant les caractères utilisés &#160;pour..." alt="" coords="183,72,372,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="387,80,520,67,521,72,388,85"/>
-<area shape="rect" id="Node000004" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html" title=" " alt="" coords="5,72,134,115"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,91,183,91,183,96,149,96"/>
-</map>

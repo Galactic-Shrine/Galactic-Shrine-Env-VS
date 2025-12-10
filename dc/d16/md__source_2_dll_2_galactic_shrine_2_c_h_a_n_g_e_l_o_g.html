@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Environement-VS: Changelog</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript" src="../../darkmode_toggle.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../1.3.2.small.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Environement-VS<span id="projectnumber">&#160;1.0.0-Alpha</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Changelog </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="changelog"></a></p>
+<blockquote class="doxtable">
+<p>Nous sommes désolés : aucun changelog n’avait été maintenu jusqu’à présent. <br  />
+ Cet historique démarre avec la version ci-dessous ; les changements antérieurs (2023–2025) n’ont pas été consignés. </p>
+</blockquote>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120115---2025-11-20"></a>
+[1.2.0.115] - 2025-11-20</h1>
+<h2 class="doxsection"><a class="anchor" id="modifié"></a>
+Modifié</h2>
+<ul>
+<li>Terminal / Thèmes<ul>
+<li><span class="tt"><a class="el" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html" title="[FR] Représente une paire de couleurs console (arrière-plan et premier plan). [EN] Represents a pair ...">GalacticShrine.Structure.Terminal.Couleur</a></span><ul>
+<li>Struct rendue immuable (<span class="tt">readonly struct</span>) avec propriétés en lecture seule.</li>
+<li>Ajout de la documentation XML bilingue (FR/EN).</li>
+</ul>
+</li>
+<li><span class="tt"><a class="el" href="../../d4/dd5/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html" title="[FR] Classe abstraite définissant les paramètres et méthodes de base pour un thème (couleurs)....">GalacticShrine.UI.Terminal.ThemeParams</a></span><ul>
+<li>Propriété <span class="tt">Couleurs</span> désormais non-nullable et initialisée avec un dictionnaire vide.</li>
+<li>Documentation clarifiée sur le rôle de <span class="tt">ConsoleParDefault</span>, <span class="tt">ConsoleArrierePlan</span> et <span class="tt">ConsolePremierPlan</span>.</li>
+</ul>
+</li>
+<li><span class="tt">GalacticShrine.UI.Terminal.Theme</span>, <span class="tt">ThemeLumineux</span>, <span class="tt">ThemeSombre</span><ul>
+<li>Construction des thèmes inchangée, mais utilisation sécurisée de <span class="tt">ThemeParams.Couleurs</span>.</li>
+</ul>
+</li>
+<li><span class="tt"><a class="el" href="../../de/d50/interface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface.html" title="[FR] Interface définissant la gestion et l&#39;ajout de couleurs dans un contexte de terminal....">GalacticShrine.Interface.Terminal.CouleurInterface</a></span><ul>
+<li>Utilisation cohérente de la propriété <span class="tt">Couleurs</span> côté implémentations.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Formatage du terminal<ul>
+<li><span class="tt"><a class="el" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html" title="[FR] Classe Format gérant les opérations de formatage et d&#39;affichage du texte dans le terminal avec g...">GalacticShrine.Terminal.Format</a></span><ul>
+<li>Validation du paramètre <span class="tt">Theme</span> via <span class="tt">ArgumentNullException.ThrowIfNull</span>.</li>
+<li>Vérification explicite que <span class="tt">Theme.Couleurs</span> est initialisé, avec <span class="tt">InvalidOperationException</span> en cas de configuration invalide.</li>
+<li>Champ <span class="tt">VariationDuTheme</span> rendu <span class="tt">private readonly</span> pour garantir l’immuabilité après construction.</li>
+<li>Méthodes internes (<span class="tt">DefinirCouleur*</span>, <span class="tt">CouleurParDefaut</span>) rendues privées, avec messages d’erreur plus explicites lorsqu’une clé de couleur est introuvable.</li>
+<li>Documentation XML FR/EN complétée pour l’ensemble de l’API publique.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Utilitaires Terminal<ul>
+<li><span class="tt">GalacticShrine.Terminal.Terminal</span><ul>
+<li>Conversion en classe statique.</li>
+<li>Propriété <span class="tt">Controleur</span> exposée en lecture seule, avec construction tolérante multi-plateforme :<ul>
+<li>utilisation de <span class="tt">Utilisateur@Domaine</span> lorsque disponible ;</li>
+<li>repli sur <span class="tt">Environment.UserName</span> en cas d’environnement sans domaine.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="tt">GalacticShrine.Terminal.Couleurs</span><ul>
+<li>Paramètre de <span class="tt">TxtStatus</span> renommé en <span class="tt">EstValide</span> (français) pour respecter les conventions de nommage.</li>
+<li>Documentation XML mise à jour pour refléter ce changement.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sortie et décoration de texte<ul>
+<li><span class="tt">GalacticShrine.Terminal.Sortie</span><ul>
+<li>Documentation XML nettoyée (balises cohérentes, suppression des redondances).</li>
+<li>Alignement des textes droite/gauche/centre clarifié et rendu plus lisible.</li>
+</ul>
+</li>
+<li><span class="tt">GalacticShrine.Terminal.Decorateur</span><ul>
+<li>Ajout de la validation de l’argument <span class="tt">Texte</span> avec <span class="tt">ArgumentNullException.ThrowIfNull</span>.</li>
+<li>Calcul de <span class="tt">LargeurEcran</span> rendu plus robuste (valeur minimale garantie).</li>
+<li>Nettoyage du code (utilisation de <span class="tt">var</span>, <span class="tt">StringBuilder</span>, <span class="tt">TrimEnd</span>, etc.) sans changement fonctionnel visible.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé"></a>
+Corrigé</h2>
+<ul>
+<li><span class="tt">GalacticShrine.Terminal.Sortie</span><ul>
+<li>Correction d’incohérences possibles entre les modes d’alignement (gauche/droite/centre) et l’utilisation de <span class="tt">PadLeft</span> / <span class="tt">PadRight</span>.</li>
+</ul>
+</li>
+<li><span class="tt">GalacticShrine.Terminal.Decorateur</span><ul>
+<li>Protection contre des largeurs de console invalides pouvant conduire à des comportements inattendus lors du découpage des mots.</li>
+</ul>
+</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120114---2025-11-19"></a>
+[1.2.0.114] - 2025-11-19</h1>
+<h2 class="doxsection"><a class="anchor" id="ajouté"></a>
+Ajouté</h2>
+<ul>
+<li><span class="tt"><a class="el" href="../../d7/dcc/interface_galactic_shrine_1_1_interface_1_1_stockage_session_interface.html" title="[FR] Interface décrivant la sauvegarde et le chargement de données de session. [EN] Interface describ...">GalacticShrine.Interface.StockageSessionInterface</a></span><ul>
+<li>Méthode asynchrone <span class="tt">Task SauvegarderAsync(string Donnees, string Cle, CancellationToken JetonAnnulation = default)</span> <br  />
+ pour la sauvegarde non bloquante des données de session.</li>
+<li>Méthode asynchrone <span class="tt">Task&lt;string&gt; ChargerAsync(string Cle, CancellationToken JetonAnnulation = default)</span> <br  />
+ pour le chargement non bloquant des données de session.</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="modifié-1"></a>
+Modifié</h2>
+<ul>
+<li><span class="tt"><a class="el" href="../../d1/dd5/class_galactic_shrine_1_1_stockage_1_1_session.html" title="[FR] Classe responsable du stockage sécurisé des données de session. [EN] Class responsible for secur...">GalacticShrine.Stockage.Session</a></span><ul>
+<li>Ajout des implémentations asynchrones <span class="tt">SauvegarderAsync</span> et <span class="tt">ChargerAsync</span> basées sur <span class="tt">FileStream</span> asynchrone, <span class="tt">CryptoStream</span> et propagation du <span class="tt">CancellationToken</span>.</li>
+<li>Introduction de la méthode interne <span class="tt">ObtenirCleDeChiffrement(string Cle)</span> :<ul>
+<li>validation de la clé AES en UTF-8 (longueur 16, 24 ou 32 octets),</li>
+<li>levée d’<span class="tt">ArgumentException</span> en cas de clé invalide.</li>
+</ul>
+</li>
+<li>Harmonisation de la gestion de l’extension du fichier de session :<ul>
+<li>utilisation de <span class="tt">Fichier.Extension["Scripts"][4]</span> pour initialiser <span class="tt">Extension</span>,</li>
+<li>concaténation du nom de fichier sous la forme <span class="tt">${NomDeFichier}{Extension}</span> sans point redondant.</li>
+</ul>
+</li>
+<li>Renforcement de la robustesse lors du chargement :<ul>
+<li>lecture et validation stricte de l’IV (16 octets),</li>
+<li>levée d’<span class="tt">InvalidDataException</span> lorsque l’IV ne peut pas être lu intégralement (fichier corrompu).</li>
+</ul>
+</li>
+<li>Mise à jour et clarification de la documentation XML bilingue (FR/EN) sur l’ensemble des méthodes de stockage de session (synchrones et asynchrones).</li>
+</ul>
+</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120113---2025-11-19"></a>
+[1.2.0.113] - 2025-11-19</h1>
+<h2 class="doxsection"><a class="anchor" id="ajouté-1"></a>
+Ajouté</h2>
+<ul>
+<li><b>SystemeExploitation.Inconnu</b> <br  />
+ (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Enumeration\<a class="el" href="../../da/db2/_systeme_exploitation_8_enum_8_ref_8cs.html">SystemeExploitation.Enum.Ref.cs</a></span>)<ul>
+<li>Nouvelle valeur explicite <span class="tt">Inconnu = 0</span> pour représenter un système d’exploitation inconnu ou non supporté.</li>
+<li>Utilisée comme valeur de retour par défaut par les méthodes de détection de l’OS.</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="modifié-2"></a>
+Modifié</h2>
+<ul>
+<li><b><a class="el" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#aa76ddebb90708b06ac0fd99dade9408a" title="[FR] Énumération des principaux systèmes d&#39;exploitation détectables. [EN] Enumeration of main detecta...">GalacticShrine.Enumeration.SystemeExploitation</a></b> <br  />
+ (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Enumeration\<a class="el" href="../../da/db2/_systeme_exploitation_8_enum_8_ref_8cs.html">SystemeExploitation.Enum.Ref.cs</a></span>)<ul>
+<li>Enum enrichie et documentation FR/EN clarifiée.</li>
+<li>Les valeurs suivent désormais <span class="tt">Inconnu = 0</span> :<ul>
+<li><span class="tt">Mac</span> = 1,</li>
+<li><span class="tt">Linux</span> = 2,</li>
+<li><span class="tt">Windows</span> = 3.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b><a class="el" href="../../d4/df4/class_galactic_shrine_1_1_outils_1_1_outils.html" title="[FR] Classe de base pour les outil. [EN] Basic class for tools.">GalacticShrine.Outils.Outils</a></b> <br  />
+ (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Outils\<a class="el" href="../../de/d4e/_outils_8_class_8_ref_8cs.html">Outils.Class.Ref.cs</a></span>)<ul>
+<li>Légère clarification des commentaires FR/EN (aucun changement d’API).</li>
+</ul>
+</li>
+<li><b>GalacticShrine.Outils.OS</b> <br  />
+ (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Outils\<a class="el" href="../../dc/dc1/_os_8_class_8_ref_8cs.html">Os.Class.Ref.cs</a></span>)<ul>
+<li><span class="tt">ObtenirNomCourantes</span> :<ul>
+<li>Ne renvoie plus jamais <span class="tt">null</span>, mais l’une des valeurs : <span class="tt">"Windows"</span>, <span class="tt">"macOS"</span>, <span class="tt">"Linux"</span> ou <span class="tt">"Inconnu"</span>.</li>
+<li>Logique simplifiée pour limiter les branches imbriquées.</li>
+</ul>
+</li>
+<li><span class="tt">ObtenirIdCourantes</span> :<ul>
+<li>Retourne désormais <span class="tt">SystemeExploitation.Inconnu</span> si aucun OS connu n’est détecté.</li>
+<li>Le fallback implicite sur <span class="tt">SystemeExploitation.Windows</span> pour les plateformes inconnues est supprimé.</li>
+</ul>
+</li>
+<li>Harmonisation de la documentation XML FR/EN.</li>
+</ul>
+</li>
+<li><b><a class="el" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a558d9b82b7562be7c775acf3b9ef128b" title="[FR] Énumération des thèmes Windows. [EN] Enumeration of Windows themes.">GalacticShrine.Enumeration.WindowsTheme</a></b> <br  />
+ (<span class="tt">\Source\Dll\Galactic-Shrine\Enumeration\<a class="el" href="../../db/d90/_windows_theme_8_enum_8_ref_8cs.html">WindowsTheme.Enum.Ref.cs</a></span>)<ul>
+<li>Normalisation mineure du formatage (espaces, alignement) sans modification des valeurs ni de l’API.</li>
+</ul>
+</li>
+<li><b>GalacticShrine.Outils.WindowsThemeAssistant</b> <br  />
+ (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Outils\<a class="el" href="../../d3/d4d/_windows_theme_8_assistant_8_class_8_ref_8cs.html">WindowsTheme.Assistant.Class.Ref.cs</a></span>)<ul>
+<li><span class="tt">ObtenirThemeApp</span> et <span class="tt">ObtenirThemeSystem</span> :<ul>
+<li>Vérifient désormais explicitement la plateforme : sur un système non Windows, retournent immédiatement <span class="tt">WindowsTheme.Inconnu</span> sans accès au Registre.</li>
+<li>Les accès au Registre (<span class="tt">Registry.CurrentUser.OpenSubKey(...)</span>) sont encapsulés dans un <span class="tt">try/catch</span> pour éviter les exceptions non gérées.</li>
+<li>En cas de valeur de registre invalide ou manquante, l’API retourne <span class="tt">WindowsTheme.Inconnu</span> de manière déterministe.</li>
+</ul>
+</li>
+<li>Nettoyage de quelques coquilles (stray <span class="tt">;</span>) et amélioration des commentaires XML FR/EN.</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé-1"></a>
+Corrigé</h2>
+<ul>
+<li><b>Détection de l’OS courant</b> <br  />
+ (<span class="tt">GalacticShrine.Outils.OS</span>)<ul>
+<li>Cas des systèmes non Windows/Linux/macOS mieux pris en compte :<ul>
+<li><span class="tt">ObtenirNomCourantes</span> ne renvoie plus <span class="tt">null</span> mais <span class="tt">"Inconnu"</span>.</li>
+<li><span class="tt">ObtenirIdCourantes</span> ne force plus <span class="tt">SystemeExploitation.Windows</span> par défaut lorsque l’OS n’est pas reconnu.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Compatibilité multi-plateforme de WindowsThemeAssistant</b><ul>
+<li>L’utilisation de <span class="tt">WindowsThemeAssistant</span> sur Linux/macOS ne provoque plus d’accès au Registre ni de comportement indéfini :<ul>
+<li>Sur toute plateforme non Windows, les thèmes applicatif et système sont systématiquement retournés comme <span class="tt">WindowsTheme.Inconnu</span>.</li>
+</ul>
+</li>
+<li>Les erreurs d’accès au Registre (droits, clés manquantes, valeurs inattendues) n’entrainent plus d’exception : l’API revient à un état sûr (<span class="tt">Inconnu</span>).</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="ruptures"></a>
+Ruptures</h2>
+<ul>
+<li><b>SystemeExploitation (valeurs numériques sous-jacentes)</b><ul>
+<li>L’ajout de <span class="tt">Inconnu = 0</span> en tête de l’énumération modifie les valeurs numériques des autres membres :<ul>
+<li><span class="tt">Mac</span> passe de <span class="tt">0</span> à <span class="tt">1</span>,</li>
+<li><span class="tt">Linux</span> passe de <span class="tt">1</span> à <span class="tt">2</span>,</li>
+<li><span class="tt">Windows</span> passe de <span class="tt">2</span> à <span class="tt">3</span>.</li>
+</ul>
+</li>
+<li>Impacts possibles :<ul>
+<li>Données sérialisées ou stockées qui s’appuyaient sur les valeurs numériques brutes de l’énumération.</li>
+<li>Éventuels <span class="tt">switch</span> ou comparaisons externes qui utilisent explicitement ces valeurs numériques.</li>
+</ul>
+</li>
+<li>L’API publique reste inchangée, mais la sémantique de la valeur par défaut (<span class="tt">0</span>) correspond désormais explicitement à un OS inconnu (<span class="tt">Inconnu</span>).</li>
+</ul>
+</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120112---2025-11-18"></a>
+[1.2.0.112] - 2025-11-18</h1>
+<h2 class="doxsection"><a class="anchor" id="modifié-3"></a>
+Modifié</h2>
+<ul>
+<li><span class="tt"><a class="el" href="../../d7/d99/class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html" title="[FR] Fournit des méthodes pour journaliser des messages dans des fichiers texte. [EN] Provides method...">GalacticShrine.Enregistrement.Journalisation</a></span><ul>
+<li>Renforcement de la validation des paramètres <span class="tt">Chemin</span>, <span class="tt">Nom</span>, <span class="tt">Extension</span> et <span class="tt">Horodatage</span> avec des exceptions localisées (<span class="tt">Resources</span>).</li>
+<li>Ajout d’un verrou interne pour rendre l’écriture dans les fichiers de log thread-safe.</li>
+<li>Centralisation de la construction du chemin complet et prise en compte de l’extension configurable.</li>
+<li>Gestion plus robuste du format d’horodatage : rétablissement du format par défaut <span class="tt">dd-MM-yyyy HH:mm:ss</span> lorsqu’une valeur vide est fournie.</li>
+<li>Amélioration de la génération des messages de log :<ul>
+<li>horodatage basé sur <span class="tt">CultureInfo.InvariantCulture</span>,</li>
+<li>meilleure utilisation des libellés localisés (<span class="tt">INFO</span>, <span class="tt">SUCCES</span>, <span class="tt">AVERTISSEMENT</span>, <span class="tt">ERREUR</span>).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="ajouté-2"></a>
+Ajouté</h2>
+<ul>
+<li>Aucun nouvel élément public.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé-2"></a>
+Corrigé</h2>
+<ul>
+<li>Réduction des risques de conditions de course lors d’écritures concurrentes dans les journaux.</li>
+<li>Meilleure cohérence entre les niveaux de journalisation et les messages localisés.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="ruptures-1"></a>
+Ruptures</h2>
+<ul>
+<li>Aucune rupture d’API attendue : la surface publique de <span class="tt">Journalisation</span> est conservée.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120111--2025-11-18"></a>
+[1.2.0.111] — 2025-11-18</h1>
+<h2 class="doxsection"><a class="anchor" id="ajouté-3"></a>
+Ajouté</h2>
+<ul>
+<li><b><a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a> (répertoires standards)</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\<a class="el" href="../../df/d4b/_galactic_shrine_8class_8_ref_8cs.html">GalacticShrine.class.Ref.cs</a></span>)<ul>
+<li>Méthodes utilitaires :<ul>
+<li><span class="tt">ObtenirLeDossier(string Nom)</span> : accès typé (<span class="tt">DossierReference</span>) aux entrées de <span class="tt">Repertoire</span>.</li>
+<li><span class="tt">ObtenirLeChemin(string Nom)</span> : accès direct au chemin brut (<span class="tt">string</span>) pour les clés de type chemin simple.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Fichier (catalogue d’extensions)</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\<a class="el" href="../../df/dcd/_fichier_8_class_8_ref_8cs.html">Fichier.Class.Ref.cs</a></span>)<ul>
+<li>Méthodes de confort autour du catalogue <span class="tt">Extension</span> :<ul>
+<li><span class="tt">EstExtensionDansGroupe(string ExtensionDeFichier, string NomDuGroupe)</span> : vérifie l’appartenance d’une extension à un groupe logique (Images, Audio, Gs, etc.).</li>
+<li><span class="tt">TrouverPremierGroupePourExtension(string ExtensionDeFichier)</span> : retourne le premier groupe qui contient l’extension (ou <span class="tt">null</span>).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Stockage.Groupe</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Stockage\<a class="el" href="../../d5/d93/_groupe_8_class_8_ref_8cs.html">Groupe.Class.Ref.cs</a></span>)<ul>
+<li>Méthode <span class="tt">Contient(string ElementRecherche)</span> pour tester la présence d’un élément dans le groupe (comparaison insensible à la casse).</li>
+</ul>
+</li>
+<li><b>Stockage.Catalogue</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Stockage\<a class="el" href="../../dd/dce/_catalogue_8_class_8_ref_8cs.html">Catalogue.Class.Ref.cs</a></span>)<ul>
+<li>Propriétés / méthodes supplémentaires :<ul>
+<li><span class="tt">Groupes</span> : énumération des instances de <span class="tt">Groupe</span>.</li>
+<li><span class="tt">Compter</span> : nombre total de groupes.</li>
+<li><span class="tt">ContientLeGroupe(string NomDuGroupe)</span> : test d’existence.</li>
+<li><span class="tt">EssayerObtenirGroupe(string NomDuGroupe, out Groupe Groupe)</span> : accès sécurisé sans exception.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="modifié-4"></a>
+Modifié</h2>
+<ul>
+<li><b>GalacticShrine.Repertoire</b><ul>
+<li>Construction déplacée dans une factory privée <span class="tt">CreerTableDesRepertoires</span> pour clarifier la logique d’initialisation.</li>
+<li>Dictionnaire désormais créé avec <span class="tt">StringComparer.OrdinalIgnoreCase</span> (accès insensible à la casse aux clés comme <span class="tt">"Config"</span>, <span class="tt">"Log"</span>, <span class="tt">"Source"</span>, etc.).</li>
+<li>Détection de <span class="tt">ProgramFiles</span> rendue plus robuste :<ul>
+<li>Priorité à <span class="tt">Environment.SpecialFolder.ProgramFiles</span>.</li>
+<li>Fallback propre sur les variables d’environnement <span class="tt">ProgramFiles</span> / <span class="tt">ProgramFiles(x86)</span>.</li>
+<li>Renvoie simplement aucune entrée si aucun chemin pertinent n’est disponible sur la plateforme (Linux/macOS).</li>
+</ul>
+</li>
+<li>Chemins standards (<span class="tt">Societe</span>, <span class="tt">Racine</span>, <span class="tt">Config</span>, <span class="tt">Log</span>, <span class="tt">Source</span>, <span class="tt">DLog</span>) toujours basés sur l’emplacement de l’assembly mais avec vérifications supplémentaires sur les chaînes vides.</li>
+</ul>
+</li>
+<li><b>Stockage.Groupe</b><ul>
+<li>Validation plus stricte des arguments (<span class="tt">Nom</span> et <span class="tt">Element</span> ne peuvent pas être nuls ou vides).</li>
+<li>Copie défensive du tableau d’éléments et cache d’une vue en lecture seule pour exposer <span class="tt">Element</span> sans risque de modification externe.</li>
+<li>Documentation FR/EN complétée et clarifiée.</li>
+</ul>
+</li>
+<li><b>Stockage.Catalogue</b><ul>
+<li>Le constructeur recopie désormais le dictionnaire source en validant chaque entrée (nom non vide, groupe non null).</li>
+<li>L’indexeur <span class="tt">this[string NomDuGroupe]</span> vérifie l’argument et documente explicitement la <span class="tt">KeyNotFoundException</span>.</li>
+<li>Normalisation systématique sur <span class="tt">StringComparer.OrdinalIgnoreCase</span> pour l’ensemble des accès.</li>
+</ul>
+</li>
+<li><b>Références de fichiers et de dossiers</b><ul>
+<li><b>FichierReference</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\<a class="el" href="../../df/de1/_fichier_8_reference_8_class_8_ref_8cs.html">Fichier.Reference.Class.Ref.cs</a></span>) <br  />
+<ul>
+<li>Renforcement de la validation d’arguments sur les méthodes publiques (chemins, contenus, etc.).</li>
+<li>Harmonisation des commentaires XML FR/EN et corrections de formulations.</li>
+</ul>
+</li>
+<li><b>DossierReference</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\<a class="el" href="../../d6/da1/_dossier_8_reference_8_class_8_ref_8cs.html">Dossier.Reference.Class.Ref.cs</a></span>) <br  />
+<ul>
+<li>Documentation complétée.</li>
+<li>Passage à un style plus moderne (utilisation de l’indexeur ^, etc.) en conservant l’API publique.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé-3"></a>
+Corrigé</h2>
+<ul>
+<li><b>DossierReference.FichiersEnumerer</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\<a class="el" href="../../d6/da1/_dossier_8_reference_8_class_8_ref_8cs.html">Dossier.Reference.Class.Ref.cs</a></span>)<ul>
+<li>Les trois surcharges <span class="tt">FichiersEnumerer(...)</span> utilisaient <span class="tt">Directory.EnumerateDirectories</span> au lieu de <span class="tt">Directory.EnumerateFiles</span>, ce qui empêchait de lister les fichiers correctement. <br  />
+ → Correction pour énumérer les fichiers comme attendu.</li>
+</ul>
+</li>
+<li><b>FichierReference.RendreInscriptibles / RendreInscriptiblesAsync</b><ul>
+<li>Correction de la manipulation des attributs : l’attribut <span class="tt">ReadOnly</span> est désormais correctement retiré au lieu de reconstruire un ensemble d’attributs incorrect.</li>
+</ul>
+</li>
+<li><b>GalacticShrine.Repertoire["ProgramFiles"]</b><ul>
+<li>Correction de la logique 32/64 bits et du fallback : évite de renvoyer un chemin incohérent lorsque les variables d’environnement ne sont pas définies comme attendu.</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="ruptures-2"></a>
+Ruptures</h2>
+<ul>
+<li>Aucune rupture majeure identifiée :<ul>
+<li>Les signatures publiques existantes des types centraux (<span class="tt">FichierReference</span>, <span class="tt">DossierReference</span>, <span class="tt">Fichier</span>, <span class="tt">Stockage.Groupe</span>, <span class="tt">Stockage.Catalogue</span>, <span class="tt"><a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a></span>) sont conservées.</li>
+<li>Les changements sont principalement additifs (nouvelles méthodes utilitaires) et des durcissements internes (validation, corrections de bugs).</li>
+</ul>
+</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120110--2025-10-26"></a>
+[1.2.0.110] — 2025-10-26</h1>
+<h2 class="doxsection"><a class="anchor" id="ajouté-4"></a>
+Ajouté</h2>
+<ul>
+<li><b>Stockage.Groupe</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Stockage\<a class="el" href="../../d5/d93/_groupe_8_class_8_ref_8cs.html">Groupe.Class.Ref.cs</a></span>)<ul>
+<li>Type simple pour regrouper des éléments (indexeurs, <span class="tt">Range</span>, <span class="tt">Count</span>, vue en lecture seule).</li>
+</ul>
+</li>
+<li><b>Stockage.Catalogue</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\Stockage\<a class="el" href="../../dd/dce/_catalogue_8_class_8_ref_8cs.html">Catalogue.Class.Ref.cs</a></span>)<ul>
+<li>Dictionnaire case-insensitive de groupes par nom, accès direct via l’indexeur et énumération des noms.</li>
+</ul>
+</li>
+<li><b>Fichier (catalogue d’extensions)</b> (<span class="tt">\Source\Dll\<a class="el" href="../../d7/d39/namespace_galactic_shrine.html">GalacticShrine</a>\<a class="el" href="../../df/dcd/_fichier_8_class_8_ref_8cs.html">Fichier.Class.Ref.cs</a></span>)<ul>
+<li>Classe statique exposant <span class="tt">Fichier.Extension</span> (catalogue prêt à l’emploi : Images, Audio, Vidéo, Documents, Scripts, Archives, Fonts, Config, Gs).</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="modifié-5"></a>
+Modifié</h2>
+<ul>
+<li><b>Renommages structurels</b><ul>
+<li><span class="tt">Dossier.Class.Ref.cs</span> ➜ <span class="tt"><a class="el" href="../../d6/da1/_dossier_8_reference_8_class_8_ref_8cs.html">Dossier.Reference.Class.Ref.cs</a></span></li>
+<li><span class="tt"><a class="el" href="../../df/dcd/_fichier_8_class_8_ref_8cs.html">Fichier.Class.Ref.cs</a></span> ➜ <span class="tt"><a class="el" href="../../df/de1/_fichier_8_reference_8_class_8_ref_8cs.html">Fichier.Reference.Class.Ref.cs</a></span></li>
+<li><span class="tt">Fichier.Systeme.Class.Ref.cs</span> ➜ <span class="tt"><a class="el" href="../../da/d2b/_fichier_8_systeme_8_reference_8_class_8_ref_8cs.html">Fichier.Systeme.Reference.Class.Ref.cs</a></span> <blockquote class="doxtable">
+<p>(Un nouveau <span class="tt"><a class="el" href="../../df/dcd/_fichier_8_class_8_ref_8cs.html">Fichier.Class.Ref.cs</a></span> coexiste désormais pour le <b>catalogue d’extensions</b>.) </p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé-4"></a>
+Corrigé</h2>
+<ul>
+<li>N/A</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="ruptures-3"></a>
+Ruptures</h2>
+<ul>
+<li>Aucune (ajouts non-cassants, renommages conservant les types <em>Reference</em> existants).</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md120109--2025-09-26"></a>
+[1.2.0.109] — 2025-09-26</h1>
+<h2 class="doxsection"><a class="anchor" id="ajouté-5"></a>
+Ajouté</h2>
+<ul>
+<li><b>Services.Http.VerificateurDeServeur</b><ul>
+<li>Vérification périodique d’une URL via HttpClient.</li>
+<li>Événement <span class="tt">ServeurVerifie</span> (online/offline).</li>
+<li>Journalisation via la classe <span class="tt">Journalisation</span>.</li>
+</ul>
+</li>
+<li><b>API asynchrones dans <span class="tt">FichierReference</span></b><ul>
+<li>Lecture : <span class="tt">LireTousLesOctetsAsync</span>, <span class="tt">LireToutLeTexteAsync</span> (± <span class="tt">Encoding</span>), <span class="tt">LireToutesLesLignesAsync</span> (± <span class="tt">Encoding</span>).</li>
+<li>Écriture : <span class="tt">EcrireTousLesOctetsAsync</span>, <span class="tt">EcrireToutLeTexteAsync</span> (± <span class="tt">Encoding</span>), <span class="tt">EcrireToutesLesLignesAsync</span> (<span class="tt">IEnumerable&lt;string&gt;</span>/<span class="tt">string[]</span> ± <span class="tt">Encoding</span>), <span class="tt">AjouterLigneAsync</span> (± <span class="tt">Encoding</span>).</li>
+<li>Attributs : <span class="tt">ObtenirDesAttributsAsync</span>, <span class="tt">DefinirDesAttributsAsync</span>, <span class="tt">RendreInscriptiblesAsync</span>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="modifié-6"></a>
+Modifié</h2>
+<ul>
+<li>Documentation FR/EN complétée pour les nouvelles API.</li>
+<li>Harmonisation mineure des noms (ex. <span class="tt">LireToutLeTexte</span>, <span class="tt">LireToutesLesLignes</span>).</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé-5"></a>
+Corrigé</h2>
+<ul>
+<li><b>Services.Http.VerificateurDeServeur</b></li>
+<li>Petites fautes dans les commentaires EN (ex. “Writres” → “Writes”, “containig” → “containing”, “frome” → “from”).</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="ruptures-4"></a>
+Ruptures</h2>
+<ul>
+<li>Aucune (toutes les API synchrones existantes restent disponibles).</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md118108--2025-09-26"></a>
+[1.1.8.108] — 2025-09-26</h1>
+<h2 class="doxsection"><a class="anchor" id="ajouté-6"></a>
+Ajouté</h2>
+<ul>
+<li>Documentation <b>FR/EN</b> sur la majorité de l’API publique.</li>
+<li>Entêtes de licence harmonisés <b>Mozilla Public License 2.0 (MPL-2.0)</b> sur les fichiers.</li>
+<li>Méthodes d’extensions de sérialisation pour <span class="tt">FichierReference</span> (lecture/écriture via <span class="tt">BinaryReader</span>/<span class="tt">BinaryWriter</span>).</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="modifié-7"></a>
+Modifié</h2>
+<ul>
+<li>Nettoyage des commentaires XML et normalisation des noms (ex. <span class="tt">LireToutLeTexte</span>, <span class="tt">LireToutesLesLignes</span>).</li>
+<li>Amélioration des messages d’exception (ex. validations de chemin/nom de fichier).</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="corrigé-6"></a>
+Corrigé</h2>
+<ul>
+<li>Fautes d’orthographe récurrentes dans les docs EN (ex. “containig” → “containing”, “Writres” → “Writes”, etc.).</li>
+<li>Petits ajustements de balises XML (<span class="tt">&lt;returns&gt;</span> manquants, coquilles).</li>
+</ul>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="historique-antérieur"></a>
+Historique antérieur</h1>
+<ul>
+<li>Non documenté (projet initial démarré en 2023). </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

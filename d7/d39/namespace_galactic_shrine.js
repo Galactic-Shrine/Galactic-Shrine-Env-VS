@@ -1,0 +1,25 @@
+var namespace_galactic_shrine =
+[
+    [ "BaseDeDonnees", "d3/d90/namespace_galactic_shrine_1_1_base_de_donnees.html", "d3/d90/namespace_galactic_shrine_1_1_base_de_donnees" ],
+    [ "Configuration", "d2/d74/namespace_galactic_shrine_1_1_configuration.html", "d2/d74/namespace_galactic_shrine_1_1_configuration" ],
+    [ "Enumeration", "d4/d05/namespace_galactic_shrine_1_1_enumeration.html", "d4/d05/namespace_galactic_shrine_1_1_enumeration" ],
+    [ "Exception", "d3/d5a/namespace_galactic_shrine_1_1_exception.html", "d3/d5a/namespace_galactic_shrine_1_1_exception" ],
+    [ "Modele", "dc/d4e/namespace_galactic_shrine_1_1_modele.html", "dc/d4e/namespace_galactic_shrine_1_1_modele" ],
+    [ "IO", "d7/d6c/namespace_galactic_shrine_1_1_i_o.html", null ],
+    [ "Enregistrement", "db/d38/namespace_galactic_shrine_1_1_enregistrement.html", "db/d38/namespace_galactic_shrine_1_1_enregistrement" ],
+    [ "Interface", "d1/dfc/namespace_galactic_shrine_1_1_interface.html", "d1/dfc/namespace_galactic_shrine_1_1_interface" ],
+    [ "Outils", "d8/d1f/namespace_galactic_shrine_1_1_outils.html", "d8/d1f/namespace_galactic_shrine_1_1_outils" ],
+    [ "Properties", "d5/db5/namespace_galactic_shrine_1_1_properties.html", "d5/db5/namespace_galactic_shrine_1_1_properties" ],
+    [ "Services", "d6/d8e/namespace_galactic_shrine_1_1_services.html", "d6/d8e/namespace_galactic_shrine_1_1_services" ],
+    [ "Stockage", "d8/de0/namespace_galactic_shrine_1_1_stockage.html", "d8/de0/namespace_galactic_shrine_1_1_stockage" ],
+    [ "Structure", "dd/df8/namespace_galactic_shrine_1_1_structure.html", "dd/df8/namespace_galactic_shrine_1_1_structure" ],
+    [ "Terminal", "da/dea/namespace_galactic_shrine_1_1_terminal.html", "da/dea/namespace_galactic_shrine_1_1_terminal" ],
+    [ "UI", "d9/d87/namespace_galactic_shrine_1_1_u_i.html", "d9/d87/namespace_galactic_shrine_1_1_u_i" ],
+    [ "ConfigExample", "d1/dc2/namespace_galactic_shrine_1_1_config_example.html", null ],
+    [ "ConfigIntegreExample", "d3/d87/namespace_galactic_shrine_1_1_config_integre_example.html", null ],
+    [ "TerminalExample", "df/d7b/namespace_galactic_shrine_1_1_terminal_example.html", "df/d7b/namespace_galactic_shrine_1_1_terminal_example" ],
+    [ "DossierReference", "dc/dbe/class_galactic_shrine_1_1_dossier_reference.html", "dc/dbe/class_galactic_shrine_1_1_dossier_reference" ],
+    [ "FichierReference", "d2/dcf/class_galactic_shrine_1_1_fichier_reference.html", "d2/dcf/class_galactic_shrine_1_1_fichier_reference" ],
+    [ "FichierSystemeReference", "dd/daf/class_galactic_shrine_1_1_fichier_systeme_reference.html", "dd/daf/class_galactic_shrine_1_1_fichier_systeme_reference" ],
+    [ "GalacticShrine", "d8/dba/class_galactic_shrine_1_1_galactic_shrine.html", null ]
+];

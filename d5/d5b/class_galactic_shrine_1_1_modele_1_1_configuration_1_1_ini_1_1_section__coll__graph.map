@@ -1,0 +1,5 @@
+<map id="GalacticShrine.Modele.Configuration.Ini.Section" name="GalacticShrine.Modele.Configuration.Ini.Section">
+<area shape="rect" id="Node000001" title="[FR] Informations associées à une propriété provenant d&#39;une Configuration INI. &#160;[EN] Information asso..." alt="" coords="5,96,243,139"/>
+<area shape="rect" id="Node000002" href="$d7/d03/interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html" title="[FR] Crée une copie en profondeur du type T , c&#39;est&#45;à&#45;dire que tous les types de référence sont égale..." alt="" coords="6,5,242,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,64,127,96,121,96,121,64"/>
+</map>

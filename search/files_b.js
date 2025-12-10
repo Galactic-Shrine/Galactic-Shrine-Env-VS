@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['resourceintegre_2econfig_2eexample_2eassemblyinfo_2ecs_0',['ResourceIntegre.Config.Example.AssemblyInfo.cs',['../net6_80_2_resource_integre_8_config_8_example_8_assembly_info_8cs.html',1,'(Espace de nommage global)'],['../net7_80_2_resource_integre_8_config_8_example_8_assembly_info_8cs.html',1,'(Espace de nommage global)']]],
-  ['resourceintegre_2econfig_2eexample_2eglobalusings_2eg_2ecs_1',['ResourceIntegre.Config.Example.GlobalUsings.g.cs',['../net6_80_2_resource_integre_8_config_8_example_8_global_usings_8g_8cs.html',1,'(Espace de nommage global)'],['../net7_80_2_resource_integre_8_config_8_example_8_global_usings_8g_8cs.html',1,'(Espace de nommage global)']]],
-  ['resources_2edesigner_2ecs_2',['Resources.Designer.cs',['../_dll_2_galactic_shrine_8_configuration_2_properties_2_resources_8_designer_8cs.html',1,'(Espace de nommage global)'],['../_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs.html',1,'(Espace de nommage global)'],['../_programs_2_terminal_8_example_2_properties_2_resources_8_designer_8cs.html',1,'(Espace de nommage global)']]]
+  ['program_2ecs_0',['Program.cs',['../db/dee/_config_8_example_2_program_8cs.html',1,'(Espace de nommage global)'],['../dc/dc2/_config_integre_8_example_2_program_8cs.html',1,'(Espace de nommage global)'],['../d5/d8a/_config_integre_8_example2_2_program_8cs.html',1,'(Espace de nommage global)'],['../d5/d54/_terminal_8_example_2_program_8cs.html',1,'(Espace de nommage global)']]],
+  ['propriete_2ecollection_2eini_2eclass_2eref_2ecs_1',['Propriete.Collection.Ini.Class.Ref.cs',['../d6/d00/_propriete_8_collection_8_ini_8_class_8_ref_8cs.html',1,'']]],
+  ['propriete_2eini_2eclass_2eref_2ecs_2',['Propriete.Ini.Class.Ref.cs',['../d2/d55/_propriete_8_ini_8_class_8_ref_8cs.html',1,'']]]
 ];
