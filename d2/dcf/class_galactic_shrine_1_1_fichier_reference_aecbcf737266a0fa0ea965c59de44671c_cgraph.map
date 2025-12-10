@@ -1,0 +1,14 @@
+<map id="GalacticShrine.FichierReference.RendreInscriptiblesAsync" name="GalacticShrine.FichierReference.RendreInscriptiblesAsync">
+<area shape="rect" id="Node000001" title="[FR] Rend un fichier inscriptible de manière asynchrone en vérifiant ses attributs...." alt="" coords="5,93,219,136"/>
+<area shape="rect" id="Node000002" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#a378076a672525fc039bb6a1ca890c768" title="[FR] Définit les attributs d&#39;un fichier de manière asynchrone. Cette méthode applique les attributs s..." alt="" coords="267,5,480,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,90,293,51,294,56,179,95"/>
+<area shape="rect" id="Node000003" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#aaec6fe3414802611f368b2f0314e04ac" title="[FR] Constructeur par défaut. [EN] Default constructor." alt="" coords="528,93,741,136"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="219,109,267,108,480,108,512,109,512,114,480,113,267,113,219,114"/>
+<area shape="rect" id="Node000004" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#a5f4fc103750e541afe81c796a221d93b" title="[FR] Récupère les attributs d&#39;un fichier de manière asynchrone. [EN] Gets the attributes for a file a..." alt="" coords="267,123,480,165"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="220,124,252,128,251,133,219,129"/>
+<area shape="rect" id="Node000005" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#a7d0d26fbec5ef0bf613a5df00d357c90" title="[FR] Détermine si le nom de fichier donné existe ou non. [EN] Determines whether the given file name ..." alt="" coords="267,189,480,232"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="165,134,268,175,287,181,285,186,266,180,163,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,46,556,85,554,90,438,51"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="480,129,512,126,513,131,481,135"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="446,186,479,175,568,140,569,145,481,180,448,191"/>
+</map>

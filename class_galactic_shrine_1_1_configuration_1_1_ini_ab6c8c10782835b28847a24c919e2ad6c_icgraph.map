@@ -1,5 +1,0 @@
-<map id="GalacticShrine.Configuration.Ini.LigneDeProcessus" name="GalacticShrine.Configuration.Ini.LigneDeProcessus">
-<area shape="rect" id="Node000001" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="245,5,436,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,5,197,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,29,197,29,197,24,229,24"/>
-</map>

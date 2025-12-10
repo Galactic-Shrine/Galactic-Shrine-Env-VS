@@ -1,7 +1,0 @@
-<map id="GalacticShrine.Modele.Configuration.Ini.ProprieteCollection.ProprieteCollection" name="GalacticShrine.Modele.Configuration.Ini.ProprieteCollection.ProprieteCollection">
-<area shape="rect" id="Node000001" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="317,39,580,81"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#ad3c80f6686b1e2a9450af794508039fe" title="[FR] Fusionne les autres propriétés, &#160;en ajoutant de nouvelles propriétés si elles n&#39;existent pas déj..." alt="" coords="18,5,256,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,47,256,42,257,37,301,42"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#a277616e1439c56affdc45f8165b70793" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="5,72,269,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,78,269,82,269,77,301,73"/>
-</map>

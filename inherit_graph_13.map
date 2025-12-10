@@ -1,3 +1,9 @@
 <map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="Node000000" href="$class_galactic_shrine_1_1_outils_1_1_outils.html" title="[FR] Classe de base pour les outil. [EN] Basic class for tools." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="Node000000" href="$de/d50/interface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface.html" title="[FR] Interface définissant la gestion et l&#39;ajout de couleurs dans un contexte de terminal...." alt="" coords="5,39,176,81"/>
+<area shape="rect" id="Node000001" href="$d4/dd5/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html" title="[FR] Classe abstraite définissant les paramètres et méthodes de base pour un thème (couleurs)...." alt="" coords="224,39,405,81"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="191,57,223,57,223,63,191,63"/>
+<area shape="rect" id="Node000002" href="$df/d96/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html" title="[FR] Implémentation d&#39;un thème clair (couleurs claires en arrière&#45;plan). [EN] Implementation of a lig..." alt="" coords="453,5,634,48"/>
+<area shape="poly" id="edge19_Node000001_Node000002" title=" " alt="" coords="420,42,452,37,453,42,421,47"/>
+<area shape="rect" id="Node000003" href="$d9/dd1/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html" title="[FR] Implémentation d&#39;un thème sombre (couleurs sombres en arrière&#45;plan). [EN] Implementation of a da..." alt="" coords="453,72,634,115"/>
+<area shape="poly" id="edge20_Node000001_Node000003" title=" " alt="" coords="421,73,453,78,452,83,420,78"/>
 </map>

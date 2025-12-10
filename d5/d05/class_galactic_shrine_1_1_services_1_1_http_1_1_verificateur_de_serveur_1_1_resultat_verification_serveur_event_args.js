@@ -1,0 +1,5 @@
+var class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur_1_1_resultat_verification_serveur_event_args =
+[
+    [ "ResultatVerificationServeurEventArgs", "d5/d05/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur_1_1_resultat_verification_serveur_event_args.html#a20fa04e1e6c8cd6e20ad8eefacface71", null ],
+    [ "EstEnLigne", "d5/d05/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur_1_1_resultat_verification_serveur_event_args.html#a33996f67bd859b2b9764c10c1cc91d1b", null ]
+];

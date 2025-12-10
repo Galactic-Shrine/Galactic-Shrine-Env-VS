@@ -1,5 +1,0 @@
-<map id="GalacticShrine.UI.Terminal.ThemeSombre.DefinirLesCouleurs" name="GalacticShrine.UI.Terminal.ThemeSombre.DefinirLesCouleurs">
-<area shape="rect" id="Node000001" title="[FR] Définit les couleurs principales du thème sombre, soit en console par défaut,..." alt="" coords="5,5,227,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title="[FR] Rétablit la couleur par défaut de la console et met à jour ConsoleArrierePlan / ConsolePremierPl..." alt="" coords="275,5,475,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,24,259,24,259,29,227,29"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="GalacticShrine.Modele.Configuration.Ini.ProprieteCollection.Ajouter" name="GalacticShrine.Modele.Configuration.Ini.ProprieteCollection.Ajouter">
-<area shape="rect" id="Node000001" title="[FR] Ajoute une nouvelle clé avec le nom spécifié, une valeur vide et des commentaires...." alt="" coords="291,5,528,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#ad3c80f6686b1e2a9450af794508039fe" title="[FR] Fusionne les autres propriétés, &#160;en ajoutant de nouvelles propriétés si elles n&#39;existent pas déj..." alt="" coords="5,5,243,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,29,243,29,243,24,275,24"/>
-</map>

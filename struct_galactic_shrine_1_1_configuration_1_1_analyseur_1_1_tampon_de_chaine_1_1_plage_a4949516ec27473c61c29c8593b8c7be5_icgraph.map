@@ -1,9 +1,0 @@
-<map id="GalacticShrine.Configuration.Analyseur.TamponDeChaine.Plage.AvecIndex" name="GalacticShrine.Configuration.Analyseur.TamponDeChaine.Plage.AvecIndex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="723,5,1014,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac949b568fd2371b7546137b7092651dc" title=" " alt="" coords="484,5,675,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="708,29,676,29,676,24,708,24"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="245,5,436,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="468,29,437,29,437,24,468,24"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,5,197,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,29,197,29,197,24,229,24"/>
-</map>

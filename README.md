@@ -1,6 +1,6 @@
 
 <center>
-<img src="https://cdn.discordapp.com/attachments/511861227157192705/623915363494658077/1.3.1.png" alt="Logo" width="700" height="150" /><br/>
+<img src="https://cdn.discordapp.com/attachments/511861227157192705/623915363494658077/1.3.1.png?ex=691e9636&is=691d44b6&hm=8f046a8d2a87c0e31bb9369ba592565f6fd0c039b5631c06913084b9b9b20045&=&format=webp&quality=lossless&width=1422&height=274" alt="Logo" width="700" height="150" /><br/>
   Environnement d'application .NET (visual studio)
 </center>
 
@@ -39,5 +39,4 @@ En cas de problème avec un autre participant n'oubliez pas de lire ceci [CODE O
 
 
 ## License
-
- Sous licence [MPL 2.0](https://mozilla.org/MPL/2.0/).
+[MPL 2.0](https://mozilla.org/MPL/2.0/).

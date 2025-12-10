@@ -1,6 +1,0 @@
-<map id="GalacticShrine.FichierSystemeReference.ContientLeNom" name="GalacticShrine.FichierSystemeReference.ContientLeNom">
-<area shape="rect" id="Node000001" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="272,29,473,72"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="414,16,399,10,372,8,348,10,333,15,327,21,329,28,324,29,322,19,330,10,347,5,372,3,400,5,416,11"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#ade1b9c34676e637966af385496b1c289" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="5,29,224,72"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="256,53,224,53,224,48,256,48"/>
-</map>

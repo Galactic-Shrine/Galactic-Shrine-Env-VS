@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Environement-VS:  Fichier source de Source/Dll/GalacticShrine/Terminal.Format.Class.Ref.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript" src="../../darkmode_toggle.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../1.3.2.small.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Environement-VS<span id="projectnumber">&#160;1.0.0-Alpha</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d2/d24/_terminal_8_format_8_class_8_ref_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Terminal.Format.Class.Ref.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d24/_terminal_8_format_8_class_8_ref_8cs.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using </span><a class="code hl_namespace" href="../../df/d88/namespace_galactic_shrine_1_1_interface_1_1_terminal.html">GalacticShrine.Interface.Terminal</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using </span><a class="code hl_namespace" href="../../d6/d7f/namespace_galactic_shrine_1_1_structure_1_1_terminal.html">GalacticShrine.Structure.Terminal</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using </span><a class="code hl_namespace" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html">GalacticShrine.Enumeration</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../da/dea/namespace_galactic_shrine_1_1_terminal.html">GalacticShrine.Terminal</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html">   29</a></span>  <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab2a67501232a09ea75f7cd7379881ced">Format</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> readonly Dictionary&lt;string, Couleur&gt; VariationDuTheme;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> readonly <span class="keywordtype">object</span> VerrouillageDeCouleur = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab2a67501232a09ea75f7cd7379881ced">   65</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab2a67501232a09ea75f7cd7379881ced">Format</a>(<a class="code hl_interface" href="../../de/d50/interface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface.html">CouleurInterface</a> Theme) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      ArgumentNullException.ThrowIfNull(Theme);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">if</span>(Theme.Couleurs is <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Les couleurs du thème ne sont pas initialisées.&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      VariationDuTheme = Theme.Couleurs;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      CouleurParDefaut();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> CouleurParDefaut(<span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      var CouleurTheme = VariationDuTheme[<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      Console.BackgroundColor = CouleurTheme.ArrierePlan;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      Console.ForegroundColor = CouleurTheme.PremierPlan;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a34e1d0c69477d28e2a4d67789b5e2525">  101</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a34e1d0c69477d28e2a4d67789b5e2525">RetablirCouleur</a>() {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        Console.ResetColor();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> DefinirCouleur(<span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>) {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="keywordflow">if</span>(VariationDuTheme.TryGetValue(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>, out <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> ValeurCouleur)) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        Console.BackgroundColor = ValeurCouleur.ArrierePlan;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        Console.ForegroundColor = ValeurCouleur.PremierPlan;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> KeyNotFoundException($<span class="stringliteral">&quot;La clé de couleur &#39;{Couleur}&#39; est introuvable dans le thème.&quot;</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> DefinirCouleurTexte(<span class="keywordtype">string</span> Couleur) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      <span class="keywordflow">if</span>(VariationDuTheme.TryGetValue(Couleur, out Couleur ValeurCouleur)) {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        Console.ForegroundColor = ValeurCouleur.PremierPlan;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> KeyNotFoundException($<span class="stringliteral">&quot;La clé de couleur &#39;{Couleur}&#39; est introuvable dans le thème.&quot;</span>);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> DefinirCouleurArrierePlan(<span class="keywordtype">string</span> Couleur) {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="keywordflow">if</span>(VariationDuTheme.TryGetValue(Couleur, out Couleur ValeurCouleur)) {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        Console.BackgroundColor = ValeurCouleur.ArrierePlan;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> KeyNotFoundException($<span class="stringliteral">&quot;La clé de couleur &#39;{Couleur}&#39; est introuvable dans le thème.&quot;</span>);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span></div>
+<div class="foldopen" id="foldopen00194" data-start="{" data-end="}">
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a844a0b16c93c48b66466939a404c5b87">  194</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a844a0b16c93c48b66466939a404c5b87">Eclaircir</a>() {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        Console.Clear();</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
+</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span></div>
+<div class="foldopen" id="foldopen00216" data-start="{" data-end="}">
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ae68a9d5e74c6f107e3b651711b80ec9b">  216</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ae68a9d5e74c6f107e3b651711b80ec9b">Ecrire</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        Sortie.Ecrire(Texte);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    }</div>
+</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span></div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab18e4cb2bc7593d2b0c34ad4ff1c3291">  244</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab18e4cb2bc7593d2b0c34ad4ff1c3291">Ecrire</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        Sortie.Ecrire(Texte, Argument);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
+</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span></div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="}">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a4f9c358dcd329a5afc5c58fcf314dafe">  272</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a4f9c358dcd329a5afc5c58fcf314dafe">Ecrire</a>(<span class="keywordtype">bool</span> ReserveToutLaLigne, <span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        Sortie.Ecrire(ReserveToutLaLigne, Texte);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
+</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span></div>
+<div class="foldopen" id="foldopen00304" data-start="{" data-end="}">
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a572cc6730aefc99829905d5b645ac71b">  304</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a572cc6730aefc99829905d5b645ac71b">Ecrire</a>(<span class="keywordtype">bool</span> ReserveToutLaLigne, <span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        Sortie.Ecrire(ReserveToutLaLigne, Texte, Argument);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      }</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    }</div>
+</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span></div>
+<div class="foldopen" id="foldopen00332" data-start="{" data-end="}">
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a68e9bcefe3f7e173c16131df6e9b0f70">  332</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a68e9bcefe3f7e173c16131df6e9b0f70">Ecrire2Couleur</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        Sortie.Ecrire(Texte);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      }</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    }</div>
+</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span></div>
+<div class="foldopen" id="foldopen00365" data-start="{" data-end="}">
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab8325766295b719e03151a03fee67915">  365</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab8325766295b719e03151a03fee67915">Ecrire2Couleur</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        Sortie.Ecrire(Texte, Argument);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>      }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    }</div>
+</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span></div>
+<div class="foldopen" id="foldopen00398" data-start="{" data-end="}">
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa8a11ed1ca1552fbb565aa0666e7ddbe">  398</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa8a11ed1ca1552fbb565aa0666e7ddbe">Ecrire2Couleur</a>(<span class="keywordtype">bool</span> ReserveToutLaLigne, <span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>        Sortie.Ecrire(ReserveToutLaLigne, Texte);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>      }</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    }</div>
+</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span></div>
+<div class="foldopen" id="foldopen00435" data-start="{" data-end="}">
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a9a71b7de9233e4e6a4b3eb50bb96e8eb">  435</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a9a71b7de9233e4e6a4b3eb50bb96e8eb">Ecrire2Couleur</a>(<span class="keywordtype">bool</span> ReserveToutLaLigne, <span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        Sortie.Ecrire(ReserveToutLaLigne, Texte, Argument);</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>      }</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    }</div>
+</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span></div>
+<div class="foldopen" id="foldopen00460" data-start="{" data-end="}">
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a66e8e71ea3179ad120b5bb6ec1150ee6">  460</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a66e8e71ea3179ad120b5bb6ec1150ee6">Aligner</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        Sortie.Aligner(Texte);</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>      }</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    }</div>
+</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span></div>
+<div class="foldopen" id="foldopen00488" data-start="{" data-end="}">
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a68553bc683138074295d3ba3f2e95425">  488</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a68553bc683138074295d3ba3f2e95425">Aligner</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span> </div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        Sortie.Aligner(Texte, Argument);</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>      }</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    }</div>
+</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span></div>
+<div class="foldopen" id="foldopen00516" data-start="{" data-end="}">
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ac0662652fa9e6c989db9819bb6a0f516">  516</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ac0662652fa9e6c989db9819bb6a0f516">Aligner</a>(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a> <a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, <span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        Sortie.Aligner(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, Texte);</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>      }</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    }</div>
+</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span></div>
+<div class="foldopen" id="foldopen00548" data-start="{" data-end="}">
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#afc6fe25df2974b81af26b00b2680f961">  548</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#afc6fe25df2974b81af26b00b2680f961">Aligner</a>(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a> <a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, <span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        Sortie.Aligner(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, Texte, Argument);</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>      }</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    }</div>
+</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span></div>
+<div class="foldopen" id="foldopen00576" data-start="{" data-end="}">
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a5e97b48b1548dec3aefeedf4cd99fb65">  576</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a5e97b48b1548dec3aefeedf4cd99fb65">Aligner2Couleur</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        Sortie.Aligner(Texte);</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>      }</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    }</div>
+</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span></div>
+<div class="foldopen" id="foldopen00609" data-start="{" data-end="}">
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a8a9171b5213f7bb1cec86c029bf22bc1">  609</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a8a9171b5213f7bb1cec86c029bf22bc1">Aligner2Couleur</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span> </div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        Sortie.Aligner(Texte, Argument);</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>      }</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    }</div>
+</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span></div>
+<div class="foldopen" id="foldopen00642" data-start="{" data-end="}">
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#abde40dada8a831bb552034c25948f0de">  642</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#abde40dada8a831bb552034c25948f0de">Aligner2Couleur</a>(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a> <a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, <span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        Sortie.Aligner(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, Texte);</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      }</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    }</div>
+</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span></div>
+<div class="foldopen" id="foldopen00679" data-start="{" data-end="}">
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#af2b2194b74e493a72d47d13fb883a1ea">  679</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#af2b2194b74e493a72d47d13fb883a1ea">Aligner2Couleur</a>(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a> <a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, <span class="keywordtype">string</span> Texte, <span class="keywordtype">object</span> Argument, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        Sortie.Aligner(<a class="code hl_enumeration" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">Alignement</a>, Texte, Argument);</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>      }</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    }</div>
+</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span></div>
+<div class="foldopen" id="foldopen00704" data-start="{" data-end="}">
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a2888e1823702fabf85c3583a1ed08fab">  704</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a2888e1823702fabf85c3583a1ed08fab">AlignerLaDivision</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        <span class="keywordtype">string</span> <a class="code hl_enumvalue" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992ba96edc948adb823d524184c91e9d97091">Gauche</a> = Texte.Split(<span class="charliteral">&#39;|&#39;</span>)[0];</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>        <span class="keywordtype">string</span> Droit = Texte.Split(<span class="charliteral">&#39;|&#39;</span>)[1];</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        Sortie.Extreme(<a class="code hl_enumvalue" href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992ba96edc948adb823d524184c91e9d97091">Gauche</a>, Droit);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>      }</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    }</div>
+</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span></div>
+<div class="foldopen" id="foldopen00730" data-start="{" data-end="}">
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a3a01e2e5d46605c1863034bb6c0e9d70">  730</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a3a01e2e5d46605c1863034bb6c0e9d70">Enveloppement</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>        Decorateur.Texte(Texte);</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>      }</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    }</div>
+</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span></div>
+<div class="foldopen" id="foldopen00758" data-start="{" data-end="}">
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a7f240afa80fe6d09dbd8b37713fbc5ba">  758</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a7f240afa80fe6d09dbd8b37713fbc5ba">Enveloppement2Couleur</a>(<span class="keywordtype">string</span> Texte, <span class="keywordtype">string</span> CouleurTexte = Couleurs.Txt.Default, <span class="keywordtype">string</span> CouleurArrierePlan = Couleurs.Bg.Default) {</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        DefinirCouleurTexte(CouleurTexte);</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        DefinirCouleurArrierePlan(CouleurArrierePlan);</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        Decorateur.Texte(Texte);</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>      }</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
+</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span></div>
+<div class="foldopen" id="foldopen00783" data-start="{" data-end="}">
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489">  783</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489">LigneSeparatriceDecoree</a>(<span class="keywordtype">char</span> Character, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>) {</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>        Sortie.LigneSeparatriceDecoree(Character);</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>      }</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    }</div>
+</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span></div>
+<div class="foldopen" id="foldopen00803" data-start="{" data-end="}">
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a3026c584ad7c5ce63edfcf8292ed45dd">  803</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a3026c584ad7c5ce63edfcf8292ed45dd">LigneSeparatriceDecoree</a>(<span class="keywordtype">char</span> Character) {</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>      <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489">LigneSeparatriceDecoree</a>(Character, Couleurs.Txt.Default);</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    }</div>
+</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span></div>
+<div class="foldopen" id="foldopen00818" data-start="{" data-end="}">
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa56a0a4aab2059e02fdf7f0257058735">  818</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa56a0a4aab2059e02fdf7f0257058735">LigneSeparatrice</a>(<span class="keywordtype">int</span> Lignes = 1) {</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>      <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa56a0a4aab2059e02fdf7f0257058735">LigneSeparatrice</a>(Lignes, Couleurs.Txt.Default);</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    }</div>
+</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span></div>
+<div class="foldopen" id="foldopen00833" data-start="{" data-end="}">
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a85de8f9eee88bbc8bc9a59e466f9e37d">  833</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a85de8f9eee88bbc8bc9a59e466f9e37d">LigneSeparatrice</a>(<span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>) {</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>      <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa56a0a4aab2059e02fdf7f0257058735">LigneSeparatrice</a>(1, <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    }</div>
+</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span></div>
+<div class="foldopen" id="foldopen00852" data-start="{" data-end="}">
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno"><a class="line" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ad0c89a66b79e7ec4ddc0f30c32e16bbb">  852</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ad0c89a66b79e7ec4ddc0f30c32e16bbb">LigneSeparatrice</a>(<span class="keywordtype">int</span> Lignes, <span class="keywordtype">string</span> <a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a> = Couleurs.Txt.Default) {</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>      lock(VerrouillageDeCouleur) {</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span> </div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>        DefinirCouleur(<a class="code hl_struct" href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">Couleur</a>);</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>        Sortie.LigneSeparatrice(Lignes);</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>        CouleurParDefaut();</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>      }</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    }</div>
+</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  }</div>
+</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>}</div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a2888e1823702fabf85c3583a1ed08fab"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a2888e1823702fabf85c3583a1ed08fab">GalacticShrine.Terminal.Format.AlignerLaDivision</a></div><div class="ttdeci">void AlignerLaDivision(string Texte, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Aligne une division de texte séparée par un caractère spécifique avec une couleur donnée....</div><div class="ttdef"><b>Definition</b> <a href="#l00704">Terminal.Format.Class.Ref.cs:704</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a3026c584ad7c5ce63edfcf8292ed45dd"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a3026c584ad7c5ce63edfcf8292ed45dd">GalacticShrine.Terminal.Format.LigneSeparatriceDecoree</a></div><div class="ttdeci">void LigneSeparatriceDecoree(char Character)</div><div class="ttdoc">[FR] Dessine une ligne séparatrice décorée avec un caractère spécifique et une couleur par défaut....</div><div class="ttdef"><b>Definition</b> <a href="#l00803">Terminal.Format.Class.Ref.cs:803</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a34e1d0c69477d28e2a4d67789b5e2525"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a34e1d0c69477d28e2a4d67789b5e2525">GalacticShrine.Terminal.Format.RetablirCouleur</a></div><div class="ttdeci">void RetablirCouleur()</div><div class="ttdoc">[FR] Rétablit les couleurs par défaut de la console de manière thread-safe. [EN] Resets the console&#39;s...</div><div class="ttdef"><b>Definition</b> <a href="#l00101">Terminal.Format.Class.Ref.cs:101</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a3a01e2e5d46605c1863034bb6c0e9d70"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a3a01e2e5d46605c1863034bb6c0e9d70">GalacticShrine.Terminal.Format.Enveloppement</a></div><div class="ttdeci">void Enveloppement(string Texte, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Enveloppe le texte fourni en utilisant le décorateur de texte. [EN] Wraps the provided text usin...</div><div class="ttdef"><b>Definition</b> <a href="#l00730">Terminal.Format.Class.Ref.cs:730</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a4f9c358dcd329a5afc5c58fcf314dafe"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a4f9c358dcd329a5afc5c58fcf314dafe">GalacticShrine.Terminal.Format.Ecrire</a></div><div class="ttdeci">void Ecrire(bool ReserveToutLaLigne, string Texte, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Écrit du texte dans la console en réservant toute la ligne avec une couleur spécifiée....</div><div class="ttdef"><b>Definition</b> <a href="#l00272">Terminal.Format.Class.Ref.cs:272</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a572cc6730aefc99829905d5b645ac71b"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a572cc6730aefc99829905d5b645ac71b">GalacticShrine.Terminal.Format.Ecrire</a></div><div class="ttdeci">void Ecrire(bool ReserveToutLaLigne, string Texte, object Argument, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Écrit du texte formaté dans la console en réservant toute la ligne avec une couleur spécifiée....</div><div class="ttdef"><b>Definition</b> <a href="#l00304">Terminal.Format.Class.Ref.cs:304</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a5e97b48b1548dec3aefeedf4cd99fb65"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a5e97b48b1548dec3aefeedf4cd99fb65">GalacticShrine.Terminal.Format.Aligner2Couleur</a></div><div class="ttdeci">void Aligner2Couleur(string Texte, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Aligne le texte avec deux couleurs distinctes pour le texte et l&#39;arrière-plan....</div><div class="ttdef"><b>Definition</b> <a href="#l00576">Terminal.Format.Class.Ref.cs:576</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a66e8e71ea3179ad120b5bb6ec1150ee6"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a66e8e71ea3179ad120b5bb6ec1150ee6">GalacticShrine.Terminal.Format.Aligner</a></div><div class="ttdeci">void Aligner(string Texte, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Aligne le texte spécifié avec une couleur donnée. [EN] Aligns the specified text with a given co...</div><div class="ttdef"><b>Definition</b> <a href="#l00460">Terminal.Format.Class.Ref.cs:460</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a68553bc683138074295d3ba3f2e95425"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a68553bc683138074295d3ba3f2e95425">GalacticShrine.Terminal.Format.Aligner</a></div><div class="ttdeci">void Aligner(string Texte, object Argument, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Aligne le texte formaté avec une couleur donnée. [EN] Aligns the formatted text with a given col...</div><div class="ttdef"><b>Definition</b> <a href="#l00488">Terminal.Format.Class.Ref.cs:488</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a68e9bcefe3f7e173c16131df6e9b0f70"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a68e9bcefe3f7e173c16131df6e9b0f70">GalacticShrine.Terminal.Format.Ecrire2Couleur</a></div><div class="ttdeci">void Ecrire2Couleur(string Texte, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Écrit du texte avec deux couleurs distinctes pour le texte et l&#39;arrière-plan....</div><div class="ttdef"><b>Definition</b> <a href="#l00332">Terminal.Format.Class.Ref.cs:332</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a7f240afa80fe6d09dbd8b37713fbc5ba"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a7f240afa80fe6d09dbd8b37713fbc5ba">GalacticShrine.Terminal.Format.Enveloppement2Couleur</a></div><div class="ttdeci">void Enveloppement2Couleur(string Texte, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Enveloppe le texte fourni avec deux couleurs distinctes pour le texte et l&#39;arrière-plan....</div><div class="ttdef"><b>Definition</b> <a href="#l00758">Terminal.Format.Class.Ref.cs:758</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a844a0b16c93c48b66466939a404c5b87"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a844a0b16c93c48b66466939a404c5b87">GalacticShrine.Terminal.Format.Eclaircir</a></div><div class="ttdeci">void Eclaircir()</div><div class="ttdoc">[FR] Efface le contenu de la console de manière thread-safe. [EN] Clears the console content in a thr...</div><div class="ttdef"><b>Definition</b> <a href="#l00194">Terminal.Format.Class.Ref.cs:194</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a85de8f9eee88bbc8bc9a59e466f9e37d"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a85de8f9eee88bbc8bc9a59e466f9e37d">GalacticShrine.Terminal.Format.LigneSeparatrice</a></div><div class="ttdeci">void LigneSeparatrice(string Couleur)</div><div class="ttdoc">[FR] Dessine une ligne séparatrice avec une couleur spécifiée. [EN] Draws a separator line with a spe...</div><div class="ttdef"><b>Definition</b> <a href="#l00833">Terminal.Format.Class.Ref.cs:833</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a8a9171b5213f7bb1cec86c029bf22bc1"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a8a9171b5213f7bb1cec86c029bf22bc1">GalacticShrine.Terminal.Format.Aligner2Couleur</a></div><div class="ttdeci">void Aligner2Couleur(string Texte, object Argument, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Aligne le texte formaté avec deux couleurs distinctes pour le texte et l&#39;arrière-plan....</div><div class="ttdef"><b>Definition</b> <a href="#l00609">Terminal.Format.Class.Ref.cs:609</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_a9a71b7de9233e4e6a4b3eb50bb96e8eb"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#a9a71b7de9233e4e6a4b3eb50bb96e8eb">GalacticShrine.Terminal.Format.Ecrire2Couleur</a></div><div class="ttdeci">void Ecrire2Couleur(bool ReserveToutLaLigne, string Texte, object Argument, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Écrit du texte formaté avec deux couleurs distinctes pour le texte et l&#39;arrière-plan en réservan...</div><div class="ttdef"><b>Definition</b> <a href="#l00435">Terminal.Format.Class.Ref.cs:435</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_aa50fa4264a0524fd081eb75431f66489"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489">GalacticShrine.Terminal.Format.LigneSeparatriceDecoree</a></div><div class="ttdeci">void LigneSeparatriceDecoree(char Character, string Couleur)</div><div class="ttdoc">[FR] Dessine une ligne séparatrice décorée avec un caractère spécifique et une couleur donnée....</div><div class="ttdef"><b>Definition</b> <a href="#l00783">Terminal.Format.Class.Ref.cs:783</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_aa56a0a4aab2059e02fdf7f0257058735"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa56a0a4aab2059e02fdf7f0257058735">GalacticShrine.Terminal.Format.LigneSeparatrice</a></div><div class="ttdeci">void LigneSeparatrice(int Lignes=1)</div><div class="ttdoc">[FR] Dessine une ou plusieurs lignes séparatrices avec une couleur par défaut. [EN] Draws one or more...</div><div class="ttdef"><b>Definition</b> <a href="#l00818">Terminal.Format.Class.Ref.cs:818</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_aa8a11ed1ca1552fbb565aa0666e7ddbe"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#aa8a11ed1ca1552fbb565aa0666e7ddbe">GalacticShrine.Terminal.Format.Ecrire2Couleur</a></div><div class="ttdeci">void Ecrire2Couleur(bool ReserveToutLaLigne, string Texte, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Écrit du texte en réservant toute la ligne avec deux couleurs distinctes pour le texte et l&#39;arri...</div><div class="ttdef"><b>Definition</b> <a href="#l00398">Terminal.Format.Class.Ref.cs:398</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_ab18e4cb2bc7593d2b0c34ad4ff1c3291"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab18e4cb2bc7593d2b0c34ad4ff1c3291">GalacticShrine.Terminal.Format.Ecrire</a></div><div class="ttdeci">void Ecrire(string Texte, object Argument, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Écrit du texte formaté dans la console avec une couleur spécifiée. [EN] Writes formatted text to...</div><div class="ttdef"><b>Definition</b> <a href="#l00244">Terminal.Format.Class.Ref.cs:244</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_ab2a67501232a09ea75f7cd7379881ced"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab2a67501232a09ea75f7cd7379881ced">GalacticShrine.Terminal.Format.Format</a></div><div class="ttdeci">Format(CouleurInterface Theme)</div><div class="ttdoc">[FR] Constructeur de la classe Format. Initialise les variations de thème et définit les couleurs par...</div><div class="ttdef"><b>Definition</b> <a href="#l00065">Terminal.Format.Class.Ref.cs:65</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_ab8325766295b719e03151a03fee67915"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ab8325766295b719e03151a03fee67915">GalacticShrine.Terminal.Format.Ecrire2Couleur</a></div><div class="ttdeci">void Ecrire2Couleur(string Texte, object Argument, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Écrit du texte formaté avec deux couleurs distinctes pour le texte et l&#39;arrière-plan....</div><div class="ttdef"><b>Definition</b> <a href="#l00365">Terminal.Format.Class.Ref.cs:365</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_abde40dada8a831bb552034c25948f0de"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#abde40dada8a831bb552034c25948f0de">GalacticShrine.Terminal.Format.Aligner2Couleur</a></div><div class="ttdeci">void Aligner2Couleur(Alignement Alignement, string Texte, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Aligne le texte avec deux couleurs distinctes et un alignement spécifique. [EN] Aligns the text ...</div><div class="ttdef"><b>Definition</b> <a href="#l00642">Terminal.Format.Class.Ref.cs:642</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_ac0662652fa9e6c989db9819bb6a0f516"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ac0662652fa9e6c989db9819bb6a0f516">GalacticShrine.Terminal.Format.Aligner</a></div><div class="ttdeci">void Aligner(Alignement Alignement, string Texte, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Aligne le texte avec un alignement spécifique et une couleur donnée. [EN] Aligns the text with a...</div><div class="ttdef"><b>Definition</b> <a href="#l00516">Terminal.Format.Class.Ref.cs:516</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_ad0c89a66b79e7ec4ddc0f30c32e16bbb"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ad0c89a66b79e7ec4ddc0f30c32e16bbb">GalacticShrine.Terminal.Format.LigneSeparatrice</a></div><div class="ttdeci">void LigneSeparatrice(int Lignes, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Dessine une ou plusieurs lignes séparatrices avec une couleur spécifiée. [EN] Draws one or more ...</div><div class="ttdef"><b>Definition</b> <a href="#l00852">Terminal.Format.Class.Ref.cs:852</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_ae68a9d5e74c6f107e3b651711b80ec9b"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#ae68a9d5e74c6f107e3b651711b80ec9b">GalacticShrine.Terminal.Format.Ecrire</a></div><div class="ttdeci">void Ecrire(string Texte, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Écrit du texte dans la console avec une couleur spécifiée. [EN] Writes text to the console with ...</div><div class="ttdef"><b>Definition</b> <a href="#l00216">Terminal.Format.Class.Ref.cs:216</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_af2b2194b74e493a72d47d13fb883a1ea"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#af2b2194b74e493a72d47d13fb883a1ea">GalacticShrine.Terminal.Format.Aligner2Couleur</a></div><div class="ttdeci">void Aligner2Couleur(Alignement Alignement, string Texte, object Argument, string CouleurTexte=Couleurs.Txt.Default, string CouleurArrierePlan=Couleurs.Bg.Default)</div><div class="ttdoc">[FR] Aligne le texte formaté avec deux couleurs distinctes et un alignement spécifique....</div><div class="ttdef"><b>Definition</b> <a href="#l00679">Terminal.Format.Class.Ref.cs:679</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_terminal_1_1_format_html_afc6fe25df2974b81af26b00b2680f961"><div class="ttname"><a href="../../d1/d42/class_galactic_shrine_1_1_terminal_1_1_format.html#afc6fe25df2974b81af26b00b2680f961">GalacticShrine.Terminal.Format.Aligner</a></div><div class="ttdeci">void Aligner(Alignement Alignement, string Texte, object Argument, string Couleur=Couleurs.Txt.Default)</div><div class="ttdoc">[FR] Aligne le texte formaté avec un alignement spécifique et une couleur donnée. [EN] Aligns the for...</div><div class="ttdef"><b>Definition</b> <a href="#l00548">Terminal.Format.Class.Ref.cs:548</a></div></div>
+<div class="ttc" id="ainterface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface_html"><div class="ttname"><a href="../../de/d50/interface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface.html">GalacticShrine.Interface.Terminal.CouleurInterface</a></div><div class="ttdoc">[FR] Interface définissant la gestion et l&#39;ajout de couleurs dans un contexte de terminal....</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d56/_couleur_8_inter_8_ref_8cs_source.html#l00026">Couleur.Inter.Ref.cs:26</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html"><div class="ttname"><a href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html">GalacticShrine.Enumeration</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d53/_comportement_des_proprietes_dupliquees_8_class_8_ref_8cs_source.html#l00006">ComportementDesProprietesDupliquees.Class.Ref.cs:6</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_a5a477d34e36480e2f317f4c4ebef992b"><div class="ttname"><a href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992b">GalacticShrine.Enumeration.Alignement</a></div><div class="ttdeci">Alignement</div><div class="ttdoc">[FR] Énumération pour représenter l&#39;alignement d&#39;un contenu (texte, éléments graphiques,...</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2c/_alignement_8_enum_8_ref_8cs_source.html#l00024">Alignement.Enum.Ref.cs:24</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_a5a477d34e36480e2f317f4c4ebef992ba96edc948adb823d524184c91e9d97091"><div class="ttname"><a href="../../d4/d05/namespace_galactic_shrine_1_1_enumeration.html#a5a477d34e36480e2f317f4c4ebef992ba96edc948adb823d524184c91e9d97091">GalacticShrine.Enumeration.Alignement.Gauche</a></div><div class="ttdeci">@ Gauche</div><div class="ttdoc">[FR] Aligne sur la gauche. [EN] Left alignment.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2c/_alignement_8_enum_8_ref_8cs_source.html#l00040">Alignement.Enum.Ref.cs:40</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_interface_1_1_terminal_html"><div class="ttname"><a href="../../df/d88/namespace_galactic_shrine_1_1_interface_1_1_terminal.html">GalacticShrine.Interface.Terminal</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d56/_couleur_8_inter_8_ref_8cs_source.html#l00019">Couleur.Inter.Ref.cs:19</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_structure_1_1_terminal_html"><div class="ttname"><a href="../../d6/d7f/namespace_galactic_shrine_1_1_structure_1_1_terminal.html">GalacticShrine.Structure.Terminal</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d8a/_couleur_8_struc_8_ref_8cs_source.html#l00017">Couleur.Struc.Ref.cs:17</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_terminal_html"><div class="ttname"><a href="../../da/dea/namespace_galactic_shrine_1_1_terminal.html">GalacticShrine.Terminal</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dcf/_terminal_8_class_8_ref_8cs_source.html#l00017">Terminal.Class.Ref.cs:17</a></div></div>
+<div class="ttc" id="astruct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur_html"><div class="ttname"><a href="../../d2/d35/struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html">GalacticShrine.Structure.Terminal.Couleur</a></div><div class="ttdoc">[FR] Représente une paire de couleurs console (arrière-plan et premier plan). [EN] Represents a pair ...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d8a/_couleur_8_struc_8_ref_8cs_source.html#l00029">Couleur.Struc.Ref.cs:29</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a href="../../dir_b586309762ba03a8cfa576de64078e44.html">Dll</a></li><li class="navelem"><a href="../../dir_5ec389d2453140882ef3295c23b52e2b.html">GalacticShrine</a></li><li class="navelem"><a href="../../d2/d24/_terminal_8_format_8_class_8_ref_8cs.html">Terminal.Format.Class.Ref.cs</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

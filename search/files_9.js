@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ini_2eclass_2eref_2ecs_0',['Ini.Class.Ref.cs',['../_ini_8_class_8_ref_8cs.html',1,'']]]
+  ['journalisation_2eclass_2eref_2ecs_0',['Journalisation.Class.Ref.cs',['../de/dfb/_journalisation_8_class_8_ref_8cs.html',1,'']]],
+  ['journalisation_2eenum_2eref_2ecs_1',['Journalisation.Enum.Ref.cs',['../dc/d0f/_journalisation_8_enum_8_ref_8cs.html',1,'']]]
 ];

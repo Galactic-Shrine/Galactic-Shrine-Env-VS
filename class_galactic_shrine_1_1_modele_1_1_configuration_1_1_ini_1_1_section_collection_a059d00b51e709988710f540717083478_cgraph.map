@@ -1,7 +1,0 @@
-<map id="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Contient" name="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Contient">
-<area shape="rect" id="Node000001" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="5,51,243,93"/>
-<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html#a105777a718fdc2d14973eecfe9ba182b" title="[FR] Crée un nouvel objet qui est une copie de l&#39;instance actuelle. [EN] Creates a new object that is..." alt="" coords="312,5,516,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,54,297,47,297,52,244,59"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ad60d92d481523dc4e20b4edea9ca9f0e" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="291,88,538,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,85,275,89,275,94,243,90"/>
-</map>

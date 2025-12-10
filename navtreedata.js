@@ -25,15 +25,51 @@
 var NAVTREE =
 [
   [ "Environement-VS", "index.html", [
-    [ "Changelog", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html", [
-      [ "[1.1.8.108] — 2025-09-26", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md118108--2025-09-26", [
-        [ "Ajouté", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté", null ],
-        [ "Modifié", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié", null ],
-        [ "Corrigé", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé", null ],
-        [ "Non inclus / réservés pour <b>1.2.0</b>", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#non-inclus--réservés-pour-120", null ],
-        [ "À venir", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#à-venir", null ]
+    [ "Changelog", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html", [
+      [ "[1.2.0.115] - 2025-11-20", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120115---2025-11-20", [
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé", null ]
       ] ],
-      [ "Historique antérieur", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#historique-antérieur", null ]
+      [ "[1.2.0.114] - 2025-11-19", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120114---2025-11-19", [
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté", null ],
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-1", null ]
+      ] ],
+      [ "[1.2.0.113] - 2025-11-19", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120113---2025-11-19", [
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté-1", null ],
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-2", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé-1", null ],
+        [ "Ruptures", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ruptures", null ]
+      ] ],
+      [ "[1.2.0.112] - 2025-11-18", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120112---2025-11-18", [
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-3", null ],
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté-2", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé-2", null ],
+        [ "Ruptures", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ruptures-1", null ]
+      ] ],
+      [ "[1.2.0.111] — 2025-11-18", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120111--2025-11-18", [
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté-3", null ],
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-4", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé-3", null ],
+        [ "Ruptures", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ruptures-2", null ]
+      ] ],
+      [ "[1.2.0.110] — 2025-10-26", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120110--2025-10-26", [
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté-4", null ],
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-5", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé-4", null ],
+        [ "Ruptures", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ruptures-3", null ]
+      ] ],
+      [ "[1.2.0.109] — 2025-09-26", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md120109--2025-09-26", [
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté-5", null ],
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-6", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé-5", null ],
+        [ "Ruptures", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ruptures-4", null ]
+      ] ],
+      [ "[1.1.8.108] — 2025-09-26", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md118108--2025-09-26", [
+        [ "Ajouté", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté-6", null ],
+        [ "Modifié", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié-7", null ],
+        [ "Corrigé", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé-6", null ]
+      ] ],
+      [ "Historique antérieur", "dc/d16/md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#historique-antérieur", null ]
     ] ],
     [ "Paquetages", "namespaces.html", [
       [ "Liste des paquetages", "namespaces.html", "namespaces_dup" ],
@@ -48,9 +84,10 @@ var NAVTREE =
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Champs de donnée", "functions.html", [
         [ "Tout", "functions.html", "functions_dup" ],
-        [ "Fonctions", "functions_func.html", null ],
+        [ "Fonctions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Propriétés", "functions_prop.html", null ]
+        [ "Propriétés", "functions_prop.html", null ],
+        [ "Événements", "functions_evnt.html", null ]
       ] ]
     ] ],
     [ "Fichiers", "files.html", [
@@ -65,10 +102,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_alignement_8_enum_8_ref_8cs.html",
-"class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#a88e5a422dbda65e14e58ec827b96df85",
-"class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489",
-"struct_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine_1_1_plage.html#ad752a0fe0cdbc2d5c5dff5276b2c1281"
+"annotated.html",
+"d4/d05/namespace_galactic_shrine_1_1_enumeration.html",
+"da/d64/class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html#a7d9b680fbdb009172eefd49408f6dc43",
+"df/d96/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

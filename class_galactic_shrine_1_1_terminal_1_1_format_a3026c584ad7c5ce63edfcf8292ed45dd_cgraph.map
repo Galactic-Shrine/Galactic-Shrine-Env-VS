@@ -1,5 +1,0 @@
-<map id="GalacticShrine.Terminal.Format.LigneSeparatriceDecoree" name="GalacticShrine.Terminal.Format.LigneSeparatriceDecoree">
-<area shape="rect" id="Node000001" title="[FR] Dessine une ligne séparatrice décorée avec un caractère spécifique et une couleur par défaut...." alt="" coords="5,5,218,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489" title="[FR] Dessine une ligne séparatrice décorée avec un caractère spécifique et une couleur donnée...." alt="" coords="266,5,478,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,24,250,24,250,29,218,29"/>
-</map>

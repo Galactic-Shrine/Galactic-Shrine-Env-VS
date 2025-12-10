@@ -1,9 +1,0 @@
-<map id="GalacticShrine.Configuration.DonneesIni.DonneesIni" name="GalacticShrine.Configuration.DonneesIni.DonneesIni">
-<area shape="rect" id="Node000001" title="[FR] Initialise une instance DonneesIni. &#160;[EN] Initializes an IniData instance." alt="" coords="342,80,533,123"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#a9642ba6cb2fcaa90b88f939c12ade18c" title="[FR] Initialise une instance DonneesIni. &#160;[EN] Initializes an IniData instance." alt="" coords="54,5,245,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,78,293,63,245,51,246,45,294,57,349,73"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_donnees_ini_insensible_a___la_casse.html#ad080218198a71aaf88312025d16a6add" title="[FR] Copie une instance de la classe GalacticShrine.Modele.Configuration.Ini.DonneesIniInsensibleA_La..." alt="" coords="5,72,294,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="326,104,294,104,294,99,326,99"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#addd473fd59f8f71989ab837ac8064aba" title="[FR] Fusionne les autres iniData dans celle&#45;ci en écrasant les valeurs existantes...." alt="" coords="54,155,245,197"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,130,294,145,246,157,245,152,293,140,348,125"/>
-</map>

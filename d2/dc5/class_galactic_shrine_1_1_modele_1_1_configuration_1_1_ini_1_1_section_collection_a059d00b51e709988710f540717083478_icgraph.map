@@ -1,0 +1,16 @@
+<map id="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Contient" name="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Contient">
+<area shape="rect" id="Node000001" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="1055,72,1292,115"/>
+<area shape="rect" id="Node000002" href="$d2/dc5/class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ae22f32de4181a433da5d6ab3bd28d365" title="[FR] Ajoute une nouvelle instance de section à la collection. &#160;[EN] Adds a new section instance to th..." alt="" coords="769,5,1007,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1064,71,982,51,983,46,1065,65"/>
+<area shape="rect" id="Node000003" href="$d2/dc5/class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ab439f8ed108317714dae058d645f56c0" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="769,72,1007,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1039,96,1007,96,1007,91,1039,91"/>
+<area shape="rect" id="Node000005" href="$dd/da8/class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="507,131,698,173"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="1060,121,1007,129,844,145,699,152,699,147,844,140,1006,124,1059,115"/>
+<area shape="rect" id="Node000004" href="$d2/dc5/class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ac2f833e033dd9b7cb49023856a6ae7c9" title=" " alt="" coords="484,64,721,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="754,92,722,91,722,86,754,87"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="767,121,699,135,698,130,766,116"/>
+<area shape="rect" id="Node000006" href="$dd/da8/class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="245,131,436,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="491,155,436,155,436,149,491,149"/>
+<area shape="rect" id="Node000007" href="$dd/da8/class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,131,197,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="229,155,197,155,197,149,229,149"/>
+</map>

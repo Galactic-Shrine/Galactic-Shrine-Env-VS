@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['program_2ecs_0',['Program.cs',['../_config_8_example_2_program_8cs.html',1,'(Espace de nommage global)'],['../_config_integre_8_example_2_program_8cs.html',1,'(Espace de nommage global)'],['../_config_integre_8_example2_2_program_8cs.html',1,'(Espace de nommage global)'],['../_terminal_8_example_2_program_8cs.html',1,'(Espace de nommage global)']]],
-  ['propriete_2ecollection_2eini_2eclass_2eref_2ecs_1',['Propriete.Collection.Ini.Class.Ref.cs',['../_propriete_8_collection_8_ini_8_class_8_ref_8cs.html',1,'']]],
-  ['propriete_2eini_2eclass_2eref_2ecs_2',['Propriete.Ini.Class.Ref.cs',['../_propriete_8_ini_8_class_8_ref_8cs.html',1,'']]]
+  ['resources_2edesigner_2ecs_0',['Resources.Designer.cs',['../de/db6/_dll_2_galactic_shrine_8_configuration_2_properties_2_resources_8_designer_8cs.html',1,'(Espace de nommage global)'],['../dc/dbc/_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs.html',1,'(Espace de nommage global)'],['../d6/d31/_programs_2_terminal_8_example_2_properties_2_resources_8_designer_8cs.html',1,'(Espace de nommage global)']]]
 ];

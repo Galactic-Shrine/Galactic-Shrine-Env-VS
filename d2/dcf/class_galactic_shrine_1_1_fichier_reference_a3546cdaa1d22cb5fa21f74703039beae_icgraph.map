@@ -1,0 +1,5 @@
+<map id="GalacticShrine.FichierReference.ObtenirDesAttributs" name="GalacticShrine.FichierReference.ObtenirDesAttributs">
+<area shape="rect" id="Node000001" title="[FR] Récupère les attributs d&#39;un fichier. [EN] Gets the attributes for a file." alt="" coords="267,5,480,48"/>
+<area shape="rect" id="Node000002" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#a99e8deff2ef8063d9b912bf9bbbdbac7" title="[FR] Rend un emplacement de fichier inscriptible. [EN] Makes a file location writeable." alt="" coords="5,5,219,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,29,219,29,219,24,251,24"/>
+</map>

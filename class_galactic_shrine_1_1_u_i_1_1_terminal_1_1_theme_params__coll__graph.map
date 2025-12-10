@@ -1,5 +1,0 @@
-<map id="GalacticShrine.UI.Terminal.ThemeParams" name="GalacticShrine.UI.Terminal.ThemeParams">
-<area shape="rect" id="Node000001" title="[FR] Classe abstraite définissant les paramètres et méthodes de base pour un thème (couleurs)...." alt="" coords="5,96,187,139"/>
-<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface.html" title="[FR] Interface définissant la gestion et l&#39;ajout de couleurs dans un contexte de terminal...." alt="" coords="11,5,181,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,64,99,96,93,96,93,64"/>
-</map>

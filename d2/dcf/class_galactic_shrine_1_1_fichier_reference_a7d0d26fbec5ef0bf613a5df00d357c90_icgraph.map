@@ -1,0 +1,7 @@
+<map id="GalacticShrine.FichierReference.VerifieSiExiste" name="GalacticShrine.FichierReference.VerifieSiExiste">
+<area shape="rect" id="Node000001" title="[FR] Détermine si le nom de fichier donné existe ou non. [EN] Determines whether the given file name ..." alt="" coords="267,39,480,81"/>
+<area shape="rect" id="Node000002" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#a99e8deff2ef8063d9b912bf9bbbdbac7" title="[FR] Rend un emplacement de fichier inscriptible. [EN] Makes a file location writeable." alt="" coords="5,5,219,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,47,219,43,219,38,251,42"/>
+<area shape="rect" id="Node000003" href="$d2/dcf/class_galactic_shrine_1_1_fichier_reference.html#aecbcf737266a0fa0ea965c59de44671c" title="[FR] Rend un fichier inscriptible de manière asynchrone en vérifiant ses attributs...." alt="" coords="5,72,219,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,78,219,82,219,77,251,73"/>
+</map>

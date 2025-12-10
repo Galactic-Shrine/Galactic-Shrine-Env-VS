@@ -1,0 +1,9 @@
+<map id="GalacticShrine.Services.Http.VerificateurDeServeur.VerificateurDeServeur" name="GalacticShrine.Services.Http.VerificateurDeServeur.VerificateurDeServeur">
+<area shape="rect" id="Node000001" title="[FR] Initialise une nouvelle instance de VerificateurDeServeur. [EN] Initializes a new instance of th..." alt="" coords="289,64,535,123"/>
+<area shape="rect" id="Node000002" href="$d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur.html#afcf526be6014c0679024697481ac2a4b" title="[FR] Arrête le minuteur de vérification périodique. [EN] Stops the periodic verification timer." alt="" coords="13,5,233,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,64,218,51,219,46,274,59"/>
+<area shape="rect" id="Node000003" href="$d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur.html#aaac211bcf333a7504bdfbb5cb2884ca7" title="[FR] Démarre le minuteur de vérification périodique. [EN] Starts the periodic verification timer." alt="" coords="5,72,241,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,96,241,96,241,91,273,91"/>
+<area shape="rect" id="Node000004" href="$d5/d6b/class_galactic_shrine_1_1_services_1_1_http_1_1_verificateur_de_serveur.html#a6900e78b673cd4b0aa22504fd469f36e" title="[FR] Lance immédiatement une vérification de l&#39;état du serveur. [EN] Immediately triggers a server st..." alt="" coords="12,139,234,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,130,235,142,233,137,281,124"/>
+</map>

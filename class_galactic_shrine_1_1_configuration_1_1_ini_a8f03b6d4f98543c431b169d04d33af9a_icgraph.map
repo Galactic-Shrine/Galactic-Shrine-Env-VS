@@ -1,8 +1,0 @@
-<map id="GalacticShrine.Configuration.Ini.Analyse" name="GalacticShrine.Configuration.Ini.Analyse">
-<area shape="rect" id="Node000001" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="245,39,436,81"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="379,26,365,20,340,17,318,19,304,24,298,30,300,38,295,39,293,29,301,20,317,14,340,12,366,14,381,21"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a3294558450a1866eef139fb9f447ea1d" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,5,197,48"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="229,47,197,43,198,37,230,42"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a2e1f5764e7bf9201332ee2c8790a3540" title="[FR] Ouvre un fichier, qui contient une chaîne de données au format INI. &#160;[EN] Opens a file containin..." alt="" coords="5,72,197,115"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="230,78,198,83,197,77,229,73"/>
-</map>

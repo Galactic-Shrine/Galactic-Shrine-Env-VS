@@ -1,0 +1,11 @@
+<map id="GalacticShrine.UI.Terminal.ThemeSombre.ThemeSombre" name="GalacticShrine.UI.Terminal.ThemeSombre.ThemeSombre">
+<area shape="rect" id="Node000001" title="[FR] Constructeur du thème sombre. Initialise et configure les couleurs et composants...." alt="" coords="5,39,201,81"/>
+<area shape="rect" id="Node000002" href="$d9/dd1/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html#a40e2a871b6941ff37638869444d5abc5" title="[FR] Configure les différents composants (textes, fonds) avec des couleurs sombres...." alt="" coords="249,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,45,233,41,234,46,201,50"/>
+<area shape="rect" id="Node000004" href="$d9/dd1/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html#ac5b63fc1b20610a3cbaf47ee2829eec2" title="[FR] Définit les couleurs principales du thème sombre, soit en console par défaut,..." alt="" coords="260,72,481,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,70,244,75,244,80,201,75"/>
+<area shape="rect" id="Node000003" href="$d4/dd5/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aa34e36adfde77fb1d09783d65926c5cc" title="[FR] Crée et retourne un objet Couleur en tenant compte d&#39;éventuelles couleurs de fallback...." alt="" coords="542,5,738,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,24,526,24,526,29,492,29"/>
+<area shape="rect" id="Node000005" href="$d4/dd5/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title="[FR] Rétablit la couleur par défaut de la console et met à jour ConsoleArrierePlan / ConsolePremierPl..." alt="" coords="540,72,740,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="481,91,524,91,524,96,481,96"/>
+</map>

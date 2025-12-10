@@ -1,20 +1,10 @@
 var searchData=
 [
-  ['mac_0',['Mac',['../namespace_galactic_shrine_1_1_enumeration.html#aa76ddebb90708b06ac0fd99dade9408aa1748c0644a50090814d3e170723ccc5c',1,'GalacticShrine::Enumeration']]],
-  ['magenta_1',['Magenta',['../class_galactic_shrine_1_1_terminal_example_1_1_properties_1_1_resources.html#a4bdc0ad2fcb727424990230a801daf0c',1,'GalacticShrine::TerminalExample::Properties::Resources']]],
-  ['marqueparrapporta_2',['MarqueParRapportA',['../class_galactic_shrine_1_1_fichier_systeme_reference.html#aaef26d3c2bbe0e93099422be52e95256',1,'GalacticShrine::FichierSystemeReference']]],
-  ['marqueradistance_3',['MarquerADistance',['../class_galactic_shrine_1_1_dossier_reference.html#a7978b8dac894861a49ca2b86b9091dd6',1,'GalacticShrine::DossierReference']]],
-  ['md5_4',['MD5',['../namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82fa7f138a09169b250e9dcb378140907378',1,'GalacticShrine::Enumeration']]],
-  ['message_5',['Message',['../class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d',1,'GalacticShrine::Enregistrement::Journalisation']]],
-  ['messageexceptionduplicationdelacle_6',['MessageExceptionDuplicationDeLaCle',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#ab5813ca5770ba69df42d021d30c47d79',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreuranalyse0_7',['MessageExceptionErreurAnalyse0',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#ade541980ac632be8701fcbb5e890b35f',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreuranalyse1_8',['MessageExceptionErreurAnalyse1',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#a54ea415168524390930a3d9c42300064',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreurformatini_9',['MessageExceptionErreurFormatIni',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#a95951e654b672df408645dbb9e039020',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreurpasdevaleurdesectionfermante_10',['MessageExceptionErreurPasDeValeurDeSectionFermante',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#aed3a80c85d77947d876e97150c89cefb',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreurproprieteshorssection_11',['MessageExceptionErreurProprietesHorsSection',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#ad02d03685b1d1a7ac3f2c564f806cee8',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreurproprietessanscle_12',['MessageExceptionErreurProprietesSansCle',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#a57643307c6db615743213f5e8953fac1',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['messageexceptionerreursectiondupliqueeaveclenom_13',['MessageExceptionErreurSectionDupliqueeAvecLeNom',['../class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#ac6d5d8395aa67cc817db7891977c18c9',1,'GalacticShrine::Configuration::Properties::Resources']]],
-  ['modifié_14',['Modifié',['../md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié',1,'']]],
-  ['modifierlextension_15',['ModifierLextension',['../class_galactic_shrine_1_1_fichier_reference.html#a7d65b74a6f59f8b51d503ee26ecc797d',1,'GalacticShrine::FichierReference']]],
-  ['multithread_16',['MultiThread',['../namespace_galactic_shrine_1_1_enumeration.html#a9cdea63c29fbcd0b88a2ffab075e648bad16cca1cc43da16cb76fba5a25b24ce6',1,'GalacticShrine::Enumeration']]]
+  ['nom_0',['Nom',['../d0/d5c/class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section.html#a17c3a6f04631ea699a8a9e11e0849b29',1,'GalacticShrine.Modele.Configuration.Ini.Section.Nom'],['../d7/d99/class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae8c3260c636a0e06218d1da1c7922142',1,'GalacticShrine.Enregistrement.Journalisation.Nom']]],
+  ['nomcomplet_1',['NomComplet',['../dd/daf/class_galactic_shrine_1_1_fichier_systeme_reference.html#a6c04a62c4b54c9005c523b9e112e90e9',1,'GalacticShrine::FichierSystemeReference']]],
+  ['nomdefichier_2',['NomDeFichier',['../d1/dd5/class_galactic_shrine_1_1_stockage_1_1_session.html#adc33d3ff13e2496ddf06e4a4fb911e99',1,'GalacticShrine::Stockage::Session']]],
+  ['nomdugroupe_3',['NomDuGroupe',['../dd/d54/class_galactic_shrine_1_1_stockage_1_1_catalogue.html#a736ec85e52fe749945b00dea99d9f92e',1,'GalacticShrine::Stockage::Catalogue']]],
+  ['noms_4',['Noms',['../dd/dbc/class_galactic_shrine_1_1_stockage_1_1_groupe.html#a9fd4763476c2f6ff29338b1ba2fb9074',1,'GalacticShrine::Stockage::Groupe']]],
+  ['nonconcordancedelasommedecontrole_5',['NonConcordanceDeLaSommeDeControle',['../d6/d92/class_galactic_shrine_1_1_properties_1_1_resources.html#ad9255d32060a93d69a35d4986047d13a',1,'GalacticShrine::Properties::Resources']]],
+  ['numerodelaligne_6',['NumeroDeLaLigne',['../d3/d85/class_galactic_shrine_1_1_exception_1_1_configuration_1_1_analyse_exception.html#a32cddcadc71e74fb54460f13bf7159a4',1,'GalacticShrine::Exception::Configuration::AnalyseException']]]
 ];

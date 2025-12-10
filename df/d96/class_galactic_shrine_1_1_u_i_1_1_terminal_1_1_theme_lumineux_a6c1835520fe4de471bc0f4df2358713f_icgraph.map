@@ -1,0 +1,5 @@
+<map id="GalacticShrine.UI.Terminal.ThemeLumineux.DefinirLesCouleurs" name="GalacticShrine.UI.Terminal.ThemeLumineux.DefinirLesCouleurs">
+<area shape="rect" id="Node000001" title="[FR] Définit les couleurs principales du thème lumineux, soit par défaut console, soit en clair...." alt="" coords="271,5,503,48"/>
+<area shape="rect" id="Node000002" href="$df/d96/class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html#af0fce102a9735023fe98f2d6da78ed2d" title="[FR] Constructeur du thème lumineux. Initialise et configure les couleurs et composants...." alt="" coords="5,5,223,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,29,223,29,223,24,255,24"/>
+</map>

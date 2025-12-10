@@ -1,0 +1,7 @@
+<map id="GalacticShrine.Services.Http.VerificateurDeServeur" name="GalacticShrine.Services.Http.VerificateurDeServeur">
+<area shape="rect" id="Node000001" title="[FR] Vérifie périodiquement l&#39;état d&#39;un serveur donné. [EN] Periodically checks the status of a given..." alt="" coords="28,80,206,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,43,102,78,98,82,69,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="120,5,248,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,46,136,82,132,78,162,43"/>
+</map>

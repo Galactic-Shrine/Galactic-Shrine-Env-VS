@@ -1,0 +1,5 @@
+<map id="GalacticShrine.DossierReference.Creer" name="GalacticShrine.DossierReference.Creer">
+<area shape="rect" id="Node000001" title="[FR] Crée un répertoire. [EN] Creates a directory." alt="" coords="5,5,225,48"/>
+<area shape="rect" id="Node000002" href="$dc/dbe/class_galactic_shrine_1_1_dossier_reference.html#ae3a2ef695411bb77ae57419fff996dab" title="[FR] Constructeur par défaut. [EN] Default constructor." alt="" coords="273,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,24,257,24,257,29,225,29"/>
+</map>
