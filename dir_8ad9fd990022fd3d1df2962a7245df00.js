@@ -1,5 +1,5 @@
 var dir_8ad9fd990022fd3d1df2962a7245df00 =
 [
-    [ "net6.0", "dir_c24e3d4683a06aeda5bf8c86b272c0ac.html", "dir_c24e3d4683a06aeda5bf8c86b272c0ac" ],
-    [ "net7.0", "dir_bd9a6aba267d1496af47eaf78b66412b.html", "dir_bd9a6aba267d1496af47eaf78b66412b" ]
+    [ ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs", "_dll_2_galactic_shrine_2obj_2_debug_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs.html", null ],
+    [ "GalacticShrine.AssemblyInfo.cs", "_galactic_shrine_8_assembly_info_8cs.html", null ]
 ];

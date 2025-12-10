@@ -1,39 +1,48 @@
 <map id="GalacticShrine.Configuration.Ini.LigneDeProcessus" name="GalacticShrine.Configuration.Ini.LigneDeProcessus">
-<area shape="rect" id="Node000001" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="5,245,195,288"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa1784d12ea6aefb26d219e9010a90653" title=" " alt="" coords="487,5,756,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,243,175,200,241,156,299,128,360,104,477,66,479,71,362,109,301,133,244,161,178,204,126,247"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab33c61b1a5f2a6e45d63e48113f20750" title=" " alt="" coords="525,387,718,429"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,286,191,308,243,328,381,365,510,389,509,395,380,370,242,333,189,313,142,291"/>
-<area shape="rect" id="Node000007" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac949b568fd2371b7546137b7092651dc" title=" " alt="" coords="243,171,432,213"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="170,242,252,216,254,221,171,247"/>
-<area shape="rect" id="Node000009" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ac0a94fa81730c6f5fde7f2f842200620" title=" " alt="" coords="503,320,740,363"/>
-<area shape="poly" id="edge23_Node000001_Node000009" title=" " alt="" coords="187,286,243,297,369,315,488,328,488,334,368,321,242,303,186,291"/>
-<area shape="rect" id="Node000011" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="243,245,432,288"/>
-<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="195,264,227,264,227,269,195,269"/>
-<area shape="rect" id="Node000003" href="$struct_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine_1_1_plage.html#a2001d3beece21e14bb82661f749c60ae" title=" " alt="" coords="827,69,1070,128"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="757,58,813,70,812,75,756,64"/>
-<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ac1b985808f0790b6eb9130ae2f5b01d2" title=" " alt="" coords="818,316,1079,359"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="718,385,832,360,833,365,719,390"/>
-<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ad4240aacc0c932e5f08443b756b82f27" title=" " alt="" coords="810,191,1087,233"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="717,393,740,384,761,373,777,357,786,340,794,322,808,302,850,267,893,239,896,243,853,272,812,306,798,325,790,342,781,360,764,377,742,389,719,398"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="358,168,410,121,443,96,479,74,490,68,492,73,481,78,446,100,413,125,361,172"/>
-<area shape="rect" id="Node000008" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#a5ff6a33ce5c9c8b1c634b3242304a1b7" title=" " alt="" coords="500,171,742,213"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="432,189,485,189,485,195,432,195"/>
-<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="403,212,434,231,450,251,458,271,465,289,482,306,491,312,488,316,478,310,461,292,453,273,445,254,430,235,400,216"/>
-<area shape="rect" id="Node000010" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#afa88b78cbdf391a2bdb3128d611760b6" title=" " alt="" coords="506,88,736,147"/>
-<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="421,167,493,148,494,153,422,173"/>
-<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="743,197,796,200,796,205,743,202"/>
-<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="737,108,813,104,813,109,737,113"/>
-<area shape="poly" id="edge16_Node000011_Node000002" title=" " alt="" coords="405,243,430,223,443,205,450,186,452,149,455,112,463,93,478,74,481,71,485,75,482,78,468,96,461,113,457,150,455,188,448,207,434,227,409,247"/>
-<area shape="poly" id="edge18_Node000011_Node000008" title=" " alt="" coords="410,242,479,223,510,215,511,220,481,228,412,247"/>
-<area shape="poly" id="edge21_Node000011_Node000009" title=" " alt="" coords="412,286,481,305,511,313,510,318,479,311,410,291"/>
-<area shape="poly" id="edge22_Node000011_Node000010" title=" " alt="" coords="399,243,430,223,445,207,453,190,462,173,478,157,491,148,494,153,482,161,466,176,458,192,449,210,434,227,402,247"/>
-<area shape="rect" id="Node000012" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ab439f8ed108317714dae058d645f56c0" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="504,453,739,496"/>
-<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="352,287,372,321,401,362,438,404,482,439,491,445,488,449,478,444,434,408,397,366,368,324,348,290"/>
-<area shape="rect" id="Node000013" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="831,483,1066,525"/>
-<area shape="poly" id="edge17_Node000011_Node000013" title=" " alt="" coords="346,288,361,336,387,398,405,429,427,459,452,485,481,506,527,527,576,541,626,548,677,550,775,543,860,527,861,532,776,548,677,556,626,553,575,546,525,532,479,510,449,489,423,462,401,432,383,400,356,338,341,289"/>
-<area shape="rect" id="Node000014" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ad657925f38944e77f8ac413d45a9fe21" title=" " alt="" coords="480,237,762,296"/>
-<area shape="poly" id="edge19_Node000011_Node000014" title=" " alt="" coords="432,264,465,264,465,269,432,269"/>
-<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="739,483,816,489,816,495,739,488"/>
-<area shape="poly" id="edge20_Node000014_Node000005" title=" " alt="" coords="761,294,833,310,831,315,760,299"/>
+<area shape="rect" id="Node000001" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="5,280,197,323"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa1784d12ea6aefb26d219e9010a90653" title=" " alt="" coords="498,272,770,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,299,482,299,482,304,197,304"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab33c61b1a5f2a6e45d63e48113f20750" title=" " alt="" coords="245,488,441,531"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="129,321,307,476,304,480,126,325"/>
+<area shape="rect" id="Node000008" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac949b568fd2371b7546137b7092651dc" title=" " alt="" coords="247,189,438,232"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="159,277,269,235,271,240,161,282"/>
+<area shape="rect" id="Node000010" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ac0a94fa81730c6f5fde7f2f842200620" title=" " alt="" coords="514,123,754,165"/>
+<area shape="poly" id="edge28_Node000001_Node000010" title=" " alt="" coords="117,278,169,224,205,197,244,175,307,154,372,141,438,134,499,133,499,138,438,140,373,146,308,159,246,180,207,201,173,228,121,282"/>
+<area shape="rect" id="Node000012" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="247,351,438,393"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="177,321,253,343,252,348,176,326"/>
+<area shape="rect" id="Node000003" href="$struct_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine_1_1_plage.html#a2001d3beece21e14bb82661f749c60ae" title=" " alt="" coords="844,189,1090,248"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="755,269,831,250,832,255,756,274"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#a3660111c46db3c7f63414eaa29a7f844" title=" " alt="" coords="840,355,1094,413"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="756,329,832,348,831,353,755,334"/>
+<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ac1b985808f0790b6eb9130ae2f5b01d2" title=" " alt="" coords="502,488,767,531"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="441,507,486,507,486,512,441,512"/>
+<area shape="rect" id="Node000007" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ad4240aacc0c932e5f08443b756b82f27" title=" " alt="" coords="827,651,1107,693"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="357,529,377,564,407,605,445,644,466,660,490,674,536,691,584,702,634,709,683,711,779,707,863,694,863,700,779,712,683,717,633,714,583,708,534,696,488,678,464,665,441,648,403,608,373,567,353,532"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="692,485,871,417,873,422,694,490"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="407,230,490,257,513,265,512,270,488,263,405,235"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="365,187,418,144,452,123,488,108,568,87,634,81,699,89,780,108,818,121,854,139,917,178,915,182,852,143,816,126,779,113,698,94,634,86,569,92,490,113,454,128,421,148,368,191"/>
+<area shape="rect" id="Node000009" href="$struct_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine_1_1_plage.html#a4949516ec27473c61c29c8593b8c7be5" title=" " alt="" coords="489,5,779,48"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="358,187,411,126,447,93,488,64,513,52,516,56,490,69,451,97,415,130,362,191"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="438,186,523,167,524,172,440,191"/>
+<area shape="rect" id="Node000011" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#afa88b78cbdf391a2bdb3128d611760b6" title=" " alt="" coords="516,189,752,248"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="439,211,501,212,501,218,439,216"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="752,216,829,216,829,221,752,221"/>
+<area shape="poly" id="edge20_Node000012_Node000002" title=" " alt="" coords="433,347,496,332,497,337,435,353"/>
+<area shape="poly" id="edge26_Node000012_Node000010" title=" " alt="" coords="359,349,439,243,459,206,470,190,487,175,499,168,502,173,491,179,474,194,464,209,443,245,363,352"/>
+<area shape="poly" id="edge27_Node000012_Node000011" title=" " alt="" coords="365,348,418,303,452,279,488,258,501,252,503,256,490,262,455,283,421,307,368,352"/>
+<area shape="rect" id="Node000013" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ab439f8ed108317714dae058d645f56c0" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="516,555,753,597"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="368,392,443,474,456,494,465,511,474,526,491,541,502,548,500,552,487,545,470,529,460,514,452,497,439,478,364,396"/>
+<area shape="rect" id="Node000014" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="848,496,1086,539"/>
+<area shape="poly" id="edge21_Node000012_Node000014" title=" " alt="" coords="398,391,490,423,570,441,634,451,698,459,780,473,856,489,855,495,779,479,697,465,633,457,569,447,488,428,396,396"/>
+<area shape="rect" id="Node000017" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#a5ff6a33ce5c9c8b1c634b3242304a1b7" title=" " alt="" coords="512,621,756,664"/>
+<area shape="poly" id="edge22_Node000012_Node000017" title=" " alt="" coords="371,392,408,428,443,475,453,494,458,513,462,547,469,577,477,592,491,607,500,615,497,619,487,611,473,595,464,579,457,548,453,514,448,496,439,477,404,432,368,396"/>
+<area shape="rect" id="Node000018" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#ad657925f38944e77f8ac413d45a9fe21" title=" " alt="" coords="492,355,777,413"/>
+<area shape="poly" id="edge24_Node000012_Node000018" title=" " alt="" coords="439,373,477,375,476,380,439,379"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="753,552,833,538,833,544,754,558"/>
+<area shape="rect" id="Node000015" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html#a105777a718fdc2d14973eecfe9ba182b" title="[FR] Crée un nouvel objet qui est une copie de l&#39;instance actuelle. [EN] Creates a new object that is..." alt="" coords="1176,451,1380,509"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="1086,500,1161,491,1161,497,1086,506"/>
+<area shape="rect" id="Node000016" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ad60d92d481523dc4e20b4edea9ca9f0e" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="1155,533,1402,576"/>
+<area shape="poly" id="edge19_Node000014_Node000016" title=" " alt="" coords="1086,529,1140,535,1139,541,1086,534"/>
+<area shape="poly" id="edge23_Node000017_Node000007" title=" " alt="" coords="757,651,812,656,812,661,756,656"/>
+<area shape="poly" id="edge25_Node000018_Node000004" title=" " alt="" coords="777,381,824,381,824,387,777,387"/>
 </map>

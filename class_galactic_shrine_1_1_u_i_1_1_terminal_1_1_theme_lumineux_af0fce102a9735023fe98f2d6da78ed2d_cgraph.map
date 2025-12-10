@@ -1,11 +1,11 @@
 <map id="GalacticShrine.UI.Terminal.ThemeLumineux.ThemeLumineux" name="GalacticShrine.UI.Terminal.ThemeLumineux.ThemeLumineux">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,221,81"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html#a30d4193d0b1fcc9964b8f165f04f38e3" title=" " alt="" coords="269,5,519,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,45,254,41,254,46,221,50"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html#a6c1835520fe4de471bc0f4df2358713f" title=" " alt="" coords="280,72,508,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,70,265,75,264,81,221,75"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aa34e36adfde77fb1d09783d65926c5cc" title=" " alt="" coords="569,5,763,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="520,24,553,24,553,29,520,29"/>
-<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title=" " alt="" coords="567,72,764,115"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="509,91,552,91,552,96,509,96"/>
+<area shape="rect" id="Node000001" title="[FR] Constructeur du thème lumineux. Initialise et configure les couleurs et composants...." alt="" coords="5,39,223,81"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html#a30d4193d0b1fcc9964b8f165f04f38e3" title="[FR] Configure les différents composants (textes, fonds) avec des couleurs claires...." alt="" coords="271,5,525,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,45,255,41,255,46,224,50"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html#a6c1835520fe4de471bc0f4df2358713f" title="[FR] Définit les couleurs principales du thème lumineux, soit par défaut console, soit en clair...." alt="" coords="282,72,514,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,70,267,75,266,81,223,75"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aa34e36adfde77fb1d09783d65926c5cc" title="[FR] Crée et retourne un objet Couleur en tenant compte d&#39;éventuelles couleurs de fallback...." alt="" coords="575,5,771,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,24,559,24,559,29,526,29"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title="[FR] Rétablit la couleur par défaut de la console et met à jour ConsoleArrierePlan / ConsolePremierPl..." alt="" coords="573,72,773,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="514,91,557,91,557,96,514,96"/>
 </map>

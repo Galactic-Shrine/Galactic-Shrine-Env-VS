@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ini_2eclass_2eref_2ecs_0',['Ini.Class.Ref.cs',['../_ini_8_class_8_ref_8cs.html',1,'']]]
+  ['hachage_2eenum_2eref_2ecs_0',['Hachage.Enum.Ref.cs',['../_hachage_8_enum_8_ref_8cs.html',1,'']]]
 ];

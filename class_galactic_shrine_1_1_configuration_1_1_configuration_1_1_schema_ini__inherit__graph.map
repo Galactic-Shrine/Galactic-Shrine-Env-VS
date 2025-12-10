@@ -1,5 +1,5 @@
 <map id="GalacticShrine.Configuration.Configuration.SchemaIni" name="GalacticShrine.Configuration.Configuration.SchemaIni">
-<area shape="rect" id="Node000001" title="[FR] Cette structure définit le format du fichier INI en personnalisant les caractères utilisés &#160;pour..." alt="" coords="5,96,195,139"/>
-<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html" title=" " alt="" coords="36,5,164,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,63,103,96,97,96,97,63"/>
+<area shape="rect" id="Node000001" title="[FR] Cette structure définit le format du fichier INI en personnalisant les caractères utilisés &#160;pour..." alt="" coords="27,96,219,139"/>
+<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html" title="[FR] Crée une copie en profondeur du type T , c&#39;est&#45;à&#45;dire que tous les types de référence sont égale..." alt="" coords="5,5,241,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,64,126,96,120,96,120,64"/>
 </map>

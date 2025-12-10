@@ -1,15 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: ".acdefghijlmnoprstvw",
-  1: "acdfgioprst",
+  0: ".0128abcdefghijlmnoprstuvwà—",
+  1: "abcdfgijoprst",
   2: "g",
-  3: ".acdefghioprst",
-  4: "acdefgilmoprst",
+  3: ".abcdefghijoprst",
+  4: "acdefgijlmoprst",
   5: "cdenrst",
   6: "g",
-  7: "acdehost",
-  8: "acdefgijlmpstvw",
-  9: "acdefhilmnprstv"
+  7: "acdehjs",
+  8: "acdegilmpstw",
+  9: "acdefhilmnprstuv",
+  10: "0128achimnprvà—"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "typedefs",
   7: "enums",
   8: "enumvalues",
-  9: "properties"
+  9: "properties",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "Définitions de type",
   7: "Énumérations",
   8: "Valeurs énumérées",
-  9: "Propriétés"
+  9: "Propriétés",
+  10: "Pages"
 };
 

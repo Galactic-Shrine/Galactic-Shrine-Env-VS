@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['valeur_0',['Valeur',['../class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html#a44044976703f80cd753439db52679fd3',1,'GalacticShrine::Modele::Configuration::Ini::Propriete']]],
-  ['variablevaleurs_1',['VariableValeurs',['../class_galactic_shrine_1_1_terminal_example_1_1_properties_1_1_resources.html#a0089669ebd7eca276390cbefe1b4d909',1,'GalacticShrine::TerminalExample::Properties::Resources']]],
-  ['verbeux_2',['Verbeux',['../namespace_galactic_shrine_1_1_enumeration_1_1_outils_1_1_journalisation.html#ac408392b1cfb1720432566b01587bc75acdc6c0f924bda043826a15491a623c08',1,'GalacticShrine::Enumeration::Outils::Journalisation']]],
-  ['versionlib_3',['VersionLib',['../class_galactic_shrine_1_1_exceptions_1_1_configuration_1_1_analyse_exception.html#a51925af24d64188d898eb6f0647d37c3',1,'GalacticShrine::Exceptions::Configuration::AnalyseException']]]
+  ['obtenirledossierspecial_0',['ObtenirLeDossierSpecial',['../class_galactic_shrine_1_1_dossier_reference.html#ae4bc967f181b51f76aa4d01132d59412',1,'GalacticShrine::DossierReference']]],
+  ['obtenirlenomdurepertoire_1',['ObtenirLeNomDuRepertoire',['../class_galactic_shrine_1_1_dossier_reference.html#a57be00912250e50daa61ee968cbb2680',1,'GalacticShrine::DossierReference']]],
+  ['obtenirlextension_2',['ObtenirLextension',['../class_galactic_shrine_1_1_fichier_reference.html#afd891b587e4bffb3178a3bb7a7ba245d',1,'GalacticShrine::FichierReference']]],
+  ['operator_21_3d_3',['operator!=',['../class_galactic_shrine_1_1_dossier_reference.html#a02f583140d69a4e18d8a476ee2b10d85',1,'GalacticShrine::DossierReference']]],
+  ['operator_2b_4',['operator+',['../class_galactic_shrine_1_1_fichier_reference.html#a427da320d23c9e4c53afe6ddd70a20dc',1,'GalacticShrine::FichierReference']]],
+  ['os_2eclass_2eref_2ecs_5',['Os.Class.Ref.cs',['../_os_8_class_8_ref_8cs.html',1,'']]],
+  ['outils_6',['Outils',['../class_galactic_shrine_1_1_outils_1_1_outils.html',1,'GalacticShrine::Outils']]],
+  ['outils_2eclass_2eref_2ecs_7',['Outils.Class.Ref.cs',['../_outils_8_class_8_ref_8cs.html',1,'']]],
+  ['ouvrir_8',['Ouvrir',['../class_galactic_shrine_1_1_configuration_1_1_ini.html#a2e1f5764e7bf9201332ee2c8790a3540',1,'GalacticShrine::Configuration::Ini']]]
 ];

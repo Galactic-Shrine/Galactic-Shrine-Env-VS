@@ -1,7 +1,12 @@
 <map id="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Fusionner" name="GalacticShrine.Modele.Configuration.Ini.SectionCollection.Fusionner">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,241,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ab439f8ed108317714dae058d645f56c0" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="289,5,524,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,24,274,24,274,29,241,29"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="572,5,807,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,24,557,24,557,29,525,29"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,243,101"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ab439f8ed108317714dae058d645f56c0" title="[FR] Crée une nouvelle section avec des données vides. &#160;[EN] Creates a new section with empty data." alt="" coords="291,29,528,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,65,275,62,276,67,243,70"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#ad60d92d481523dc4e20b4edea9ca9f0e" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="861,88,1109,131"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="243,81,846,102,845,107,243,87"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478" title="[FR] Permet de savoir si une section portant le nom spécifié existe dans la collection...." alt="" coords="576,29,813,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="528,48,561,48,561,53,528,53"/>
+<area shape="rect" id="Node000004" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html#a105777a718fdc2d14973eecfe9ba182b" title="[FR] Crée un nouvel objet qui est une copie de l&#39;instance actuelle. [EN] Creates a new object that is..." alt="" coords="883,5,1087,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="814,41,867,38,867,44,814,47"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="804,70,862,82,861,87,803,75"/>
 </map>

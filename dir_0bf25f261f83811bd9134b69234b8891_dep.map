@@ -1,12 +1,11 @@
 <map id="Source/Dll/GalacticShrine.Configuration" name="Source/Dll/GalacticShrine.Configuration">
-<area shape="rect" id="node2" href="dir_a27be16d89c997f869fa82390ebf9687.html" title="Analyseur" alt="" coords="728,64,808,91"/>
-<area shape="rect" id="node3" href="dir_b13a9bee6b3ab21fb5b5b4073226ae92.html" title="Configuration" alt="" coords="608,64,704,91"/>
-<area shape="rect" id="node4" href="dir_041f003d09a6a3750c773664fd4ac763.html" title="Enumeration" alt="" coords="489,64,583,91"/>
-<area shape="rect" id="node5" href="dir_7fb142f5bf80c58cd946c0ec7a6cbfde.html" title="Exception" alt="" coords="386,64,465,91"/>
-<area shape="rect" id="node6" href="dir_f7555f9fffe554917a58c6b7a87bea00.html" title="Interface" alt="" coords="292,64,362,91"/>
-<area shape="rect" id="node7" href="dir_5555f22ebc37ffb433a0d3a6b31de4dd.html" title="Modele" alt="" coords="204,64,268,91"/>
-<area shape="rect" id="node8" href="dir_c02f118d771b9b13660662fc6b040157.html" title="obj" alt="" coords="142,64,181,91"/>
-<area shape="rect" id="node9" href="dir_67b9328cbd84857722f27ad7bd775077.html" title="Properties" alt="" coords="37,64,118,91"/>
-<area shape="rect" id="clust2" href="dir_0bf25f261f83811bd9134b69234b8891.html" alt="" coords="27,53,1028,101"/>
-<area shape="rect" id="clust1" href="dir_b586309762ba03a8cfa576de64078e44.html" title="Dll" alt="" coords="16,16,1039,112"/>
+<area shape="rect" id="node2" href="dir_a27be16d89c997f869fa82390ebf9687.html" title="Analyseur" alt="" coords="248,64,328,91"/>
+<area shape="rect" id="node3" href="dir_b13a9bee6b3ab21fb5b5b4073226ae92.html" title="Configuration" alt="" coords="352,64,450,91"/>
+<area shape="rect" id="node4" href="dir_041f003d09a6a3750c773664fd4ac763.html" title="Enumeration" alt="" coords="474,64,568,91"/>
+<area shape="rect" id="node5" href="dir_7fb142f5bf80c58cd946c0ec7a6cbfde.html" title="Exception" alt="" coords="592,64,672,91"/>
+<area shape="rect" id="node6" href="dir_5555f22ebc37ffb433a0d3a6b31de4dd.html" title="Modele" alt="" coords="696,64,760,91"/>
+<area shape="rect" id="node7" href="dir_c02f118d771b9b13660662fc6b040157.html" title="obj" alt="" coords="783,64,822,91"/>
+<area shape="rect" id="node8" href="dir_67b9328cbd84857722f27ad7bd775077.html" title="Properties" alt="" coords="846,64,927,91"/>
+<area shape="rect" id="clust2" href="dir_0bf25f261f83811bd9134b69234b8891.html" alt="" coords="27,53,937,101"/>
+<area shape="rect" id="clust1" href="dir_b586309762ba03a8cfa576de64078e44.html" title="Dll" alt="" coords="16,16,948,112"/>
 </map>

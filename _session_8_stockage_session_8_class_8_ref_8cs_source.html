@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Environement-VS:  Fichier source de Source/Dll/GalacticShrine/Stockage/Session.StockageSession.Class.Ref.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="1.3.2.small.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Environement-VS<span id="projectnumber">&#160;1.1.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_session_8_stockage_session_8_class_8_ref_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Session.StockageSession.Class.Ref.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_session_8_stockage_session_8_class_8_ref_8cs.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>System.IO;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>System.Text;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>System.Security.Cryptography;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_interface.html">GalacticShrine.Interface</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_i_o.html">GalacticShrine.IO</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span>static <a class="code hl_namespace" href="namespace_galactic_shrine.html">GalacticShrine</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_galactic_shrine.html">GalacticShrine</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span>static <a class="code hl_namespace" href="namespace_galactic_shrine.html">GalacticShrine</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_dossier_reference.html">DossierReference</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span>static <a class="code hl_namespace" href="namespace_galactic_shrine.html">GalacticShrine</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_fichier_reference.html">FichierReference</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespace_galactic_shrine_1_1_stockage.html">   15</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_stockage.html">GalacticShrine.Stockage</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_stockage_1_1_session.html">   23</a></span>  <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_galactic_shrine_1_1_stockage_1_1_session.html">Session</a> : <a class="code hl_interface" href="interface_galactic_shrine_1_1_interface_1_1_stockage_session_interface.html">StockageSessionInterface</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adf83db2aba7cd5ed14d9f83d175d3535">   33</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adf83db2aba7cd5ed14d9f83d175d3535">Apps</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_stockage_1_1_session.html#ad85c61bc2ce64b5d38b110782d18a7f6">   43</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_stockage_1_1_session.html#ad85c61bc2ce64b5d38b110782d18a7f6">Extension</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;dat&quot;</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adc33d3ff13e2496ddf06e4a4fb911e99">   53</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adc33d3ff13e2496ddf06e4a4fb911e99">NomDeFichier</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;Session&quot;</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span> ObtenirLeCheminDuFichier() =&gt; Chemin.Combiner(Chemin1: $<span class="stringliteral">&quot;{Repertoire[&quot;</span>Roaming<span class="stringliteral">&quot;]}&quot;</span>, Chemin2: <a class="code hl_property" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adf83db2aba7cd5ed14d9f83d175d3535">Apps</a>, Chemin3: $<span class="stringliteral">&quot;{NomDeFichier}.{Extension}&quot;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_stockage_1_1_session.html#aae5b7cbcf200d64f21babd61ea8333a8">   81</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_galactic_shrine_1_1_stockage_1_1_session.html#aae5b7cbcf200d64f21babd61ea8333a8">Sauvegarder</a>(<span class="keywordtype">string</span> Donnees, <span class="keywordtype">string</span> Cle) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="comment">// Vérifie si le dossier de stockage existe.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">if</span>(!VerifieSiExiste(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_dossier_reference.html">DossierReference</a>(Chemins: Chemin.Combiner(Chemin1: $<span class="stringliteral">&quot;{Repertoire[&quot;</span>Roaming<span class="stringliteral">&quot;]}&quot;</span>, Chemin2: <a class="code hl_property" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adf83db2aba7cd5ed14d9f83d175d3535">Apps</a>)))) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// Crée un nouveau dossier de stockage.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        Creer(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_dossier_reference.html">DossierReference</a>(Chemins: Chemin.Combiner(Chemin1: $<span class="stringliteral">&quot;{Repertoire[&quot;</span>Roaming<span class="stringliteral">&quot;]}&quot;</span>, Chemin2: <a class="code hl_property" href="class_galactic_shrine_1_1_stockage_1_1_session.html#adf83db2aba7cd5ed14d9f83d175d3535">Apps</a>)));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keyword">using</span>(Aes aes = Aes.Create()) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">byte</span>[] key = Encoding.UTF8.GetBytes(Cle);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        aes.Key = key;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        aes.GenerateIV();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keyword">using</span>(FileStream fs = <span class="keyword">new</span> FileStream(ObtenirLeCheminDuFichier(), FileMode.Create)) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>          </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>          <span class="comment">// Écrit l&#39;IV au début du fichier.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>          fs.Write(aes.IV, 0, aes.IV.Length);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          <span class="comment">// Crypteur</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>          <span class="keyword">using</span>(CryptoStream cs = <span class="keyword">new</span> CryptoStream(fs, aes.CreateEncryptor(), CryptoStreamMode.Write))</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>          <span class="keyword">using</span>(StreamWriter writer = <span class="keyword">new</span> StreamWriter(cs)) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            writer.Write(Donnees);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>          }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_stockage_1_1_session.html#ac5b7c84c7018d87af075a349dc7f7a1b">  124</a></span>    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_stockage_1_1_session.html#ac5b7c84c7018d87af075a349dc7f7a1b">Charger</a>(<span class="keywordtype">string</span> Cle) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <span class="comment">// Vérifie si le fichier de session existe.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      <span class="keywordflow">if</span>(!VerifieSiExiste(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_fichier_reference.html">FichierReference</a>(Chemins: ObtenirLeCheminDuFichier())))</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="keyword">using</span>(FileStream fs = <span class="keyword">new</span> FileStream(ObtenirLeCheminDuFichier(), FileMode.Open)) {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordtype">byte</span>[] iv = <span class="keyword">new</span> <span class="keywordtype">byte</span>[16];</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        fs.Read(iv, 0, iv.Length);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keyword">using</span>(Aes aes = Aes.Create()) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>          <span class="keywordtype">byte</span>[] key = Encoding.UTF8.GetBytes(Cle);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>          aes.Key = key;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>          aes.IV = iv;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>          <span class="keyword">using</span>(CryptoStream cs = <span class="keyword">new</span> CryptoStream(fs, aes.CreateDecryptor(), CryptoStreamMode.Read))</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>          <span class="keyword">using</span>(StreamReader reader = <span class="keyword">new</span> StreamReader(cs)) {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">return</span> reader.ReadToEnd();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>          }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>      }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  }</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+</div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_dossier_reference_html"><div class="ttname"><a href="class_galactic_shrine_1_1_dossier_reference.html">GalacticShrine.DossierReference</a></div><div class="ttdoc">[FR] Représentation d&#39;un chemin de répertoire absolu. Permet un hachage et des comparaisons rapides....</div><div class="ttdef"><b>Definition</b> <a href="_dossier_8_class_8_ref_8cs_source.html#l00032">Dossier.Class.Ref.cs:32</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_fichier_reference_html"><div class="ttname"><a href="class_galactic_shrine_1_1_fichier_reference.html">GalacticShrine.FichierReference</a></div><div class="ttdoc">[FR] Représentation d&#39;un chemin de fichier absolu. Permet des hachages et des comparaisons rapides....</div><div class="ttdef"><b>Definition</b> <a href="_fichier_8_class_8_ref_8cs_source.html#l00025">Fichier.Class.Ref.cs:25</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_galactic_shrine_html"><div class="ttname"><a href="class_galactic_shrine_1_1_galactic_shrine.html">GalacticShrine.GalacticShrine</a></div><div class="ttdef"><b>Definition</b> <a href="_galactic_shrine_8class_8_ref_8cs_source.html#l00025">GalacticShrine.class.Ref.cs:25</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_stockage_1_1_session_html"><div class="ttname"><a href="class_galactic_shrine_1_1_stockage_1_1_session.html">GalacticShrine.Stockage.Session</a></div><div class="ttdoc">[FR] Classe responsable du stockage sécurisé des données de session. [EN] Class responsible for secur...</div><div class="ttdef"><b>Definition</b> <a href="#l00023">Session.StockageSession.Class.Ref.cs:23</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_stockage_1_1_session_html_aae5b7cbcf200d64f21babd61ea8333a8"><div class="ttname"><a href="class_galactic_shrine_1_1_stockage_1_1_session.html#aae5b7cbcf200d64f21babd61ea8333a8">GalacticShrine.Stockage.Session.Sauvegarder</a></div><div class="ttdeci">void Sauvegarder(string Donnees, string Cle)</div><div class="ttdoc">[FR] Sauvegarde les données de session dans un fichier sécurisé. [EN] Saves the session data in a sec...</div><div class="ttdef"><b>Definition</b> <a href="#l00081">Session.StockageSession.Class.Ref.cs:81</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_stockage_1_1_session_html_ac5b7c84c7018d87af075a349dc7f7a1b"><div class="ttname"><a href="class_galactic_shrine_1_1_stockage_1_1_session.html#ac5b7c84c7018d87af075a349dc7f7a1b">GalacticShrine.Stockage.Session.Charger</a></div><div class="ttdeci">string Charger(string Cle)</div><div class="ttdoc">[FR] Charge les données de session depuis un fichier sécurisé. [EN] Loads session data from a secure ...</div><div class="ttdef"><b>Definition</b> <a href="#l00124">Session.StockageSession.Class.Ref.cs:124</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_stockage_1_1_session_html_ad85c61bc2ce64b5d38b110782d18a7f6"><div class="ttname"><a href="class_galactic_shrine_1_1_stockage_1_1_session.html#ad85c61bc2ce64b5d38b110782d18a7f6">GalacticShrine.Stockage.Session.Extension</a></div><div class="ttdeci">static string Extension</div><div class="ttdoc">[FR] Extension du fichier de session. Par défaut : dat [EN] File extension for the session....</div><div class="ttdef"><b>Definition</b> <a href="#l00043">Session.StockageSession.Class.Ref.cs:43</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_stockage_1_1_session_html_adc33d3ff13e2496ddf06e4a4fb911e99"><div class="ttname"><a href="class_galactic_shrine_1_1_stockage_1_1_session.html#adc33d3ff13e2496ddf06e4a4fb911e99">GalacticShrine.Stockage.Session.NomDeFichier</a></div><div class="ttdeci">static string NomDeFichier</div><div class="ttdoc">[FR] Nom du fichier de session. Par défaut : Session [EN] Session file name. Default: Session</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Session.StockageSession.Class.Ref.cs:53</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_stockage_1_1_session_html_adf83db2aba7cd5ed14d9f83d175d3535"><div class="ttname"><a href="class_galactic_shrine_1_1_stockage_1_1_session.html#adf83db2aba7cd5ed14d9f83d175d3535">GalacticShrine.Stockage.Session.Apps</a></div><div class="ttdeci">static string Apps</div><div class="ttdoc">[FR] Nom du dossier de stockage sécurisé de l&#39;application. Par défaut : vide [EN] Name of the secure ...</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Session.StockageSession.Class.Ref.cs:33</a></div></div>
+<div class="ttc" id="ainterface_galactic_shrine_1_1_interface_1_1_stockage_session_interface_html"><div class="ttname"><a href="interface_galactic_shrine_1_1_interface_1_1_stockage_session_interface.html">GalacticShrine.Interface.StockageSessionInterface</a></div><div class="ttdoc">[FR] Interface décrivant la sauvegarde et le chargement de données de session. [EN] Interface describ...</div><div class="ttdef"><b>Definition</b> <a href="_stockage_session_8_inter_8_ref_8cs_source.html#l00014">StockageSession.Inter.Ref.cs:14</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_i_o_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_i_o.html">GalacticShrine.IO</a></div><div class="ttdef"><b>Definition</b> <a href="_chemin_8_class_8_ref_8cs_source.html#l00019">Chemin.Class.Ref.cs:19</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_interface_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_interface.html">GalacticShrine.Interface</a></div><div class="ttdef"><b>Definition</b> <a href="_clonable_8_inter_8_ref_8cs_source.html#l00006">Clonable.Inter.Ref.cs:6</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_stockage_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_stockage.html">GalacticShrine.Stockage</a></div><div class="ttdef"><b>Definition</b> <a href="#l00015">Session.StockageSession.Class.Ref.cs:15</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_html"><div class="ttname"><a href="namespace_galactic_shrine.html">GalacticShrine</a></div><div class="ttdef"><b>Definition</b> <a href="_base_de_donnees_8_class_8_ref_8cs_source.html#l00006">BaseDeDonnees.Class.Ref.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a href="dir_b586309762ba03a8cfa576de64078e44.html">Dll</a></li><li class="navelem"><a href="dir_5ec389d2453140882ef3295c23b52e2b.html">GalacticShrine</a></li><li class="navelem"><a href="dir_5eb619c80e9e8ffc9153e4e25dd16725.html">Stockage</a></li><li class="navelem"><a href="_session_8_stockage_session_8_class_8_ref_8cs.html">Session.StockageSession.Class.Ref.cs</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

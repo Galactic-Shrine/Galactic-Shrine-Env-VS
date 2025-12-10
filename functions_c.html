@@ -3,16 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Environement-VS: Champs de donnée</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -27,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="1.3.2.small.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Environement-VS
+   <div id="projectname">Environement-VS<span id="projectnumber">&#160;1.1.8</span>
    </div>
   </td>
  </tr>
@@ -35,21 +36,20 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.7 -->
+<!-- Généré par Doxygen 1.15.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Recherche');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -64,10 +64,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_c.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('functions_c.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -93,10 +92,13 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <div class="contents">
 <div class="textblock">Liste de tous les champs de structure et d'union avec des liens vers les structures/unions auxquelles ils appartiennent :</div>
 
-<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>ChangementsDansLesRejets()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa1784d12ea6aefb26d219e9010a90653">GalacticShrine.Configuration.Analyseur.TamponDeChaine</a></li>
-<li>Cle&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html#a9bec7793cb714ebecd5643d5eecb0510">GalacticShrine.Modele.Configuration.Ini.Propriete</a></li>
-<li>CloneEnProfondeur()&#160;:&#160;<a class="el" href="interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html#a105777a718fdc2d14973eecfe9ba182b">GalacticShrine.Interface.Configuration.ClonableInterface&lt; T &gt;</a></li>
+<li>Charger()&#160;:&#160;<a class="el" href="interface_galactic_shrine_1_1_interface_1_1_stockage_session_interface.html#a54d104e26109f2325646e7d3010fe00c">GalacticShrine.Interface.StockageSessionInterface</a>, <a class="el" href="class_galactic_shrine_1_1_stockage_1_1_session.html#ac5b7c84c7018d87af075a349dc7f7a1b">GalacticShrine.Stockage.Session</a></li>
+<li>Chemin&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a29bab5320e973348011dce25b72f27f3">GalacticShrine.Enregistrement.Journalisation</a></li>
+<li>CheminOuNomDuJournalPasDefini&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_properties_1_1_resources.html#a2ab872170f12c701361601404e1209d0">GalacticShrine.Properties.Resources</a></li>
+<li>Cle&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_configuration_1_1_securite_1_1_crypt.html#a97b892e272fdcc489eba83411b75b2b1">GalacticShrine.Configuration.Securite.Crypt</a>, <a class="el" href="class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html#a9bec7793cb714ebecd5643d5eecb0510">GalacticShrine.Modele.Configuration.Ini.Propriete</a></li>
+<li>CloneEnProfondeur()&#160;:&#160;<a class="el" href="interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html#a105777a718fdc2d14973eecfe9ba182b">GalacticShrine.Interface.Configuration.ClonableInterface&lt; T &gt;</a></li>
 <li>Combiner()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_dossier_reference.html#a5a65f3ae81008c225632053b268cfa37">GalacticShrine.DossierReference</a></li>
 <li>Commentaire&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html#a4615505ed1de4b920250081368c363d5">GalacticShrine.Modele.Configuration.Ini.Propriete</a>, <a class="el" href="class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section.html#a4761f06647a6f8edee5e911cf466c30d">GalacticShrine.Modele.Configuration.Ini.Section</a></li>
 <li>CommentaireDeProcessus()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_configuration_1_1_ini.html#ab33c61b1a5f2a6e45d63e48113f20750">GalacticShrine.Configuration.Ini</a></li>
@@ -110,7 +112,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ConsoleEstTropPetite&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_properties_1_1_resources.html#af507c759318024f7e36d1f5a29975905">GalacticShrine.Properties.Resources</a></li>
 <li>ConsoleParDefault&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#a626d4fd7725f2ce55d6fb860a2f8e3f2">GalacticShrine.UI.Terminal.ThemeParams</a></li>
 <li>ConsolePremierPlan&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#a6019a605bac41739e117e4c12f98d1a7">GalacticShrine.UI.Terminal.ThemeParams</a></li>
-<li>ContenuDeLaLigne&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_exceptions_1_1_configuration_1_1_analyse_exception.html#acbfbbf40a484bb96358ddbed8d418069">GalacticShrine.Exceptions.Configuration.AnalyseException</a></li>
+<li>ContenuDeLaLigne&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_exception_1_1_configuration_1_1_analyse_exception.html#ac8f5a34335bd9d2d8247b2a693a6e2bf">GalacticShrine.Exception.Configuration.AnalyseException</a></li>
 <li>Contient()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html#a059d00b51e709988710f540717083478">GalacticShrine.Modele.Configuration.Ini.SectionCollection</a></li>
 <li>ContientLeNom()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_fichier_systeme_reference.html#acc47c56ccbec6b6c4b35722936c8719b">GalacticShrine.FichierSystemeReference</a></li>
 <li>ContientTousLesNoms()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_fichier_systeme_reference.html#ade1b9c34676e637966af385496b1c289">GalacticShrine.FichierSystemeReference</a></li>
@@ -118,16 +120,19 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>Copier()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_fichier_reference.html#a4f7c77ea53e453d33653660dbd98dbef">GalacticShrine.FichierReference</a></li>
 <li>Couleur()&#160;:&#160;<a class="el" href="struct_galactic_shrine_1_1_structure_1_1_terminal_1_1_couleur.html#a98aff18552953aad3a750a2a6e301e10">GalacticShrine.Structure.Terminal.Couleur</a>, <a class="el" href="class_galactic_shrine_1_1_terminal_example_1_1_properties_1_1_resources.html#adbd6c86f29c39a2d34888d57486fcd1c">GalacticShrine.TerminalExample.Properties.Resources</a></li>
 <li>Couleurs&#160;:&#160;<a class="el" href="interface_galactic_shrine_1_1_interface_1_1_terminal_1_1_couleur_interface.html#a019ceb8d0f35f2357f8cb6a3aeaaa4f7">GalacticShrine.Interface.Terminal.CouleurInterface</a>, <a class="el" href="class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#adf069b49e06aa53da9eecbe956db0a10">GalacticShrine.UI.Terminal.ThemeParams</a></li>
+<li>CreationDArchive&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_properties_1_1_resources.html#a0283ec6b67482f2090fe193fddd69dd3">GalacticShrine.Properties.Resources</a></li>
+<li>CreationDArchiveTerminee&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_properties_1_1_resources.html#a017c8f4bb206f0a848f5db5e88cdfac1">GalacticShrine.Properties.Resources</a></li>
 <li>Creer()&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_dossier_reference.html#aa3b70c305ebfc9152c461c7f635e0ee9">GalacticShrine.DossierReference</a></li>
 <li>CreerDesSectionsSilsNexistentPas&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#a613795d3152d57109341aa37f586e380">GalacticShrine.Configuration.DonneesIni</a></li>
 <li>Culture&#160;:&#160;<a class="el" href="class_galactic_shrine_1_1_configuration_1_1_properties_1_1_resources.html#afd7721e64df13b64a8deda91f6cc404b">GalacticShrine.Configuration.Properties.Resources</a>, <a class="el" href="class_galactic_shrine_1_1_properties_1_1_resources.html#ab2d51b0f43178551382d6081482d0d16">GalacticShrine.Properties.Resources</a>, <a class="el" href="class_galactic_shrine_1_1_terminal_example_1_1_properties_1_1_resources.html#a26810b522fe1fa73255e1ea647228169">GalacticShrine.TerminalExample.Properties.Resources</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 <map id="GalacticShrine.Modele.Configuration.Ini.ProprieteCollection.ProprieteCollection" name="GalacticShrine.Modele.Configuration.Ini.ProprieteCollection.ProprieteCollection">
-<area shape="rect" id="Node000001" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="5,13,266,56"/>
-<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html#a105777a718fdc2d14973eecfe9ba182b" title="[FR] Crée un nouvel objet qui est une copie de l&#39;instance actuelle. &#160;[EN] Creates a new object that i..." alt="" coords="314,5,517,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,32,299,32,299,37,266,37"/>
+<area shape="rect" id="Node000001" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="5,51,269,93"/>
+<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html#a105777a718fdc2d14973eecfe9ba182b" title="[FR] Crée un nouvel objet qui est une copie de l&#39;instance actuelle. [EN] Creates a new object that is..." alt="" coords="346,5,550,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,54,330,46,331,51,270,59"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html#a85f8812a120a851842950527767497bf" title="[FR] Initialise une nouvelle instance de la classe GalacticShrine.Modele.Configuration...." alt="" coords="317,88,580,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,85,302,89,301,94,269,90"/>
 </map>

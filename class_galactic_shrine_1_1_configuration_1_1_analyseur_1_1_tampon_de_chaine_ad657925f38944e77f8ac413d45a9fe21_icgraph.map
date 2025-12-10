@@ -1,9 +1,9 @@
 <map id="GalacticShrine.Configuration.Analyseur.TamponDeChaine.RedimensionnerEntreLesIndex" name="GalacticShrine.Configuration.Analyseur.TamponDeChaine.RedimensionnerEntreLesIndex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="717,5,1000,64"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="480,13,669,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="702,37,670,37,670,32,702,32"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="243,13,432,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,37,433,37,433,32,465,32"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,13,195,56"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,37,195,37,195,32,228,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="723,5,1009,64"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="484,13,675,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="708,37,676,37,676,32,708,32"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="245,13,436,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="468,37,437,37,437,32,468,32"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,13,197,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,37,197,37,197,32,229,32"/>
 </map>

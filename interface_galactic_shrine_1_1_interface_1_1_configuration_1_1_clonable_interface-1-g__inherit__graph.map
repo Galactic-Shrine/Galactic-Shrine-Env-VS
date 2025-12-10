@@ -1,0 +1,23 @@
+<map id="GalacticShrine.Interface.Configuration.ClonableInterface&lt; T &gt;" name="GalacticShrine.Interface.Configuration.ClonableInterface&lt; T &gt;">
+<area shape="rect" id="Node000001" title="[FR] Crée une copie en profondeur du type T , c&#39;est&#45;à&#45;dire que tous les types de référence sont égale..." alt="" coords="5,272,241,315"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_analyseur_ini.html" title=" " alt="" coords="312,5,503,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,256,161,211,194,157,236,104,287,58,310,45,312,50,290,62,240,107,198,160,165,214,142,259"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="312,72,503,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,258,206,190,245,155,287,124,311,113,313,118,290,129,248,159,210,194,151,261"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_configuration_1_1_schema_ini.html" title="[FR] Cette structure définit le format du fichier INI en personnalisant les caractères utilisés &#160;pour..." alt="" coords="312,139,503,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,261,222,225,288,191,318,179,320,184,290,196,225,229,168,265"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html" title=" " alt="" coords="312,205,503,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="231,265,313,246,314,251,232,271"/>
+<area shape="rect" id="Node000007" href="$class_galactic_shrine_1_1_configuration_1_1_securite_1_1_crypt.html" title=" " alt="" coords="312,272,503,315"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="256,291,311,291,311,296,256,296"/>
+<area shape="rect" id="Node000008" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete.html" title="[FR] Informations associées à une propriété provenant d&#39;une Configuration INI. &#160;[EN] Information asso..." alt="" coords="289,339,526,381"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="232,316,314,335,313,341,231,321"/>
+<area shape="rect" id="Node000009" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_propriete_collection.html" title="[FR] Représente une collection de données de clé. &#160;[EN] Represents a collection of key data." alt="" coords="289,405,526,448"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="168,321,225,357,290,391,320,402,318,407,288,396,222,362,166,326"/>
+<area shape="rect" id="Node000010" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section.html" title="[FR] Informations associées à une propriété provenant d&#39;une Configuration INI. &#160;[EN] Information asso..." alt="" coords="289,472,526,515"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="151,325,210,393,248,428,290,458,313,469,311,474,287,462,245,432,206,397,147,329"/>
+<area shape="rect" id="Node000011" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_section_collection.html" title=" " alt="" coords="289,539,526,581"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="142,328,165,373,198,426,240,479,290,525,310,536,307,541,287,529,236,483,194,429,161,376,137,330"/>
+<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_donnees_ini_insensible_a___la_casse.html" title="[FR] Représente toutes les données d&#39;un fichier INI exactement comme la classe GalacticShrine...." alt="" coords="574,205,811,248"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="519,224,574,224,574,229,519,229"/>
+</map>

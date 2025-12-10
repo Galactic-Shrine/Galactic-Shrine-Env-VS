@@ -1,9 +1,9 @@
 <map id="GalacticShrine.FichierSystemeReference.ContientTousLesNoms" name="GalacticShrine.FichierSystemeReference.ContientTousLesNoms">
-<area shape="rect" id="Node000001" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="5,59,220,101"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#acc47c56ccbec6b6c4b35722936c8719b" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="268,29,469,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,65,253,61,253,67,220,70"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#abfc03c5b2589c13d5ada90301886908f" title="[FR] Détermine si l&#39;objet donné est dans ou sous le répertoire donné. [EN] Determines if the given ob..." alt="" coords="517,59,723,101"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="220,80,268,81,469,81,502,81,502,86,469,87,268,87,220,86"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="321,29,319,19,327,10,343,5,368,3,396,5,412,12,410,17,395,10,368,8,344,10,330,15,324,21,326,28"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="470,60,503,64,502,69,469,65"/>
+<area shape="rect" id="Node000001" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="5,59,224,101"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#acc47c56ccbec6b6c4b35722936c8719b" title="[FR] Détermine si l&#39;objet donné est sous le répertoire donné, dans un sous&#45;dossier du nom donné...." alt="" coords="272,29,473,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,65,256,61,256,67,224,70"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_fichier_systeme_reference.html#abfc03c5b2589c13d5ada90301886908f" title="[FR] Détermine si l&#39;objet donné est dans ou sous le répertoire donné. [EN] Determines if the given ob..." alt="" coords="521,59,730,101"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="224,80,272,81,473,81,506,81,506,86,473,87,272,87,224,86"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="325,29,323,19,331,10,347,5,372,3,399,5,416,11,414,16,398,10,372,8,348,10,334,15,328,21,330,28"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="474,60,506,63,505,69,473,65"/>
 </map>

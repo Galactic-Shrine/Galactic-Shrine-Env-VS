@@ -1,21 +1,22 @@
 <map id="GalacticShrine.Configuration.Analyseur.TamponDeChaine.Plage.DeL_IndexA_LaTaille" name="GalacticShrine.Configuration.Analyseur.TamponDeChaine.Plage.DeL_IndexA_LaTaille">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1035,88,1277,147"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa1784d12ea6aefb26d219e9010a90653" title=" " alt="" coords="717,5,987,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1031,86,962,67,963,62,1032,81"/>
-<area shape="rect" id="Node000007" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa46cf6519596b079db685dab1a7f0b74" title=" " alt="" coords="734,171,970,229"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1032,154,963,173,962,167,1031,149"/>
-<area shape="rect" id="Node000008" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#afa88b78cbdf391a2bdb3128d611760b6" title=" " alt="" coords="737,88,967,147"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="1020,120,968,120,968,115,1020,115"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="243,29,432,72"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="702,19,593,15,480,20,418,31,417,26,480,15,593,9,703,14"/>
-<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac949b568fd2371b7546137b7092651dc" title=" " alt="" coords="480,96,669,139"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="738,71,650,98,648,93,736,66"/>
-<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="480,29,669,72"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="703,46,670,48,670,43,702,41"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,29,195,72"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,53,195,53,195,48,228,48"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="482,94,415,75,417,70,484,89"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="465,53,433,53,433,48,465,48"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="722,120,670,120,670,115,722,115"/>
-<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="722,89,666,75,667,70,723,84"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1044,121,1289,180"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa1784d12ea6aefb26d219e9010a90653" title=" " alt="" coords="723,5,996,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1087,117,995,78,962,67,964,62,997,74,1089,112"/>
+<area shape="rect" id="Node000005" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac949b568fd2371b7546137b7092651dc" title=" " alt="" coords="484,117,675,160"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="1029,162,882,166,723,161,675,157,676,151,724,156,882,161,1029,157"/>
+<area shape="rect" id="Node000007" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#aa46cf6519596b079db685dab1a7f0b74" title=" " alt="" coords="740,221,979,280"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1061,188,953,223,951,218,1059,183"/>
+<area shape="rect" id="Node000008" href="$class_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine.html#afa88b78cbdf391a2bdb3128d611760b6" title=" " alt="" coords="742,88,977,147"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="1028,138,977,133,978,127,1029,133"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ab6c8c10782835b28847a24c919e2ad6c" title="[FR] Traite une ligne et analyse les données qui s&#39;y trouvent (section ou paire clé/valeur avec ou sa..." alt="" coords="245,51,436,93"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="708,31,598,33,484,41,422,53,421,47,484,36,598,27,708,26"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="739,72,725,78,701,93,677,108,650,119,648,114,674,103,698,88,722,74,737,67"/>
+<area shape="rect" id="Node000006" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#a23f514b3f12d239e58c39e45cd133d51" title="[FR] Traite une chaîne de caractères contenant une section ini. &#160;[EN] Processes a string containing a..." alt="" coords="484,51,675,93"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="708,58,676,62,675,57,708,52"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_configuration_1_1_ini.html#ac15c07bfff5ae1ddc1dc255904aa5f70" title="[FR] Analyse une chaîne contenant des données ini valides. &#160;[EN] Parses a string containing valid ini..." alt="" coords="5,51,197,93"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,75,197,75,197,69,229,69"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="486,115,419,97,420,91,487,110"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="468,75,437,75,437,69,468,69"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="727,130,676,134,676,129,726,125"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="726,98,675,90,676,85,727,93"/>
 </map>

@@ -25,6 +25,16 @@
 var NAVTREE =
 [
   [ "Environement-VS", "index.html", [
+    [ "Changelog", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html", [
+      [ "[1.1.8.108] — 2025-09-26", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#autotoc_md118108--2025-09-26", [
+        [ "Ajouté", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#ajouté", null ],
+        [ "Modifié", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#modifié", null ],
+        [ "Corrigé", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#corrigé", null ],
+        [ "Non inclus / réservés pour <b>1.2.0</b>", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#non-inclus--réservés-pour-120", null ],
+        [ "À venir", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#à-venir", null ]
+      ] ],
+      [ "Historique antérieur", "md__source_2_dll_2_galactic_shrine_2_c_h_a_n_g_e_l_o_g.html#historique-antérieur", null ]
+    ] ],
     [ "Paquetages", "namespaces.html", [
       [ "Liste des paquetages", "namespaces.html", "namespaces_dup" ],
       [ "Membres de paquetage", "namespacemembers.html", [
@@ -56,10 +66,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alignement_8_enum_8_ref_8cs.html",
-"_schema_type_8_enum_8_ref_8cs.html#abe402ea1172912466cb8d2e58f4a7513aaa2aaa59ac1a7c24e5e86c068bda3d20",
-"class_galactic_shrine_1_1_modele_1_1_configuration_1_1_ini_1_1_donnees_ini_insensible_a___la_casse.html#acba747206d77b30921cb7c2469270632",
-"functions_n.html"
+"class_galactic_shrine_1_1_configuration_1_1_donnees_ini.html#a88e5a422dbda65e14e58ec827b96df85",
+"class_galactic_shrine_1_1_terminal_1_1_format.html#aa50fa4264a0524fd081eb75431f66489",
+"struct_galactic_shrine_1_1_configuration_1_1_analyseur_1_1_tampon_de_chaine_1_1_plage.html#ad752a0fe0cdbc2d5c5dff5276b2c1281"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';
 var SYNCOFFMSG = 'cliquez pour activer la synchronisation du panel';
+var LISTOFALLMEMBERS = 'Liste de tous les membres';

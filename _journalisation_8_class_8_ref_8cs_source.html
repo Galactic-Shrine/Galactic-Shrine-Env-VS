@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Environement-VS:  Fichier source de Source/Dll/GalacticShrine/Enregistrement/Journalisation.Class.Ref.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="1.3.2.small.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Environement-VS<span id="projectnumber">&#160;1.1.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_journalisation_8_class_8_ref_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Journalisation.Class.Ref.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_journalisation_8_class_8_ref_8cs.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_enumeration.html">GalacticShrine.Enumeration</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_properties.html">GalacticShrine.Properties</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using </span>static <a class="code hl_namespace" href="namespace_galactic_shrine.html">GalacticShrine</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_dossier_reference.html">DossierReference</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using </span>static <a class="code hl_namespace" href="namespace_galactic_shrine.html">GalacticShrine</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_fichier_reference.html">FichierReference</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespace_galactic_shrine_1_1_enregistrement.html">   23</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_galactic_shrine_1_1_enregistrement.html">GalacticShrine.Enregistrement</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html">   25</a></span>  <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#aecb2cf5fd6926cadd214b97ea4b6a788">Journalisation</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> _CheminDuDossier = $<span class="stringliteral">&quot;{GalacticShrine.Repertoire[&quot;</span>Log<span class="stringliteral">&quot;]}&quot;</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> _NomDuFichier;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span> <span class="keywordtype">bool</span> _UnParJour;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> readonly <span class="keywordtype">string</span> _DateDuJour = DateTime.Now.ToString(<span class="stringliteral">&quot;yyyyMMdd&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//private string _Horodatage = $&quot;[{DateTime.Now:dd-MM-yyyy HH:mm:ss}] &quot;;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> _Horodatage = <span class="stringliteral">&quot;dd-MM-yyyy HH:mm:ss&quot;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> CheminComplet { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a29bab5320e973348011dce25b72f27f3">   45</a></span>    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a29bab5320e973348011dce25b72f27f3">Chemin</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">get</span> =&gt; _CheminDuDossier;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span>(<span class="keywordtype">string</span>.IsNullOrWhiteSpace(value: value))</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>          <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(message: <a class="code hl_class" href="class_galactic_shrine_1_1_properties_1_1_resources.html">Resources</a>.<a class="code hl_property" href="class_galactic_shrine_1_1_properties_1_1_resources.html#a3fd8705884750c1f8df92c2cad7b51e4">LeCheminNePeutPasEtreVide</a>, paramName: nameof(value));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">// Vérifie et crée le dossier si nécessaire</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span>(!VerifieSiExiste(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_dossier_reference.html">DossierReference</a>(value))) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          Creer(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_dossier_reference.html">DossierReference</a>(value));</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        _CheminDuDossier = value;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        MettreAJourCheminComplet();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae8c3260c636a0e06218d1da1c7922142">   69</a></span>    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae8c3260c636a0e06218d1da1c7922142">Nom</a> {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keyword">get</span> =&gt; _NomDuFichier;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span>(<span class="keywordtype">string</span>.IsNullOrWhiteSpace(value: value))</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(message: <a class="code hl_class" href="class_galactic_shrine_1_1_properties_1_1_resources.html">Resources</a>.<a class="code hl_property" href="class_galactic_shrine_1_1_properties_1_1_resources.html#aeee1626e0fa9a8c000d39a49b0b8436a">LeNomDuFichierNePeutPasEtreVide</a>, paramName: nameof(value));</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        _NomDuFichier = value;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        MettreAJourCheminComplet();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a300bd49f8c34db18abf1aed2af893fdc">   88</a></span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a300bd49f8c34db18abf1aed2af893fdc">UnFichierParJour</a> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keyword">get</span> =&gt; _UnParJour; </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        _UnParJour = value;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        MettreAJourCheminComplet();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a40ca2d4e456a97c55dd22ceac0a0e1dd">   99</a></span>    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a40ca2d4e456a97c55dd22ceac0a0e1dd">Extension</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;log&quot;</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a1afccbe66f257d839090b3619017e350">  101</a></span>    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a1afccbe66f257d839090b3619017e350">Horodatage</a> {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <span class="keyword">get</span> =&gt; _Horodatage;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        _Horodatage = $<span class="stringliteral">&quot;{value}&quot;</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#aecb2cf5fd6926cadd214b97ea4b6a788">  111</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#aecb2cf5fd6926cadd214b97ea4b6a788">Journalisation</a>(<span class="keywordtype">string</span> CheminDuDossier = <span class="keyword">null</span>, <span class="keywordtype">string</span> NomDuFichier = <span class="keyword">null</span>, <span class="keywordtype">bool</span> UnParJour = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      <span class="keywordflow">if</span>(CheminDuDossier != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a29bab5320e973348011dce25b72f27f3">Chemin</a> = CheminDuDossier;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">if</span>(NomDuFichier != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae8c3260c636a0e06218d1da1c7922142">Nom</a> = NomDuFichier;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <span class="keywordflow">if</span>(UnParJour != <span class="keyword">true</span>)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_property" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a300bd49f8c34db18abf1aed2af893fdc">UnFichierParJour</a> = UnParJour;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> MettreAJourCheminComplet() {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="keywordflow">if</span>(!<span class="keywordtype">string</span>.IsNullOrWhiteSpace(value: _CheminDuDossier) &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrWhiteSpace(value: _NomDuFichier)) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">if</span>(_UnParJour == <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>          CheminComplet = <a class="code hl_namespace" href="namespace_galactic_shrine_1_1_i_o.html">IO</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_i_o_1_1_chemin.html">Chemin</a>.Combiner(Chemin1: _CheminDuDossier, Chemin2: $<span class="stringliteral">&quot;{_NomDuFichier}.{_DateDuJour}.{Extension}&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>          CheminComplet = <a class="code hl_namespace" href="namespace_galactic_shrine_1_1_i_o.html">IO</a>.<a class="code hl_class" href="class_galactic_shrine_1_1_i_o_1_1_chemin.html">Chemin</a>.Combiner(Chemin1: _CheminDuDossier, Chemin2: $<span class="stringliteral">&quot;{_NomDuFichier}.{Extension}&quot;</span>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">  138</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>(<a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a> Niveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, <span class="keywordtype">string</span> TypePersonnalise = <span class="keyword">null</span>, <span class="keywordtype">string</span> SousNiveau = <span class="keyword">null</span>) =&gt; Enregistreur(Niveau: Niveau, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, TypePersonnalise: TypePersonnalise, SousNiveau: SousNiveau);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a977a7223997e10d4daa2ce0d309fafc6">Autre</a>(<span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Autre, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6ab1ddfcd159764646a117ccae83bd19a9">Avertissement</a>(<span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Avertissement, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a4059b0251f66a18cb56f544728796875">Info</a>(<span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Info, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6afe7d2cb7d4db59ae3c13b1d29aa2515e">Erreur</a>(<span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Erreur, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a9ee75d741ac35acc8046b27bd02f62c1">Succes</a>(<span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Succes, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6aab57fa0c13b867a46108668c11bff46a">Personnalise</a>(<span class="keywordtype">string</span> TypePersonnalise, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Personnalise, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, TypePersonnalise: TypePersonnalise);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6ab1ddfcd159764646a117ccae83bd19a9">Avertissement</a>(<span class="keywordtype">string</span> SousNiveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Avertissement, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, SousNiveau: SousNiveau);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a4059b0251f66a18cb56f544728796875">Info</a>(<span class="keywordtype">string</span> SousNiveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Info, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, SousNiveau: SousNiveau);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6afe7d2cb7d4db59ae3c13b1d29aa2515e">Erreur</a>(<span class="keywordtype">string</span> SousNiveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Erreur, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, SousNiveau: SousNiveau);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a9ee75d741ac35acc8046b27bd02f62c1">Succes</a>(<span class="keywordtype">string</span> SousNiveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Succes, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, SousNiveau: SousNiveau);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6aab57fa0c13b867a46108668c11bff46a">Personnalise</a>(<span class="keywordtype">string</span> TypePersonnalise, <span class="keywordtype">string</span> SousNiveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>) =&gt; Enregistreur(Niveau: <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Personnalise, <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, TypePersonnalise: TypePersonnalise, SousNiveau: SousNiveau);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> Enregistreur(<a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a> Niveau, <span class="keywordtype">string</span> <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>, <span class="keywordtype">string</span> TypePersonnalise = <span class="keyword">null</span>, <span class="keywordtype">string</span> SousNiveau = <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      <span class="keywordflow">if</span>(<span class="keywordtype">string</span>.IsNullOrWhiteSpace(value: <a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>))</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(message: <a class="code hl_class" href="class_galactic_shrine_1_1_properties_1_1_resources.html">Resources</a>.<a class="code hl_property" href="class_galactic_shrine_1_1_properties_1_1_resources.html#a1198402426be0e4d1525f555dafa956f">LeMessageNePeutPasEtreVide</a>, paramName: nameof(<a class="code hl_function" href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">Message</a>));</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      <span class="keywordflow">if</span>(<span class="keywordtype">string</span>.IsNullOrWhiteSpace(value: CheminComplet))</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(message: <a class="code hl_class" href="class_galactic_shrine_1_1_properties_1_1_resources.html">Resources</a>.<a class="code hl_property" href="class_galactic_shrine_1_1_properties_1_1_resources.html#a2ab872170f12c701361601404e1209d0">CheminOuNomDuJournalPasDefini</a>);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      <span class="keywordtype">string</span> NiveauTexte = TypePersonnalise ?? Niveau.ToString();</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      <span class="keywordtype">string</span> Datage = $<span class="stringliteral">&quot;[{DateTime.Now.ToString(format: _Horodatage, provider: CultureInfo.InvariantCulture)}] &quot;</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      <span class="keywordtype">string</span> Echelon;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      <span class="keywordflow">if</span>(Niveau == <a class="code hl_enumeration" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">Journalisations</a>.Autre) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        Echelon = NiveauTexte == <span class="stringliteral">&quot;Autre&quot;</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>          ? <span class="stringliteral">&quot;&quot;</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>          : $<span class="stringliteral">&quot;[{</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="stringliteral">            NiveauTexte</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="stringliteral">            .Replace(oldValue: &quot;</span><a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a4059b0251f66a18cb56f544728796875">Info</a><span class="stringliteral">&quot;, newValue: Resources.INFO)</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="stringliteral">            .Replace(oldValue: &quot;</span><a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a9ee75d741ac35acc8046b27bd02f62c1">Succes</a><span class="stringliteral">&quot;, newValue: Resources.SUCCES)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="stringliteral">            .Replace(oldValue: &quot;</span><a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6afe7d2cb7d4db59ae3c13b1d29aa2515e">Erreur</a><span class="stringliteral">&quot;, newValue: Resources.ERREUR)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="stringliteral">            .Replace(oldValue: &quot;</span><a class="code hl_enumvalue" href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6ab1ddfcd159764646a117ccae83bd19a9">Avertissement</a><span class="stringliteral">&quot;, newValue: Resources.AVERTISSEMENT)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="stringliteral">            }] &quot;</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        Echelon = $<span class="stringliteral">&quot;[{NiveauTexte}] &quot;</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      <span class="keywordtype">string</span> journalMessage = SousNiveau == <span class="keyword">null</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        ? $<span class="stringliteral">&quot;{Datage}{Echelon}{Message}{Environment.NewLine}&quot;</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        : $<span class="stringliteral">&quot;{Datage}{Echelon}[{SousNiveau}] {Message}{Environment.NewLine}&quot;</span>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      <span class="keywordflow">if</span>(!VerifieSiExiste(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_fichier_reference.html">FichierReference</a>(Chemins: CheminComplet))) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        EcrireToutesLeslignes(Localisation: <span class="keyword">new</span> <a class="code hl_class" href="class_galactic_shrine_1_1_fichier_reference.html">FichierReference</a>(Chemins: CheminComplet), Contenu: [journalMessage]);</div>
+</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      }</div>
+</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="keywordflow">else</span> {</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        AjouterLigne(Localisation: <span class="keyword">new</span> FichierReference(Chemins: CheminComplet), Contenu: journalMessage);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>      }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_dossier_reference_html"><div class="ttname"><a href="class_galactic_shrine_1_1_dossier_reference.html">GalacticShrine.DossierReference</a></div><div class="ttdoc">[FR] Représentation d&#39;un chemin de répertoire absolu. Permet un hachage et des comparaisons rapides....</div><div class="ttdef"><b>Definition</b> <a href="_dossier_8_class_8_ref_8cs_source.html#l00032">Dossier.Class.Ref.cs:32</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_a1afccbe66f257d839090b3619017e350"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a1afccbe66f257d839090b3619017e350">GalacticShrine.Enregistrement.Journalisation.Horodatage</a></div><div class="ttdeci">string Horodatage</div><div class="ttdef"><b>Definition</b> <a href="#l00101">Journalisation.Class.Ref.cs:101</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_a29bab5320e973348011dce25b72f27f3"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a29bab5320e973348011dce25b72f27f3">GalacticShrine.Enregistrement.Journalisation.Chemin</a></div><div class="ttdeci">string Chemin</div><div class="ttdoc">Chemin du dossier de sortie.</div><div class="ttdef"><b>Definition</b> <a href="#l00045">Journalisation.Class.Ref.cs:45</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_a300bd49f8c34db18abf1aed2af893fdc"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a300bd49f8c34db18abf1aed2af893fdc">GalacticShrine.Enregistrement.Journalisation.UnFichierParJour</a></div><div class="ttdeci">bool UnFichierParJour</div><div class="ttdoc">Affiche la date du jour dans le nom du fichier.</div><div class="ttdef"><b>Definition</b> <a href="#l00088">Journalisation.Class.Ref.cs:88</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_a40ca2d4e456a97c55dd22ceac0a0e1dd"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#a40ca2d4e456a97c55dd22ceac0a0e1dd">GalacticShrine.Enregistrement.Journalisation.Extension</a></div><div class="ttdeci">string Extension</div><div class="ttdef"><b>Definition</b> <a href="#l00099">Journalisation.Class.Ref.cs:99</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_ae5ae70843a3f049bb7b97005b31f482d"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae5ae70843a3f049bb7b97005b31f482d">GalacticShrine.Enregistrement.Journalisation.Message</a></div><div class="ttdeci">void Message(Journalisations Niveau, string Message, string TypePersonnalise=null, string SousNiveau=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00138">Journalisation.Class.Ref.cs:138</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_ae8c3260c636a0e06218d1da1c7922142"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#ae8c3260c636a0e06218d1da1c7922142">GalacticShrine.Enregistrement.Journalisation.Nom</a></div><div class="ttdeci">string Nom</div><div class="ttdoc">Nom du fichier.</div><div class="ttdef"><b>Definition</b> <a href="#l00069">Journalisation.Class.Ref.cs:69</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_enregistrement_1_1_journalisation_html_aecb2cf5fd6926cadd214b97ea4b6a788"><div class="ttname"><a href="class_galactic_shrine_1_1_enregistrement_1_1_journalisation.html#aecb2cf5fd6926cadd214b97ea4b6a788">GalacticShrine.Enregistrement.Journalisation.Journalisation</a></div><div class="ttdeci">Journalisation(string CheminDuDossier=null, string NomDuFichier=null, bool UnParJour=true)</div><div class="ttdef"><b>Definition</b> <a href="#l00111">Journalisation.Class.Ref.cs:111</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_fichier_reference_html"><div class="ttname"><a href="class_galactic_shrine_1_1_fichier_reference.html">GalacticShrine.FichierReference</a></div><div class="ttdoc">[FR] Représentation d&#39;un chemin de fichier absolu. Permet des hachages et des comparaisons rapides....</div><div class="ttdef"><b>Definition</b> <a href="_fichier_8_class_8_ref_8cs_source.html#l00025">Fichier.Class.Ref.cs:25</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_i_o_1_1_chemin_html"><div class="ttname"><a href="class_galactic_shrine_1_1_i_o_1_1_chemin.html">GalacticShrine.IO.Chemin</a></div><div class="ttdef"><b>Definition</b> <a href="_chemin_8_class_8_ref_8cs_source.html#l00027">Chemin.Class.Ref.cs:27</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_properties_1_1_resources_html"><div class="ttname"><a href="class_galactic_shrine_1_1_properties_1_1_resources.html">GalacticShrine.Properties.Resources</a></div><div class="ttdoc">Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localis...</div><div class="ttdef"><b>Definition</b> <a href="_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs_source.html#l00025">Resources.Designer.cs:25</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_properties_1_1_resources_html_a1198402426be0e4d1525f555dafa956f"><div class="ttname"><a href="class_galactic_shrine_1_1_properties_1_1_resources.html#a1198402426be0e4d1525f555dafa956f">GalacticShrine.Properties.Resources.LeMessageNePeutPasEtreVide</a></div><div class="ttdeci">static string LeMessageNePeutPasEtreVide</div><div class="ttdoc">Recherche une chaîne localisée semblable à Le message ne peut pas être vide..</div><div class="ttdef"><b>Definition</b> <a href="_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs_source.html#l00273">Resources.Designer.cs:273</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_properties_1_1_resources_html_a2ab872170f12c701361601404e1209d0"><div class="ttname"><a href="class_galactic_shrine_1_1_properties_1_1_resources.html#a2ab872170f12c701361601404e1209d0">GalacticShrine.Properties.Resources.CheminOuNomDuJournalPasDefini</a></div><div class="ttdeci">static string CheminOuNomDuJournalPasDefini</div><div class="ttdoc">Recherche une chaîne localisée semblable à Le chemin ou le nom du fichier journal n&#39;est pas défini....</div><div class="ttdef"><b>Definition</b> <a href="_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs_source.html#l00084">Resources.Designer.cs:84</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_properties_1_1_resources_html_a3fd8705884750c1f8df92c2cad7b51e4"><div class="ttname"><a href="class_galactic_shrine_1_1_properties_1_1_resources.html#a3fd8705884750c1f8df92c2cad7b51e4">GalacticShrine.Properties.Resources.LeCheminNePeutPasEtreVide</a></div><div class="ttdeci">static string LeCheminNePeutPasEtreVide</div><div class="ttdoc">Recherche une chaîne localisée semblable à Le chemin ne peut pas être vide..</div><div class="ttdef"><b>Definition</b> <a href="_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs_source.html#l00264">Resources.Designer.cs:264</a></div></div>
+<div class="ttc" id="aclass_galactic_shrine_1_1_properties_1_1_resources_html_aeee1626e0fa9a8c000d39a49b0b8436a"><div class="ttname"><a href="class_galactic_shrine_1_1_properties_1_1_resources.html#aeee1626e0fa9a8c000d39a49b0b8436a">GalacticShrine.Properties.Resources.LeNomDuFichierNePeutPasEtreVide</a></div><div class="ttdeci">static string LeNomDuFichierNePeutPasEtreVide</div><div class="ttdoc">Recherche une chaîne localisée semblable à Le nom du fichier ne peut pas être vide....</div><div class="ttdef"><b>Definition</b> <a href="_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs_source.html#l00282">Resources.Designer.cs:282</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enregistrement_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enregistrement.html">GalacticShrine.Enregistrement</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">Journalisation.Class.Ref.cs:23</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html">GalacticShrine.Enumeration</a></div><div class="ttdef"><b>Definition</b> <a href="_comportement_des_proprietes_dupliquees_8_class_8_ref_8cs_source.html#l00006">ComportementDesProprietesDupliquees.Class.Ref.cs:6</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6">GalacticShrine.Enumeration.Journalisations</a></div><div class="ttdeci">Journalisations</div><div class="ttdoc">[FR] Énumération définissant les niveaux possibles de journalisation (logs). [EN] Enumeration definin...</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00024">Journalisation.Enum.Ref.cs:24</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6a4059b0251f66a18cb56f544728796875"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a4059b0251f66a18cb56f544728796875">GalacticShrine.Enumeration.Journalisations.Info</a></div><div class="ttdeci">@ Info</div><div class="ttdoc">[FR] Information générale. [EN] General informational level.</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00056">Journalisation.Enum.Ref.cs:56</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6a977a7223997e10d4daa2ce0d309fafc6"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a977a7223997e10d4daa2ce0d309fafc6">GalacticShrine.Enumeration.Journalisations.Autre</a></div><div class="ttdeci">@ Autre</div><div class="ttdoc">[FR] Niveau non spécifié ou autre. [EN] Unspecified or other level.</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00032">Journalisation.Enum.Ref.cs:32</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6a9ee75d741ac35acc8046b27bd02f62c1"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6a9ee75d741ac35acc8046b27bd02f62c1">GalacticShrine.Enumeration.Journalisations.Succes</a></div><div class="ttdeci">@ Succes</div><div class="ttdoc">[FR] Succès : opération réussie. [EN] Success: operation completed successfully.</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00064">Journalisation.Enum.Ref.cs:64</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6aab57fa0c13b867a46108668c11bff46a"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6aab57fa0c13b867a46108668c11bff46a">GalacticShrine.Enumeration.Journalisations.Personnalise</a></div><div class="ttdeci">@ Personnalise</div><div class="ttdoc">[FR] Niveau personnalisé défini par l&#39;application/utilisateur. [EN] Custom level defined by the appli...</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00072">Journalisation.Enum.Ref.cs:72</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6ab1ddfcd159764646a117ccae83bd19a9"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6ab1ddfcd159764646a117ccae83bd19a9">GalacticShrine.Enumeration.Journalisations.Avertissement</a></div><div class="ttdeci">@ Avertissement</div><div class="ttdoc">[FR] Avertissement : problème potentiel, n&#39;interrompt pas le fonctionnement. [EN] Warning: potential ...</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00040">Journalisation.Enum.Ref.cs:40</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_enumeration_html_ae9e92ef533b9b4e3231a1f32c3ce27b6afe7d2cb7d4db59ae3c13b1d29aa2515e"><div class="ttname"><a href="namespace_galactic_shrine_1_1_enumeration.html#ae9e92ef533b9b4e3231a1f32c3ce27b6afe7d2cb7d4db59ae3c13b1d29aa2515e">GalacticShrine.Enumeration.Journalisations.Erreur</a></div><div class="ttdeci">@ Erreur</div><div class="ttdoc">[FR] Erreur : peut nécessiter une intervention ou stopper l&#39;opération en cours. [EN] Error: may requi...</div><div class="ttdef"><b>Definition</b> <a href="_journalisation_8_enum_8_ref_8cs_source.html#l00048">Journalisation.Enum.Ref.cs:48</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_i_o_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_i_o.html">GalacticShrine.IO</a></div><div class="ttdef"><b>Definition</b> <a href="_chemin_8_class_8_ref_8cs_source.html#l00019">Chemin.Class.Ref.cs:19</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_1_1_properties_html"><div class="ttname"><a href="namespace_galactic_shrine_1_1_properties.html">GalacticShrine.Properties</a></div><div class="ttdef"><b>Definition</b> <a href="_dll_2_galactic_shrine_2_properties_2_resources_8_designer_8cs_source.html#l00011">Resources.Designer.cs:11</a></div></div>
+<div class="ttc" id="anamespace_galactic_shrine_html"><div class="ttname"><a href="namespace_galactic_shrine.html">GalacticShrine</a></div><div class="ttdef"><b>Definition</b> <a href="_base_de_donnees_8_class_8_ref_8cs_source.html#l00006">BaseDeDonnees.Class.Ref.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a href="dir_b586309762ba03a8cfa576de64078e44.html">Dll</a></li><li class="navelem"><a href="dir_5ec389d2453140882ef3295c23b52e2b.html">GalacticShrine</a></li><li class="navelem"><a href="dir_a784e669ba7e2c6ddaae749c2b33b7f4.html">Enregistrement</a></li><li class="navelem"><a href="_journalisation_8_class_8_ref_8cs.html">Journalisation.Class.Ref.cs</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

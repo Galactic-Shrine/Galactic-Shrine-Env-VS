@@ -1,9 +1,9 @@
 <map id="GalacticShrine.Interface.Terminal.CouleurInterface" name="GalacticShrine.Interface.Terminal.CouleurInterface">
-<area shape="rect" id="Node000001" title=" " alt="" coords="113,5,280,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html" title=" " alt="" coords="107,96,286,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,63,199,96,194,96,194,63"/>
-<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html" title=" " alt="" coords="5,187,185,229"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,151,120,188,117,184,160,147"/>
-<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html" title=" " alt="" coords="209,187,389,229"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="233,147,277,184,273,188,229,151"/>
+<area shape="rect" id="Node000001" title="[FR] Interface définissant la gestion et l&#39;ajout de couleurs dans un contexte de terminal...." alt="" coords="114,5,284,48"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html" title="[FR] Classe abstraite définissant les paramètres et méthodes de base pour un thème (couleurs)...." alt="" coords="108,96,289,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,64,201,96,196,96,196,64"/>
+<area shape="rect" id="Node000003" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_lumineux.html" title="[FR] Implémentation d&#39;un thème clair (couleurs claires en arrière&#45;plan). [EN] Implementation of a lig..." alt="" coords="5,187,187,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="165,151,122,188,118,184,162,147"/>
+<area shape="rect" id="Node000004" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_sombre.html" title="[FR] Implémentation d&#39;un thème sombre (couleurs sombres en arrière&#45;plan). [EN] Implementation of a da..." alt="" coords="211,187,392,229"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="236,147,279,184,276,188,232,151"/>
 </map>

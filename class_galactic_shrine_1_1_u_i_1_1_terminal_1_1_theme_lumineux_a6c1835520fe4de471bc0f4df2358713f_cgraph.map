@@ -1,5 +1,5 @@
 <map id="GalacticShrine.UI.Terminal.ThemeLumineux.DefinirLesCouleurs" name="GalacticShrine.UI.Terminal.ThemeLumineux.DefinirLesCouleurs">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,234,48"/>
-<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title=" " alt="" coords="282,5,479,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,24,267,24,267,29,234,29"/>
+<area shape="rect" id="Node000001" title="[FR] Définit les couleurs principales du thème lumineux, soit par défaut console, soit en clair...." alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$class_galactic_shrine_1_1_u_i_1_1_terminal_1_1_theme_params.html#aff504db1be705b7e839ef8e02b1ab71f" title="[FR] Rétablit la couleur par défaut de la console et met à jour ConsoleArrierePlan / ConsolePremierPl..." alt="" coords="286,5,486,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,270,24,270,29,238,29"/>
 </map>

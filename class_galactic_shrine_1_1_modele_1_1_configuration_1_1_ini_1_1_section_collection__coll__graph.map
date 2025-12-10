@@ -1,7 +1,7 @@
 <map id="GalacticShrine.Modele.Configuration.Ini.SectionCollection" name="GalacticShrine.Modele.Configuration.Ini.SectionCollection">
-<area shape="rect" id="Node000001" title=" " alt="" coords="44,96,279,139"/>
-<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface.html" title=" " alt="" coords="5,5,144,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,57,143,94,139,98,103,61"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="167,13,329,40"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,53,183,97,179,94,223,49"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="99,96,336,139"/>
+<area shape="rect" id="Node000002" href="$interface_galactic_shrine_1_1_interface_1_1_configuration_1_1_clonable_interface-1-g.html" title="[FR] Crée une copie en profondeur du type T , c&#39;est&#45;à&#45;dire que tous les types de référence sont égale..." alt="" coords="5,5,241,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,57,198,94,194,98,154,61"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="265,13,360,40"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,53,241,98,238,94,286,49"/>
 </map>

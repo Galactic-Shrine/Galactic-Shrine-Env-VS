@@ -1,9 +1,10 @@
 var _hachage_8_enum_8_ref_8cs =
 [
-    [ "HachageType", "_hachage_8_enum_8_ref_8cs.html#a65645c3840dd27a8bede7a23b7f047d2", [
-      [ "Md5", "_hachage_8_enum_8_ref_8cs.html#a65645c3840dd27a8bede7a23b7f047d2a8d6c0760e7dae464f181d5fb9f6d3cb0", null ],
-      [ "Sha1", "_hachage_8_enum_8_ref_8cs.html#a65645c3840dd27a8bede7a23b7f047d2a89305d971a8d86cf8aeee61cc1a85d4b", null ],
-      [ "Sha256", "_hachage_8_enum_8_ref_8cs.html#a65645c3840dd27a8bede7a23b7f047d2a15c0db5566b4b1794251c08e46022245", null ],
-      [ "Sha512", "_hachage_8_enum_8_ref_8cs.html#a65645c3840dd27a8bede7a23b7f047d2ae304cb0386a040917fdb6a4b4b738cee", null ]
+    [ "GalacticShrine.Enumeration.Hachage", "namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82f", [
+      [ "GalacticShrine.Enumeration.Hachage.MD5", "namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82fa7f138a09169b250e9dcb378140907378", null ],
+      [ "GalacticShrine.Enumeration.Hachage.SHA1", "namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82fa9a9f4eb6d0036a164588b6ee74390442", null ],
+      [ "GalacticShrine.Enumeration.Hachage.SHA256", "namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82fab505df5aa812b4f320420b8a952f20e5", null ],
+      [ "GalacticShrine.Enumeration.Hachage.SHA384", "namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82fae446c175009b980a004574cb795388ab", null ],
+      [ "GalacticShrine.Enumeration.Hachage.SHA512", "namespace_galactic_shrine_1_1_enumeration.html#a49b9ca6c2d333d6368934a5f49cfc82fadb6c5a350bb792ef07a62a1750962737", null ]
     ] ]
 ];
